@@ -82,7 +82,7 @@ export default function Dashboard() {
   }
 
   // Executive overview (last 30 days)
-  const last30 = useMemo(() => (typeof window !== "undefined" ? getEvents(30) : []), [now]);
+  const last30 = useMemo(() => (typeof window !== "undefined" ? getEvents(30) : []), []);
   const kpis = useMemo(() => {
     let links = 0, bookings = 0, reviews = 0, ratingSum = 0;
     let scans = 0;
@@ -173,7 +173,7 @@ export default function Dashboard() {
     const curr = byDay(0, 7);
     const change = prev === 0 ? 100 : Math.round(((curr - prev) / Math.max(prev, 1)) * 100);
     return { prev, curr, change };
-  }, [now]);
+  }, []);
 
   // Alerts (simple rules)
   const alerts = useMemo(() => {

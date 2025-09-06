@@ -123,7 +123,14 @@ async function checkRateLimit(id: string) {
 
 const DEFAULT_MODEL = process.env.OPENAI_DEFAULT_MODEL || "gpt-5-mini-2025-08-07";
 
-const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+let openai: OpenAI | null = null;
+
+function getOpenAI() {
+  if (!openai && process.env.OPENAI_API_KEY) {
+    openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+  }
+  return openai;
+}
 
 export async function POST(req: NextRequest) {
   const clientIp = getClientId(req);
@@ -168,10 +175,11 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  if (!process.env.OPENAI_API_KEY) {
+  const openaiClient = getOpenAI();
+  if (!openaiClient) {
     return NextResponse.json(
-      { error: "Server misconfigured: missing OPENAI_API_KEY" },
-      { status: 500 }
+      { error: "AI service temporarily unavailable. Please try again later." },
+      { status: 503 }
     );
   }
 
@@ -195,7 +203,7 @@ export async function POST(req: NextRequest) {
 
   try {
     const started = Date.now();
-    const resp = await openai.chat.completions.create({
+    const resp = await openaiClient.chat.completions.create({
       model,
       messages: safeMessages,
       max_tokens: maxTokens,
