@@ -1,0 +1,344 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - button "Toggle navigation menu" [ref=e3]:
+    - img [ref=e4]
+  - complementary [ref=e5]:
+    - generic [ref=e7]:
+      - img "Prairie Signal" [ref=e8]
+      - generic [ref=e9]:
+        - generic [ref=e10]: Belmont
+        - generic [ref=e11]: SEO Lab
+    - navigation "Primary Navigation" [ref=e12]:
+      - generic [ref=e14]:
+        - link "Home" [ref=e16] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e17] [cursor=pointer]: Home
+        - link "Dashboard" [ref=e19] [cursor=pointer]:
+          - /url: /apps/dashboard
+          - img [ref=e20] [cursor=pointer]
+          - generic [ref=e23] [cursor=pointer]: Dashboard
+        - link "Onboarding" [ref=e25] [cursor=pointer]:
+          - /url: /apps/onboarding
+          - img [ref=e26] [cursor=pointer]
+          - generic [ref=e33] [cursor=pointer]: Onboarding
+      - generic [ref=e34]:
+        - heading "Content Creation" [level=3] [ref=e36]
+        - generic [ref=e37]:
+          - link "Google Posts Writer" [ref=e39] [cursor=pointer]:
+            - /url: /apps/gbp-composer
+            - img [ref=e40] [cursor=pointer]
+            - generic [ref=e43] [cursor=pointer]: Google Posts Writer
+          - link "Social Media Studio" [ref=e45] [cursor=pointer]:
+            - /url: /apps/post-studio
+            - img [ref=e46] [cursor=pointer]
+            - generic [ref=e50] [cursor=pointer]: Social Media Studio
+          - link "Content Calendar" [ref=e52] [cursor=pointer]:
+            - /url: /apps/post-oracle
+            - img [ref=e53] [cursor=pointer]
+            - generic [ref=e55] [cursor=pointer]: Content Calendar
+          - link "Local Content Ideas" [ref=e57] [cursor=pointer]:
+            - /url: /apps/neighbor-signal
+            - img [ref=e58] [cursor=pointer]
+            - generic [ref=e65] [cursor=pointer]: Local Content Ideas
+      - generic [ref=e66]:
+        - heading "Marketing & Tracking" [level=3] [ref=e68]
+        - generic [ref=e69]:
+          - link "Campaign Links" [ref=e71] [cursor=pointer]:
+            - /url: /apps/utm-dashboard
+            - img [ref=e72] [cursor=pointer]
+            - generic [ref=e76] [cursor=pointer]: Campaign Links
+          - link "QR Code Maker" [ref=e78] [cursor=pointer]:
+            - /url: /apps/utm-qr
+            - img [ref=e79] [cursor=pointer]
+            - generic [ref=e82] [cursor=pointer]: QR Code Maker
+          - link "Staff Referral Codes" [ref=e84] [cursor=pointer]:
+            - /url: /apps/referral-qr
+            - img [ref=e85] [cursor=pointer]
+            - generic [ref=e91] [cursor=pointer]: Staff Referral Codes
+          - link "Review Request Links" [ref=e93] [cursor=pointer]:
+            - /url: /apps/review-link
+            - img [ref=e94] [cursor=pointer]
+            - generic [ref=e100] [cursor=pointer]: Review Request Links
+      - generic [ref=e101]:
+        - heading "Customer Management" [level=3] [ref=e103]
+        - generic [ref=e104]:
+          - link "Review Responses" [ref=e106] [cursor=pointer]:
+            - /url: /apps/review-composer
+            - img [ref=e107] [cursor=pointer]
+            - generic [ref=e109] [cursor=pointer]: Review Responses
+          - link "Customer Analysis" [ref=e111] [cursor=pointer]:
+            - /url: /apps/rfm-crm
+            - img [ref=e112] [cursor=pointer]
+            - generic [ref=e117] [cursor=pointer]: Customer Analysis
+          - link "Appointment Reminders" [ref=e119] [cursor=pointer]:
+            - /url: /apps/noshow-shield
+            - img [ref=e120] [cursor=pointer]
+            - generic [ref=e122] [cursor=pointer]: Appointment Reminders
+          - link "Service Suggestions" [ref=e124] [cursor=pointer]:
+            - /url: /apps/addon-recommender
+            - img [ref=e125] [cursor=pointer]
+            - generic [ref=e126] [cursor=pointer]: Service Suggestions
+      - generic [ref=e127]:
+        - heading "Search Performance" [level=3] [ref=e129]
+        - generic [ref=e130]:
+          - link "Search Performance" [ref=e132] [cursor=pointer]:
+            - /url: /apps/gsc-ctr-miner
+            - img [ref=e133] [cursor=pointer]
+            - generic [ref=e135] [cursor=pointer]: Search Performance
+          - link "Search Rankings" [ref=e137] [cursor=pointer]:
+            - /url: /apps/rank-grid
+            - img [ref=e138] [cursor=pointer]
+            - generic [ref=e141] [cursor=pointer]: Search Rankings
+          - link "Ranking Monitor" [ref=e143] [cursor=pointer]:
+            - /url: /apps/rankgrid-watcher
+            - img [ref=e144] [cursor=pointer]
+            - generic [ref=e147] [cursor=pointer]: Ranking Monitor
+          - link "Service Profits" [ref=e149] [cursor=pointer]:
+            - /url: /apps/slot-yield
+            - img [ref=e150] [cursor=pointer]
+            - generic [ref=e153] [cursor=pointer]: Service Profits
+          - link "Busy Times Predictor" [ref=e155] [cursor=pointer]:
+            - /url: /apps/queuetime
+            - img [ref=e156] [cursor=pointer]
+            - generic [ref=e159] [cursor=pointer]: Busy Times Predictor
+      - generic [ref=e160]:
+        - heading "Local Partnerships" [level=3] [ref=e162]
+        - generic [ref=e163]:
+          - link "Partner Finder" [ref=e165] [cursor=pointer]:
+            - /url: /apps/link-prospect-kit
+            - img [ref=e166] [cursor=pointer]
+            - generic [ref=e169] [cursor=pointer]: Partner Finder
+          - link "Partnership Map" [ref=e171] [cursor=pointer]:
+            - /url: /apps/link-map
+            - img [ref=e172] [cursor=pointer]
+            - generic [ref=e175] [cursor=pointer]: Partnership Map
+      - generic [ref=e176]:
+        - heading "Website Optimization" [level=3] [ref=e178]
+        - generic [ref=e179]:
+          - link "Website Guide" [ref=e181] [cursor=pointer]:
+            - /url: /apps/seo-brief
+            - img [ref=e182] [cursor=pointer]
+            - generic [ref=e185] [cursor=pointer]: Website Guide
+          - link "Page Titles & Descriptions" [ref=e187] [cursor=pointer]:
+            - /url: /apps/meta-planner
+            - img [ref=e188] [cursor=pointer]
+            - generic [ref=e191] [cursor=pointer]: Page Titles & Descriptions
+          - link "Business Listings Check" [ref=e193] [cursor=pointer]:
+            - /url: /apps/citation-tracker
+            - img [ref=e194] [cursor=pointer]
+            - generic [ref=e200] [cursor=pointer]: Business Listings Check
+      - generic [ref=e201]:
+        - heading "Support" [level=3] [ref=e203]
+        - generic [ref=e204]:
+          - link "Status" [ref=e206] [cursor=pointer]:
+            - /url: /status
+            - img [ref=e207] [cursor=pointer]
+            - generic [ref=e209] [cursor=pointer]: Status
+          - link "Trial Guide" [ref=e211] [cursor=pointer]:
+            - /url: /guide/trial
+            - img [ref=e212] [cursor=pointer]
+            - generic [ref=e215] [cursor=pointer]: Trial Guide
+  - generic [ref=e216]:
+    - banner [ref=e217]:
+      - generic [ref=e218]:
+        - link "Prairie SignalBelmont SEO LabSEO Lab" [ref=e219] [cursor=pointer]:
+          - /url: /
+          - img "Prairie Signal" [ref=e220] [cursor=pointer]
+          - generic [ref=e221] [cursor=pointer]: Belmont SEO Lab
+          - generic [ref=e222] [cursor=pointer]: SEO Lab
+        - generic [ref=e223]:
+          - generic [ref=e224]:
+            - link "Call for assistance" [ref=e225] [cursor=pointer]:
+              - /url: tel:403-555-0123
+              - img [ref=e226] [cursor=pointer]
+              - generic [ref=e228] [cursor=pointer]: Assistance
+            - link "Find The Belmont Barbershop on map" [ref=e229] [cursor=pointer]:
+              - /url: https://maps.google.com/?q=Little+Bow+River,+High+River,+AB,+T1V+1M6
+              - img [ref=e230] [cursor=pointer]
+              - generic [ref=e233] [cursor=pointer]: Map
+          - generic [ref=e234]:
+            - img [ref=e235]
+            - textbox "Search tools" [ref=e238]
+          - generic [ref=e239]:
+            - button "Toggle Simple Mode" [ref=e240]: Advanced
+            - button "Toggle theme" [ref=e241]:
+              - img [ref=e242]
+    - main [ref=e244]:
+      - generic [ref=e245]:
+        - generic [ref=e246]:
+          - generic [ref=e248]:
+            - heading "Appointment Reminders" [level=1] [ref=e249]
+            - paragraph [ref=e250]: Predict and prevent no-show appointments using historical data patterns.
+          - generic [ref=e251]:
+            - generic [ref=e252]:
+              - img [ref=e253]
+              - text: "AI: Unavailable"
+            - button "Load Visit Data" [ref=e261]:
+              - img [ref=e262]
+              - text: Load Visit Data
+        - generic [ref=e265]:
+          - tablist [ref=e266]:
+            - tab "How To" [selected] [ref=e267]
+            - tab "Dashboard" [ref=e268]
+            - tab "Reminders" [ref=e269]
+          - tabpanel "How To" [ref=e270]:
+            - generic [ref=e271]:
+              - generic [ref=e272]:
+                - generic [ref=e273]:
+                  - img [ref=e274]
+                  - text: How to Use the Appointment Reminders Tool
+                - generic [ref=e276]: Learn how to predict and prevent no-show appointments to protect Belmont's revenue
+              - generic [ref=e278]:
+                - generic [ref=e279]:
+                  - heading "What This Tool Does" [level=3] [ref=e280]
+                  - paragraph [ref=e281]: This tool analyzes historical appointment data to identify patterns that predict which customers are most likely to miss their appointments. It provides automated risk scoring and suggests proactive communication strategies to reduce no-shows and protect Belmont's revenue.
+                - generic [ref=e282]:
+                  - heading "Why No-Show Prevention Matters for Belmont" [level=3] [ref=e283]
+                  - paragraph [ref=e284]: "No-show appointments represent lost revenue and wasted time for Belmont:"
+                  - list [ref=e285]:
+                    - listitem [ref=e286]:
+                      - strong [ref=e287]: "Revenue protection:"
+                      - text: Every no-show costs Belmont the full price of the missed service
+                    - listitem [ref=e288]:
+                      - strong [ref=e289]: "Staff productivity:"
+                      - text: Barbers have unproductive time that could be filled with paying customers
+                    - listitem [ref=e290]:
+                      - strong [ref=e291]: "Customer satisfaction:"
+                      - text: Proactive reminders show Belmont cares about their customers' time
+                    - listitem [ref=e292]:
+                      - strong [ref=e293]: "Resource optimization:"
+                      - text: Better appointment attendance means more efficient use of chairs and staff
+                    - listitem [ref=e294]:
+                      - strong [ref=e295]: "Business reputation:"
+                      - text: Reliable service builds trust and encourages repeat business
+                - generic [ref=e296]:
+                  - heading "Step-by-Step Instructions" [level=3] [ref=e297]
+                  - list [ref=e298]:
+                    - listitem [ref=e299]:
+                      - strong [ref=e300]: "Load your appointment data:"
+                      - text: Click "Load Visit Data" to analyze historical patterns and train the risk prediction model
+                    - listitem [ref=e301]:
+                      - strong [ref=e302]: "Review the risk dashboard:"
+                      - text: Check the "Dashboard" tab to see current risk levels and appointment statistics
+                    - listitem [ref=e303]:
+                      - strong [ref=e304]: "Identify at-risk appointments:"
+                      - text: The tool highlights appointments with high no-show risk based on historical patterns
+                    - listitem [ref=e305]:
+                      - strong [ref=e306]: "Send proactive reminders:"
+                      - text: Use the suggested communication methods (phone, text, email) for high-risk appointments
+                    - listitem [ref=e307]:
+                      - strong [ref=e308]: "Track effectiveness:"
+                      - text: Monitor how reminder strategies reduce no-show rates over time
+                    - listitem [ref=e309]:
+                      - strong [ref=e310]: "Refine your approach:"
+                      - text: Use the risk factor analysis to improve your reminder timing and messaging
+                - generic [ref=e311]:
+                  - heading "Understanding Risk Factors" [level=3] [ref=e312]
+                  - list [ref=e313]:
+                    - listitem [ref=e314]:
+                      - strong [ref=e315]: "First-time customers:"
+                      - text: New customers are more likely to miss appointments (28% higher risk)
+                    - listitem [ref=e316]:
+                      - strong [ref=e317]: "Late bookings:"
+                      - text: Appointments booked close to the service time have higher no-show rates
+                    - listitem [ref=e318]:
+                      - strong [ref=e319]: "Weekend appointments:"
+                      - text: Friday and Saturday appointments show higher cancellation rates
+                    - listitem [ref=e320]:
+                      - strong [ref=e321]: "Longer services:"
+                      - text: More expensive or time-intensive services have slightly higher no-show rates
+                    - listitem [ref=e322]:
+                      - strong [ref=e323]: "Time of day:"
+                      - text: Early morning and late afternoon slots sometimes have different attendance patterns
+                    - listitem [ref=e324]:
+                      - strong [ref=e325]: "Historical behavior:"
+                      - text: Customers with previous no-shows are flagged for extra attention
+                - generic [ref=e326]:
+                  - heading "Reminder Strategies for Belmont" [level=3] [ref=e327]
+                  - list [ref=e328]:
+                    - listitem [ref=e329]:
+                      - strong [ref=e330]: "High-risk appointments:"
+                      - text: Call 24 hours in advance + text reminder 2 hours before
+                    - listitem [ref=e331]:
+                      - strong [ref=e332]: "Medium-risk appointments:"
+                      - text: Automated text reminder 24 hours before + confirmation request
+                    - listitem [ref=e333]:
+                      - strong [ref=e334]: "First-time customers:"
+                      - text: Personal phone call to confirm appointment and answer questions
+                    - listitem [ref=e335]:
+                      - strong [ref=e336]: "Weekend appointments:"
+                      - text: Extra reminder on Friday for Saturday appointments
+                    - listitem [ref=e337]:
+                      - strong [ref=e338]: "Late bookings:"
+                      - text: Immediate confirmation call when appointment is booked
+                    - listitem [ref=e339]:
+                      - strong [ref=e340]: "Longer services:"
+                      - text: Specific reminder about service duration and what to expect
+                - generic [ref=e341]:
+                  - heading "Measuring Success" [level=3] [ref=e342]
+                  - list [ref=e343]:
+                    - listitem [ref=e344]:
+                      - strong [ref=e345]: "No-show rate reduction:"
+                      - text: Track percentage decrease in missed appointments
+                    - listitem [ref=e346]:
+                      - strong [ref=e347]: "Revenue protection:"
+                      - text: Calculate dollars saved by preventing no-shows
+                    - listitem [ref=e348]:
+                      - strong [ref=e349]: "Reminder effectiveness:"
+                      - text: Compare no-show rates for reminded vs. non-reminded appointments
+                    - listitem [ref=e350]:
+                      - strong [ref=e351]: "Customer satisfaction:"
+                      - text: Monitor if proactive reminders improve overall experience
+                    - listitem [ref=e352]:
+                      - strong [ref=e353]: "Staff time savings:"
+                      - text: Track time saved by reducing unproductive appointment slots
+                - generic [ref=e354]:
+                  - heading "Best Practices for No-Show Prevention" [level=3] [ref=e355]
+                  - list [ref=e356]:
+                    - listitem [ref=e357]:
+                      - strong [ref=e358]: "Multiple reminder methods:"
+                      - text: Use phone + text + email for maximum effectiveness
+                    - listitem [ref=e359]:
+                      - strong [ref=e360]: "Strategic timing:"
+                      - text: Send reminders at optimal intervals (24h before, 2h before)
+                    - listitem [ref=e361]:
+                      - strong [ref=e362]: "Personal touch:"
+                      - text: Include customer's name and specific service details in reminders
+                    - listitem [ref=e363]:
+                      - strong [ref=e364]: "Easy cancellation:"
+                      - text: Make it simple for customers to cancel/reschedule if they can't make it
+                    - listitem [ref=e365]:
+                      - strong [ref=e366]: "Follow-up on no-shows:"
+                      - text: Contact no-show customers to reschedule and understand reasons
+                    - listitem [ref=e367]:
+                      - strong [ref=e368]: "Continuous learning:"
+                      - text: Update your risk model with new data to improve predictions
+                - generic [ref=e369]:
+                  - heading "Communication Templates" [level=3] [ref=e370]
+                  - generic [ref=e371]:
+                    - generic [ref=e372]:
+                      - paragraph [ref=e373]: "Phone Script:"
+                      - paragraph [ref=e374]: "\"Hi [Name], this is Belmont calling to confirm your [service] appointment for [time]. We're looking forward to seeing you!\""
+                    - generic [ref=e375]:
+                      - paragraph [ref=e376]: "Text Reminder:"
+                      - paragraph [ref=e377]: "\"Hi [Name]! Just a reminder of your [service] at Belmont tomorrow at [time]. See you then! 💺✂️\""
+                    - generic [ref=e378]:
+                      - paragraph [ref=e379]: "Email Confirmation:"
+                      - paragraph [ref=e380]: "\"Dear [Name], We're excited about your upcoming [service] appointment. Please reply to confirm you're still able to make it.\""
+    - generic [ref=e382]:
+      - link "Email support" [ref=e383] [cursor=pointer]:
+        - /url: mailto:info@thebelmontbarber.ca
+        - img "Prairie Signal" [ref=e384] [cursor=pointer]
+        - text: Need help? Email support
+      - generic [ref=e385]:
+        - button "Open AI diagnostics" [ref=e386]:
+          - img [ref=e387]
+        - link "Call for assistance" [ref=e395] [cursor=pointer]:
+          - /url: tel:403-555-0123
+          - img [ref=e396] [cursor=pointer]
+        - link "Find The Belmont Barbershop on map" [ref=e398] [cursor=pointer]:
+          - /url: https://maps.google.com/?q=Little+Bow+River,+High+River,+AB,+T1V+1M6
+          - img [ref=e399] [cursor=pointer]
+```

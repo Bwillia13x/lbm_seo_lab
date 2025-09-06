@@ -1,0 +1,350 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - button "Toggle navigation menu" [ref=e3]:
+    - img [ref=e4]
+  - complementary [ref=e5]:
+    - generic [ref=e7]:
+      - img "Prairie Signal" [ref=e8]
+      - generic [ref=e9]:
+        - generic [ref=e10]: Belmont
+        - generic [ref=e11]: SEO Lab
+    - navigation "Primary Navigation" [ref=e12]:
+      - generic [ref=e14]:
+        - link "Home" [ref=e16] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e17] [cursor=pointer]: Home
+        - link "Dashboard" [ref=e19] [cursor=pointer]:
+          - /url: /apps/dashboard
+          - img [ref=e20] [cursor=pointer]
+          - generic [ref=e23] [cursor=pointer]: Dashboard
+        - link "Onboarding" [ref=e25] [cursor=pointer]:
+          - /url: /apps/onboarding
+          - img [ref=e26] [cursor=pointer]
+          - generic [ref=e33] [cursor=pointer]: Onboarding
+      - generic [ref=e34]:
+        - heading "Content Creation" [level=3] [ref=e36]
+        - generic [ref=e37]:
+          - link "Google Posts Writer" [ref=e39] [cursor=pointer]:
+            - /url: /apps/gbp-composer
+            - img [ref=e40] [cursor=pointer]
+            - generic [ref=e43] [cursor=pointer]: Google Posts Writer
+          - link "Social Media Studio" [ref=e45] [cursor=pointer]:
+            - /url: /apps/post-studio
+            - img [ref=e46] [cursor=pointer]
+            - generic [ref=e50] [cursor=pointer]: Social Media Studio
+          - link "Content Calendar" [ref=e52] [cursor=pointer]:
+            - /url: /apps/post-oracle
+            - img [ref=e53] [cursor=pointer]
+            - generic [ref=e55] [cursor=pointer]: Content Calendar
+          - link "Local Content Ideas" [ref=e57] [cursor=pointer]:
+            - /url: /apps/neighbor-signal
+            - img [ref=e58] [cursor=pointer]
+            - generic [ref=e65] [cursor=pointer]: Local Content Ideas
+      - generic [ref=e66]:
+        - heading "Marketing & Tracking" [level=3] [ref=e68]
+        - generic [ref=e69]:
+          - link "Campaign Links" [ref=e71] [cursor=pointer]:
+            - /url: /apps/utm-dashboard
+            - img [ref=e72] [cursor=pointer]
+            - generic [ref=e76] [cursor=pointer]: Campaign Links
+          - link "QR Code Maker" [ref=e78] [cursor=pointer]:
+            - /url: /apps/utm-qr
+            - img [ref=e79] [cursor=pointer]
+            - generic [ref=e82] [cursor=pointer]: QR Code Maker
+          - link "Staff Referral Codes" [ref=e84] [cursor=pointer]:
+            - /url: /apps/referral-qr
+            - img [ref=e85] [cursor=pointer]
+            - generic [ref=e91] [cursor=pointer]: Staff Referral Codes
+          - link "Review Request Links" [ref=e93] [cursor=pointer]:
+            - /url: /apps/review-link
+            - img [ref=e94] [cursor=pointer]
+            - generic [ref=e100] [cursor=pointer]: Review Request Links
+      - generic [ref=e101]:
+        - heading "Customer Management" [level=3] [ref=e103]
+        - generic [ref=e104]:
+          - link "Review Responses" [ref=e106] [cursor=pointer]:
+            - /url: /apps/review-composer
+            - img [ref=e107] [cursor=pointer]
+            - generic [ref=e109] [cursor=pointer]: Review Responses
+          - link "Customer Analysis" [ref=e111] [cursor=pointer]:
+            - /url: /apps/rfm-crm
+            - img [ref=e112] [cursor=pointer]
+            - generic [ref=e117] [cursor=pointer]: Customer Analysis
+          - link "Appointment Reminders" [ref=e119] [cursor=pointer]:
+            - /url: /apps/noshow-shield
+            - img [ref=e120] [cursor=pointer]
+            - generic [ref=e122] [cursor=pointer]: Appointment Reminders
+          - link "Service Suggestions" [ref=e124] [cursor=pointer]:
+            - /url: /apps/addon-recommender
+            - img [ref=e125] [cursor=pointer]
+            - generic [ref=e126] [cursor=pointer]: Service Suggestions
+      - generic [ref=e127]:
+        - heading "Search Performance" [level=3] [ref=e129]
+        - generic [ref=e130]:
+          - link "Search Performance" [ref=e132] [cursor=pointer]:
+            - /url: /apps/gsc-ctr-miner
+            - img [ref=e133] [cursor=pointer]
+            - generic [ref=e135] [cursor=pointer]: Search Performance
+          - link "Search Rankings" [ref=e137] [cursor=pointer]:
+            - /url: /apps/rank-grid
+            - img [ref=e138] [cursor=pointer]
+            - generic [ref=e141] [cursor=pointer]: Search Rankings
+          - link "Ranking Monitor" [ref=e143] [cursor=pointer]:
+            - /url: /apps/rankgrid-watcher
+            - img [ref=e144] [cursor=pointer]
+            - generic [ref=e147] [cursor=pointer]: Ranking Monitor
+          - link "Service Profits" [ref=e149] [cursor=pointer]:
+            - /url: /apps/slot-yield
+            - img [ref=e150] [cursor=pointer]
+            - generic [ref=e153] [cursor=pointer]: Service Profits
+          - link "Busy Times Predictor" [ref=e155] [cursor=pointer]:
+            - /url: /apps/queuetime
+            - img [ref=e156] [cursor=pointer]
+            - generic [ref=e159] [cursor=pointer]: Busy Times Predictor
+      - generic [ref=e160]:
+        - heading "Local Partnerships" [level=3] [ref=e162]
+        - generic [ref=e163]:
+          - link "Partner Finder" [ref=e165] [cursor=pointer]:
+            - /url: /apps/link-prospect-kit
+            - img [ref=e166] [cursor=pointer]
+            - generic [ref=e169] [cursor=pointer]: Partner Finder
+          - link "Partnership Map" [ref=e171] [cursor=pointer]:
+            - /url: /apps/link-map
+            - img [ref=e172] [cursor=pointer]
+            - generic [ref=e175] [cursor=pointer]: Partnership Map
+      - generic [ref=e176]:
+        - heading "Website Optimization" [level=3] [ref=e178]
+        - generic [ref=e179]:
+          - link "Website Guide" [ref=e181] [cursor=pointer]:
+            - /url: /apps/seo-brief
+            - img [ref=e182] [cursor=pointer]
+            - generic [ref=e185] [cursor=pointer]: Website Guide
+          - link "Page Titles & Descriptions" [ref=e187] [cursor=pointer]:
+            - /url: /apps/meta-planner
+            - img [ref=e188] [cursor=pointer]
+            - generic [ref=e191] [cursor=pointer]: Page Titles & Descriptions
+          - link "Business Listings Check" [ref=e193] [cursor=pointer]:
+            - /url: /apps/citation-tracker
+            - img [ref=e194] [cursor=pointer]
+            - generic [ref=e200] [cursor=pointer]: Business Listings Check
+      - generic [ref=e201]:
+        - heading "Support" [level=3] [ref=e203]
+        - generic [ref=e204]:
+          - link "Status" [ref=e206] [cursor=pointer]:
+            - /url: /status
+            - img [ref=e207] [cursor=pointer]
+            - generic [ref=e209] [cursor=pointer]: Status
+          - link "Trial Guide" [ref=e211] [cursor=pointer]:
+            - /url: /guide/trial
+            - img [ref=e212] [cursor=pointer]
+            - generic [ref=e215] [cursor=pointer]: Trial Guide
+  - generic [ref=e216]:
+    - banner [ref=e217]:
+      - generic [ref=e218]:
+        - link "Prairie SignalBelmont SEO LabSEO Lab" [ref=e219] [cursor=pointer]:
+          - /url: /
+          - img "Prairie Signal" [ref=e220] [cursor=pointer]
+          - generic [ref=e221] [cursor=pointer]: Belmont SEO Lab
+          - generic [ref=e222] [cursor=pointer]: SEO Lab
+        - generic [ref=e223]:
+          - generic [ref=e224]:
+            - link "Call for assistance" [ref=e225] [cursor=pointer]:
+              - /url: tel:403-555-0123
+              - img [ref=e226] [cursor=pointer]
+              - generic [ref=e228] [cursor=pointer]: Assistance
+            - link "Find The Belmont Barbershop on map" [ref=e229] [cursor=pointer]:
+              - /url: https://maps.google.com/?q=Little+Bow+River,+High+River,+AB,+T1V+1M6
+              - img [ref=e230] [cursor=pointer]
+              - generic [ref=e233] [cursor=pointer]: Map
+          - generic [ref=e234]:
+            - img [ref=e235]
+            - textbox "Search tools" [ref=e238]
+          - generic [ref=e239]:
+            - button "Toggle Simple Mode" [ref=e240]: Advanced
+            - button "Toggle theme" [ref=e241]:
+              - img [ref=e242]
+    - main [ref=e244]:
+      - generic [ref=e245]:
+        - generic [ref=e246]:
+          - generic [ref=e248]:
+            - heading "AI QR Studio" [level=1] [ref=e249]
+            - paragraph [ref=e250]: Generate intelligent, optimized QR codes with AI-powered design suggestions and performance analytics.
+          - generic [ref=e251]:
+            - generic [ref=e252]:
+              - img [ref=e253]
+              - text: "AI: Unavailable"
+            - generic [ref=e261]:
+              - button "Load Demo" [ref=e262]:
+                - img [ref=e263]
+                - text: Load Demo
+              - generic [ref=e266]:
+                - button "AI Optimize" [ref=e267]:
+                  - img [ref=e268]
+                  - text: AI Optimize
+                - button "Test QR" [disabled] [ref=e276]:
+                  - img [ref=e277]
+                  - text: Test QR
+              - button "Reset" [ref=e279]:
+                - img [ref=e280]
+                - text: Reset
+        - generic [ref=e285]:
+          - generic [ref=e287]: Do this next
+          - list [ref=e289]:
+            - listitem [ref=e290]: Choose preset, service, area, and campaign name.
+            - listitem [ref=e291]: Click Generate to build your link and preview the QR.
+            - listitem [ref=e292]: Click Copy to use the link online.
+            - listitem [ref=e293]: Click Download ASCII to save the QR preview (or use the other QR tool for PNG).
+        - generic [ref=e294]:
+          - generic [ref=e295]:
+            - generic [ref=e297]:
+              - img [ref=e298]
+              - text: Links Built
+            - generic [ref=e301]:
+              - generic [ref=e302]: "0"
+              - generic [ref=e303]: Generated
+          - generic [ref=e304]:
+            - generic [ref=e306]:
+              - img [ref=e307]
+              - text: AI Status
+            - generic [ref=e315]:
+              - generic [ref=e316]: Server-managed
+              - generic [ref=e317]: Optimization
+          - generic [ref=e318]:
+            - generic [ref=e320]:
+              - img [ref=e321]
+              - text: QR Ready
+            - generic [ref=e327]:
+              - generic [ref=e328]: "0"
+              - generic [ref=e329]: Available
+          - generic [ref=e330]:
+            - generic [ref=e332]:
+              - img [ref=e333]
+              - text: Library
+            - generic [ref=e335]:
+              - generic [ref=e336]: "0"
+              - generic [ref=e337]: Saved designs
+          - generic [ref=e338]:
+            - generic [ref=e340]:
+              - img [ref=e341]
+              - text: Test Score
+            - generic [ref=e343]:
+              - generic [ref=e344]: —
+              - generic [ref=e345]: Readability
+          - generic [ref=e346]:
+            - generic [ref=e348]:
+              - img [ref=e349]
+              - text: Tests
+            - generic [ref=e351]:
+              - generic [ref=e352]: 0/0
+              - generic [ref=e353]: Passed
+        - generic [ref=e354]:
+          - tablist [ref=e355]:
+            - tab "How To" [selected] [ref=e356]
+            - tab "Single Link" [active] [ref=e357]
+            - generic [ref=e358]:
+              - tab "AI Optimize" [ref=e359]
+              - tab "Design Studio" [ref=e360]
+              - tab "Library" [ref=e361]
+              - tab "Batch QR" [ref=e362]
+              - tab "Analytics" [ref=e363]
+              - tab "Tests" [ref=e364]
+          - tabpanel "How To" [ref=e365]:
+            - generic [ref=e367]:
+              - generic [ref=e368]:
+                - generic [ref=e369]:
+                  - img [ref=e370]
+                  - text: How to Use the QR Code Maker
+                - generic [ref=e372]: Create QR codes and tracking links for Belmont's marketing campaigns
+              - generic [ref=e374]:
+                - generic [ref=e375]:
+                  - heading "What This Tool Does" [level=3] [ref=e376]
+                  - paragraph [ref=e377]: This tool creates QR codes that customers can scan with their phones to instantly visit Belmont's website or booking page. It also creates tracking links so you can see which marketing campaigns bring the most customers.
+                - generic [ref=e378]:
+                  - heading "Why QR Codes Matter for Belmont" [level=3] [ref=e379]
+                  - paragraph [ref=e380]: "QR codes make it easy for customers to contact Belmont without typing long web addresses. They're perfect for:"
+                  - list [ref=e381]:
+                    - listitem [ref=e382]: Business cards and flyers
+                    - listitem [ref=e383]: Window decals and posters
+                    - listitem [ref=e384]: Social media posts
+                    - listitem [ref=e385]: Google Business Profile posts
+                    - listitem [ref=e386]: Counter displays in the shop
+                - generic [ref=e387]:
+                  - heading "Step-by-Step Instructions" [level=3] [ref=e388]
+                  - list [ref=e389]:
+                    - listitem [ref=e390]:
+                      - strong [ref=e391]: "Choose a preset:"
+                      - text: Select the marketing channel you're using (Instagram Bio, GBP Post, Email, etc.)
+                    - listitem [ref=e392]:
+                      - strong [ref=e393]: "Pick a service:"
+                      - text: Choose which Belmont service you want to promote (Haircut, Beard Trim, etc.)
+                    - listitem [ref=e394]:
+                      - strong [ref=e395]: "Select an area:"
+                      - text: Choose the Calgary area you want to target (Bridgeland, Riverside, etc.)
+                    - listitem [ref=e396]:
+                      - strong [ref=e397]: "Enter campaign name:"
+                      - text: Give your campaign a clear name (e.g., "belmont-groomsmen-winter-2024")
+                    - listitem [ref=e398]:
+                      - strong [ref=e399]: "Click Generate:"
+                      - text: The tool will create your tracking link and QR code
+                    - listitem [ref=e400]:
+                      - strong [ref=e401]: "Copy the link:"
+                      - text: Use this tracking link in your marketing materials
+                    - listitem [ref=e402]:
+                      - strong [ref=e403]: "Download QR code:"
+                      - text: Save the QR code image to use in your marketing
+                - generic [ref=e404]:
+                  - heading "Best Practices for Belmont" [level=3] [ref=e405]
+                  - list [ref=e406]:
+                    - listitem [ref=e407]:
+                      - strong [ref=e408]: "Print QR codes large:"
+                      - text: Make sure they're at least 1-2 inches square so phones can scan them easily
+                    - listitem [ref=e409]:
+                      - strong [ref=e410]: "Test before printing:"
+                      - text: Always scan your QR codes with different phones to make sure they work
+                    - listitem [ref=e411]:
+                      - strong [ref=e412]: "Include clear instructions:"
+                      - text: Add text like "Scan to book" or "Scan for specials" next to your QR codes
+                    - listitem [ref=e413]:
+                      - strong [ref=e414]: "Use consistent branding:"
+                      - text: Include Belmont's logo and colors with your QR codes
+                    - listitem [ref=e415]:
+                      - strong [ref=e416]: "Track performance:"
+                      - text: Use Google Analytics to see which QR codes get the most scans
+                - generic [ref=e417]:
+                  - heading "Campaign Naming Tips" [level=3] [ref=e418]
+                  - paragraph [ref=e419]:
+                    - text: "Use this pattern for campaign names:"
+                    - code [ref=e420]: belmont-mens-cut-bridgeland-202509
+                  - paragraph [ref=e421]: "Examples: \"belmont-skin-fade-bridgeland-202412\", \"belmont-groomsmen-riverside-202501\""
+                - generic [ref=e422]:
+                  - heading "Where to Use QR Codes" [level=3] [ref=e423]
+                  - list [ref=e424]:
+                    - listitem [ref=e425]:
+                      - strong [ref=e426]: "GBP posts:"
+                      - text: Republish the same QR code on your counter display
+                    - listitem [ref=e427]:
+                      - strong [ref=e428]: "Instagram:"
+                      - text: Put the tracking link in your bio and use QR codes in Stories
+                    - listitem [ref=e429]:
+                      - strong [ref=e430]: "Email/SMS:"
+                      - text: Make sure you have customer permission (CASL compliance) and include unsubscribe options
+                    - listitem [ref=e431]:
+                      - strong [ref=e432]: "Print materials:"
+                      - text: Business cards, flyers, window decals, and posters
+    - generic [ref=e434]:
+      - link "Email support" [ref=e435] [cursor=pointer]:
+        - /url: mailto:info@thebelmontbarber.ca
+        - img "Prairie Signal" [ref=e436] [cursor=pointer]
+        - text: Need help? Email support
+      - generic [ref=e437]:
+        - button "Open AI diagnostics" [ref=e438]:
+          - img [ref=e439]
+        - link "Call for assistance" [ref=e447] [cursor=pointer]:
+          - /url: tel:403-555-0123
+          - img [ref=e448] [cursor=pointer]
+        - link "Find The Belmont Barbershop on map" [ref=e450] [cursor=pointer]:
+          - /url: https://maps.google.com/?q=Little+Bow+River,+High+River,+AB,+T1V+1M6
+          - img [ref=e451] [cursor=pointer]
+```

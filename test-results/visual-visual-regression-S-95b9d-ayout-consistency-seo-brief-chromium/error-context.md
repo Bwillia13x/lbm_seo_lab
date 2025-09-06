@@ -1,0 +1,335 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - button "Toggle navigation menu" [ref=e3]:
+    - img [ref=e4]
+  - complementary [ref=e5]:
+    - generic [ref=e7]:
+      - img "Prairie Signal" [ref=e8]
+      - generic [ref=e9]:
+        - generic [ref=e10]: Belmont
+        - generic [ref=e11]: SEO Lab
+    - navigation "Primary Navigation" [ref=e12]:
+      - generic [ref=e14]:
+        - link "Home" [ref=e16] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e17] [cursor=pointer]: Home
+        - link "Dashboard" [ref=e19] [cursor=pointer]:
+          - /url: /apps/dashboard
+          - img [ref=e20] [cursor=pointer]
+          - generic [ref=e23] [cursor=pointer]: Dashboard
+        - link "Onboarding" [ref=e25] [cursor=pointer]:
+          - /url: /apps/onboarding
+          - img [ref=e26] [cursor=pointer]
+          - generic [ref=e33] [cursor=pointer]: Onboarding
+      - generic [ref=e34]:
+        - heading "Content Creation" [level=3] [ref=e36]
+        - generic [ref=e37]:
+          - link "Google Posts Writer" [ref=e39] [cursor=pointer]:
+            - /url: /apps/gbp-composer
+            - img [ref=e40] [cursor=pointer]
+            - generic [ref=e43] [cursor=pointer]: Google Posts Writer
+          - link "Social Media Studio" [ref=e45] [cursor=pointer]:
+            - /url: /apps/post-studio
+            - img [ref=e46] [cursor=pointer]
+            - generic [ref=e50] [cursor=pointer]: Social Media Studio
+          - link "Content Calendar" [ref=e52] [cursor=pointer]:
+            - /url: /apps/post-oracle
+            - img [ref=e53] [cursor=pointer]
+            - generic [ref=e55] [cursor=pointer]: Content Calendar
+          - link "Local Content Ideas" [ref=e57] [cursor=pointer]:
+            - /url: /apps/neighbor-signal
+            - img [ref=e58] [cursor=pointer]
+            - generic [ref=e65] [cursor=pointer]: Local Content Ideas
+      - generic [ref=e66]:
+        - heading "Marketing & Tracking" [level=3] [ref=e68]
+        - generic [ref=e69]:
+          - link "Campaign Links" [ref=e71] [cursor=pointer]:
+            - /url: /apps/utm-dashboard
+            - img [ref=e72] [cursor=pointer]
+            - generic [ref=e76] [cursor=pointer]: Campaign Links
+          - link "QR Code Maker" [ref=e78] [cursor=pointer]:
+            - /url: /apps/utm-qr
+            - img [ref=e79] [cursor=pointer]
+            - generic [ref=e82] [cursor=pointer]: QR Code Maker
+          - link "Staff Referral Codes" [ref=e84] [cursor=pointer]:
+            - /url: /apps/referral-qr
+            - img [ref=e85] [cursor=pointer]
+            - generic [ref=e91] [cursor=pointer]: Staff Referral Codes
+          - link "Review Request Links" [ref=e93] [cursor=pointer]:
+            - /url: /apps/review-link
+            - img [ref=e94] [cursor=pointer]
+            - generic [ref=e100] [cursor=pointer]: Review Request Links
+      - generic [ref=e101]:
+        - heading "Customer Management" [level=3] [ref=e103]
+        - generic [ref=e104]:
+          - link "Review Responses" [ref=e106] [cursor=pointer]:
+            - /url: /apps/review-composer
+            - img [ref=e107] [cursor=pointer]
+            - generic [ref=e109] [cursor=pointer]: Review Responses
+          - link "Customer Analysis" [ref=e111] [cursor=pointer]:
+            - /url: /apps/rfm-crm
+            - img [ref=e112] [cursor=pointer]
+            - generic [ref=e117] [cursor=pointer]: Customer Analysis
+          - link "Appointment Reminders" [ref=e119] [cursor=pointer]:
+            - /url: /apps/noshow-shield
+            - img [ref=e120] [cursor=pointer]
+            - generic [ref=e122] [cursor=pointer]: Appointment Reminders
+          - link "Service Suggestions" [ref=e124] [cursor=pointer]:
+            - /url: /apps/addon-recommender
+            - img [ref=e125] [cursor=pointer]
+            - generic [ref=e126] [cursor=pointer]: Service Suggestions
+      - generic [ref=e127]:
+        - heading "Search Performance" [level=3] [ref=e129]
+        - generic [ref=e130]:
+          - link "Search Performance" [ref=e132] [cursor=pointer]:
+            - /url: /apps/gsc-ctr-miner
+            - img [ref=e133] [cursor=pointer]
+            - generic [ref=e135] [cursor=pointer]: Search Performance
+          - link "Search Rankings" [ref=e137] [cursor=pointer]:
+            - /url: /apps/rank-grid
+            - img [ref=e138] [cursor=pointer]
+            - generic [ref=e141] [cursor=pointer]: Search Rankings
+          - link "Ranking Monitor" [ref=e143] [cursor=pointer]:
+            - /url: /apps/rankgrid-watcher
+            - img [ref=e144] [cursor=pointer]
+            - generic [ref=e147] [cursor=pointer]: Ranking Monitor
+          - link "Service Profits" [ref=e149] [cursor=pointer]:
+            - /url: /apps/slot-yield
+            - img [ref=e150] [cursor=pointer]
+            - generic [ref=e153] [cursor=pointer]: Service Profits
+          - link "Busy Times Predictor" [ref=e155] [cursor=pointer]:
+            - /url: /apps/queuetime
+            - img [ref=e156] [cursor=pointer]
+            - generic [ref=e159] [cursor=pointer]: Busy Times Predictor
+      - generic [ref=e160]:
+        - heading "Local Partnerships" [level=3] [ref=e162]
+        - generic [ref=e163]:
+          - link "Partner Finder" [ref=e165] [cursor=pointer]:
+            - /url: /apps/link-prospect-kit
+            - img [ref=e166] [cursor=pointer]
+            - generic [ref=e169] [cursor=pointer]: Partner Finder
+          - link "Partnership Map" [ref=e171] [cursor=pointer]:
+            - /url: /apps/link-map
+            - img [ref=e172] [cursor=pointer]
+            - generic [ref=e175] [cursor=pointer]: Partnership Map
+      - generic [ref=e176]:
+        - heading "Website Optimization" [level=3] [ref=e178]
+        - generic [ref=e179]:
+          - link "Website Guide" [ref=e181] [cursor=pointer]:
+            - /url: /apps/seo-brief
+            - img [ref=e182] [cursor=pointer]
+            - generic [ref=e185] [cursor=pointer]: Website Guide
+          - link "Page Titles & Descriptions" [ref=e187] [cursor=pointer]:
+            - /url: /apps/meta-planner
+            - img [ref=e188] [cursor=pointer]
+            - generic [ref=e191] [cursor=pointer]: Page Titles & Descriptions
+          - link "Business Listings Check" [ref=e193] [cursor=pointer]:
+            - /url: /apps/citation-tracker
+            - img [ref=e194] [cursor=pointer]
+            - generic [ref=e200] [cursor=pointer]: Business Listings Check
+      - generic [ref=e201]:
+        - heading "Support" [level=3] [ref=e203]
+        - generic [ref=e204]:
+          - link "Status" [ref=e206] [cursor=pointer]:
+            - /url: /status
+            - img [ref=e207] [cursor=pointer]
+            - generic [ref=e209] [cursor=pointer]: Status
+          - link "Trial Guide" [ref=e211] [cursor=pointer]:
+            - /url: /guide/trial
+            - img [ref=e212] [cursor=pointer]
+            - generic [ref=e215] [cursor=pointer]: Trial Guide
+  - generic [ref=e216]:
+    - banner [ref=e217]:
+      - generic [ref=e218]:
+        - link "Prairie SignalBelmont SEO LabSEO Lab" [ref=e219] [cursor=pointer]:
+          - /url: /
+          - img "Prairie Signal" [ref=e220] [cursor=pointer]
+          - generic [ref=e221] [cursor=pointer]: Belmont SEO Lab
+          - generic [ref=e222] [cursor=pointer]: SEO Lab
+        - generic [ref=e223]:
+          - generic [ref=e224]:
+            - link "Call for assistance" [ref=e225] [cursor=pointer]:
+              - /url: tel:403-555-0123
+              - img [ref=e226] [cursor=pointer]
+              - generic [ref=e228] [cursor=pointer]: Assistance
+            - link "Find The Belmont Barbershop on map" [ref=e229] [cursor=pointer]:
+              - /url: https://maps.google.com/?q=Little+Bow+River,+High+River,+AB,+T1V+1M6
+              - img [ref=e230] [cursor=pointer]
+              - generic [ref=e233] [cursor=pointer]: Map
+          - generic [ref=e234]:
+            - img [ref=e235]
+            - textbox "Search tools" [ref=e238]
+          - generic [ref=e239]:
+            - button "Toggle Simple Mode" [ref=e240]: Advanced
+            - button "Toggle theme" [ref=e241]:
+              - img [ref=e242]
+    - main [ref=e244]:
+      - generic [ref=e245]:
+        - generic [ref=e246]:
+          - generic [ref=e247]:
+            - img "Prairie Signal" [ref=e248]
+            - generic [ref=e249]:
+              - heading "Website Guide" [level=1] [ref=e250]
+              - paragraph [ref=e251]: Generate page briefs & JSON‑LD for Belmont — copy‑paste into your CMS today.
+          - generic [ref=e253]:
+            - img [ref=e254]
+            - text: "AI: Unavailable"
+        - generic [ref=e262]:
+          - generic [ref=e264]: Do this next
+          - list [ref=e266]:
+            - listitem [ref=e267]: Fill in Business Inputs (name, website, hours).
+            - listitem [ref=e268]: Open Page Briefs and copy the Title and Meta for a page.
+            - listitem [ref=e269]: Paste into your CMS page settings.
+            - listitem [ref=e270]: Open JSON‑LD and export Business or Service schema.
+            - listitem [ref=e271]: Paste the JSON‑LD into your site.
+        - generic [ref=e272]:
+          - generic [ref=e273]:
+            - generic [ref=e275]:
+              - img [ref=e276]
+              - text: Pages
+            - generic [ref=e278]:
+              - generic [ref=e279]: "7"
+              - generic [ref=e280]: Configured
+          - generic [ref=e281]:
+            - generic [ref=e283]:
+              - img [ref=e284]
+              - text: Schema Types
+            - generic [ref=e286]:
+              - generic [ref=e287]: "2"
+              - generic [ref=e288]: Business + Service
+          - generic [ref=e289]:
+            - generic [ref=e291]:
+              - img [ref=e292]
+              - text: Services
+            - generic [ref=e295]:
+              - generic [ref=e296]: "5"
+              - generic [ref=e297]: Listed
+          - generic [ref=e298]:
+            - generic [ref=e300]:
+              - img [ref=e301]
+              - text: Optimization
+            - generic [ref=e304]:
+              - generic [ref=e305]: Ready
+              - generic [ref=e306]: SEO prepared
+        - generic [ref=e307]:
+          - tablist [ref=e308]:
+            - tab "How To" [selected] [ref=e309]
+            - tab "Business Inputs" [ref=e310]
+            - tab "Page Briefs" [ref=e311]
+            - tab "JSON‑LD" [ref=e312]
+            - tab "Tests" [ref=e313]
+          - tabpanel "How To" [ref=e314]:
+            - generic [ref=e316]:
+              - generic [ref=e317]:
+                - generic [ref=e318]:
+                  - img [ref=e319]
+                  - text: How to Use the Website Improvement Guide
+                - generic [ref=e321]: Create optimized page content and structured data to help Google understand Belmont's services
+              - generic [ref=e323]:
+                - generic [ref=e324]:
+                  - heading "What This Tool Does" [level=3] [ref=e325]
+                  - paragraph [ref=e326]: This tool creates optimized content and code for Belmont's website that helps Google better understand what services Belmont offers. It generates page titles, descriptions, and special code (JSON-LD) that tells search engines about Belmont's business information.
+                - generic [ref=e327]:
+                  - heading "Why Website Optimization Matters for Belmont" [level=3] [ref=e328]
+                  - paragraph [ref=e329]: "When customers search for Belmont's services online, Google uses the information on Belmont's website to decide how to display Belmont in search results:"
+                  - list [ref=e330]:
+                    - listitem [ref=e331]: Page titles appear in search results as clickable headlines
+                    - listitem [ref=e332]: Meta descriptions show a preview of what the page contains
+                    - listitem [ref=e333]: Structured data helps Google show Belmont's business info in search results
+                    - listitem [ref=e334]: Well-optimized pages rank higher and get more clicks from customers
+                - generic [ref=e335]:
+                  - heading "Step-by-Step Instructions" [level=3] [ref=e336]
+                  - list [ref=e337]:
+                    - listitem [ref=e338]:
+                      - strong [ref=e339]: "Enter business information:"
+                      - text: Go to the "Business Inputs" tab and fill in Belmont's details (name, address, phone, services, hours)
+                    - listitem [ref=e340]:
+                      - strong [ref=e341]: "Generate page content:"
+                      - text: Click the "Page Briefs" tab to see optimized titles and descriptions for different pages on Belmont's website
+                    - listitem [ref=e342]:
+                      - strong [ref=e343]: "Copy the suggestions:"
+                      - text: Click the copy buttons to copy the recommended titles and descriptions
+                    - listitem [ref=e344]:
+                      - strong [ref=e345]: "Update your website:"
+                      - text: Paste the optimized titles and descriptions into your website's content management system (CMS)
+                    - listitem [ref=e346]:
+                      - strong [ref=e347]: "Add structured data:"
+                      - text: Go to the "JSON-LD" tab to get special code that helps Google understand Belmont's business information
+                    - listitem [ref=e348]:
+                      - strong [ref=e349]: "Install the code:"
+                      - text: Copy the JSON-LD code and paste it into your website's settings or page HTML
+                - generic [ref=e350]:
+                  - heading "Best Practices for Belmont" [level=3] [ref=e351]
+                  - list [ref=e352]:
+                    - listitem [ref=e353]:
+                      - strong [ref=e354]: "Use clear, benefit-focused titles:"
+                      - text: Instead of just "Haircuts", use "Professional Men's Haircuts & Styling in Bridgeland"
+                    - listitem [ref=e355]:
+                      - strong [ref=e356]: "Include location keywords:"
+                      - text: Add "Bridgeland", "Riverside", or "Calgary" to help local customers find Belmont
+                    - listitem [ref=e357]:
+                      - strong [ref=e358]: "Highlight unique services:"
+                      - text: Mention "Veterans Discount", "Groomsmen Party Packages", or "Hot Towel Shaves" in titles
+                    - listitem [ref=e359]:
+                      - strong [ref=e360]: "Add booking links:"
+                      - text: Include calls-to-action like "Book Now" in titles and descriptions
+                    - listitem [ref=e361]:
+                      - strong [ref=e362]: "Keep descriptions under 160 characters:"
+                      - text: Meta descriptions should be concise and compelling
+                    - listitem [ref=e363]:
+                      - strong [ref=e364]: "Update regularly:"
+                      - text: Refresh page content monthly to keep it current and effective
+                - generic [ref=e365]:
+                  - heading "Content Guidelines" [level=3] [ref=e366]
+                  - list [ref=e367]:
+                    - listitem [ref=e368]:
+                      - strong [ref=e369]: "Titles:"
+                      - text: Keep under 60 characters for best display in search results
+                    - listitem [ref=e370]:
+                      - strong [ref=e371]: "Meta descriptions:"
+                      - text: Aim for 150-160 characters to fit perfectly in search results
+                    - listitem [ref=e372]:
+                      - strong [ref=e373]: "One service per page:"
+                      - text: Focus each page on a specific service (haircuts, beard trims, etc.)
+                    - listitem [ref=e374]:
+                      - strong [ref=e375]: "Include booking CTAs:"
+                      - text: Add calls-to-action and links to your booking system
+                    - listitem [ref=e376]:
+                      - strong [ref=e377]: "Add internal links:"
+                      - text: Link to related services and Belmont's location page
+                    - listitem [ref=e378]:
+                      - strong [ref=e379]: "Natural language:"
+                      - text: Write for humans first, search engines second. Avoid keyword stuffing
+                - generic [ref=e380]:
+                  - heading "Installing JSON-LD Structured Data" [level=3] [ref=e381]
+                  - paragraph [ref=e382]: "Structured data (JSON-LD) helps Google display Belmont's information in rich search results:"
+                  - list [ref=e383]:
+                    - listitem [ref=e384]:
+                      - strong [ref=e385]: "Copy the code:"
+                      - text: Click the copy button next to the JSON-LD section
+                    - listitem [ref=e386]:
+                      - strong [ref=e387]: "Paste into your CMS:"
+                      - text: Add the code to your website's settings or page HTML
+                    - listitem [ref=e388]:
+                      - strong [ref=e389]: "Test the code:"
+                      - text: Use Google's Rich Results Test tool to verify it works
+                    - listitem [ref=e390]:
+                      - strong [ref=e391]: "One script per page:"
+                      - text: Add the appropriate JSON-LD to each relevant page
+    - generic [ref=e393]:
+      - link "Email support" [ref=e394] [cursor=pointer]:
+        - /url: mailto:info@thebelmontbarber.ca
+        - img "Prairie Signal" [ref=e395] [cursor=pointer]
+        - text: Need help? Email support
+      - generic [ref=e396]:
+        - button "Open AI diagnostics" [ref=e397]:
+          - img [ref=e398]
+        - link "Call for assistance" [ref=e406] [cursor=pointer]:
+          - /url: tel:403-555-0123
+          - img [ref=e407] [cursor=pointer]
+        - link "Find The Belmont Barbershop on map" [ref=e409] [cursor=pointer]:
+          - /url: https://maps.google.com/?q=Little+Bow+River,+High+River,+AB,+T1V+1M6
+          - img [ref=e410] [cursor=pointer]
+```

@@ -1,0 +1,844 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - button "Toggle navigation menu" [ref=e3]:
+    - img [ref=e4]
+  - complementary [ref=e5]:
+    - generic [ref=e7]:
+      - img "Prairie Signal" [ref=e8]
+      - generic [ref=e9]:
+        - generic [ref=e10]: Belmont
+        - generic [ref=e11]: SEO Lab
+    - navigation "Primary Navigation" [ref=e12]:
+      - generic [ref=e14]:
+        - link "Home" [ref=e16] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e17] [cursor=pointer]: Home
+        - link "Dashboard" [ref=e19] [cursor=pointer]:
+          - /url: /apps/dashboard
+          - img [ref=e20] [cursor=pointer]
+          - generic [ref=e23] [cursor=pointer]: Dashboard
+        - link "Onboarding" [ref=e25] [cursor=pointer]:
+          - /url: /apps/onboarding
+          - img [ref=e26] [cursor=pointer]
+          - generic [ref=e33] [cursor=pointer]: Onboarding
+      - generic [ref=e34]:
+        - heading "Content Creation" [level=3] [ref=e36]
+        - generic [ref=e37]:
+          - link "Google Posts Writer" [ref=e39] [cursor=pointer]:
+            - /url: /apps/gbp-composer
+            - img [ref=e40] [cursor=pointer]
+            - generic [ref=e43] [cursor=pointer]: Google Posts Writer
+          - link "Social Media Studio" [ref=e45] [cursor=pointer]:
+            - /url: /apps/post-studio
+            - img [ref=e46] [cursor=pointer]
+            - generic [ref=e50] [cursor=pointer]: Social Media Studio
+          - link "Content Calendar" [ref=e52] [cursor=pointer]:
+            - /url: /apps/post-oracle
+            - img [ref=e53] [cursor=pointer]
+            - generic [ref=e55] [cursor=pointer]: Content Calendar
+          - link "Local Content Ideas" [ref=e57] [cursor=pointer]:
+            - /url: /apps/neighbor-signal
+            - img [ref=e58] [cursor=pointer]
+            - generic [ref=e65] [cursor=pointer]: Local Content Ideas
+      - generic [ref=e66]:
+        - heading "Marketing & Tracking" [level=3] [ref=e68]
+        - generic [ref=e69]:
+          - link "Campaign Links" [ref=e71] [cursor=pointer]:
+            - /url: /apps/utm-dashboard
+            - img [ref=e72] [cursor=pointer]
+            - generic [ref=e76] [cursor=pointer]: Campaign Links
+          - link "QR Code Maker" [ref=e78] [cursor=pointer]:
+            - /url: /apps/utm-qr
+            - img [ref=e79] [cursor=pointer]
+            - generic [ref=e82] [cursor=pointer]: QR Code Maker
+          - link "Staff Referral Codes" [ref=e84] [cursor=pointer]:
+            - /url: /apps/referral-qr
+            - img [ref=e85] [cursor=pointer]
+            - generic [ref=e91] [cursor=pointer]: Staff Referral Codes
+          - link "Review Request Links" [ref=e93] [cursor=pointer]:
+            - /url: /apps/review-link
+            - img [ref=e94] [cursor=pointer]
+            - generic [ref=e100] [cursor=pointer]: Review Request Links
+      - generic [ref=e101]:
+        - heading "Customer Management" [level=3] [ref=e103]
+        - generic [ref=e104]:
+          - link "Review Responses" [ref=e106] [cursor=pointer]:
+            - /url: /apps/review-composer
+            - img [ref=e107] [cursor=pointer]
+            - generic [ref=e109] [cursor=pointer]: Review Responses
+          - link "Customer Analysis" [ref=e111] [cursor=pointer]:
+            - /url: /apps/rfm-crm
+            - img [ref=e112] [cursor=pointer]
+            - generic [ref=e117] [cursor=pointer]: Customer Analysis
+          - link "Appointment Reminders" [ref=e119] [cursor=pointer]:
+            - /url: /apps/noshow-shield
+            - img [ref=e120] [cursor=pointer]
+            - generic [ref=e122] [cursor=pointer]: Appointment Reminders
+          - link "Service Suggestions" [ref=e124] [cursor=pointer]:
+            - /url: /apps/addon-recommender
+            - img [ref=e125] [cursor=pointer]
+            - generic [ref=e126] [cursor=pointer]: Service Suggestions
+      - generic [ref=e127]:
+        - heading "Search Performance" [level=3] [ref=e129]
+        - generic [ref=e130]:
+          - link "Search Performance" [ref=e132] [cursor=pointer]:
+            - /url: /apps/gsc-ctr-miner
+            - img [ref=e133] [cursor=pointer]
+            - generic [ref=e135] [cursor=pointer]: Search Performance
+          - link "Search Rankings" [ref=e137] [cursor=pointer]:
+            - /url: /apps/rank-grid
+            - img [ref=e138] [cursor=pointer]
+            - generic [ref=e141] [cursor=pointer]: Search Rankings
+          - link "Ranking Monitor" [ref=e143] [cursor=pointer]:
+            - /url: /apps/rankgrid-watcher
+            - img [ref=e144] [cursor=pointer]
+            - generic [ref=e147] [cursor=pointer]: Ranking Monitor
+          - link "Service Profits" [ref=e149] [cursor=pointer]:
+            - /url: /apps/slot-yield
+            - img [ref=e150] [cursor=pointer]
+            - generic [ref=e153] [cursor=pointer]: Service Profits
+          - link "Busy Times Predictor" [ref=e155] [cursor=pointer]:
+            - /url: /apps/queuetime
+            - img [ref=e156] [cursor=pointer]
+            - generic [ref=e159] [cursor=pointer]: Busy Times Predictor
+      - generic [ref=e160]:
+        - heading "Local Partnerships" [level=3] [ref=e162]
+        - generic [ref=e163]:
+          - link "Partner Finder" [ref=e165] [cursor=pointer]:
+            - /url: /apps/link-prospect-kit
+            - img [ref=e166] [cursor=pointer]
+            - generic [ref=e169] [cursor=pointer]: Partner Finder
+          - link "Partnership Map" [ref=e171] [cursor=pointer]:
+            - /url: /apps/link-map
+            - img [ref=e172] [cursor=pointer]
+            - generic [ref=e175] [cursor=pointer]: Partnership Map
+      - generic [ref=e176]:
+        - heading "Website Optimization" [level=3] [ref=e178]
+        - generic [ref=e179]:
+          - link "Website Guide" [ref=e181] [cursor=pointer]:
+            - /url: /apps/seo-brief
+            - img [ref=e182] [cursor=pointer]
+            - generic [ref=e185] [cursor=pointer]: Website Guide
+          - link "Page Titles & Descriptions" [ref=e187] [cursor=pointer]:
+            - /url: /apps/meta-planner
+            - img [ref=e188] [cursor=pointer]
+            - generic [ref=e191] [cursor=pointer]: Page Titles & Descriptions
+          - link "Business Listings Check" [ref=e193] [cursor=pointer]:
+            - /url: /apps/citation-tracker
+            - img [ref=e194] [cursor=pointer]
+            - generic [ref=e200] [cursor=pointer]: Business Listings Check
+      - generic [ref=e201]:
+        - heading "Support" [level=3] [ref=e203]
+        - generic [ref=e204]:
+          - link "Status" [ref=e206] [cursor=pointer]:
+            - /url: /status
+            - img [ref=e207] [cursor=pointer]
+            - generic [ref=e209] [cursor=pointer]: Status
+          - link "Trial Guide" [ref=e211] [cursor=pointer]:
+            - /url: /guide/trial
+            - img [ref=e212] [cursor=pointer]
+            - generic [ref=e215] [cursor=pointer]: Trial Guide
+  - generic [ref=e216]:
+    - banner [ref=e217]:
+      - generic [ref=e218]:
+        - link "Prairie SignalBelmont SEO LabSEO Lab" [ref=e219] [cursor=pointer]:
+          - /url: /
+          - img "Prairie Signal" [ref=e220] [cursor=pointer]
+          - generic [ref=e221] [cursor=pointer]: Belmont SEO Lab
+          - generic [ref=e222] [cursor=pointer]: SEO Lab
+        - generic [ref=e223]:
+          - generic [ref=e224]:
+            - link "Call for assistance" [ref=e225] [cursor=pointer]:
+              - /url: tel:403-555-0123
+              - img [ref=e226] [cursor=pointer]
+              - generic [ref=e228] [cursor=pointer]: Assistance
+            - link "Find The Belmont Barbershop on map" [ref=e229] [cursor=pointer]:
+              - /url: https://maps.google.com/?q=Little+Bow+River,+High+River,+AB,+T1V+1M6
+              - img [ref=e230] [cursor=pointer]
+              - generic [ref=e233] [cursor=pointer]: Map
+          - generic [ref=e234]:
+            - img [ref=e235]
+            - textbox "Search tools" [ref=e238]
+          - generic [ref=e239]:
+            - button "Toggle Simple Mode" [ref=e240]: Advanced
+            - button "Toggle theme" [ref=e241]:
+              - img [ref=e242]
+    - main [ref=e244]:
+      - generic [ref=e245]:
+        - generic [ref=e246]:
+          - generic [ref=e247]:
+            - img "Prairie Signal" [ref=e248]
+            - generic [ref=e249]:
+              - heading "Google Business Profile Post Composer" [level=1] [ref=e250]
+              - paragraph [ref=e251]: AI-powered content creation with SEO optimization, A/B testing, analytics tracking, and professional templates for Little Bow Meadows' Google Business Profile.
+          - generic [ref=e253]:
+            - img [ref=e254]
+            - text: "AI: Unavailable"
+        - generic [ref=e262]:
+          - generic [ref=e263]:
+            - generic [ref=e265]: Words
+            - generic [ref=e266]:
+              - generic [ref=e267]: "0"
+              - generic [ref=e268]: Current body length
+          - generic [ref=e269]:
+            - generic [ref=e271]: Type
+            - generic [ref=e273]: Style Spotlight
+          - generic [ref=e274]:
+            - generic [ref=e276]: Tone
+            - generic [ref=e278]: Classic
+          - generic [ref=e279]:
+            - generic [ref=e281]: SEO Score
+            - generic [ref=e282]:
+              - generic [ref=e283]: N/A
+              - generic [ref=e284]: Overall optimization
+          - generic [ref=e285]:
+            - generic [ref=e287]: Tests
+            - generic [ref=e289]: 2/3
+        - generic [ref=e290]:
+          - tablist [ref=e291]:
+            - tab "How To Use" [selected] [ref=e292]
+            - tab "Compose" [ref=e293]
+            - tab "Preview" [ref=e294]
+            - generic [ref=e295]:
+              - tab "AI Generate" [ref=e296]
+              - tab "SEO Analysis" [ref=e297]
+              - tab "A/B Test" [ref=e298]
+              - tab "Analytics" [ref=e299]
+              - tab "Tests" [ref=e300]
+          - tabpanel "How To Use" [ref=e301]:
+            - generic [ref=e302]:
+              - generic [ref=e303]:
+                - generic [ref=e304]:
+                  - img [ref=e305]
+                  - text: Complete Guide to Google Business Profile Posts
+                - generic [ref=e307]: Everything you need to know about creating effective Google posts for Little Bow Meadows Barbershop - explained in plain English
+              - generic [ref=e308]:
+                - generic [ref=e309]:
+                  - heading "What This Tool Does" [level=3] [ref=e310]:
+                    - img [ref=e311]
+                    - text: What This Tool Does
+                  - generic [ref=e315]:
+                    - paragraph [ref=e316]: This tool helps you create posts for your Google Business Profile page (the listing that shows up when people search for "Little Bow Meadows Barbershop" on Google). These posts appear right on your Google listing and can include photos, special offers, updates about your services, or announcements.
+                    - paragraph [ref=e317]: Instead of guessing what to write, this tool gives you ready-made templates, suggests what people might like to read, and helps you create posts that get more attention and bring more customers through your door.
+                - generic [ref=e318]:
+                  - heading "Why Google Posts Are Important for Little Bow Meadows" [level=3] [ref=e319]:
+                    - img [ref=e320]
+                    - text: Why Google Posts Are Important for Little Bow Meadows
+                  - generic [ref=e323]:
+                    - generic [ref=e325]:
+                      - heading "More People See You" [level=4] [ref=e326]
+                      - paragraph [ref=e327]: Your posts show up directly in Google search results and on Google Maps, so more people discover your shop.
+                    - generic [ref=e329]:
+                      - heading "Share Special Offers" [level=4] [ref=e330]
+                      - paragraph [ref=e331]: Promote discounts, package deals, or limited-time offers to attract more customers.
+                    - generic [ref=e333]:
+                      - heading "Show Your Personality" [level=4] [ref=e334]
+                      - paragraph [ref=e335]: Share stories about your team, customer experiences, or what makes Little Bow Meadows special.
+                    - generic [ref=e337]:
+                      - heading "Drive More Bookings" [level=4] [ref=e338]
+                      - paragraph [ref=e339]: Include links to your booking page so people can easily schedule appointments.
+                - generic [ref=e340]:
+                  - heading "Understanding the Numbers at the Top" [level=3] [ref=e341]:
+                    - img [ref=e342]
+                    - text: Understanding the Numbers at the Top
+                  - generic [ref=e344]:
+                    - paragraph [ref=e345]: "These boxes show you key information about your post:"
+                    - generic [ref=e346]:
+                      - generic [ref=e347]:
+                        - strong [ref=e348]: "Words:"
+                        - text: How long your post body is (aim for 150-300 words for best results)
+                      - generic [ref=e349]:
+                        - strong [ref=e350]: "Type:"
+                        - text: What kind of post this is (like "Offer" or "Style Spotlight")
+                      - generic [ref=e351]:
+                        - strong [ref=e352]: "Tone:"
+                        - text: The writing style (Professional, Friendly, etc.)
+                      - generic [ref=e353]:
+                        - strong [ref=e354]: "SEO Score:"
+                        - text: How well your post is optimized for Google search (higher is better)
+                      - generic [ref=e355]:
+                        - strong [ref=e356]: "Tests:"
+                        - text: How many quality checks your post passes
+                - generic [ref=e357]:
+                  - heading "How to Use Each Section" [level=3] [ref=e358]:
+                    - img [ref=e359]
+                    - text: How to Use Each Section
+                  - generic [ref=e362]:
+                    - generic [ref=e363]:
+                      - generic [ref=e364]:
+                        - generic [ref=e365]: 📝 Compose Tab - Build Your Post
+                        - generic [ref=e366]: Fill in the basic information to create your post
+                      - generic [ref=e368]:
+                        - generic [ref=e369]:
+                          - strong [ref=e370]: "Business Name:"
+                          - text: Your shop name (usually "The Little Bow Meadows Barbershop")
+                        - generic [ref=e371]:
+                          - strong [ref=e372]: "Service:"
+                          - text: What you're writing about (like "Men's Haircut" or "Beard Trim")
+                        - generic [ref=e373]:
+                          - strong [ref=e374]: "Area:"
+                          - text: Your location ("Bridgeland", "Riverside", etc.)
+                        - generic [ref=e375]:
+                          - strong [ref=e376]: "Post Type:"
+                          - text: What kind of message you want to send
+                          - list [ref=e377]:
+                            - listitem [ref=e378]:
+                              - strong [ref=e379]: "Style Spotlight:"
+                              - text: Show off your work or a service
+                            - listitem [ref=e380]:
+                              - strong [ref=e381]: "Offer:"
+                              - text: Share a special deal or discount
+                            - listitem [ref=e382]:
+                              - strong [ref=e383]: "Event:"
+                              - text: Announce something happening at your shop
+                            - listitem [ref=e384]:
+                              - strong [ref=e385]: "What's New:"
+                              - text: Tell people about changes or updates
+                        - generic [ref=e386]:
+                          - strong [ref=e387]: "Tone:"
+                          - text: How you want to sound
+                          - list [ref=e388]:
+                            - listitem [ref=e389]:
+                              - strong [ref=e390]: "Professional:"
+                              - text: Formal and trustworthy
+                            - listitem [ref=e391]:
+                              - strong [ref=e392]: "Friendly:"
+                              - text: Warm and approachable
+                            - listitem [ref=e393]:
+                              - strong [ref=e394]: "Classic:"
+                              - text: Traditional barber shop feel
+                            - listitem [ref=e395]:
+                              - strong [ref=e396]: "Modern:"
+                              - text: Contemporary and fresh
+                    - generic [ref=e397]:
+                      - generic [ref=e398]:
+                        - generic [ref=e399]: 🤖 AI Generate Tab - Let AI Write for You
+                        - generic [ref=e400]: Get help from artificial intelligence to create great content
+                      - generic [ref=e402]:
+                        - generic [ref=e403]:
+                          - strong [ref=e404]: "AI:"
+                          - text: Server-managed. No API key needed.
+                        - generic [ref=e405]:
+                          - strong [ref=e406]: "AI Templates:"
+                          - text: Choose from pre-made prompts or write your own
+                          - list [ref=e407]:
+                            - listitem [ref=e408]:
+                              - strong [ref=e409]: "Service Bundle:"
+                              - text: Suggest complementary services
+                            - listitem [ref=e410]:
+                              - strong [ref=e411]: "Limited Time Offer:"
+                              - text: Create urgent, exciting promotions
+                            - listitem [ref=e412]:
+                              - strong [ref=e413]: "Customer Stories:"
+                              - text: Share positive experiences
+                        - generic [ref=e414]:
+                          - strong [ref=e415]: "How it works:"
+                          - text: The AI understands your business and creates posts that match your style and goals
+                    - generic [ref=e416]:
+                      - generic [ref=e417]:
+                        - generic [ref=e418]: 👁️ Preview Tab - See How It Looks
+                        - generic [ref=e419]: Check your post before you publish it
+                      - generic [ref=e421]:
+                        - generic [ref=e422]:
+                          - strong [ref=e423]: "Title:"
+                          - text: The headline people see first (keep it short and catchy)
+                        - generic [ref=e424]:
+                          - strong [ref=e425]: "Body:"
+                          - text: The main message (this is what most people read)
+                        - generic [ref=e426]:
+                          - strong [ref=e427]: "Alt Text:"
+                          - text: Description for screen readers and search engines (helps with accessibility)
+                        - generic [ref=e428]:
+                          - strong [ref=e429]: "Copy buttons:"
+                          - text: Click these to copy text to your clipboard for easy pasting
+                    - generic [ref=e430]:
+                      - generic [ref=e431]:
+                        - generic [ref=e432]: 🎯 SEO Analysis Tab - Optimize for Search
+                        - generic [ref=e433]: Make sure your post gets found by the right people
+                      - generic [ref=e435]:
+                        - generic [ref=e436]:
+                          - strong [ref=e437]: "Target Keywords:"
+                          - text: Words people might search for (like "barber Bridgeland" or "beard trim Calgary")
+                        - generic [ref=e438]:
+                          - strong [ref=e439]: "Post Goals:"
+                          - text: What you want this post to achieve
+                          - list [ref=e440]:
+                            - listitem [ref=e441]:
+                              - strong [ref=e442]: "Drive Bookings:"
+                              - text: Get more appointment requests
+                            - listitem [ref=e443]:
+                              - strong [ref=e444]: "Build Brand Awareness:"
+                              - text: Help people remember your shop
+                            - listitem [ref=e445]:
+                              - strong [ref=e446]: "Share Special Offers:"
+                              - text: Promote deals and discounts
+                        - generic [ref=e447]:
+                          - strong [ref=e448]: "SEO Score:"
+                          - text: A number from 0-100 showing how well your post is optimized
+                          - list [ref=e449]:
+                            - listitem [ref=e450]:
+                              - strong [ref=e451]: "80-100:"
+                              - text: Excellent - very likely to be found
+                            - listitem [ref=e452]:
+                              - strong [ref=e453]: "60-79:"
+                              - text: Good - decent visibility
+                            - listitem [ref=e454]:
+                              - strong [ref=e455]: "Below 60:"
+                              - text: Needs improvement
+                    - generic [ref=e456]:
+                      - generic [ref=e457]:
+                        - generic [ref=e458]: 🧪 A/B Test Tab - Test Different Versions
+                        - generic [ref=e459]: Create multiple versions of your post to see which works better
+                      - generic [ref=e461]:
+                        - generic [ref=e462]:
+                          - strong [ref=e463]: Why test?
+                          - text: Different people respond to different messages. Testing helps you find what works best for your customers.
+                        - generic [ref=e464]:
+                          - strong [ref=e465]: "How it works:"
+                          - text: The tool creates slight variations of your post (like different titles or word choices)
+                        - generic [ref=e466]:
+                          - strong [ref=e467]: "Score:"
+                          - text: Each version gets a score based on how effective it might be
+                        - generic [ref=e468]:
+                          - strong [ref=e469]: "Use This Variant:"
+                          - text: Click this button to switch to that version of your post
+                    - generic [ref=e470]:
+                      - generic [ref=e471]:
+                        - generic [ref=e472]: 📊 Analytics Tab - Track Performance
+                        - generic [ref=e473]: See how well your posts are doing
+                      - generic [ref=e475]:
+                        - generic [ref=e476]:
+                          - strong [ref=e477]: "What to look for:"
+                          - list [ref=e478]:
+                            - listitem [ref=e479]:
+                              - strong [ref=e480]: "Views:"
+                              - text: How many people saw your post
+                            - listitem [ref=e481]:
+                              - strong [ref=e482]: "Clicks:"
+                              - text: How many people clicked to learn more
+                            - listitem [ref=e483]:
+                              - strong [ref=e484]: "Engagements:"
+                              - text: Likes, shares, and comments
+                            - listitem [ref=e485]:
+                              - strong [ref=e486]: "CTR (Click-Through Rate):"
+                              - text: Percentage of viewers who clicked
+                        - generic [ref=e487]:
+                          - strong [ref=e488]: "Good performance indicators:"
+                          - list [ref=e489]:
+                            - listitem [ref=e490]: CTR above 2% is very good
+                            - listitem [ref=e491]: Engagement rate above 5% shows people care
+                            - listitem [ref=e492]: Compare different post types to see what works
+                - generic [ref=e493]:
+                  - heading "Best Practices for Great Google Posts" [level=3] [ref=e494]:
+                    - img [ref=e495]
+                    - text: Best Practices for Great Google Posts
+                  - generic [ref=e498]:
+                    - generic [ref=e500]:
+                      - heading "📝 Writing Tips" [level=4] [ref=e501]
+                      - list [ref=e502]:
+                        - listitem [ref=e503]: • Keep titles under 30 characters
+                        - listitem [ref=e504]: • Use active, exciting language
+                        - listitem [ref=e505]: • Include a clear call-to-action
+                        - listitem [ref=e506]: • Mention your location naturally
+                        - listitem [ref=e507]: • Use emojis sparingly (1-2 per post)
+                    - generic [ref=e509]:
+                      - heading "🖼️ Photo Tips" [level=4] [ref=e510]
+                      - list [ref=e511]:
+                        - listitem [ref=e512]: • Use high-quality, well-lit photos
+                        - listitem [ref=e513]: • Show your actual shop and work
+                        - listitem [ref=e514]: • Include faces and personalities
+                        - listitem [ref=e515]: • Use the alt text suggestions provided
+                        - listitem [ref=e516]: • Post regularly (2-3 times per week)
+                    - generic [ref=e518]:
+                      - heading "🎯 Timing Tips" [level=4] [ref=e519]
+                      - list [ref=e520]:
+                        - listitem [ref=e521]: • Post during business hours
+                        - listitem [ref=e522]: • Weekdays often get more views
+                        - listitem [ref=e523]: • Special offers work best mid-week
+                        - listitem [ref=e524]: • Respond to comments within 24 hours
+                        - listitem [ref=e525]: • Track what times work best for you
+                    - generic [ref=e527]:
+                      - heading "📈 Success Metrics" [level=4] [ref=e528]
+                      - list [ref=e529]:
+                        - listitem [ref=e530]: • Aim for 100+ views per post
+                        - listitem [ref=e531]: • Target 2-5% click-through rate
+                        - listitem [ref=e532]: • Build up to 10+ engagements
+                        - listitem [ref=e533]: • Track booking increases
+                        - listitem [ref=e534]: • Compare different post types
+                - generic [ref=e535]:
+                  - heading "Frequently Asked Questions" [level=3] [ref=e536]:
+                    - img [ref=e537]
+                    - text: Frequently Asked Questions
+                  - generic [ref=e539]:
+                    - generic [ref=e541]:
+                      - heading "How often should I post?" [level=4] [ref=e542]
+                      - paragraph [ref=e543]: Post 2-3 times per week to stay visible without overwhelming your audience. Quality matters more than quantity.
+                    - generic [ref=e545]:
+                      - heading "What makes a post successful?" [level=4] [ref=e546]
+                      - paragraph [ref=e547]: Great photos, clear value proposition, and a strong call-to-action. Posts that solve problems or offer value get the most engagement.
+                    - generic [ref=e549]:
+                      - heading "Should I use the AI features?" [level=4] [ref=e550]
+                      - paragraph [ref=e551]: Yes! The AI understands your business and can create better content than starting from scratch. Use it as a starting point, then personalize.
+                    - generic [ref=e553]:
+                      - heading "How do I know if my SEO score is good?" [level=4] [ref=e554]
+                      - paragraph [ref=e555]: Scores above 80 are excellent. Focus on including relevant keywords naturally, mentioning your location, and having a clear call-to-action.
+                - generic [ref=e556]:
+                  - heading "Ready to Get Started?" [level=3] [ref=e557]:
+                    - img [ref=e558]
+                    - text: Ready to Get Started?
+                  - generic [ref=e560]:
+                    - paragraph [ref=e561]:
+                      - text: 🎯
+                      - strong [ref=e562]: "Step 1:"
+                      - text: Choose what you want to promote (a service, offer, or update)
+                    - paragraph [ref=e563]:
+                      - text: 📝
+                      - strong [ref=e564]: "Step 2:"
+                      - text: Fill in the basic information in the Compose tab
+                    - paragraph [ref=e565]:
+                      - text: 🤖
+                      - strong [ref=e566]: "Step 3:"
+                      - text: Use AI Generate to get professional content ideas
+                    - paragraph [ref=e567]:
+                      - text: 👁️
+                      - strong [ref=e568]: "Step 4:"
+                      - text: Preview your post and make any final tweaks
+                    - paragraph [ref=e569]:
+                      - text: 📤
+                      - strong [ref=e570]: "Step 5:"
+                      - text: Copy the content and post it to your Google Business Profile
+                    - paragraph [ref=e571]:
+                      - text: 📊
+                      - strong [ref=e572]: "Step 6:"
+                      - text: Check the Analytics tab later to see how it performed
+                  - paragraph [ref=e574]:
+                    - text: 💡
+                    - strong [ref=e575]: "Pro Tip:"
+                    - text: Start with the AI Generate tab - it's the easiest way to create great content quickly!
+          - tabpanel "How To Use" [ref=e576]:
+            - generic [ref=e577]:
+              - generic [ref=e578]:
+                - generic [ref=e579]:
+                  - img [ref=e580]
+                  - text: Complete Guide to Google Business Profile Posts
+                - generic [ref=e582]: Everything you need to know about creating effective Google posts for Little Bow Meadows Barbershop - explained in plain English
+              - generic [ref=e583]:
+                - generic [ref=e584]:
+                  - heading "What This Tool Does" [level=3] [ref=e585]:
+                    - img [ref=e586]
+                    - text: What This Tool Does
+                  - generic [ref=e590]:
+                    - paragraph [ref=e591]: This tool helps you create posts for your Google Business Profile page (the listing that shows up when people search for "Little Bow Meadows Barbershop" on Google). These posts appear right on your Google listing and can include photos, special offers, updates about your services, or announcements.
+                    - paragraph [ref=e592]: Instead of guessing what to write, this tool gives you ready-made templates, suggests what people might like to read, and helps you create posts that get more attention and bring more customers through your door.
+                - generic [ref=e593]:
+                  - heading "Why Google Posts Are Important for Little Bow Meadows" [level=3] [ref=e594]:
+                    - img [ref=e595]
+                    - text: Why Google Posts Are Important for Little Bow Meadows
+                  - generic [ref=e598]:
+                    - generic [ref=e600]:
+                      - heading "More People See You" [level=4] [ref=e601]
+                      - paragraph [ref=e602]: Your posts show up directly in Google search results and on Google Maps, so more people discover your shop.
+                    - generic [ref=e604]:
+                      - heading "Share Special Offers" [level=4] [ref=e605]
+                      - paragraph [ref=e606]: Promote discounts, package deals, or limited-time offers to attract more customers.
+                    - generic [ref=e608]:
+                      - heading "Show Your Personality" [level=4] [ref=e609]
+                      - paragraph [ref=e610]: Share stories about your team, customer experiences, or what makes Little Bow Meadows special.
+                    - generic [ref=e612]:
+                      - heading "Drive More Bookings" [level=4] [ref=e613]
+                      - paragraph [ref=e614]: Include links to your booking page so people can easily schedule appointments.
+                - generic [ref=e615]:
+                  - heading "Understanding the Numbers at the Top" [level=3] [ref=e616]:
+                    - img [ref=e617]
+                    - text: Understanding the Numbers at the Top
+                  - generic [ref=e619]:
+                    - paragraph [ref=e620]: "These boxes show you key information about your post:"
+                    - generic [ref=e621]:
+                      - generic [ref=e622]:
+                        - strong [ref=e623]: "Words:"
+                        - text: How long your post body is (aim for 150-300 words for best results)
+                      - generic [ref=e624]:
+                        - strong [ref=e625]: "Type:"
+                        - text: What kind of post this is (like "Offer" or "Style Spotlight")
+                      - generic [ref=e626]:
+                        - strong [ref=e627]: "Tone:"
+                        - text: The writing style (Professional, Friendly, etc.)
+                      - generic [ref=e628]:
+                        - strong [ref=e629]: "SEO Score:"
+                        - text: How well your post is optimized for Google search (higher is better)
+                      - generic [ref=e630]:
+                        - strong [ref=e631]: "Tests:"
+                        - text: How many quality checks your post passes
+                - generic [ref=e632]:
+                  - heading "How to Use Each Section" [level=3] [ref=e633]:
+                    - img [ref=e634]
+                    - text: How to Use Each Section
+                  - generic [ref=e637]:
+                    - generic [ref=e638]:
+                      - generic [ref=e639]:
+                        - generic [ref=e640]: 📝 Compose Tab - Build Your Post
+                        - generic [ref=e641]: Fill in the basic information to create your post
+                      - generic [ref=e643]:
+                        - generic [ref=e644]:
+                          - strong [ref=e645]: "Business Name:"
+                          - text: Your shop name (usually "The Little Bow Meadows Barbershop")
+                        - generic [ref=e646]:
+                          - strong [ref=e647]: "Service:"
+                          - text: What you're writing about (like "Men's Haircut" or "Beard Trim")
+                        - generic [ref=e648]:
+                          - strong [ref=e649]: "Area:"
+                          - text: Your location ("Bridgeland", "Riverside", etc.)
+                        - generic [ref=e650]:
+                          - strong [ref=e651]: "Post Type:"
+                          - text: What kind of message you want to send
+                          - list [ref=e652]:
+                            - listitem [ref=e653]:
+                              - strong [ref=e654]: "Style Spotlight:"
+                              - text: Show off your work or a service
+                            - listitem [ref=e655]:
+                              - strong [ref=e656]: "Offer:"
+                              - text: Share a special deal or discount
+                            - listitem [ref=e657]:
+                              - strong [ref=e658]: "Event:"
+                              - text: Announce something happening at your shop
+                            - listitem [ref=e659]:
+                              - strong [ref=e660]: "What's New:"
+                              - text: Tell people about changes or updates
+                        - generic [ref=e661]:
+                          - strong [ref=e662]: "Tone:"
+                          - text: How you want to sound
+                          - list [ref=e663]:
+                            - listitem [ref=e664]:
+                              - strong [ref=e665]: "Professional:"
+                              - text: Formal and trustworthy
+                            - listitem [ref=e666]:
+                              - strong [ref=e667]: "Friendly:"
+                              - text: Warm and approachable
+                            - listitem [ref=e668]:
+                              - strong [ref=e669]: "Classic:"
+                              - text: Traditional barber shop feel
+                            - listitem [ref=e670]:
+                              - strong [ref=e671]: "Modern:"
+                              - text: Contemporary and fresh
+                    - generic [ref=e672]:
+                      - generic [ref=e673]:
+                        - generic [ref=e674]: 🤖 AI Generate Tab - Let AI Write for You
+                        - generic [ref=e675]: Get help from artificial intelligence to create great content
+                      - generic [ref=e677]:
+                        - generic [ref=e678]:
+                          - strong [ref=e679]: "AI:"
+                          - text: Server-managed. No API key needed.
+                        - generic [ref=e680]:
+                          - strong [ref=e681]: "AI Templates:"
+                          - text: Choose from pre-made prompts or write your own
+                          - list [ref=e682]:
+                            - listitem [ref=e683]:
+                              - strong [ref=e684]: "Service Bundle:"
+                              - text: Suggest complementary services
+                            - listitem [ref=e685]:
+                              - strong [ref=e686]: "Limited Time Offer:"
+                              - text: Create urgent, exciting promotions
+                            - listitem [ref=e687]:
+                              - strong [ref=e688]: "Customer Stories:"
+                              - text: Share positive experiences
+                        - generic [ref=e689]:
+                          - strong [ref=e690]: "How it works:"
+                          - text: The AI understands your business and creates posts that match your style and goals
+                    - generic [ref=e691]:
+                      - generic [ref=e692]:
+                        - generic [ref=e693]: 👁️ Preview Tab - See How It Looks
+                        - generic [ref=e694]: Check your post before you publish it
+                      - generic [ref=e696]:
+                        - generic [ref=e697]:
+                          - strong [ref=e698]: "Title:"
+                          - text: The headline people see first (keep it short and catchy)
+                        - generic [ref=e699]:
+                          - strong [ref=e700]: "Body:"
+                          - text: The main message (this is what most people read)
+                        - generic [ref=e701]:
+                          - strong [ref=e702]: "Alt Text:"
+                          - text: Description for screen readers and search engines (helps with accessibility)
+                        - generic [ref=e703]:
+                          - strong [ref=e704]: "Copy buttons:"
+                          - text: Click these to copy text to your clipboard for easy pasting
+                    - generic [ref=e705]:
+                      - generic [ref=e706]:
+                        - generic [ref=e707]: 🎯 SEO Analysis Tab - Optimize for Search
+                        - generic [ref=e708]: Make sure your post gets found by the right people
+                      - generic [ref=e710]:
+                        - generic [ref=e711]:
+                          - strong [ref=e712]: "Target Keywords:"
+                          - text: Words people might search for (like "barber Bridgeland" or "beard trim Calgary")
+                        - generic [ref=e713]:
+                          - strong [ref=e714]: "Post Goals:"
+                          - text: What you want this post to achieve
+                          - list [ref=e715]:
+                            - listitem [ref=e716]:
+                              - strong [ref=e717]: "Drive Bookings:"
+                              - text: Get more appointment requests
+                            - listitem [ref=e718]:
+                              - strong [ref=e719]: "Build Brand Awareness:"
+                              - text: Help people remember your shop
+                            - listitem [ref=e720]:
+                              - strong [ref=e721]: "Share Special Offers:"
+                              - text: Promote deals and discounts
+                        - generic [ref=e722]:
+                          - strong [ref=e723]: "SEO Score:"
+                          - text: A number from 0-100 showing how well your post is optimized
+                          - list [ref=e724]:
+                            - listitem [ref=e725]:
+                              - strong [ref=e726]: "80-100:"
+                              - text: Excellent - very likely to be found
+                            - listitem [ref=e727]:
+                              - strong [ref=e728]: "60-79:"
+                              - text: Good - decent visibility
+                            - listitem [ref=e729]:
+                              - strong [ref=e730]: "Below 60:"
+                              - text: Needs improvement
+                    - generic [ref=e731]:
+                      - generic [ref=e732]:
+                        - generic [ref=e733]: 🧪 A/B Test Tab - Test Different Versions
+                        - generic [ref=e734]: Create multiple versions of your post to see which works better
+                      - generic [ref=e736]:
+                        - generic [ref=e737]:
+                          - strong [ref=e738]: Why test?
+                          - text: Different people respond to different messages. Testing helps you find what works best for your customers.
+                        - generic [ref=e739]:
+                          - strong [ref=e740]: "How it works:"
+                          - text: The tool creates slight variations of your post (like different titles or word choices)
+                        - generic [ref=e741]:
+                          - strong [ref=e742]: "Score:"
+                          - text: Each version gets a score based on how effective it might be
+                        - generic [ref=e743]:
+                          - strong [ref=e744]: "Use This Variant:"
+                          - text: Click this button to switch to that version of your post
+                    - generic [ref=e745]:
+                      - generic [ref=e746]:
+                        - generic [ref=e747]: 📊 Analytics Tab - Track Performance
+                        - generic [ref=e748]: See how well your posts are doing
+                      - generic [ref=e750]:
+                        - generic [ref=e751]:
+                          - strong [ref=e752]: "What to look for:"
+                          - list [ref=e753]:
+                            - listitem [ref=e754]:
+                              - strong [ref=e755]: "Views:"
+                              - text: How many people saw your post
+                            - listitem [ref=e756]:
+                              - strong [ref=e757]: "Clicks:"
+                              - text: How many people clicked to learn more
+                            - listitem [ref=e758]:
+                              - strong [ref=e759]: "Engagements:"
+                              - text: Likes, shares, and comments
+                            - listitem [ref=e760]:
+                              - strong [ref=e761]: "CTR (Click-Through Rate):"
+                              - text: Percentage of viewers who clicked
+                        - generic [ref=e762]:
+                          - strong [ref=e763]: "Good performance indicators:"
+                          - list [ref=e764]:
+                            - listitem [ref=e765]: CTR above 2% is very good
+                            - listitem [ref=e766]: Engagement rate above 5% shows people care
+                            - listitem [ref=e767]: Compare different post types to see what works
+                - generic [ref=e768]:
+                  - heading "Best Practices for Great Google Posts" [level=3] [ref=e769]:
+                    - img [ref=e770]
+                    - text: Best Practices for Great Google Posts
+                  - generic [ref=e773]:
+                    - generic [ref=e775]:
+                      - heading "📝 Writing Tips" [level=4] [ref=e776]
+                      - list [ref=e777]:
+                        - listitem [ref=e778]: • Keep titles under 30 characters
+                        - listitem [ref=e779]: • Use active, exciting language
+                        - listitem [ref=e780]: • Include a clear call-to-action
+                        - listitem [ref=e781]: • Mention your location naturally
+                        - listitem [ref=e782]: • Use emojis sparingly (1-2 per post)
+                    - generic [ref=e784]:
+                      - heading "🖼️ Photo Tips" [level=4] [ref=e785]
+                      - list [ref=e786]:
+                        - listitem [ref=e787]: • Use high-quality, well-lit photos
+                        - listitem [ref=e788]: • Show your actual shop and work
+                        - listitem [ref=e789]: • Include faces and personalities
+                        - listitem [ref=e790]: • Use the alt text suggestions provided
+                        - listitem [ref=e791]: • Post regularly (2-3 times per week)
+                    - generic [ref=e793]:
+                      - heading "🎯 Timing Tips" [level=4] [ref=e794]
+                      - list [ref=e795]:
+                        - listitem [ref=e796]: • Post during business hours
+                        - listitem [ref=e797]: • Weekdays often get more views
+                        - listitem [ref=e798]: • Special offers work best mid-week
+                        - listitem [ref=e799]: • Respond to comments within 24 hours
+                        - listitem [ref=e800]: • Track what times work best for you
+                    - generic [ref=e802]:
+                      - heading "📈 Success Metrics" [level=4] [ref=e803]
+                      - list [ref=e804]:
+                        - listitem [ref=e805]: • Aim for 100+ views per post
+                        - listitem [ref=e806]: • Target 2-5% click-through rate
+                        - listitem [ref=e807]: • Build up to 10+ engagements
+                        - listitem [ref=e808]: • Track booking increases
+                        - listitem [ref=e809]: • Compare different post types
+                - generic [ref=e810]:
+                  - heading "Frequently Asked Questions" [level=3] [ref=e811]:
+                    - img [ref=e812]
+                    - text: Frequently Asked Questions
+                  - generic [ref=e814]:
+                    - generic [ref=e816]:
+                      - heading "How often should I post?" [level=4] [ref=e817]
+                      - paragraph [ref=e818]: Post 2-3 times per week to stay visible without overwhelming your audience. Quality matters more than quantity.
+                    - generic [ref=e820]:
+                      - heading "What makes a post successful?" [level=4] [ref=e821]
+                      - paragraph [ref=e822]: Great photos, clear value proposition, and a strong call-to-action. Posts that solve problems or offer value get the most engagement.
+                    - generic [ref=e824]:
+                      - heading "Should I use the AI features?" [level=4] [ref=e825]
+                      - paragraph [ref=e826]: Yes! The AI understands your business and can create better content than starting from scratch. Use it as a starting point, then personalize.
+                    - generic [ref=e828]:
+                      - heading "How do I know if my SEO score is good?" [level=4] [ref=e829]
+                      - paragraph [ref=e830]: Scores above 80 are excellent. Focus on including relevant keywords naturally, mentioning your location, and having a clear call-to-action.
+                - generic [ref=e831]:
+                  - heading "Ready to Get Started?" [level=3] [ref=e832]:
+                    - img [ref=e833]
+                    - text: Ready to Get Started?
+                  - generic [ref=e835]:
+                    - paragraph [ref=e836]:
+                      - text: 🎯
+                      - strong [ref=e837]: "Step 1:"
+                      - text: Choose what you want to promote (a service, offer, or update)
+                    - paragraph [ref=e838]:
+                      - text: 📝
+                      - strong [ref=e839]: "Step 2:"
+                      - text: Fill in the basic information in the Compose tab
+                    - paragraph [ref=e840]:
+                      - text: 🤖
+                      - strong [ref=e841]: "Step 3:"
+                      - text: Use AI Generate to get professional content ideas
+                    - paragraph [ref=e842]:
+                      - text: 👁️
+                      - strong [ref=e843]: "Step 4:"
+                      - text: Preview your post and make any final tweaks
+                    - paragraph [ref=e844]:
+                      - text: 📤
+                      - strong [ref=e845]: "Step 5:"
+                      - text: Copy the content and post it to your Google Business Profile
+                    - paragraph [ref=e846]:
+                      - text: 📊
+                      - strong [ref=e847]: "Step 6:"
+                      - text: Check the Analytics tab later to see how it performed
+                  - paragraph [ref=e849]:
+                    - text: 💡
+                    - strong [ref=e850]: "Pro Tip:"
+                    - text: Start with the AI Generate tab - it's the easiest way to create great content quickly!
+    - generic [ref=e852]:
+      - link "Email support" [ref=e853] [cursor=pointer]:
+        - /url: mailto:info@thebelmontbarber.ca
+        - img "Prairie Signal" [ref=e854] [cursor=pointer]
+        - text: Need help? Email support
+      - generic [ref=e855]:
+        - button "Open AI diagnostics" [ref=e856]:
+          - img [ref=e857]
+        - link "Call for assistance" [ref=e865] [cursor=pointer]:
+          - /url: tel:403-555-0123
+          - img [ref=e866] [cursor=pointer]
+        - link "Find The Belmont Barbershop on map" [ref=e868] [cursor=pointer]:
+          - /url: https://maps.google.com/?q=Little+Bow+River,+High+River,+AB,+T1V+1M6
+          - img [ref=e869] [cursor=pointer]
+```

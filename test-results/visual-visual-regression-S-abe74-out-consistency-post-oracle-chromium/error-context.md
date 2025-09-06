@@ -1,0 +1,411 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - button "Toggle navigation menu" [ref=e3]:
+    - img [ref=e4]
+  - complementary [ref=e5]:
+    - generic [ref=e7]:
+      - img "Prairie Signal" [ref=e8]
+      - generic [ref=e9]:
+        - generic [ref=e10]: Belmont
+        - generic [ref=e11]: SEO Lab
+    - navigation "Primary Navigation" [ref=e12]:
+      - generic [ref=e14]:
+        - link "Home" [ref=e16] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e17] [cursor=pointer]: Home
+        - link "Dashboard" [ref=e19] [cursor=pointer]:
+          - /url: /apps/dashboard
+          - img [ref=e20] [cursor=pointer]
+          - generic [ref=e23] [cursor=pointer]: Dashboard
+        - link "Onboarding" [ref=e25] [cursor=pointer]:
+          - /url: /apps/onboarding
+          - img [ref=e26] [cursor=pointer]
+          - generic [ref=e33] [cursor=pointer]: Onboarding
+      - generic [ref=e34]:
+        - heading "Content Creation" [level=3] [ref=e36]
+        - generic [ref=e37]:
+          - link "Google Posts Writer" [ref=e39] [cursor=pointer]:
+            - /url: /apps/gbp-composer
+            - img [ref=e40] [cursor=pointer]
+            - generic [ref=e43] [cursor=pointer]: Google Posts Writer
+          - link "Social Media Studio" [ref=e45] [cursor=pointer]:
+            - /url: /apps/post-studio
+            - img [ref=e46] [cursor=pointer]
+            - generic [ref=e50] [cursor=pointer]: Social Media Studio
+          - link "Content Calendar" [ref=e52] [cursor=pointer]:
+            - /url: /apps/post-oracle
+            - img [ref=e53] [cursor=pointer]
+            - generic [ref=e55] [cursor=pointer]: Content Calendar
+          - link "Local Content Ideas" [ref=e57] [cursor=pointer]:
+            - /url: /apps/neighbor-signal
+            - img [ref=e58] [cursor=pointer]
+            - generic [ref=e65] [cursor=pointer]: Local Content Ideas
+      - generic [ref=e66]:
+        - heading "Marketing & Tracking" [level=3] [ref=e68]
+        - generic [ref=e69]:
+          - link "Campaign Links" [ref=e71] [cursor=pointer]:
+            - /url: /apps/utm-dashboard
+            - img [ref=e72] [cursor=pointer]
+            - generic [ref=e76] [cursor=pointer]: Campaign Links
+          - link "QR Code Maker" [ref=e78] [cursor=pointer]:
+            - /url: /apps/utm-qr
+            - img [ref=e79] [cursor=pointer]
+            - generic [ref=e82] [cursor=pointer]: QR Code Maker
+          - link "Staff Referral Codes" [ref=e84] [cursor=pointer]:
+            - /url: /apps/referral-qr
+            - img [ref=e85] [cursor=pointer]
+            - generic [ref=e91] [cursor=pointer]: Staff Referral Codes
+          - link "Review Request Links" [ref=e93] [cursor=pointer]:
+            - /url: /apps/review-link
+            - img [ref=e94] [cursor=pointer]
+            - generic [ref=e100] [cursor=pointer]: Review Request Links
+      - generic [ref=e101]:
+        - heading "Customer Management" [level=3] [ref=e103]
+        - generic [ref=e104]:
+          - link "Review Responses" [ref=e106] [cursor=pointer]:
+            - /url: /apps/review-composer
+            - img [ref=e107] [cursor=pointer]
+            - generic [ref=e109] [cursor=pointer]: Review Responses
+          - link "Customer Analysis" [ref=e111] [cursor=pointer]:
+            - /url: /apps/rfm-crm
+            - img [ref=e112] [cursor=pointer]
+            - generic [ref=e117] [cursor=pointer]: Customer Analysis
+          - link "Appointment Reminders" [ref=e119] [cursor=pointer]:
+            - /url: /apps/noshow-shield
+            - img [ref=e120] [cursor=pointer]
+            - generic [ref=e122] [cursor=pointer]: Appointment Reminders
+          - link "Service Suggestions" [ref=e124] [cursor=pointer]:
+            - /url: /apps/addon-recommender
+            - img [ref=e125] [cursor=pointer]
+            - generic [ref=e126] [cursor=pointer]: Service Suggestions
+      - generic [ref=e127]:
+        - heading "Search Performance" [level=3] [ref=e129]
+        - generic [ref=e130]:
+          - link "Search Performance" [ref=e132] [cursor=pointer]:
+            - /url: /apps/gsc-ctr-miner
+            - img [ref=e133] [cursor=pointer]
+            - generic [ref=e135] [cursor=pointer]: Search Performance
+          - link "Search Rankings" [ref=e137] [cursor=pointer]:
+            - /url: /apps/rank-grid
+            - img [ref=e138] [cursor=pointer]
+            - generic [ref=e141] [cursor=pointer]: Search Rankings
+          - link "Ranking Monitor" [ref=e143] [cursor=pointer]:
+            - /url: /apps/rankgrid-watcher
+            - img [ref=e144] [cursor=pointer]
+            - generic [ref=e147] [cursor=pointer]: Ranking Monitor
+          - link "Service Profits" [ref=e149] [cursor=pointer]:
+            - /url: /apps/slot-yield
+            - img [ref=e150] [cursor=pointer]
+            - generic [ref=e153] [cursor=pointer]: Service Profits
+          - link "Busy Times Predictor" [ref=e155] [cursor=pointer]:
+            - /url: /apps/queuetime
+            - img [ref=e156] [cursor=pointer]
+            - generic [ref=e159] [cursor=pointer]: Busy Times Predictor
+      - generic [ref=e160]:
+        - heading "Local Partnerships" [level=3] [ref=e162]
+        - generic [ref=e163]:
+          - link "Partner Finder" [ref=e165] [cursor=pointer]:
+            - /url: /apps/link-prospect-kit
+            - img [ref=e166] [cursor=pointer]
+            - generic [ref=e169] [cursor=pointer]: Partner Finder
+          - link "Partnership Map" [ref=e171] [cursor=pointer]:
+            - /url: /apps/link-map
+            - img [ref=e172] [cursor=pointer]
+            - generic [ref=e175] [cursor=pointer]: Partnership Map
+      - generic [ref=e176]:
+        - heading "Website Optimization" [level=3] [ref=e178]
+        - generic [ref=e179]:
+          - link "Website Guide" [ref=e181] [cursor=pointer]:
+            - /url: /apps/seo-brief
+            - img [ref=e182] [cursor=pointer]
+            - generic [ref=e185] [cursor=pointer]: Website Guide
+          - link "Page Titles & Descriptions" [ref=e187] [cursor=pointer]:
+            - /url: /apps/meta-planner
+            - img [ref=e188] [cursor=pointer]
+            - generic [ref=e191] [cursor=pointer]: Page Titles & Descriptions
+          - link "Business Listings Check" [ref=e193] [cursor=pointer]:
+            - /url: /apps/citation-tracker
+            - img [ref=e194] [cursor=pointer]
+            - generic [ref=e200] [cursor=pointer]: Business Listings Check
+      - generic [ref=e201]:
+        - heading "Support" [level=3] [ref=e203]
+        - generic [ref=e204]:
+          - link "Status" [ref=e206] [cursor=pointer]:
+            - /url: /status
+            - img [ref=e207] [cursor=pointer]
+            - generic [ref=e209] [cursor=pointer]: Status
+          - link "Trial Guide" [ref=e211] [cursor=pointer]:
+            - /url: /guide/trial
+            - img [ref=e212] [cursor=pointer]
+            - generic [ref=e215] [cursor=pointer]: Trial Guide
+  - generic [ref=e216]:
+    - banner [ref=e217]:
+      - generic [ref=e218]:
+        - link "Prairie SignalBelmont SEO LabSEO Lab" [ref=e219] [cursor=pointer]:
+          - /url: /
+          - img "Prairie Signal" [ref=e220] [cursor=pointer]
+          - generic [ref=e221] [cursor=pointer]: Belmont SEO Lab
+          - generic [ref=e222] [cursor=pointer]: SEO Lab
+        - generic [ref=e223]:
+          - generic [ref=e224]:
+            - link "Call for assistance" [ref=e225] [cursor=pointer]:
+              - /url: tel:403-555-0123
+              - img [ref=e226] [cursor=pointer]
+              - generic [ref=e228] [cursor=pointer]: Assistance
+            - link "Find The Belmont Barbershop on map" [ref=e229] [cursor=pointer]:
+              - /url: https://maps.google.com/?q=Little+Bow+River,+High+River,+AB,+T1V+1M6
+              - img [ref=e230] [cursor=pointer]
+              - generic [ref=e233] [cursor=pointer]: Map
+          - generic [ref=e234]:
+            - img [ref=e235]
+            - textbox "Search tools" [ref=e238]
+          - generic [ref=e239]:
+            - button "Toggle Simple Mode" [ref=e240]: Advanced
+            - button "Toggle theme" [ref=e241]:
+              - img [ref=e242]
+    - main [ref=e244]:
+      - generic [ref=e245]:
+        - generic [ref=e246]:
+          - generic [ref=e248]:
+            - heading "AI Content Studio" [level=1] [ref=e249]
+            - paragraph [ref=e250]: Generate intelligent, local-focused content across all platforms with AI-powered optimization.
+          - generic [ref=e251]:
+            - generic [ref=e252]:
+              - img [ref=e253]
+              - text: "AI: Unavailable"
+            - generic [ref=e261]:
+              - button "Generate Posts" [ref=e262]:
+                - img [ref=e263]
+                - text: Generate Posts
+              - generic [ref=e266]:
+                - button "AI Generate" [ref=e267]:
+                  - img [ref=e268]
+                  - text: AI Generate
+                - button "Export CSV" [disabled] [ref=e271]:
+                  - img [ref=e272]
+                  - text: Export CSV
+        - generic [ref=e275]:
+          - generic [ref=e276]:
+            - generic [ref=e278]:
+              - img [ref=e279]
+              - text: Posts Generated
+            - generic [ref=e281]:
+              - generic [ref=e282]: "0"
+              - generic [ref=e283]: This week
+          - generic [ref=e284]:
+            - generic [ref=e286]:
+              - img [ref=e287]
+              - text: AI Generated
+            - generic [ref=e290]:
+              - generic [ref=e291]: "0"
+              - generic [ref=e292]: Smart content
+          - generic [ref=e293]:
+            - generic [ref=e295]:
+              - img [ref=e296]
+              - text: Platforms
+            - generic [ref=e302]:
+              - generic [ref=e303]: "0"
+              - generic [ref=e304]: Multi-platform
+          - generic [ref=e305]:
+            - generic [ref=e307]:
+              - img [ref=e308]
+              - text: Quality Score
+            - generic [ref=e312]:
+              - generic [ref=e313]: "0"
+              - generic [ref=e314]: Avg score
+          - generic [ref=e315]:
+            - generic [ref=e317]:
+              - img [ref=e318]
+              - text: Library Items
+            - generic [ref=e320]:
+              - generic [ref=e321]: "0"
+              - generic [ref=e322]: Saved content
+          - generic [ref=e323]:
+            - generic [ref=e325]:
+              - img [ref=e326]
+              - text: Scheduled
+            - generic [ref=e329]:
+              - generic [ref=e330]: "0"
+              - generic [ref=e331]: Upcoming posts
+        - generic [ref=e332]:
+          - tablist [ref=e333]:
+            - tab "How To" [selected] [ref=e334]
+            - tab "Generator" [ref=e335]
+            - generic [ref=e336]:
+              - tab "AI Generate" [ref=e337]
+              - tab "Quality" [ref=e338]
+              - tab "A/B Test" [ref=e339]
+              - tab "Library" [ref=e340]
+              - tab "Scheduler" [ref=e341]
+              - tab "Analytics" [ref=e342]
+          - tabpanel "How To" [ref=e343]:
+            - generic [ref=e344]:
+              - generic [ref=e345]:
+                - generic [ref=e346]:
+                  - img [ref=e347]
+                  - text: How to Use the Content Calendar Tool
+                - generic [ref=e349]: Learn how to create and manage weekly social media and Google Business Profile posts for Belmont
+              - generic [ref=e351]:
+                - generic [ref=e352]:
+                  - heading "What This Tool Does" [level=3] [ref=e353]
+                  - paragraph [ref=e354]: This tool generates a complete weekly content calendar with ready-to-post content for Google Business Profile and Instagram. It creates engaging posts that highlight Belmont's services, includes UTM tracking links for analytics, and provides AI image prompts for visual content.
+                - generic [ref=e355]:
+                  - heading "Why Content Calendar Matters for Belmont" [level=3] [ref=e356]
+                  - paragraph [ref=e357]: "Consistent social media presence helps Belmont stay top-of-mind with customers and improves local search rankings:"
+                  - list [ref=e358]:
+                    - listitem [ref=e359]:
+                      - strong [ref=e360]: Google Business Profile posts
+                      - text: improve local search visibility and click-through rates
+                    - listitem [ref=e361]:
+                      - strong [ref=e362]: Instagram content
+                      - text: builds community engagement and brand awareness
+                    - listitem [ref=e363]:
+                      - strong [ref=e364]: UTM tracking links
+                      - text: help measure which posts drive the most bookings
+                    - listitem [ref=e365]:
+                      - strong [ref=e366]: Consistent posting
+                      - text: signals to Google that Belmont is an active, reliable business
+                    - listitem [ref=e367]:
+                      - strong [ref=e368]: Local event tie-ins
+                      - text: help Belmont participate in community conversations
+                - generic [ref=e369]:
+                  - heading "Step-by-Step Instructions" [level=3] [ref=e370]
+                  - list [ref=e371]:
+                    - listitem [ref=e372]:
+                      - strong [ref=e373]: "Set your parameters:"
+                      - text: Choose the week you want to plan for and optionally add a custom local event
+                    - listitem [ref=e374]:
+                      - strong [ref=e375]: "Select services to feature:"
+                      - text: Click on service badges to include or exclude specific services from the calendar
+                    - listitem [ref=e376]:
+                      - strong [ref=e377]: "Generate posts:"
+                      - text: Click "Generate Posts" to create 4 days worth of content (8 posts total - 4 GBP + 4 Instagram)
+                    - listitem [ref=e378]:
+                      - strong [ref=e379]: "Review generated content:"
+                      - text: Check each post's title, content, hashtags, and UTM tracking links
+                    - listitem [ref=e380]:
+                      - strong [ref=e381]: "Copy content to post:"
+                      - text: Use the copy buttons to copy post content to your clipboard
+                    - listitem [ref=e382]:
+                      - strong [ref=e383]: "Export for records:"
+                      - text: Download a CSV file of all posts for your content management records
+                    - listitem [ref=e384]:
+                      - strong [ref=e385]: "Copy to Post Studio:"
+                      - text: Send the generated content to the Post Studio tool for further editing
+                - generic [ref=e386]:
+                  - heading "Best Practices for Belmont Posts" [level=3] [ref=e387]
+                  - list [ref=e388]:
+                    - listitem [ref=e389]:
+                      - strong [ref=e390]: "Post consistently:"
+                      - text: Aim for 3-4 posts per week to stay visible without overwhelming your audience
+                    - listitem [ref=e391]:
+                      - strong [ref=e392]: "Include local context:"
+                      - text: Mention Bridgeland, Riverside, or Calgary events and landmarks
+                    - listitem [ref=e393]:
+                      - strong [ref=e394]: "Highlight specials:"
+                      - text: Promote veterans discounts, groomsmen packages, and seasonal offers
+                    - listitem [ref=e395]:
+                      - strong [ref=e396]: "Use emojis strategically:"
+                      - text: Add personality but don't overdo it (2-3 per Instagram post)
+                    - listitem [ref=e397]:
+                      - strong [ref=e398]: "Include booking CTAs:"
+                      - text: Every post should encourage customers to book appointments
+                    - listitem [ref=e399]:
+                      - strong [ref=e400]: "Track performance:"
+                      - text: Use UTM links to see which types of posts drive the most bookings
+                    - listitem [ref=e401]:
+                      - strong [ref=e402]: "Engage with responses:"
+                      - text: Reply to comments and messages within 24 hours
+                - generic [ref=e403]:
+                  - heading "UTM Tracking Parameters" [level=3] [ref=e404]
+                  - list [ref=e405]:
+                    - listitem [ref=e406]:
+                      - strong [ref=e407]: "Source:"
+                      - text: Identifies where traffic comes from (google, instagram, facebook)
+                    - listitem [ref=e408]:
+                      - strong [ref=e409]: "Medium:"
+                      - text: Describes the type of link (gbp, social, email, referral)
+                    - listitem [ref=e410]:
+                      - strong [ref=e411]: "Campaign:"
+                      - text: Groups related posts (weekly-post-1, stampede-special, etc.)
+                    - listitem [ref=e412]:
+                      - strong [ref=e413]: "Content:"
+                      - text: Identifies the specific service or offer being promoted
+                    - listitem [ref=e414]:
+                      - strong [ref=e415]: "Tracking benefits:"
+                      - text: See which posts drive the most bookings and customer engagement
+                - generic [ref=e416]:
+                  - heading "Content Types and Timing" [level=3] [ref=e417]
+                  - list [ref=e418]:
+                    - listitem [ref=e419]:
+                      - strong [ref=e420]: "Monday:"
+                      - text: Service highlights and weekly specials
+                    - listitem [ref=e421]:
+                      - strong [ref=e422]: "Wednesday:"
+                      - text: Local event tie-ins and community content
+                    - listitem [ref=e423]:
+                      - strong [ref=e424]: "Friday:"
+                      - text: Weekend promotions and appointment availability
+                    - listitem [ref=e425]:
+                      - strong [ref=e426]: "Sunday:"
+                      - text: Preview of upcoming week's services and staff highlights
+                    - listitem [ref=e427]:
+                      - strong [ref=e428]: "Best posting times:"
+                      - text: Weekdays 11AM-2PM, Weekends 10AM-12PM
+                - generic [ref=e429]:
+                  - heading "Google Business Profile Posts" [level=3] [ref=e430]
+                  - paragraph [ref=e431]: "GBP posts appear directly in Google search results and Maps:"
+                  - list [ref=e432]:
+                    - listitem [ref=e433]:
+                      - strong [ref=e434]: Keep under 750 characters
+                      - text: for full display in search results
+                    - listitem [ref=e435]:
+                      - strong [ref=e436]: Include your phone number
+                      - text: so customers can call directly
+                    - listitem [ref=e437]:
+                      - strong [ref=e438]: Add location context
+                      - text: like "in Bridgeland" or "near the LRT"
+                    - listitem [ref=e439]:
+                      - strong [ref=e440]: Use keywords naturally
+                      - text: like "men's haircut", "beard trim", "professional barber"
+                    - listitem [ref=e441]:
+                      - strong [ref=e442]: Include booking encouragement
+                      - text: like "Book now" or "Easy online booking"
+                - generic [ref=e443]:
+                  - heading "Instagram Content Strategy" [level=3] [ref=e444]
+                  - list [ref=e445]:
+                    - listitem [ref=e446]:
+                      - strong [ref=e447]: "Visual storytelling:"
+                      - text: Use the AI image prompts to create compelling visuals
+                    - listitem [ref=e448]:
+                      - strong [ref=e449]: "Engagement hooks:"
+                      - text: Ask questions like "What's your go-to hairstyle?"
+                    - listitem [ref=e450]:
+                      - strong [ref=e451]: "Behind-the-scenes:"
+                      - text: Show staff, equipment, and the Belmont atmosphere
+                    - listitem [ref=e452]:
+                      - strong [ref=e453]: "Customer features:"
+                      - text: Share before/after photos (with permission)
+                    - listitem [ref=e454]:
+                      - strong [ref=e455]: "Reels for education:"
+                      - text: Short videos showing haircut techniques or product demos
+                    - listitem [ref=e456]:
+                      - strong [ref=e457]: "Stories for daily updates:"
+                      - text: Quick polls, appointment availability, daily specials
+    - generic [ref=e459]:
+      - link "Email support" [ref=e460] [cursor=pointer]:
+        - /url: mailto:info@thebelmontbarber.ca
+        - img "Prairie Signal" [ref=e461] [cursor=pointer]
+        - text: Need help? Email support
+      - generic [ref=e462]:
+        - button "Open AI diagnostics" [ref=e463]:
+          - img [ref=e464]
+        - link "Call for assistance" [ref=e472] [cursor=pointer]:
+          - /url: tel:403-555-0123
+          - img [ref=e473] [cursor=pointer]
+        - link "Find The Belmont Barbershop on map" [ref=e475] [cursor=pointer]:
+          - /url: https://maps.google.com/?q=Little+Bow+River,+High+River,+AB,+T1V+1M6
+          - img [ref=e476] [cursor=pointer]
+```

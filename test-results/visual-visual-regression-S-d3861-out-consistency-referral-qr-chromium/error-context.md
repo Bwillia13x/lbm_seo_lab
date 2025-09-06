@@ -1,0 +1,421 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - button "Toggle navigation menu" [ref=e3]:
+    - img [ref=e4]
+  - complementary [ref=e5]:
+    - generic [ref=e7]:
+      - img "Prairie Signal" [ref=e8]
+      - generic [ref=e9]:
+        - generic [ref=e10]: Belmont
+        - generic [ref=e11]: SEO Lab
+    - navigation "Primary Navigation" [ref=e12]:
+      - generic [ref=e14]:
+        - link "Home" [ref=e16] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e17] [cursor=pointer]: Home
+        - link "Dashboard" [ref=e19] [cursor=pointer]:
+          - /url: /apps/dashboard
+          - img [ref=e20] [cursor=pointer]
+          - generic [ref=e23] [cursor=pointer]: Dashboard
+        - link "Onboarding" [ref=e25] [cursor=pointer]:
+          - /url: /apps/onboarding
+          - img [ref=e26] [cursor=pointer]
+          - generic [ref=e33] [cursor=pointer]: Onboarding
+      - generic [ref=e34]:
+        - heading "Content Creation" [level=3] [ref=e36]
+        - generic [ref=e37]:
+          - link "Google Posts Writer" [ref=e39] [cursor=pointer]:
+            - /url: /apps/gbp-composer
+            - img [ref=e40] [cursor=pointer]
+            - generic [ref=e43] [cursor=pointer]: Google Posts Writer
+          - link "Social Media Studio" [ref=e45] [cursor=pointer]:
+            - /url: /apps/post-studio
+            - img [ref=e46] [cursor=pointer]
+            - generic [ref=e50] [cursor=pointer]: Social Media Studio
+          - link "Content Calendar" [ref=e52] [cursor=pointer]:
+            - /url: /apps/post-oracle
+            - img [ref=e53] [cursor=pointer]
+            - generic [ref=e55] [cursor=pointer]: Content Calendar
+          - link "Local Content Ideas" [ref=e57] [cursor=pointer]:
+            - /url: /apps/neighbor-signal
+            - img [ref=e58] [cursor=pointer]
+            - generic [ref=e65] [cursor=pointer]: Local Content Ideas
+      - generic [ref=e66]:
+        - heading "Marketing & Tracking" [level=3] [ref=e68]
+        - generic [ref=e69]:
+          - link "Campaign Links" [ref=e71] [cursor=pointer]:
+            - /url: /apps/utm-dashboard
+            - img [ref=e72] [cursor=pointer]
+            - generic [ref=e76] [cursor=pointer]: Campaign Links
+          - link "QR Code Maker" [ref=e78] [cursor=pointer]:
+            - /url: /apps/utm-qr
+            - img [ref=e79] [cursor=pointer]
+            - generic [ref=e82] [cursor=pointer]: QR Code Maker
+          - link "Staff Referral Codes" [ref=e84] [cursor=pointer]:
+            - /url: /apps/referral-qr
+            - img [ref=e85] [cursor=pointer]
+            - generic [ref=e91] [cursor=pointer]: Staff Referral Codes
+          - link "Review Request Links" [ref=e93] [cursor=pointer]:
+            - /url: /apps/review-link
+            - img [ref=e94] [cursor=pointer]
+            - generic [ref=e100] [cursor=pointer]: Review Request Links
+      - generic [ref=e101]:
+        - heading "Customer Management" [level=3] [ref=e103]
+        - generic [ref=e104]:
+          - link "Review Responses" [ref=e106] [cursor=pointer]:
+            - /url: /apps/review-composer
+            - img [ref=e107] [cursor=pointer]
+            - generic [ref=e109] [cursor=pointer]: Review Responses
+          - link "Customer Analysis" [ref=e111] [cursor=pointer]:
+            - /url: /apps/rfm-crm
+            - img [ref=e112] [cursor=pointer]
+            - generic [ref=e117] [cursor=pointer]: Customer Analysis
+          - link "Appointment Reminders" [ref=e119] [cursor=pointer]:
+            - /url: /apps/noshow-shield
+            - img [ref=e120] [cursor=pointer]
+            - generic [ref=e122] [cursor=pointer]: Appointment Reminders
+          - link "Service Suggestions" [ref=e124] [cursor=pointer]:
+            - /url: /apps/addon-recommender
+            - img [ref=e125] [cursor=pointer]
+            - generic [ref=e126] [cursor=pointer]: Service Suggestions
+      - generic [ref=e127]:
+        - heading "Search Performance" [level=3] [ref=e129]
+        - generic [ref=e130]:
+          - link "Search Performance" [ref=e132] [cursor=pointer]:
+            - /url: /apps/gsc-ctr-miner
+            - img [ref=e133] [cursor=pointer]
+            - generic [ref=e135] [cursor=pointer]: Search Performance
+          - link "Search Rankings" [ref=e137] [cursor=pointer]:
+            - /url: /apps/rank-grid
+            - img [ref=e138] [cursor=pointer]
+            - generic [ref=e141] [cursor=pointer]: Search Rankings
+          - link "Ranking Monitor" [ref=e143] [cursor=pointer]:
+            - /url: /apps/rankgrid-watcher
+            - img [ref=e144] [cursor=pointer]
+            - generic [ref=e147] [cursor=pointer]: Ranking Monitor
+          - link "Service Profits" [ref=e149] [cursor=pointer]:
+            - /url: /apps/slot-yield
+            - img [ref=e150] [cursor=pointer]
+            - generic [ref=e153] [cursor=pointer]: Service Profits
+          - link "Busy Times Predictor" [ref=e155] [cursor=pointer]:
+            - /url: /apps/queuetime
+            - img [ref=e156] [cursor=pointer]
+            - generic [ref=e159] [cursor=pointer]: Busy Times Predictor
+      - generic [ref=e160]:
+        - heading "Local Partnerships" [level=3] [ref=e162]
+        - generic [ref=e163]:
+          - link "Partner Finder" [ref=e165] [cursor=pointer]:
+            - /url: /apps/link-prospect-kit
+            - img [ref=e166] [cursor=pointer]
+            - generic [ref=e169] [cursor=pointer]: Partner Finder
+          - link "Partnership Map" [ref=e171] [cursor=pointer]:
+            - /url: /apps/link-map
+            - img [ref=e172] [cursor=pointer]
+            - generic [ref=e175] [cursor=pointer]: Partnership Map
+      - generic [ref=e176]:
+        - heading "Website Optimization" [level=3] [ref=e178]
+        - generic [ref=e179]:
+          - link "Website Guide" [ref=e181] [cursor=pointer]:
+            - /url: /apps/seo-brief
+            - img [ref=e182] [cursor=pointer]
+            - generic [ref=e185] [cursor=pointer]: Website Guide
+          - link "Page Titles & Descriptions" [ref=e187] [cursor=pointer]:
+            - /url: /apps/meta-planner
+            - img [ref=e188] [cursor=pointer]
+            - generic [ref=e191] [cursor=pointer]: Page Titles & Descriptions
+          - link "Business Listings Check" [ref=e193] [cursor=pointer]:
+            - /url: /apps/citation-tracker
+            - img [ref=e194] [cursor=pointer]
+            - generic [ref=e200] [cursor=pointer]: Business Listings Check
+      - generic [ref=e201]:
+        - heading "Support" [level=3] [ref=e203]
+        - generic [ref=e204]:
+          - link "Status" [ref=e206] [cursor=pointer]:
+            - /url: /status
+            - img [ref=e207] [cursor=pointer]
+            - generic [ref=e209] [cursor=pointer]: Status
+          - link "Trial Guide" [ref=e211] [cursor=pointer]:
+            - /url: /guide/trial
+            - img [ref=e212] [cursor=pointer]
+            - generic [ref=e215] [cursor=pointer]: Trial Guide
+  - generic [ref=e216]:
+    - banner [ref=e217]:
+      - generic [ref=e218]:
+        - link "Prairie SignalBelmont SEO LabSEO Lab" [ref=e219] [cursor=pointer]:
+          - /url: /
+          - img "Prairie Signal" [ref=e220] [cursor=pointer]
+          - generic [ref=e221] [cursor=pointer]: Belmont SEO Lab
+          - generic [ref=e222] [cursor=pointer]: SEO Lab
+        - generic [ref=e223]:
+          - generic [ref=e224]:
+            - link "Call for assistance" [ref=e225] [cursor=pointer]:
+              - /url: tel:403-555-0123
+              - img [ref=e226] [cursor=pointer]
+              - generic [ref=e228] [cursor=pointer]: Assistance
+            - link "Find The Belmont Barbershop on map" [ref=e229] [cursor=pointer]:
+              - /url: https://maps.google.com/?q=Little+Bow+River,+High+River,+AB,+T1V+1M6
+              - img [ref=e230] [cursor=pointer]
+              - generic [ref=e233] [cursor=pointer]: Map
+          - generic [ref=e234]:
+            - img [ref=e235]
+            - textbox "Search tools" [ref=e238]
+          - generic [ref=e239]:
+            - button "Toggle Simple Mode" [ref=e240]: Advanced
+            - button "Toggle theme" [ref=e241]:
+              - img [ref=e242]
+    - main [ref=e244]:
+      - generic [ref=e245]:
+        - generic [ref=e246]:
+          - generic [ref=e248]:
+            - heading "AI Referral Studio" [level=1] [ref=e249]
+            - paragraph [ref=e250]: AI-powered referral management with performance analytics, campaign optimization, and automated incentive programs.
+          - generic [ref=e251]:
+            - generic [ref=e252]:
+              - img [ref=e253]
+              - text: "AI: Unavailable"
+            - generic [ref=e262]:
+              - button "AI Optimize" [ref=e263]:
+                - img [ref=e264]
+                - text: AI Optimize
+              - button "Analytics" [disabled] [ref=e272]:
+                - img [ref=e273]
+                - text: Analytics
+              - button "Download All QR" [disabled] [ref=e275]:
+                - img [ref=e276]
+                - text: Download All QR
+              - button "Export Report" [disabled] [ref=e279]:
+                - img [ref=e280]
+                - text: Export Report
+        - generic [ref=e285]:
+          - generic [ref=e286]:
+            - generic [ref=e288]:
+              - img [ref=e289]
+              - text: Referral Codes
+            - generic [ref=e295]:
+              - generic [ref=e296]: "0"
+              - generic [ref=e297]: Active
+          - generic [ref=e298]:
+            - generic [ref=e300]:
+              - img [ref=e301]
+              - text: AI Status
+            - generic [ref=e309]:
+              - generic [ref=e310]: Server-managed
+              - generic [ref=e311]: Optimization
+          - generic [ref=e312]:
+            - generic [ref=e314]:
+              - img [ref=e315]
+              - text: Total Clicks
+            - generic [ref=e320]:
+              - generic [ref=e321]: "0"
+              - generic [ref=e322]: All time
+          - generic [ref=e323]:
+            - generic [ref=e325]:
+              - img [ref=e326]
+              - text: Conversion Rate
+            - generic [ref=e330]:
+              - generic [ref=e331]: —
+              - generic [ref=e332]: Click to booking
+          - generic [ref=e333]:
+            - generic [ref=e335]:
+              - img [ref=e336]
+              - text: Avg Revenue
+            - generic [ref=e339]:
+              - generic [ref=e340]: —
+              - generic [ref=e341]: Per referral
+          - generic [ref=e342]:
+            - generic [ref=e344]:
+              - img [ref=e345]
+              - text: Total Revenue
+            - generic [ref=e347]:
+              - generic [ref=e348]: $0
+              - generic [ref=e349]: Generated
+        - generic [ref=e350]:
+          - tablist [ref=e351]:
+            - tab "How To" [selected] [ref=e352]
+            - tab "Single Code" [ref=e353]
+            - generic [ref=e354]:
+              - tab "AI Optimize" [ref=e355]
+              - tab "QR Design" [ref=e356]
+              - tab "Batch Gen" [ref=e357]
+              - tab "Library" [ref=e358]
+              - tab "Analytics" [ref=e359]
+            - tab "Leaderboard" [ref=e360]
+          - tabpanel "How To" [ref=e361]:
+            - generic [ref=e362]:
+              - generic [ref=e363]:
+                - generic [ref=e364]:
+                  - img [ref=e365]
+                  - text: How to Use the Staff Referral Codes Tool
+                - generic [ref=e367]: Learn how to create and manage QR codes for staff referrals, partners, and events to track marketing performance
+              - generic [ref=e369]:
+                - generic [ref=e370]:
+                  - heading "What This Tool Does" [level=3] [ref=e371]
+                  - paragraph [ref=e372]: This tool creates unique QR codes and tracking links for different referral sources (staff, partners, events). Each code includes UTM parameters for detailed analytics, allowing you to track which referrals drive the most bookings and revenue for Belmont.
+                - generic [ref=e373]:
+                  - heading "Why Referral Tracking Matters for Belmont" [level=3] [ref=e374]
+                  - paragraph [ref=e375]: "Referral tracking helps Belmont understand which marketing channels and partnerships are most effective:"
+                  - list [ref=e376]:
+                    - listitem [ref=e377]:
+                      - strong [ref=e378]: "Staff performance:"
+                      - text: Track which barbers bring in the most referrals through their personal QR codes
+                    - listitem [ref=e379]:
+                      - strong [ref=e380]: "Partner ROI:"
+                      - text: Measure the revenue generated from each business partnership
+                    - listitem [ref=e381]:
+                      - strong [ref=e382]: "Event effectiveness:"
+                      - text: See which community events and promotions drive the most bookings
+                    - listitem [ref=e383]:
+                      - strong [ref=e384]: "Marketing optimization:"
+                      - text: Focus resources on the highest-performing referral channels
+                    - listitem [ref=e385]:
+                      - strong [ref=e386]: "Incentive programs:"
+                      - text: Reward top-performing staff and partners based on actual results
+                - generic [ref=e387]:
+                  - heading "Step-by-Step Instructions" [level=3] [ref=e388]
+                  - list [ref=e389]:
+                    - listitem [ref=e390]:
+                      - strong [ref=e391]: "Choose referral type:"
+                      - text: Select whether you're creating a code for staff, partner, or event
+                    - listitem [ref=e392]:
+                      - strong [ref=e393]: "Enter name:"
+                      - text: Add the person's name or event/partner business name
+                    - listitem [ref=e394]:
+                      - strong [ref=e395]: "Generate QR code:"
+                      - text: Click "Generate QR Code" to create a unique code with UTM tracking
+                    - listitem [ref=e396]:
+                      - strong [ref=e397]: "Download QR code:"
+                      - text: Save the QR code as PNG for printing or digital sharing
+                    - listitem [ref=e398]:
+                      - strong [ref=e399]: "Share with referrer:"
+                      - text: Give the QR code to staff for their business cards or partners for their website
+                    - listitem [ref=e400]:
+                      - strong [ref=e401]: "Track performance:"
+                      - text: Monitor clicks, bookings, and revenue in the leaderboard
+                    - listitem [ref=e402]:
+                      - strong [ref=e403]: "Export reports:"
+                      - text: Download CSV files for detailed analysis and incentive calculations
+                - generic [ref=e404]:
+                  - heading "Understanding UTM Parameters" [level=3] [ref=e405]
+                  - list [ref=e406]:
+                    - listitem [ref=e407]:
+                      - strong [ref=e408]: "Source:"
+                      - text: Identifies the referral type (staff, partner, event)
+                    - listitem [ref=e409]:
+                      - strong [ref=e410]: "Medium:"
+                      - text: Always "referral" for these tracking links
+                    - listitem [ref=e411]:
+                      - strong [ref=e412]: "Campaign:"
+                      - text: The unique referral code (e.g., BELMONT-ABC123)
+                    - listitem [ref=e413]:
+                      - strong [ref=e414]: "Content:"
+                      - text: The referrer's name or identifier
+                    - listitem [ref=e415]:
+                      - strong [ref=e416]: "Benefits:"
+                      - text: Track exactly which referrals convert to bookings
+                - generic [ref=e417]:
+                  - heading "Referral Code Types" [level=3] [ref=e418]
+                  - list [ref=e419]:
+                    - listitem [ref=e420]:
+                      - strong [ref=e421]: "Staff codes:"
+                      - text: Personal QR codes for barbers to include on business cards, social media, etc.
+                    - listitem [ref=e422]:
+                      - strong [ref=e423]: "Partner codes:"
+                      - text: For local businesses that refer customers to Belmont
+                    - listitem [ref=e424]:
+                      - strong [ref=e425]: "Event codes:"
+                      - text: For community events, sponsorships, or promotional campaigns
+                    - listitem [ref=e426]:
+                      - strong [ref=e427]: "Benefits:"
+                      - text: Each type gets different UTM parameters for accurate attribution
+                - generic [ref=e428]:
+                  - heading "Best Practices for Referral Programs" [level=3] [ref=e429]
+                  - list [ref=e430]:
+                    - listitem [ref=e431]:
+                      - strong [ref=e432]: "Clear incentives:"
+                      - text: Define what staff/partners earn for successful referrals
+                    - listitem [ref=e433]:
+                      - strong [ref=e434]: "Easy sharing:"
+                      - text: Make QR codes available in multiple formats (print, digital, email)
+                    - listitem [ref=e435]:
+                      - strong [ref=e436]: "Regular reporting:"
+                      - text: Share performance data with staff and partners monthly
+                    - listitem [ref=e437]:
+                      - strong [ref=e438]: "Quality referrals:"
+                      - text: Encourage referrals from satisfied customers who will book again
+                    - listitem [ref=e439]:
+                      - strong [ref=e440]: "Track all sources:"
+                      - text: Use different codes for different marketing channels
+                    - listitem [ref=e441]:
+                      - strong [ref=e442]: "Celebrate successes:"
+                      - text: Recognize top performers publicly (with permission)
+                - generic [ref=e443]:
+                  - heading "Staff Referral Program Ideas" [level=3] [ref=e444]
+                  - list [ref=e445]:
+                    - listitem [ref=e446]:
+                      - strong [ref=e447]: "Business cards:"
+                      - text: Include personal QR codes on all staff business cards
+                    - listitem [ref=e448]:
+                      - strong [ref=e449]: "Social media:"
+                      - text: Staff can share their referral links on personal Instagram/TikTok
+                    - listitem [ref=e450]:
+                      - strong [ref=e451]: "Email signatures:"
+                      - text: Add referral links to professional email signatures
+                    - listitem [ref=e452]:
+                      - strong [ref=e453]: "Word-of-mouth:"
+                      - text: Encourage staff to mention Belmont when out in the community
+                    - listitem [ref=e454]:
+                      - strong [ref=e455]: "Commission structure:"
+                      - text: Offer percentage of service revenue from referrals
+                - generic [ref=e456]:
+                  - heading "Partner Referral Opportunities" [level=3] [ref=e457]
+                  - list [ref=e458]:
+                    - listitem [ref=e459]:
+                      - strong [ref=e460]: "Local restaurants:"
+                      - text: Partner with nearby cafes and restaurants
+                    - listitem [ref=e461]:
+                      - strong [ref=e462]: "Salons and spas:"
+                      - text: Cross-promote with other personal care businesses
+                    - listitem [ref=e463]:
+                      - strong [ref=e464]: "Gyms and fitness:"
+                      - text: Partner with local fitness centers
+                    - listitem [ref=e465]:
+                      - strong [ref=e466]: "Real estate agents:"
+                      - text: Work with local realtors for new resident welcome packages
+                    - listitem [ref=e467]:
+                      - strong [ref=e468]: "Event venues:"
+                      - text: Partner with hotels, community centers, and event spaces
+                - generic [ref=e469]:
+                  - heading "Measuring Success" [level=3] [ref=e470]
+                  - list [ref=e471]:
+                    - listitem [ref=e472]:
+                      - strong [ref=e473]: "Conversion rate:"
+                      - text: Percentage of clicks that become bookings
+                    - listitem [ref=e474]:
+                      - strong [ref=e475]: "Revenue per referral:"
+                      - text: Average revenue generated from each successful referral
+                    - listitem [ref=e476]:
+                      - strong [ref=e477]: "Top performers:"
+                      - text: Identify which staff/partners bring in the most business
+                    - listitem [ref=e478]:
+                      - strong [ref=e479]: "Channel effectiveness:"
+                      - text: Compare performance across different referral types
+                    - listitem [ref=e480]:
+                      - strong [ref=e481]: "ROI analysis:"
+                      - text: Calculate return on investment for referral incentives
+    - generic [ref=e483]:
+      - link "Email support" [ref=e484] [cursor=pointer]:
+        - /url: mailto:info@thebelmontbarber.ca
+        - img "Prairie Signal" [ref=e485] [cursor=pointer]
+        - text: Need help? Email support
+      - generic [ref=e486]:
+        - button "Open AI diagnostics" [ref=e487]:
+          - img [ref=e488]
+        - link "Call for assistance" [ref=e496] [cursor=pointer]:
+          - /url: tel:403-555-0123
+          - img [ref=e497] [cursor=pointer]
+        - link "Find The Belmont Barbershop on map" [ref=e499] [cursor=pointer]:
+          - /url: https://maps.google.com/?q=Little+Bow+River,+High+River,+AB,+T1V+1M6
+          - img [ref=e500] [cursor=pointer]
+```

@@ -1,0 +1,313 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - button "Toggle navigation menu" [ref=e3]:
+    - img [ref=e4]
+  - complementary [ref=e5]:
+    - generic [ref=e7]:
+      - img "Prairie Signal" [ref=e8]
+      - generic [ref=e9]:
+        - generic [ref=e10]: Belmont
+        - generic [ref=e11]: SEO Lab
+    - navigation "Primary Navigation" [ref=e12]:
+      - generic [ref=e14]:
+        - link "Home" [ref=e16] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e17] [cursor=pointer]: Home
+        - link "Dashboard" [ref=e19] [cursor=pointer]:
+          - /url: /apps/dashboard
+          - img [ref=e20] [cursor=pointer]
+          - generic [ref=e23] [cursor=pointer]: Dashboard
+        - link "Onboarding" [ref=e25] [cursor=pointer]:
+          - /url: /apps/onboarding
+          - img [ref=e26] [cursor=pointer]
+          - generic [ref=e33] [cursor=pointer]: Onboarding
+      - generic [ref=e34]:
+        - heading "Content Creation" [level=3] [ref=e36]
+        - generic [ref=e37]:
+          - link "Google Posts Writer" [ref=e39] [cursor=pointer]:
+            - /url: /apps/gbp-composer
+            - img [ref=e40] [cursor=pointer]
+            - generic [ref=e43] [cursor=pointer]: Google Posts Writer
+          - link "Social Media Studio" [ref=e45] [cursor=pointer]:
+            - /url: /apps/post-studio
+            - img [ref=e46] [cursor=pointer]
+            - generic [ref=e50] [cursor=pointer]: Social Media Studio
+          - link "Content Calendar" [ref=e52] [cursor=pointer]:
+            - /url: /apps/post-oracle
+            - img [ref=e53] [cursor=pointer]
+            - generic [ref=e55] [cursor=pointer]: Content Calendar
+          - link "Local Content Ideas" [ref=e57] [cursor=pointer]:
+            - /url: /apps/neighbor-signal
+            - img [ref=e58] [cursor=pointer]
+            - generic [ref=e65] [cursor=pointer]: Local Content Ideas
+      - generic [ref=e66]:
+        - heading "Marketing & Tracking" [level=3] [ref=e68]
+        - generic [ref=e69]:
+          - link "Campaign Links" [ref=e71] [cursor=pointer]:
+            - /url: /apps/utm-dashboard
+            - img [ref=e72] [cursor=pointer]
+            - generic [ref=e76] [cursor=pointer]: Campaign Links
+          - link "QR Code Maker" [ref=e78] [cursor=pointer]:
+            - /url: /apps/utm-qr
+            - img [ref=e79] [cursor=pointer]
+            - generic [ref=e82] [cursor=pointer]: QR Code Maker
+          - link "Staff Referral Codes" [ref=e84] [cursor=pointer]:
+            - /url: /apps/referral-qr
+            - img [ref=e85] [cursor=pointer]
+            - generic [ref=e91] [cursor=pointer]: Staff Referral Codes
+          - link "Review Request Links" [ref=e93] [cursor=pointer]:
+            - /url: /apps/review-link
+            - img [ref=e94] [cursor=pointer]
+            - generic [ref=e100] [cursor=pointer]: Review Request Links
+      - generic [ref=e101]:
+        - heading "Customer Management" [level=3] [ref=e103]
+        - generic [ref=e104]:
+          - link "Review Responses" [ref=e106] [cursor=pointer]:
+            - /url: /apps/review-composer
+            - img [ref=e107] [cursor=pointer]
+            - generic [ref=e109] [cursor=pointer]: Review Responses
+          - link "Customer Analysis" [ref=e111] [cursor=pointer]:
+            - /url: /apps/rfm-crm
+            - img [ref=e112] [cursor=pointer]
+            - generic [ref=e117] [cursor=pointer]: Customer Analysis
+          - link "Appointment Reminders" [ref=e119] [cursor=pointer]:
+            - /url: /apps/noshow-shield
+            - img [ref=e120] [cursor=pointer]
+            - generic [ref=e122] [cursor=pointer]: Appointment Reminders
+          - link "Service Suggestions" [ref=e124] [cursor=pointer]:
+            - /url: /apps/addon-recommender
+            - img [ref=e125] [cursor=pointer]
+            - generic [ref=e126] [cursor=pointer]: Service Suggestions
+      - generic [ref=e127]:
+        - heading "Search Performance" [level=3] [ref=e129]
+        - generic [ref=e130]:
+          - link "Search Performance" [ref=e132] [cursor=pointer]:
+            - /url: /apps/gsc-ctr-miner
+            - img [ref=e133] [cursor=pointer]
+            - generic [ref=e135] [cursor=pointer]: Search Performance
+          - link "Search Rankings" [ref=e137] [cursor=pointer]:
+            - /url: /apps/rank-grid
+            - img [ref=e138] [cursor=pointer]
+            - generic [ref=e141] [cursor=pointer]: Search Rankings
+          - link "Ranking Monitor" [ref=e143] [cursor=pointer]:
+            - /url: /apps/rankgrid-watcher
+            - img [ref=e144] [cursor=pointer]
+            - generic [ref=e147] [cursor=pointer]: Ranking Monitor
+          - link "Service Profits" [ref=e149] [cursor=pointer]:
+            - /url: /apps/slot-yield
+            - img [ref=e150] [cursor=pointer]
+            - generic [ref=e153] [cursor=pointer]: Service Profits
+          - link "Busy Times Predictor" [ref=e155] [cursor=pointer]:
+            - /url: /apps/queuetime
+            - img [ref=e156] [cursor=pointer]
+            - generic [ref=e159] [cursor=pointer]: Busy Times Predictor
+      - generic [ref=e160]:
+        - heading "Local Partnerships" [level=3] [ref=e162]
+        - generic [ref=e163]:
+          - link "Partner Finder" [ref=e165] [cursor=pointer]:
+            - /url: /apps/link-prospect-kit
+            - img [ref=e166] [cursor=pointer]
+            - generic [ref=e169] [cursor=pointer]: Partner Finder
+          - link "Partnership Map" [ref=e171] [cursor=pointer]:
+            - /url: /apps/link-map
+            - img [ref=e172] [cursor=pointer]
+            - generic [ref=e175] [cursor=pointer]: Partnership Map
+      - generic [ref=e176]:
+        - heading "Website Optimization" [level=3] [ref=e178]
+        - generic [ref=e179]:
+          - link "Website Guide" [ref=e181] [cursor=pointer]:
+            - /url: /apps/seo-brief
+            - img [ref=e182] [cursor=pointer]
+            - generic [ref=e185] [cursor=pointer]: Website Guide
+          - link "Page Titles & Descriptions" [ref=e187] [cursor=pointer]:
+            - /url: /apps/meta-planner
+            - img [ref=e188] [cursor=pointer]
+            - generic [ref=e191] [cursor=pointer]: Page Titles & Descriptions
+          - link "Business Listings Check" [ref=e193] [cursor=pointer]:
+            - /url: /apps/citation-tracker
+            - img [ref=e194] [cursor=pointer]
+            - generic [ref=e200] [cursor=pointer]: Business Listings Check
+      - generic [ref=e201]:
+        - heading "Support" [level=3] [ref=e203]
+        - generic [ref=e204]:
+          - link "Status" [ref=e206] [cursor=pointer]:
+            - /url: /status
+            - img [ref=e207] [cursor=pointer]
+            - generic [ref=e209] [cursor=pointer]: Status
+          - link "Trial Guide" [ref=e211] [cursor=pointer]:
+            - /url: /guide/trial
+            - img [ref=e212] [cursor=pointer]
+            - generic [ref=e215] [cursor=pointer]: Trial Guide
+  - generic [ref=e216]:
+    - banner [ref=e217]:
+      - generic [ref=e218]:
+        - link "Prairie SignalBelmont SEO LabSEO Lab" [ref=e219] [cursor=pointer]:
+          - /url: /
+          - img "Prairie Signal" [ref=e220] [cursor=pointer]
+          - generic [ref=e221] [cursor=pointer]: Belmont SEO Lab
+          - generic [ref=e222] [cursor=pointer]: SEO Lab
+        - generic [ref=e223]:
+          - generic [ref=e224]:
+            - link "Call for assistance" [ref=e225] [cursor=pointer]:
+              - /url: tel:403-555-0123
+              - img [ref=e226] [cursor=pointer]
+              - generic [ref=e228] [cursor=pointer]: Assistance
+            - link "Find The Belmont Barbershop on map" [ref=e229] [cursor=pointer]:
+              - /url: https://maps.google.com/?q=Little+Bow+River,+High+River,+AB,+T1V+1M6
+              - img [ref=e230] [cursor=pointer]
+              - generic [ref=e233] [cursor=pointer]: Map
+          - generic [ref=e234]:
+            - img [ref=e235]
+            - textbox "Search tools" [ref=e238]
+          - generic [ref=e239]:
+            - button "Toggle Simple Mode" [ref=e240]: Advanced
+            - button "Toggle theme" [ref=e241]:
+              - img [ref=e242]
+    - main [ref=e244]:
+      - generic [ref=e245]:
+        - generic [ref=e246]:
+          - generic [ref=e248]:
+            - heading "Local Content Ideas" [level=1] [ref=e249]
+            - paragraph [ref=e250]: Analyze content for local SEO signals and suggest improvements for Bridgeland/Riverside.
+          - generic [ref=e252]:
+            - img [ref=e253]
+            - text: "AI: Unavailable"
+        - generic [ref=e261]:
+          - tablist [ref=e262]:
+            - tab "How To" [selected] [ref=e263]
+            - tab "Analyzer" [ref=e264]
+            - tab "Suggestions" [ref=e266]
+          - tabpanel "How To" [ref=e267]:
+            - generic [ref=e268]:
+              - generic [ref=e269]:
+                - generic [ref=e270]:
+                  - img [ref=e271]
+                  - text: How to Use the Local Content Ideas Tool
+                - generic [ref=e273]: Learn how to optimize your content for local SEO in Bridgeland and Riverside
+              - generic [ref=e275]:
+                - generic [ref=e276]:
+                  - heading "What This Tool Does" [level=3] [ref=e277]
+                  - paragraph [ref=e278]: This tool analyzes your content (GBP posts, website copy, social media) to measure how well it signals to Google that Belmont is a local Bridgeland business. It scores content based on local keyword usage and provides suggestions for improvement.
+                - generic [ref=e279]:
+                  - heading "Why Local Content Signals Matter" [level=3] [ref=e280]
+                  - paragraph [ref=e281]: "Google prioritizes businesses that clearly demonstrate they're part of their local community:"
+                  - list [ref=e282]:
+                    - listitem [ref=e283]:
+                      - strong [ref=e284]: "Local pack rankings:"
+                      - text: Content with local terms ranks better in map results
+                    - listitem [ref=e285]:
+                      - strong [ref=e286]: "Relevance signals:"
+                      - text: Google wants to show businesses that understand local context
+                    - listitem [ref=e287]:
+                      - strong [ref=e288]: "Community connection:"
+                      - text: Customers prefer businesses that feel like part of their neighborhood
+                    - listitem [ref=e289]:
+                      - strong [ref=e290]: "Competitive advantage:"
+                      - text: Many local businesses don't optimize for local signals
+                    - listitem [ref=e291]:
+                      - strong [ref=e292]: "Trust building:"
+                      - text: Local content builds credibility with both customers and Google
+                - generic [ref=e293]:
+                  - heading "Step-by-Step Instructions" [level=3] [ref=e294]
+                  - list [ref=e295]:
+                    - listitem [ref=e296]:
+                      - strong [ref=e297]: "Paste your content:"
+                      - text: Copy any content you want to analyze (GBP posts, website text, social media)
+                    - listitem [ref=e298]:
+                      - strong [ref=e299]: "Run the analysis:"
+                      - text: Click "Analyze Local Signals" to get your local SEO score
+                    - listitem [ref=e300]:
+                      - strong [ref=e301]: "Review the score:"
+                      - text: Check your local signal strength (aim for 60% or higher)
+                    - listitem [ref=e302]:
+                      - strong [ref=e303]: "Apply suggestions:"
+                      - text: Use the improvement suggestions to boost your score
+                    - listitem [ref=e304]:
+                      - strong [ref=e305]: "Test variations:"
+                      - text: Try different versions of content to see what works best
+                - generic [ref=e306]:
+                  - heading "Understanding Local Signal Scores" [level=3] [ref=e307]
+                  - list [ref=e308]:
+                    - listitem [ref=e309]:
+                      - strong [ref=e310]: "70-100% (Excellent):"
+                      - text: Strong local signals - content is well-optimized for Bridgeland
+                    - listitem [ref=e311]:
+                      - strong [ref=e312]: "40-69% (Good):"
+                      - text: Moderate local signals - some improvements needed
+                    - listitem [ref=e313]:
+                      - strong [ref=e314]: "0-39% (Needs Work):"
+                      - text: Weak local signals - significant improvements recommended
+                    - listitem [ref=e315]:
+                      - strong [ref=e316]: "Target score:"
+                      - text: Aim for 60%+ for optimal local SEO performance
+                - generic [ref=e317]:
+                  - heading "Key Local Terms for Belmont" [level=3] [ref=e318]
+                  - list [ref=e319]:
+                    - listitem [ref=e320]:
+                      - strong [ref=e321]: "Location terms:"
+                      - text: Bridgeland, Riverside, Calgary, neighborhood, local
+                    - listitem [ref=e322]:
+                      - strong [ref=e323]: "Community terms:"
+                      - text: community, residents, locals, area businesses
+                    - listitem [ref=e324]:
+                      - strong [ref=e325]: "Landmarks:"
+                      - text: LRT station, Prince's Island Park, Calgary Tower, Glenmore Reservoir
+                    - listitem [ref=e326]:
+                      - strong [ref=e327]: "Events:"
+                      - text: Calgary Stampede, Folk Festival, community markets, local festivals
+                    - listitem [ref=e328]:
+                      - strong [ref=e329]: "Directions:"
+                      - text: near LRT, accessible by transit, downtown Calgary access
+                - generic [ref=e330]:
+                  - heading "Content Types to Optimize" [level=3] [ref=e331]
+                  - list [ref=e332]:
+                    - listitem [ref=e333]:
+                      - strong [ref=e334]: "Google Business Profile:"
+                      - text: Posts, business description, Q&A responses
+                    - listitem [ref=e335]:
+                      - strong [ref=e336]: "Website content:"
+                      - text: Homepage, services page, about page, contact information
+                    - listitem [ref=e337]:
+                      - strong [ref=e338]: "Social media:"
+                      - text: Facebook posts, Instagram captions, local event mentions
+                    - listitem [ref=e339]:
+                      - strong [ref=e340]: "Email signatures:"
+                      - text: Include neighborhood context in business communications
+                    - listitem [ref=e341]:
+                      - strong [ref=e342]: "Blog posts:"
+                      - text: Write about local events, community news, neighborhood changes
+                - generic [ref=e343]:
+                  - heading "Best Practices for Local Content" [level=3] [ref=e344]
+                  - list [ref=e345]:
+                    - listitem [ref=e346]:
+                      - strong [ref=e347]: "Natural integration:"
+                      - text: Include local terms naturally, not forced
+                    - listitem [ref=e348]:
+                      - strong [ref=e349]: "Multiple mentions:"
+                      - text: Reinforce location across different content types
+                    - listitem [ref=e350]:
+                      - strong [ref=e351]: "Stay current:"
+                      - text: Update content when local context changes (new businesses, events)
+                    - listitem [ref=e352]:
+                      - strong [ref=e353]: "Customer-focused:"
+                      - text: Use local terms that customers actually search for
+                    - listitem [ref=e354]:
+                      - strong [ref=e355]: "Competitor awareness:"
+                      - text: Include terms that differentiate Belmont from other barbershops
+    - generic [ref=e357]:
+      - link "Email support" [ref=e358] [cursor=pointer]:
+        - /url: mailto:info@thebelmontbarber.ca
+        - img "Prairie Signal" [ref=e359] [cursor=pointer]
+        - text: Need help? Email support
+      - generic [ref=e360]:
+        - button "Open AI diagnostics" [ref=e361]:
+          - img [ref=e362]
+        - link "Call for assistance" [ref=e370] [cursor=pointer]:
+          - /url: tel:403-555-0123
+          - img [ref=e371] [cursor=pointer]
+        - link "Find The Belmont Barbershop on map" [ref=e373] [cursor=pointer]:
+          - /url: https://maps.google.com/?q=Little+Bow+River,+High+River,+AB,+T1V+1M6
+          - img [ref=e374] [cursor=pointer]
+```

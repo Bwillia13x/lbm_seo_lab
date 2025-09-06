@@ -1,0 +1,341 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - button "Toggle navigation menu" [ref=e3]:
+    - img [ref=e4]
+  - complementary [ref=e5]:
+    - generic [ref=e7]:
+      - img "Prairie Signal" [ref=e8]
+      - generic [ref=e9]:
+        - generic [ref=e10]: Belmont
+        - generic [ref=e11]: SEO Lab
+    - navigation "Primary Navigation" [ref=e12]:
+      - generic [ref=e14]:
+        - link "Home" [ref=e16] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e17] [cursor=pointer]: Home
+        - link "Dashboard" [ref=e19] [cursor=pointer]:
+          - /url: /apps/dashboard
+          - img [ref=e20] [cursor=pointer]
+          - generic [ref=e23] [cursor=pointer]: Dashboard
+        - link "Onboarding" [ref=e25] [cursor=pointer]:
+          - /url: /apps/onboarding
+          - img [ref=e26] [cursor=pointer]
+          - generic [ref=e33] [cursor=pointer]: Onboarding
+      - generic [ref=e34]:
+        - heading "Content Creation" [level=3] [ref=e36]
+        - generic [ref=e37]:
+          - link "Google Posts Writer" [ref=e39] [cursor=pointer]:
+            - /url: /apps/gbp-composer
+            - img [ref=e40] [cursor=pointer]
+            - generic [ref=e43] [cursor=pointer]: Google Posts Writer
+          - link "Social Media Studio" [ref=e45] [cursor=pointer]:
+            - /url: /apps/post-studio
+            - img [ref=e46] [cursor=pointer]
+            - generic [ref=e50] [cursor=pointer]: Social Media Studio
+          - link "Content Calendar" [ref=e52] [cursor=pointer]:
+            - /url: /apps/post-oracle
+            - img [ref=e53] [cursor=pointer]
+            - generic [ref=e55] [cursor=pointer]: Content Calendar
+          - link "Local Content Ideas" [ref=e57] [cursor=pointer]:
+            - /url: /apps/neighbor-signal
+            - img [ref=e58] [cursor=pointer]
+            - generic [ref=e65] [cursor=pointer]: Local Content Ideas
+      - generic [ref=e66]:
+        - heading "Marketing & Tracking" [level=3] [ref=e68]
+        - generic [ref=e69]:
+          - link "Campaign Links" [ref=e71] [cursor=pointer]:
+            - /url: /apps/utm-dashboard
+            - img [ref=e72] [cursor=pointer]
+            - generic [ref=e76] [cursor=pointer]: Campaign Links
+          - link "QR Code Maker" [ref=e78] [cursor=pointer]:
+            - /url: /apps/utm-qr
+            - img [ref=e79] [cursor=pointer]
+            - generic [ref=e82] [cursor=pointer]: QR Code Maker
+          - link "Staff Referral Codes" [ref=e84] [cursor=pointer]:
+            - /url: /apps/referral-qr
+            - img [ref=e85] [cursor=pointer]
+            - generic [ref=e91] [cursor=pointer]: Staff Referral Codes
+          - link "Review Request Links" [ref=e93] [cursor=pointer]:
+            - /url: /apps/review-link
+            - img [ref=e94] [cursor=pointer]
+            - generic [ref=e100] [cursor=pointer]: Review Request Links
+      - generic [ref=e101]:
+        - heading "Customer Management" [level=3] [ref=e103]
+        - generic [ref=e104]:
+          - link "Review Responses" [ref=e106] [cursor=pointer]:
+            - /url: /apps/review-composer
+            - img [ref=e107] [cursor=pointer]
+            - generic [ref=e109] [cursor=pointer]: Review Responses
+          - link "Customer Analysis" [ref=e111] [cursor=pointer]:
+            - /url: /apps/rfm-crm
+            - img [ref=e112] [cursor=pointer]
+            - generic [ref=e117] [cursor=pointer]: Customer Analysis
+          - link "Appointment Reminders" [ref=e119] [cursor=pointer]:
+            - /url: /apps/noshow-shield
+            - img [ref=e120] [cursor=pointer]
+            - generic [ref=e122] [cursor=pointer]: Appointment Reminders
+          - link "Service Suggestions" [ref=e124] [cursor=pointer]:
+            - /url: /apps/addon-recommender
+            - img [ref=e125] [cursor=pointer]
+            - generic [ref=e126] [cursor=pointer]: Service Suggestions
+      - generic [ref=e127]:
+        - heading "Search Performance" [level=3] [ref=e129]
+        - generic [ref=e130]:
+          - link "Search Performance" [ref=e132] [cursor=pointer]:
+            - /url: /apps/gsc-ctr-miner
+            - img [ref=e133] [cursor=pointer]
+            - generic [ref=e135] [cursor=pointer]: Search Performance
+          - link "Search Rankings" [ref=e137] [cursor=pointer]:
+            - /url: /apps/rank-grid
+            - img [ref=e138] [cursor=pointer]
+            - generic [ref=e141] [cursor=pointer]: Search Rankings
+          - link "Ranking Monitor" [ref=e143] [cursor=pointer]:
+            - /url: /apps/rankgrid-watcher
+            - img [ref=e144] [cursor=pointer]
+            - generic [ref=e147] [cursor=pointer]: Ranking Monitor
+          - link "Service Profits" [ref=e149] [cursor=pointer]:
+            - /url: /apps/slot-yield
+            - img [ref=e150] [cursor=pointer]
+            - generic [ref=e153] [cursor=pointer]: Service Profits
+          - link "Busy Times Predictor" [ref=e155] [cursor=pointer]:
+            - /url: /apps/queuetime
+            - img [ref=e156] [cursor=pointer]
+            - generic [ref=e159] [cursor=pointer]: Busy Times Predictor
+      - generic [ref=e160]:
+        - heading "Local Partnerships" [level=3] [ref=e162]
+        - generic [ref=e163]:
+          - link "Partner Finder" [ref=e165] [cursor=pointer]:
+            - /url: /apps/link-prospect-kit
+            - img [ref=e166] [cursor=pointer]
+            - generic [ref=e169] [cursor=pointer]: Partner Finder
+          - link "Partnership Map" [ref=e171] [cursor=pointer]:
+            - /url: /apps/link-map
+            - img [ref=e172] [cursor=pointer]
+            - generic [ref=e175] [cursor=pointer]: Partnership Map
+      - generic [ref=e176]:
+        - heading "Website Optimization" [level=3] [ref=e178]
+        - generic [ref=e179]:
+          - link "Website Guide" [ref=e181] [cursor=pointer]:
+            - /url: /apps/seo-brief
+            - img [ref=e182] [cursor=pointer]
+            - generic [ref=e185] [cursor=pointer]: Website Guide
+          - link "Page Titles & Descriptions" [ref=e187] [cursor=pointer]:
+            - /url: /apps/meta-planner
+            - img [ref=e188] [cursor=pointer]
+            - generic [ref=e191] [cursor=pointer]: Page Titles & Descriptions
+          - link "Business Listings Check" [ref=e193] [cursor=pointer]:
+            - /url: /apps/citation-tracker
+            - img [ref=e194] [cursor=pointer]
+            - generic [ref=e200] [cursor=pointer]: Business Listings Check
+      - generic [ref=e201]:
+        - heading "Support" [level=3] [ref=e203]
+        - generic [ref=e204]:
+          - link "Status" [ref=e206] [cursor=pointer]:
+            - /url: /status
+            - img [ref=e207] [cursor=pointer]
+            - generic [ref=e209] [cursor=pointer]: Status
+          - link "Trial Guide" [ref=e211] [cursor=pointer]:
+            - /url: /guide/trial
+            - img [ref=e212] [cursor=pointer]
+            - generic [ref=e215] [cursor=pointer]: Trial Guide
+  - generic [ref=e216]:
+    - banner [ref=e217]:
+      - generic [ref=e218]:
+        - link "Prairie SignalBelmont SEO LabSEO Lab" [ref=e219] [cursor=pointer]:
+          - /url: /
+          - img "Prairie Signal" [ref=e220] [cursor=pointer]
+          - generic [ref=e221] [cursor=pointer]: Belmont SEO Lab
+          - generic [ref=e222] [cursor=pointer]: SEO Lab
+        - generic [ref=e223]:
+          - generic [ref=e224]:
+            - link "Call for assistance" [ref=e225] [cursor=pointer]:
+              - /url: tel:403-555-0123
+              - img [ref=e226] [cursor=pointer]
+              - generic [ref=e228] [cursor=pointer]: Assistance
+            - link "Find The Belmont Barbershop on map" [ref=e229] [cursor=pointer]:
+              - /url: https://maps.google.com/?q=Little+Bow+River,+High+River,+AB,+T1V+1M6
+              - img [ref=e230] [cursor=pointer]
+              - generic [ref=e233] [cursor=pointer]: Map
+          - generic [ref=e234]:
+            - img [ref=e235]
+            - textbox "Search tools" [ref=e238]
+          - generic [ref=e239]:
+            - button "Toggle Simple Mode" [ref=e240]: Advanced
+            - button "Toggle theme" [ref=e241]:
+              - img [ref=e242]
+    - main [ref=e244]:
+      - generic [ref=e245]:
+        - generic [ref=e246]:
+          - generic [ref=e248]:
+            - heading "AI Search Intelligence Studio" [level=1] [ref=e249]
+            - paragraph [ref=e250]: Analyze GSC results and export prioritized recommendations.
+          - generic [ref=e251]:
+            - generic [ref=e252]:
+              - img [ref=e253]
+              - text: "AI: Unavailable"
+            - generic [ref=e261]:
+              - button "Load Belmont Sample Data" [ref=e262]:
+                - img [ref=e263]
+                - text: Load Belmont Sample Data
+              - button "Import Your GSC CSV" [ref=e267]:
+                - img [ref=e268]
+                - text: Import Your GSC CSV
+              - button "Export Recommendations" [disabled] [ref=e272]:
+                - img [ref=e273]
+                - text: Export Recommendations
+        - generic [ref=e276]:
+          - generic [ref=e278]: Do this next
+          - list [ref=e280]:
+            - listitem [ref=e281]: Click “Load Belmont Sample Data” to see how it works.
+            - listitem [ref=e282]: Then click “Import Your GSC CSV” and upload your export.
+            - listitem [ref=e283]: Open Opportunities and note the top 3 pages by missed clicks.
+            - listitem [ref=e284]: Go to Page Experiments and copy a Title/Meta pair.
+            - listitem [ref=e285]: Paste into your CMS and track the uplift next week.
+        - generic [ref=e286]:
+          - generic [ref=e287]:
+            - generic [ref=e289]:
+              - img [ref=e290]
+              - text: Total Queries
+            - generic [ref=e293]:
+              - generic [ref=e294]: "0"
+              - generic [ref=e295]: Search terms analyzed
+          - generic [ref=e296]:
+            - generic [ref=e298]:
+              - img [ref=e299]
+              - text: AI Status
+            - generic [ref=e307]:
+              - generic [ref=e308]: Server-managed
+              - generic [ref=e309]: AI optimization
+          - generic [ref=e310]:
+            - generic [ref=e312]:
+              - img [ref=e313]
+              - text: Avg Position
+            - generic [ref=e316]:
+              - generic [ref=e317]: —
+              - generic [ref=e318]: Search ranking
+          - generic [ref=e319]:
+            - generic [ref=e321]:
+              - img [ref=e322]
+              - text: Opportunities
+            - generic [ref=e324]:
+              - generic [ref=e325]: "0"
+              - generic [ref=e326]: Optimization opportunities
+          - generic [ref=e327]:
+            - generic [ref=e329]:
+              - img [ref=e330]
+              - text: Potential Clicks
+            - generic [ref=e333]:
+              - generic [ref=e334]: —
+              - generic [ref=e335]: Missed clicks
+          - generic [ref=e336]:
+            - generic [ref=e338]:
+              - img [ref=e339]
+              - text: Campaigns
+            - generic [ref=e343]:
+              - generic [ref=e344]: "0"
+              - generic [ref=e345]: Active campaigns
+        - generic [ref=e346]:
+          - tablist [ref=e347]:
+            - tab "How To" [selected] [ref=e348]
+            - tab "Analytics" [ref=e349]
+            - generic [ref=e350]:
+              - tab "AI Optimize" [ref=e351]
+              - tab "Campaigns" [ref=e352]
+              - tab "Opportunities" [ref=e353]
+              - tab "Experiments" [ref=e354]
+              - tab "Templates" [ref=e355]
+              - tab "Competitors" [ref=e356]
+              - tab "Settings" [ref=e357]
+              - tab "Charts" [ref=e358]
+          - tabpanel "How To" [ref=e359]:
+            - generic [ref=e361]:
+              - generic [ref=e362]:
+                - generic [ref=e363]:
+                  - img [ref=e364]
+                  - text: How to Use the Search Results Analyzer
+                - generic [ref=e366]: Analyze Belmont's performance in Google searches and discover opportunities to get more customers online
+              - generic [ref=e368]:
+                - generic [ref=e369]:
+                  - heading "What This Tool Does" [level=3] [ref=e370]
+                  - paragraph [ref=e371]: This tool analyzes data from Google Search Console to show Belmont exactly how customers are finding the website online. It reveals which search terms people use to find barbers in Calgary and helps identify opportunities to improve Belmont's search rankings.
+                - generic [ref=e372]:
+                  - heading "Why Search Analysis Matters for Belmont" [level=3] [ref=e373]
+                  - paragraph [ref=e374]: "Understanding how customers search for Belmont's services is crucial because:"
+                  - list [ref=e375]:
+                    - listitem [ref=e376]: Shows which keywords customers actually use when looking for barbers in Calgary
+                    - listitem [ref=e377]: Reveals if Belmont appears when people search for "barber shop bridgeland"
+                    - listitem [ref=e378]: Identifies pages that could get more clicks with better titles and descriptions
+                    - listitem [ref=e379]: Helps Belmont compete better with other local barber shops
+                - generic [ref=e380]:
+                  - heading "Step-by-Step Instructions" [level=3] [ref=e381]
+                  - list [ref=e382]:
+                    - listitem [ref=e383]:
+                      - strong [ref=e384]: "Get your Google Search Console data:"
+                      - text: Export search results from Google Search Console (last 28-90 days) with columns for Query, Page, Clicks, Impressions, CTR, Position
+                    - listitem [ref=e385]:
+                      - strong [ref=e386]: "Import the CSV:"
+                      - text: Click "Import CSV" and upload your Google Search Console export file
+                    - listitem [ref=e387]:
+                      - strong [ref=e388]: "Adjust settings:"
+                      - text: Set minimum impressions and choose whether to include brand queries (searches for "Belmont")
+                    - listitem [ref=e389]:
+                      - strong [ref=e390]: "Review opportunities:"
+                      - text: Look at the "Opportunities" tab to see which pages could get more clicks
+                    - listitem [ref=e391]:
+                      - strong [ref=e392]: "Check page experiments:"
+                      - text: Go to "Page Experiments" to see suggested title and description improvements
+                    - listitem [ref=e393]:
+                      - strong [ref=e394]: "Copy and implement:"
+                      - text: Copy the suggested titles and descriptions, then update them on your website
+                - generic [ref=e395]:
+                  - heading "Best Practices for Belmont" [level=3] [ref=e396]
+                  - list [ref=e397]:
+                    - listitem [ref=e398]:
+                      - strong [ref=e399]: "Focus on local keywords:"
+                      - text: Pay special attention to searches containing "Calgary", "Bridgeland", or "Riverside"
+                    - listitem [ref=e400]:
+                      - strong [ref=e401]: "Improve low-CTR pages first:"
+                      - text: Start with pages that get many impressions but few clicks - these have the biggest improvement potential
+                    - listitem [ref=e402]:
+                      - strong [ref=e403]: "Use clear, benefit-focused titles:"
+                      - text: Instead of just "Barber Services", use "Professional Haircuts & Beard Trims in Bridgeland"
+                    - listitem [ref=e404]:
+                      - strong [ref=e405]: "Include your unique advantages:"
+                      - text: Mention "Veterans Discount", "Groomsmen Party Packages", or "Hot Towel Shaves" in titles and descriptions
+                    - listitem [ref=e406]:
+                      - strong [ref=e407]: "Test and measure:"
+                      - text: After making changes, wait 2-4 weeks and check if your click-through rates improve
+                - generic [ref=e408]:
+                  - heading "Quick Tips" [level=3] [ref=e409]
+                  - list [ref=e410]:
+                    - listitem [ref=e411]:
+                      - text: In Google Search Console, export
+                      - emphasis [ref=e412]: Search results
+                      - text: with columns Query, Page, Clicks, Impressions, CTR, Position (last 28–90 days).
+                    - listitem [ref=e413]: Import the CSV here. Adjust minimum impressions and whether to include brand queries.
+                    - listitem [ref=e414]:
+                      - text: Review
+                      - strong [ref=e415]: Underperforming Pages
+                      - text: ; the tool highlights potential extra clicks if your CTR matched a realistic benchmark at your average position.
+                    - listitem [ref=e416]:
+                      - text: Copy a proposed
+                      - strong [ref=e417]: Title/Meta
+                      - text: pair, tweak for truthfulness (prices, hours), and deploy in your CMS.
+                    - listitem [ref=e418]: Consider A/B testing title variations on high-traffic pages.
+    - generic [ref=e420]:
+      - link "Email support" [ref=e421] [cursor=pointer]:
+        - /url: mailto:info@thebelmontbarber.ca
+        - img "Prairie Signal" [ref=e422] [cursor=pointer]
+        - text: Need help? Email support
+      - generic [ref=e423]:
+        - button "Open AI diagnostics" [ref=e424]:
+          - img [ref=e425]
+        - link "Call for assistance" [ref=e433] [cursor=pointer]:
+          - /url: tel:403-555-0123
+          - img [ref=e434] [cursor=pointer]
+        - link "Find The Belmont Barbershop on map" [ref=e436] [cursor=pointer]:
+          - /url: https://maps.google.com/?q=Little+Bow+River,+High+River,+AB,+T1V+1M6
+          - img [ref=e437] [cursor=pointer]
+```
