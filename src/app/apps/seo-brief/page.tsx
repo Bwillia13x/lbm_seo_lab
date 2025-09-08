@@ -608,7 +608,7 @@ export default function SEOBriefSchemaBuilder() {
                     <ol className="list-decimal pl-5 space-y-2 text-muted-foreground">
                       <li>
                         <strong>Enter business information:</strong> Go to the
-                        "Business Inputs" tab and fill in Belmont's details
+                        "Business Inputs\" tab and fill in Belmont's details
                         (name, address, phone, services, hours)
                       </li>
                       <li>
@@ -627,7 +627,7 @@ export default function SEOBriefSchemaBuilder() {
                       </li>
                       <li>
                         <strong>Add structured data:</strong> Go to the
-                        "JSON-LD" tab to get special code that helps Google
+                        "JSON-LD\" tab to get special code that helps Google
                         understand Belmont's business information
                       </li>
                       <li>
@@ -649,7 +649,7 @@ export default function SEOBriefSchemaBuilder() {
                       </li>
                       <li>
                         <strong>Include location keywords:</strong> Add
-                        "Bridgeland", "Riverside", or "Calgary" to help local
+                        "Bridgeland", "Riverside", or "Calgary\" to help local
                         customers find Belmont
                       </li>
                       <li>

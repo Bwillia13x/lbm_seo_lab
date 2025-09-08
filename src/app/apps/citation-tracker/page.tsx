@@ -488,7 +488,7 @@ function CitationNAPTracker() {
                 </p>
                 <p>
                   <strong>Why they matter:</strong> When customers search for
-                  "barber shop near me" or "haircut Calgary", these listings
+                  "barber shop near me\" or "haircut Calgary", these listings
                   help them find and contact you. Google especially uses this
                   information to decide where your business appears in search
                   results.
@@ -711,7 +711,7 @@ function CitationNAPTracker() {
                   </li>
                   <li>
                     <strong>Include your neighborhood:</strong> Add "Bridgeland"
-                    or "Riverside" to your descriptions so local customers can
+                    or "Riverside\" to your descriptions so local customers can
                     find you more easily.
                   </li>
                   <li>
@@ -762,7 +762,7 @@ function CitationNAPTracker() {
                 </ul>
                 <p className="mt-2 text-xs text-muted-foreground">
                   <strong>Tip:</strong> Export your work every few weeks so you
-                  don't lose track of what you've completed.
+                  don't lose track of what you\'ve completed.
                 </p>
               </CardContent>
             </Card>
