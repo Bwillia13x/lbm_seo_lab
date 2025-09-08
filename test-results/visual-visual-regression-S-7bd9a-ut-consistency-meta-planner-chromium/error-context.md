@@ -1,0 +1,354 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - button "Toggle navigation menu" [ref=e3]:
+    - img [ref=e4]
+  - complementary [ref=e5]:
+    - generic [ref=e7]:
+      - img "Prairie Signal" [ref=e8]
+      - generic [ref=e9]:
+        - generic [ref=e10]: Belmont
+        - generic [ref=e11]: SEO Lab
+    - navigation "Primary Navigation" [ref=e12]:
+      - generic [ref=e14]:
+        - link "Home" [ref=e16] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e17] [cursor=pointer]: Home
+        - link "Dashboard" [ref=e19] [cursor=pointer]:
+          - /url: /apps/dashboard
+          - img [ref=e20] [cursor=pointer]
+          - generic [ref=e23] [cursor=pointer]: Dashboard
+        - link "Onboarding" [ref=e25] [cursor=pointer]:
+          - /url: /apps/onboarding
+          - img [ref=e26] [cursor=pointer]
+          - generic [ref=e33] [cursor=pointer]: Onboarding
+      - generic [ref=e34]:
+        - heading "Content Creation" [level=3] [ref=e36]
+        - generic [ref=e37]:
+          - link "Google Posts Writer" [ref=e39] [cursor=pointer]:
+            - /url: /apps/gbp-composer
+            - img [ref=e40] [cursor=pointer]
+            - generic [ref=e43] [cursor=pointer]: Google Posts Writer
+          - link "Social Media Studio" [ref=e45] [cursor=pointer]:
+            - /url: /apps/post-studio
+            - img [ref=e46] [cursor=pointer]
+            - generic [ref=e50] [cursor=pointer]: Social Media Studio
+          - link "Content Calendar" [ref=e52] [cursor=pointer]:
+            - /url: /apps/post-oracle
+            - img [ref=e53] [cursor=pointer]
+            - generic [ref=e55] [cursor=pointer]: Content Calendar
+          - link "Local Content Ideas" [ref=e57] [cursor=pointer]:
+            - /url: /apps/neighbor-signal
+            - img [ref=e58] [cursor=pointer]
+            - generic [ref=e65] [cursor=pointer]: Local Content Ideas
+      - generic [ref=e66]:
+        - heading "Marketing & Tracking" [level=3] [ref=e68]
+        - generic [ref=e69]:
+          - link "Campaign Links" [ref=e71] [cursor=pointer]:
+            - /url: /apps/utm-dashboard
+            - img [ref=e72] [cursor=pointer]
+            - generic [ref=e76] [cursor=pointer]: Campaign Links
+          - link "QR Code Maker" [ref=e78] [cursor=pointer]:
+            - /url: /apps/utm-qr
+            - img [ref=e79] [cursor=pointer]
+            - generic [ref=e82] [cursor=pointer]: QR Code Maker
+          - link "Staff Referral Codes" [ref=e84] [cursor=pointer]:
+            - /url: /apps/referral-qr
+            - img [ref=e85] [cursor=pointer]
+            - generic [ref=e91] [cursor=pointer]: Staff Referral Codes
+          - link "Review Request Links" [ref=e93] [cursor=pointer]:
+            - /url: /apps/review-link
+            - img [ref=e94] [cursor=pointer]
+            - generic [ref=e100] [cursor=pointer]: Review Request Links
+      - generic [ref=e101]:
+        - heading "Customer Management" [level=3] [ref=e103]
+        - generic [ref=e104]:
+          - link "Review Responses" [ref=e106] [cursor=pointer]:
+            - /url: /apps/review-composer
+            - img [ref=e107] [cursor=pointer]
+            - generic [ref=e109] [cursor=pointer]: Review Responses
+          - link "Customer Analysis" [ref=e111] [cursor=pointer]:
+            - /url: /apps/rfm-crm
+            - img [ref=e112] [cursor=pointer]
+            - generic [ref=e117] [cursor=pointer]: Customer Analysis
+          - link "Appointment Reminders" [ref=e119] [cursor=pointer]:
+            - /url: /apps/noshow-shield
+            - img [ref=e120] [cursor=pointer]
+            - generic [ref=e122] [cursor=pointer]: Appointment Reminders
+          - link "Service Suggestions" [ref=e124] [cursor=pointer]:
+            - /url: /apps/addon-recommender
+            - img [ref=e125] [cursor=pointer]
+            - generic [ref=e126] [cursor=pointer]: Service Suggestions
+      - generic [ref=e127]:
+        - heading "Search Performance" [level=3] [ref=e129]
+        - generic [ref=e130]:
+          - link "Search Performance" [ref=e132] [cursor=pointer]:
+            - /url: /apps/gsc-ctr-miner
+            - img [ref=e133] [cursor=pointer]
+            - generic [ref=e135] [cursor=pointer]: Search Performance
+          - link "Search Rankings" [ref=e137] [cursor=pointer]:
+            - /url: /apps/rank-grid
+            - img [ref=e138] [cursor=pointer]
+            - generic [ref=e141] [cursor=pointer]: Search Rankings
+          - link "Ranking Monitor" [ref=e143] [cursor=pointer]:
+            - /url: /apps/rankgrid-watcher
+            - img [ref=e144] [cursor=pointer]
+            - generic [ref=e147] [cursor=pointer]: Ranking Monitor
+          - link "Service Profits" [ref=e149] [cursor=pointer]:
+            - /url: /apps/slot-yield
+            - img [ref=e150] [cursor=pointer]
+            - generic [ref=e153] [cursor=pointer]: Service Profits
+          - link "Busy Times Predictor" [ref=e155] [cursor=pointer]:
+            - /url: /apps/queuetime
+            - img [ref=e156] [cursor=pointer]
+            - generic [ref=e159] [cursor=pointer]: Busy Times Predictor
+      - generic [ref=e160]:
+        - heading "Local Partnerships" [level=3] [ref=e162]
+        - generic [ref=e163]:
+          - link "Partner Finder" [ref=e165] [cursor=pointer]:
+            - /url: /apps/link-prospect-kit
+            - img [ref=e166] [cursor=pointer]
+            - generic [ref=e169] [cursor=pointer]: Partner Finder
+          - link "Partnership Map" [ref=e171] [cursor=pointer]:
+            - /url: /apps/link-map
+            - img [ref=e172] [cursor=pointer]
+            - generic [ref=e175] [cursor=pointer]: Partnership Map
+      - generic [ref=e176]:
+        - heading "Website Optimization" [level=3] [ref=e178]
+        - generic [ref=e179]:
+          - link "Website Guide" [ref=e181] [cursor=pointer]:
+            - /url: /apps/seo-brief
+            - img [ref=e182] [cursor=pointer]
+            - generic [ref=e185] [cursor=pointer]: Website Guide
+          - link "Page Titles & Descriptions" [ref=e187] [cursor=pointer]:
+            - /url: /apps/meta-planner
+            - img [ref=e188] [cursor=pointer]
+            - generic [ref=e191] [cursor=pointer]: Page Titles & Descriptions
+          - link "Business Listings Check" [ref=e193] [cursor=pointer]:
+            - /url: /apps/citation-tracker
+            - img [ref=e194] [cursor=pointer]
+            - generic [ref=e200] [cursor=pointer]: Business Listings Check
+      - generic [ref=e201]:
+        - heading "Support" [level=3] [ref=e203]
+        - generic [ref=e204]:
+          - link "Status" [ref=e206] [cursor=pointer]:
+            - /url: /status
+            - img [ref=e207] [cursor=pointer]
+            - generic [ref=e209] [cursor=pointer]: Status
+          - link "Trial Guide" [ref=e211] [cursor=pointer]:
+            - /url: /guide/trial
+            - img [ref=e212] [cursor=pointer]
+            - generic [ref=e215] [cursor=pointer]: Trial Guide
+  - generic [ref=e216]:
+    - banner [ref=e217]:
+      - generic [ref=e218]:
+        - link "Prairie SignalBelmont SEO LabSEO Lab" [ref=e219] [cursor=pointer]:
+          - /url: /
+          - img "Prairie Signal" [ref=e220] [cursor=pointer]
+          - generic [ref=e221] [cursor=pointer]: Belmont SEO Lab
+          - generic [ref=e222] [cursor=pointer]: SEO Lab
+        - generic [ref=e223]:
+          - generic [ref=e224]:
+            - link "Call for assistance" [ref=e225] [cursor=pointer]:
+              - /url: tel:403-555-0123
+              - img [ref=e226] [cursor=pointer]
+              - generic [ref=e228] [cursor=pointer]: Assistance
+            - link "Find The Belmont Barbershop on map" [ref=e229] [cursor=pointer]:
+              - /url: https://maps.google.com/?q=Little+Bow+River,+High+River,+AB,+T1V+1M6
+              - img [ref=e230] [cursor=pointer]
+              - generic [ref=e233] [cursor=pointer]: Map
+          - generic [ref=e234]:
+            - img [ref=e235]
+            - textbox "Search tools" [ref=e238]
+          - generic [ref=e239]:
+            - button "Toggle Simple Mode" [ref=e240]: Advanced
+            - button "Toggle theme" [ref=e241]:
+              - img [ref=e242]
+    - main [ref=e244]:
+      - generic [ref=e245]:
+        - generic [ref=e246]:
+          - generic [ref=e248]:
+            - heading "Page Titles & Descriptions" [level=1] [ref=e249]
+            - paragraph [ref=e250]: Manage A/B/C title and meta description experiments with CTR tracking.
+          - generic [ref=e251]:
+            - generic [ref=e252]:
+              - img [ref=e253]
+              - text: "AI: Unavailable"
+            - generic [ref=e261]:
+              - button "Load Sample Experiments" [ref=e262]:
+                - img [ref=e263]
+                - text: Load Sample Experiments
+              - button "Export Backlog" [ref=e267]:
+                - img [ref=e268]
+                - text: Export Backlog
+        - generic [ref=e271]:
+          - generic [ref=e272]:
+            - generic [ref=e274]: Total
+            - generic [ref=e275]:
+              - generic [ref=e276]: "0"
+              - generic [ref=e277]: Experiments
+          - generic [ref=e278]:
+            - generic [ref=e280]: Planned
+            - generic [ref=e281]:
+              - generic [ref=e282]: "0"
+              - generic [ref=e283]: Ready to ship
+          - generic [ref=e284]:
+            - generic [ref=e286]: Shipped
+            - generic [ref=e287]:
+              - generic [ref=e288]: "0"
+              - generic [ref=e289]: Running
+          - generic [ref=e290]:
+            - generic [ref=e292]: Review
+            - generic [ref=e293]:
+              - generic [ref=e294]: "0"
+              - generic [ref=e295]: Ready for analysis
+        - generic [ref=e296]:
+          - tablist [ref=e297]:
+            - tab "How To" [selected] [ref=e298]
+            - tab "Kanban Board" [ref=e299]
+            - tab "Add Experiment" [ref=e300]
+          - tabpanel "How To" [ref=e301]:
+            - generic [ref=e302]:
+              - generic [ref=e303]:
+                - generic [ref=e304]:
+                  - img [ref=e305]
+                  - text: How to Use the Page Titles & Descriptions Tool
+                - generic [ref=e307]: Learn how to optimize your page titles and meta descriptions for better search rankings and click-through rates
+              - generic [ref=e309]:
+                - generic [ref=e310]:
+                  - heading "What This Tool Does" [level=3] [ref=e311]
+                  - paragraph [ref=e312]: This tool helps you manage A/B/C experiments for page titles and meta descriptions to improve your search engine rankings and click-through rates (CTR). It provides a Kanban board to track experiments from planning to review, with built-in CTR tracking and performance analysis.
+                - generic [ref=e313]:
+                  - heading "Why Title & Meta Description Optimization Matters" [level=3] [ref=e314]
+                  - paragraph [ref=e315]: "Page titles and meta descriptions are the first things customers see when your business appears in Google search results:"
+                  - list [ref=e316]:
+                    - listitem [ref=e317]:
+                      - strong [ref=e318]: Titles appear as clickable headlines
+                      - text: in search results and influence click-through rates
+                    - listitem [ref=e319]:
+                      - strong [ref=e320]: Meta descriptions provide previews
+                      - text: of what customers will find on your page
+                    - listitem [ref=e321]:
+                      - strong [ref=e322]: Well-optimized titles can increase CTR by 20-50%
+                      - text: compared to generic titles
+                    - listitem [ref=e323]:
+                      - strong [ref=e324]: A/B/C testing helps you find
+                      - text: what works best for your specific audience
+                    - listitem [ref=e325]:
+                      - strong [ref=e326]: Data-driven improvements
+                      - text: ensure you're making changes that actually work
+                - generic [ref=e327]:
+                  - heading "Step-by-Step Instructions" [level=3] [ref=e328]
+                  - list [ref=e329]:
+                    - listitem [ref=e330]:
+                      - strong [ref=e331]: "Start with sample experiments:"
+                      - text: Click "Load Sample Experiments" to see examples of title and meta variations
+                    - listitem [ref=e332]:
+                      - strong [ref=e333]: "Review the Kanban board:"
+                      - text: Check the "Kanban Board" tab to see experiments organized by status (Planned, Shipped, Review)
+                    - listitem [ref=e334]:
+                      - strong [ref=e335]: "Create new experiments:"
+                      - text: Go to the "Add Experiment" tab to create new A/B/C tests for different pages
+                    - listitem [ref=e336]:
+                      - strong [ref=e337]: "Implement winning variations:"
+                      - text: Move experiments to "Shipped" status and update your website
+                    - listitem [ref=e338]:
+                      - strong [ref=e339]: "Track performance:"
+                      - text: After 2-4 weeks, add CTR delta data to see which variations performed best
+                    - listitem [ref=e340]:
+                      - strong [ref=e341]: "Move to review:"
+                      - text: When experiments are ready, move them to "Review" status and analyze results
+                    - listitem [ref=e342]:
+                      - strong [ref=e343]: "Export your backlog:"
+                      - text: Download CSV files of all experiments for record-keeping and analysis
+                - generic [ref=e344]:
+                  - heading "Best Practices for Belmont" [level=3] [ref=e345]
+                  - list [ref=e346]:
+                    - listitem [ref=e347]:
+                      - strong [ref=e348]: "Test one page at a time:"
+                      - text: Focus on high-traffic pages like homepage, services, and location pages
+                    - listitem [ref=e349]:
+                      - strong [ref=e350]: "Include location keywords:"
+                      - text: Add "Bridgeland", "Calgary", and "Riverside" to help local searches
+                    - listitem [ref=e351]:
+                      - strong [ref=e352]: "Highlight unique services:"
+                      - text: Mention "Veterans Discount", "Hot Towel Shaves", and "Kids Cuts"
+                    - listitem [ref=e353]:
+                      - strong [ref=e354]: "Create urgency:"
+                      - text: Use phrases like "Book Now", "Easy Online Booking" in meta descriptions
+                    - listitem [ref=e355]:
+                      - strong [ref=e356]: "Keep titles under 60 characters:"
+                      - text: Longer titles get truncated in search results
+                    - listitem [ref=e357]:
+                      - strong [ref=e358]: "Write compelling descriptions:"
+                      - text: Meta descriptions should be 150-160 characters for full display
+                    - listitem [ref=e359]:
+                      - strong [ref=e360]: "Test different approaches:"
+                      - text: Try benefit-focused vs. feature-focused vs. location-focused variations
+                - generic [ref=e361]:
+                  - heading "Understanding CTR Tracking" [level=3] [ref=e362]
+                  - list [ref=e363]:
+                    - listitem [ref=e364]:
+                      - strong [ref=e365]: "CTR Delta:"
+                      - text: The percentage change in click-through rate compared to the original
+                    - listitem [ref=e366]:
+                      - strong [ref=e367]: "Positive values:"
+                      - text: Variations that perform better than the original (+15% = 15% better)
+                    - listitem [ref=e368]:
+                      - strong [ref=e369]: "Negative values:"
+                      - text: Variations that perform worse than the original (-5% = 5% worse)
+                    - listitem [ref=e370]:
+                      - strong [ref=e371]: "Test duration:"
+                      - text: Give experiments 2-4 weeks to accumulate enough data for reliable results
+                    - listitem [ref=e372]:
+                      - strong [ref=e373]: "Statistical significance:"
+                      - text: Look for changes of ±5% or more to be confident in the results
+                - generic [ref=e374]:
+                  - heading "Experiment Workflow" [level=3] [ref=e375]
+                  - list [ref=e376]:
+                    - listitem [ref=e377]:
+                      - strong [ref=e378]: "Planned:"
+                      - text: Experiments ready to be implemented on your website
+                    - listitem [ref=e379]:
+                      - strong [ref=e380]: "Shipped:"
+                      - text: Variations are live and collecting performance data
+                    - listitem [ref=e381]:
+                      - strong [ref=e382]: "Review:"
+                      - text: Experiments complete and ready for performance analysis
+                    - listitem [ref=e383]:
+                      - strong [ref=e384]: "Notes field:"
+                      - text: Use this to record implementation details and observations
+                - generic [ref=e385]:
+                  - heading "Common Title Patterns to Test" [level=3] [ref=e386]
+                  - generic [ref=e387]:
+                    - paragraph [ref=e388]:
+                      - strong [ref=e389]: "Location-focused:"
+                      - text: "\"Barbershop in Bridgeland | The Belmont (Calgary)\""
+                    - paragraph [ref=e390]:
+                      - strong [ref=e391]: "Service-focused:"
+                      - text: "\"Men's Haircuts & Beard Trims | Belmont Barbershop\""
+                    - paragraph [ref=e392]:
+                      - strong [ref=e393]: "Benefit-focused:"
+                      - text: "\"Professional Cuts & Luxury Grooming in Calgary\""
+                    - paragraph [ref=e394]:
+                      - strong [ref=e395]: "Call-to-action:"
+                      - text: "\"Book Your Haircut Online | The Belmont Barbershop\""
+                    - paragraph [ref=e396]:
+                      - strong [ref=e397]: "Trust-focused:"
+                      - text: "\"Award-Winning Barbershop in Bridgeland Since 2019\""
+    - generic [ref=e399]:
+      - link "Email support" [ref=e400] [cursor=pointer]:
+        - /url: mailto:info@thebelmontbarber.ca
+        - img "Prairie Signal" [ref=e401] [cursor=pointer]
+        - text: Need help? Email support
+      - generic [ref=e402]:
+        - button "Open AI diagnostics" [ref=e403]:
+          - img [ref=e404]
+        - link "Call for assistance" [ref=e412] [cursor=pointer]:
+          - /url: tel:403-555-0123
+          - img [ref=e413] [cursor=pointer]
+        - link "Find The Belmont Barbershop on map" [ref=e415] [cursor=pointer]:
+          - /url: https://maps.google.com/?q=Little+Bow+River,+High+River,+AB,+T1V+1M6
+          - img [ref=e416] [cursor=pointer]
+```

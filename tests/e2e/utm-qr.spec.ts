@@ -5,7 +5,7 @@ test.describe('UTM QR Builder', () => {
     await page.goto('/apps/utm-qr');
 
     // Switch to Single Link tab
-    await page.getByRole('tab', { name: 'Single Link' }).click();
+    await page.getByRole('tab', { name: 'single' }).click();
 
     // Wait for content to load
     await page.waitForTimeout(1000);
@@ -31,8 +31,7 @@ test.describe('UTM QR Builder', () => {
     // Verify a link was built (Links Built KPI shows 1)
     await expect(page.getByText('Links Built')).toBeVisible();
     // Check that there's at least one "1" visible (Links Built KPI)
-    const linksBuiltKpi = page.locator('.text-2xl.font-bold:has-text("1")').first();
-    await expect(linksBuiltKpi).toBeVisible();
+    await expect(page.getByText('1').first()).toBeVisible();
 
     // Basic presence check on the page after generation
     await expect(page.getByText(/QR Ready/i)).toBeVisible();

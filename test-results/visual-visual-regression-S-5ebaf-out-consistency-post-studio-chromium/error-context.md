@@ -1,0 +1,388 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - button "Toggle navigation menu" [ref=e3]:
+    - img [ref=e4]
+  - complementary [ref=e5]:
+    - generic [ref=e7]:
+      - img "Prairie Signal" [ref=e8]
+      - generic [ref=e9]:
+        - generic [ref=e10]: Belmont
+        - generic [ref=e11]: SEO Lab
+    - navigation "Primary Navigation" [ref=e12]:
+      - generic [ref=e14]:
+        - link "Home" [ref=e16] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e17] [cursor=pointer]: Home
+        - link "Dashboard" [ref=e19] [cursor=pointer]:
+          - /url: /apps/dashboard
+          - img [ref=e20] [cursor=pointer]
+          - generic [ref=e23] [cursor=pointer]: Dashboard
+        - link "Onboarding" [ref=e25] [cursor=pointer]:
+          - /url: /apps/onboarding
+          - img [ref=e26] [cursor=pointer]
+          - generic [ref=e33] [cursor=pointer]: Onboarding
+      - generic [ref=e34]:
+        - heading "Content Creation" [level=3] [ref=e36]
+        - generic [ref=e37]:
+          - link "Google Posts Writer" [ref=e39] [cursor=pointer]:
+            - /url: /apps/gbp-composer
+            - img [ref=e40] [cursor=pointer]
+            - generic [ref=e43] [cursor=pointer]: Google Posts Writer
+          - link "Social Media Studio" [ref=e45] [cursor=pointer]:
+            - /url: /apps/post-studio
+            - img [ref=e46] [cursor=pointer]
+            - generic [ref=e50] [cursor=pointer]: Social Media Studio
+          - link "Content Calendar" [ref=e52] [cursor=pointer]:
+            - /url: /apps/post-oracle
+            - img [ref=e53] [cursor=pointer]
+            - generic [ref=e55] [cursor=pointer]: Content Calendar
+          - link "Local Content Ideas" [ref=e57] [cursor=pointer]:
+            - /url: /apps/neighbor-signal
+            - img [ref=e58] [cursor=pointer]
+            - generic [ref=e65] [cursor=pointer]: Local Content Ideas
+      - generic [ref=e66]:
+        - heading "Marketing & Tracking" [level=3] [ref=e68]
+        - generic [ref=e69]:
+          - link "Campaign Links" [ref=e71] [cursor=pointer]:
+            - /url: /apps/utm-dashboard
+            - img [ref=e72] [cursor=pointer]
+            - generic [ref=e76] [cursor=pointer]: Campaign Links
+          - link "QR Code Maker" [ref=e78] [cursor=pointer]:
+            - /url: /apps/utm-qr
+            - img [ref=e79] [cursor=pointer]
+            - generic [ref=e82] [cursor=pointer]: QR Code Maker
+          - link "Staff Referral Codes" [ref=e84] [cursor=pointer]:
+            - /url: /apps/referral-qr
+            - img [ref=e85] [cursor=pointer]
+            - generic [ref=e91] [cursor=pointer]: Staff Referral Codes
+          - link "Review Request Links" [ref=e93] [cursor=pointer]:
+            - /url: /apps/review-link
+            - img [ref=e94] [cursor=pointer]
+            - generic [ref=e100] [cursor=pointer]: Review Request Links
+      - generic [ref=e101]:
+        - heading "Customer Management" [level=3] [ref=e103]
+        - generic [ref=e104]:
+          - link "Review Responses" [ref=e106] [cursor=pointer]:
+            - /url: /apps/review-composer
+            - img [ref=e107] [cursor=pointer]
+            - generic [ref=e109] [cursor=pointer]: Review Responses
+          - link "Customer Analysis" [ref=e111] [cursor=pointer]:
+            - /url: /apps/rfm-crm
+            - img [ref=e112] [cursor=pointer]
+            - generic [ref=e117] [cursor=pointer]: Customer Analysis
+          - link "Appointment Reminders" [ref=e119] [cursor=pointer]:
+            - /url: /apps/noshow-shield
+            - img [ref=e120] [cursor=pointer]
+            - generic [ref=e122] [cursor=pointer]: Appointment Reminders
+          - link "Service Suggestions" [ref=e124] [cursor=pointer]:
+            - /url: /apps/addon-recommender
+            - img [ref=e125] [cursor=pointer]
+            - generic [ref=e126] [cursor=pointer]: Service Suggestions
+      - generic [ref=e127]:
+        - heading "Search Performance" [level=3] [ref=e129]
+        - generic [ref=e130]:
+          - link "Search Performance" [ref=e132] [cursor=pointer]:
+            - /url: /apps/gsc-ctr-miner
+            - img [ref=e133] [cursor=pointer]
+            - generic [ref=e135] [cursor=pointer]: Search Performance
+          - link "Search Rankings" [ref=e137] [cursor=pointer]:
+            - /url: /apps/rank-grid
+            - img [ref=e138] [cursor=pointer]
+            - generic [ref=e141] [cursor=pointer]: Search Rankings
+          - link "Ranking Monitor" [ref=e143] [cursor=pointer]:
+            - /url: /apps/rankgrid-watcher
+            - img [ref=e144] [cursor=pointer]
+            - generic [ref=e147] [cursor=pointer]: Ranking Monitor
+          - link "Service Profits" [ref=e149] [cursor=pointer]:
+            - /url: /apps/slot-yield
+            - img [ref=e150] [cursor=pointer]
+            - generic [ref=e153] [cursor=pointer]: Service Profits
+          - link "Busy Times Predictor" [ref=e155] [cursor=pointer]:
+            - /url: /apps/queuetime
+            - img [ref=e156] [cursor=pointer]
+            - generic [ref=e159] [cursor=pointer]: Busy Times Predictor
+      - generic [ref=e160]:
+        - heading "Local Partnerships" [level=3] [ref=e162]
+        - generic [ref=e163]:
+          - link "Partner Finder" [ref=e165] [cursor=pointer]:
+            - /url: /apps/link-prospect-kit
+            - img [ref=e166] [cursor=pointer]
+            - generic [ref=e169] [cursor=pointer]: Partner Finder
+          - link "Partnership Map" [ref=e171] [cursor=pointer]:
+            - /url: /apps/link-map
+            - img [ref=e172] [cursor=pointer]
+            - generic [ref=e175] [cursor=pointer]: Partnership Map
+      - generic [ref=e176]:
+        - heading "Website Optimization" [level=3] [ref=e178]
+        - generic [ref=e179]:
+          - link "Website Guide" [ref=e181] [cursor=pointer]:
+            - /url: /apps/seo-brief
+            - img [ref=e182] [cursor=pointer]
+            - generic [ref=e185] [cursor=pointer]: Website Guide
+          - link "Page Titles & Descriptions" [ref=e187] [cursor=pointer]:
+            - /url: /apps/meta-planner
+            - img [ref=e188] [cursor=pointer]
+            - generic [ref=e191] [cursor=pointer]: Page Titles & Descriptions
+          - link "Business Listings Check" [ref=e193] [cursor=pointer]:
+            - /url: /apps/citation-tracker
+            - img [ref=e194] [cursor=pointer]
+            - generic [ref=e200] [cursor=pointer]: Business Listings Check
+      - generic [ref=e201]:
+        - heading "Support" [level=3] [ref=e203]
+        - generic [ref=e204]:
+          - link "Status" [ref=e206] [cursor=pointer]:
+            - /url: /status
+            - img [ref=e207] [cursor=pointer]
+            - generic [ref=e209] [cursor=pointer]: Status
+          - link "Trial Guide" [ref=e211] [cursor=pointer]:
+            - /url: /guide/trial
+            - img [ref=e212] [cursor=pointer]
+            - generic [ref=e215] [cursor=pointer]: Trial Guide
+  - generic [ref=e216]:
+    - banner [ref=e217]:
+      - generic [ref=e218]:
+        - link "Prairie SignalBelmont SEO LabSEO Lab" [ref=e219] [cursor=pointer]:
+          - /url: /
+          - img "Prairie Signal" [ref=e220] [cursor=pointer]
+          - generic [ref=e221] [cursor=pointer]: Belmont SEO Lab
+          - generic [ref=e222] [cursor=pointer]: SEO Lab
+        - generic [ref=e223]:
+          - generic [ref=e224]:
+            - link "Call for assistance" [ref=e225] [cursor=pointer]:
+              - /url: tel:403-555-0123
+              - img [ref=e226] [cursor=pointer]
+              - generic [ref=e228] [cursor=pointer]: Assistance
+            - link "Find The Belmont Barbershop on map" [ref=e229] [cursor=pointer]:
+              - /url: https://maps.google.com/?q=Little+Bow+River,+High+River,+AB,+T1V+1M6
+              - img [ref=e230] [cursor=pointer]
+              - generic [ref=e233] [cursor=pointer]: Map
+          - generic [ref=e234]:
+            - img [ref=e235]
+            - textbox "Search tools" [ref=e238]
+          - generic [ref=e239]:
+            - button "Toggle Simple Mode" [ref=e240]: Advanced
+            - button "Toggle theme" [ref=e241]:
+              - img [ref=e242]
+    - main [ref=e244]:
+      - generic [ref=e245]:
+        - generic [ref=e246]:
+          - generic [ref=e248]:
+            - heading "AI Social Media Studio" [level=1] [ref=e249]
+            - paragraph [ref=e250]: Generate AI-powered multi-platform content with analytics, scheduling, and performance tracking.
+          - generic [ref=e251]:
+            - generic [ref=e252]:
+              - img [ref=e253]
+              - text: "AI: Unavailable"
+            - generic [ref=e261]:
+              - button "Load Belmont Sample" [ref=e262]:
+                - img [ref=e263]
+                - text: Load Belmont Sample
+              - button "Reset All" [ref=e266]:
+                - img [ref=e267]
+                - text: Reset All
+              - button "Generate Multi-Platform" [ref=e272]:
+                - img [ref=e273]
+                - text: Generate Multi-Platform
+              - button "Content Calendar" [ref=e280]:
+                - img [ref=e281]
+                - text: Content Calendar
+              - link "Book Now" [ref=e283] [cursor=pointer]:
+                - /url: https://www.airbnb.com/slink/ezl2mtlK
+        - generic [ref=e284]:
+          - generic [ref=e285]:
+            - generic [ref=e287]: Posts
+            - generic [ref=e288]:
+              - generic [ref=e289]: "0"
+              - generic [ref=e290]: Generated
+          - generic [ref=e291]:
+            - generic [ref=e293]: AI Generated
+            - generic [ref=e294]:
+              - generic [ref=e295]: "0"
+              - generic [ref=e296]: Smart content
+          - generic [ref=e297]:
+            - generic [ref=e299]: Platforms
+            - generic [ref=e300]:
+              - generic [ref=e301]: "3"
+              - generic [ref=e302]: Active
+          - generic [ref=e303]:
+            - generic [ref=e305]: Calendar
+            - generic [ref=e306]:
+              - generic [ref=e307]: "0"
+              - generic [ref=e308]: Weeks planned
+          - generic [ref=e309]:
+            - generic [ref=e311]: Engagement
+            - generic [ref=e312]:
+              - generic [ref=e313]: 0%
+              - generic [ref=e314]: Avg rate
+          - generic [ref=e315]:
+            - generic [ref=e317]: Status
+            - generic [ref=e318]:
+              - generic [ref=e319]: Server-managed
+              - generic [ref=e320]: OpenAI API
+        - generic [ref=e321]:
+          - tablist [ref=e322]:
+            - tab "How To" [selected] [ref=e323]
+            - tab "AI Generate" [ref=e324]
+            - tab "Business" [ref=e325]
+            - tab "Posts" [ref=e326]
+            - tab "Quality" [ref=e327]
+            - tab "A/B Test" [ref=e328]
+            - tab "Library" [ref=e329]
+            - tab "Scheduler" [ref=e330]
+            - tab "Analytics" [ref=e331]
+            - tab "Hashtags" [ref=e332]
+            - tab "Designer" [ref=e333]
+            - tab "Exports" [ref=e334]
+          - tabpanel "How To" [ref=e335]:
+            - generic [ref=e336]:
+              - generic [ref=e338]:
+                - img [ref=e339]
+                - text: How to Use the Social Media Studio
+              - generic [ref=e343]:
+                - generic [ref=e344]:
+                  - heading "🎨 What This Tool Does" [level=3] [ref=e345]
+                  - paragraph [ref=e346]: This tool helps you create professional social media content for The Belmont Barbershop. It generates ready-to-post content for both Google Business Profile (GBP) and Instagram, plus creates custom images you can use with your posts.
+                  - paragraph [ref=e347]: Think of it as your personal content creator that understands Belmont's brand voice and creates posts that attract customers to your Bridgeland barbershop.
+                - generic [ref=e348]:
+                  - heading "🌟 Why Social Media Matters for Belmont" [level=3] [ref=e349]
+                  - paragraph [ref=e350]: "In today's world, people discover local businesses through their phones and social media. Here's why this tool is important for Belmont:"
+                  - list [ref=e351]:
+                    - listitem [ref=e352]:
+                      - strong [ref=e353]: Google Business Profile posts
+                      - text: appear directly in Google Maps and search results when people look for barbers in Calgary
+                    - listitem [ref=e354]:
+                      - strong [ref=e355]: Instagram posts
+                      - text: showcase Belmont's work and personality to potential customers
+                    - listitem [ref=e356]:
+                      - strong [ref=e357]: Custom images
+                      - text: make your posts stand out and look professional
+                    - listitem [ref=e358]:
+                      - strong [ref=e359]: Consistent branding
+                      - text: helps customers recognize Belmont across all platforms
+                    - listitem [ref=e360]:
+                      - strong [ref=e361]: Booking links
+                      - text: in every post make it easy for customers to schedule appointments
+                - generic [ref=e362]:
+                  - heading "📋 Step-by-Step Instructions" [level=3] [ref=e363]
+                  - list [ref=e364]:
+                    - listitem [ref=e365]:
+                      - strong [ref=e366]: "Start Here:"
+                      - text: Click "Load Belmont Sample" to see example posts and get familiar with the tool. This loads Belmont's business information automatically.
+                    - listitem [ref=e367]:
+                      - strong [ref=e368]: "Customize Your Content:"
+                      - text: In the "Business" tab, you can adjust Belmont's details, add special offers, or change the tone of the posts.
+                    - listitem [ref=e369]:
+                      - strong [ref=e370]: "Generate Posts:"
+                      - text: Click "Generate Belmont Posts" to create 4 Google Business Profile posts and 4 Instagram captions. Each set includes different themes to keep your content variety interesting.
+                    - listitem [ref=e371]:
+                      - strong [ref=e372]: "Create Custom Images:"
+                      - text: Go to the "Designer" tab to make professional images. Upload a photo, customize colors and text, then export PNG files sized perfectly for Instagram or Google Business Profile.
+                    - listitem [ref=e373]:
+                      - strong [ref=e374]: "Copy and Export:"
+                      - text: Use the "Exports" tab to copy all the booking links at once or download a text file with all your generated content.
+                    - listitem [ref=e375]:
+                      - strong [ref=e376]: "Post on Social Media:"
+                      - text: Copy the generated posts and images, then publish them on Google Business Profile and Instagram. The booking links will automatically track where your customers come from.
+                - generic [ref=e377]:
+                  - heading "🎯 Best Practices for Belmont Posts" [level=3] [ref=e378]
+                  - list [ref=e380]:
+                    - listitem [ref=e381]:
+                      - generic [ref=e382]: 📅
+                      - generic [ref=e383]: Post regularly - aim for 2-3 posts per week to stay visible to customers
+                    - listitem [ref=e384]:
+                      - generic [ref=e385]: 🏷️
+                      - generic [ref=e386]: Use local keywords like "Bridgeland barber", "Calgary men's haircut", "Riverside grooming"
+                    - listitem [ref=e387]:
+                      - generic [ref=e388]: 💼
+                      - generic [ref=e389]: Always include Belmont's booking link so customers can easily schedule appointments
+                    - listitem [ref=e390]:
+                      - generic [ref=e391]: 📱
+                      - generic [ref=e392]: Add high-quality photos of Belmont's shop, your work, or happy customers
+                    - listitem [ref=e393]:
+                      - generic [ref=e394]: ⏰
+                      - generic [ref=e395]: Post during peak times when customers are likely searching for barber services
+                    - listitem [ref=e396]:
+                      - generic [ref=e397]: 🎨
+                      - generic [ref=e398]: Use Belmont's signature colors (navy blue, white, and gold accents) in your images
+                - generic [ref=e399]:
+                  - heading "🏷️ Understanding Post Types" [level=3] [ref=e400]
+                  - generic [ref=e401]:
+                    - generic [ref=e402]:
+                      - strong [ref=e403]: "Google Business Profile (GBP):"
+                      - paragraph [ref=e404]: Posts that appear in Google Maps and search results. Keep them helpful and local. No hashtags needed - focus on customer benefits and clear calls-to-action.
+                    - generic [ref=e405]:
+                      - strong [ref=e406]: "Instagram Posts:"
+                      - paragraph [ref=e407]: Visual content for Belmont's Instagram feed. Include relevant hashtags and more personality. These build Belmont's brand and attract the right customers.
+                - generic [ref=e408]:
+                  - heading "📊 Post Themes Explained" [level=3] [ref=e409]
+                  - generic [ref=e410]:
+                    - generic [ref=e411]:
+                      - generic [ref=e412]: Offer
+                      - generic [ref=e413]:
+                        - strong [ref=e414]: "Limited-Time Offers:"
+                        - generic [ref=e415]: Promote specials, weekday discounts, or seasonal deals to drive immediate bookings
+                    - generic [ref=e416]:
+                      - generic [ref=e417]: Style
+                      - generic [ref=e418]:
+                        - strong [ref=e419]: "Style Spotlights:"
+                        - generic [ref=e420]: Showcase specific services like skin fades, beard trims, or hot towel shaves
+                    - generic [ref=e421]:
+                      - generic [ref=e422]: Neigh
+                      - generic [ref=e423]:
+                        - strong [ref=e424]: "Neighborhood Content:"
+                        - generic [ref=e425]: Build community connections and mention local landmarks near Belmont
+                    - generic [ref=e426]:
+                      - generic [ref=e427]: Hours
+                      - generic [ref=e428]:
+                        - strong [ref=e429]: "Hours & Booking:"
+                        - generic [ref=e430]: Remind customers about Belmont's hours and encourage online booking
+                - generic [ref=e431]:
+                  - heading "🎨 Image Designer Tips" [level=3] [ref=e432]
+                  - paragraph [ref=e433]: "The image designer creates professional graphics sized perfectly for social media:"
+                  - generic [ref=e434]:
+                    - list [ref=e435]:
+                      - listitem [ref=e436]:
+                        - strong [ref=e437]: "Instagram Portrait:"
+                        - text: 1080x1350px - perfect for Instagram feed posts
+                      - listitem [ref=e438]:
+                        - strong [ref=e439]: "Instagram Square:"
+                        - text: 1080x1080px - great for Instagram Stories and highlights
+                      - listitem [ref=e440]:
+                        - strong [ref=e441]: "GBP Photo:"
+                        - text: 1200x900px - optimized for Google Business Profile posts
+                    - paragraph [ref=e442]: Upload Belmont photos, customize with your branding, and export ready-to-use images.
+                - generic [ref=e443]:
+                  - heading "💡 Pro Tips" [level=3] [ref=e444]
+                  - list [ref=e445]:
+                    - listitem [ref=e446]:
+                      - strong [ref=e447]: "Consistency is key:"
+                      - text: Use similar colors and fonts across all Belmont's social media
+                    - listitem [ref=e448]:
+                      - strong [ref=e449]: "Include a call-to-action:"
+                      - text: Every post should encourage customers to book or visit
+                    - listitem [ref=e450]:
+                      - strong [ref=e451]: "Track your results:"
+                      - text: Use the UTM links to see which posts drive the most bookings
+                    - listitem [ref=e452]:
+                      - strong [ref=e453]: "Engage with comments:"
+                      - text: Respond to customer questions and comments on your posts
+                    - listitem [ref=e454]:
+                      - strong [ref=e455]: "Quality over quantity:"
+                      - text: Better to have 5 great posts than 50 mediocre ones
+    - generic [ref=e457]:
+      - link "Email support" [ref=e458] [cursor=pointer]:
+        - /url: mailto:info@thebelmontbarber.ca
+        - img "Prairie Signal" [ref=e459] [cursor=pointer]
+        - text: Need help? Email support
+      - generic [ref=e460]:
+        - button "Open AI diagnostics" [ref=e461]:
+          - img [ref=e462]
+        - link "Call for assistance" [ref=e470] [cursor=pointer]:
+          - /url: tel:403-555-0123
+          - img [ref=e471] [cursor=pointer]
+        - link "Find The Belmont Barbershop on map" [ref=e473] [cursor=pointer]:
+          - /url: https://maps.google.com/?q=Little+Bow+River,+High+River,+AB,+T1V+1M6
+          - img [ref=e474] [cursor=pointer]
+```

@@ -1,0 +1,375 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - button "Toggle navigation menu" [ref=e3]:
+    - img [ref=e4]
+  - complementary [ref=e5]:
+    - generic [ref=e7]:
+      - img "Prairie Signal" [ref=e8]
+      - generic [ref=e9]:
+        - generic [ref=e10]: Belmont
+        - generic [ref=e11]: SEO Lab
+    - navigation "Primary Navigation" [ref=e12]:
+      - generic [ref=e14]:
+        - link "Home" [ref=e16] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e17] [cursor=pointer]: Home
+        - link "Dashboard" [ref=e19] [cursor=pointer]:
+          - /url: /apps/dashboard
+          - img [ref=e20] [cursor=pointer]
+          - generic [ref=e23] [cursor=pointer]: Dashboard
+        - link "Onboarding" [ref=e25] [cursor=pointer]:
+          - /url: /apps/onboarding
+          - img [ref=e26] [cursor=pointer]
+          - generic [ref=e33] [cursor=pointer]: Onboarding
+      - generic [ref=e34]:
+        - heading "Content Creation" [level=3] [ref=e36]
+        - generic [ref=e37]:
+          - link "Google Posts Writer" [ref=e39] [cursor=pointer]:
+            - /url: /apps/gbp-composer
+            - img [ref=e40] [cursor=pointer]
+            - generic [ref=e43] [cursor=pointer]: Google Posts Writer
+          - link "Social Media Studio" [ref=e45] [cursor=pointer]:
+            - /url: /apps/post-studio
+            - img [ref=e46] [cursor=pointer]
+            - generic [ref=e50] [cursor=pointer]: Social Media Studio
+          - link "Content Calendar" [ref=e52] [cursor=pointer]:
+            - /url: /apps/post-oracle
+            - img [ref=e53] [cursor=pointer]
+            - generic [ref=e55] [cursor=pointer]: Content Calendar
+          - link "Local Content Ideas" [ref=e57] [cursor=pointer]:
+            - /url: /apps/neighbor-signal
+            - img [ref=e58] [cursor=pointer]
+            - generic [ref=e65] [cursor=pointer]: Local Content Ideas
+      - generic [ref=e66]:
+        - heading "Marketing & Tracking" [level=3] [ref=e68]
+        - generic [ref=e69]:
+          - link "Campaign Links" [ref=e71] [cursor=pointer]:
+            - /url: /apps/utm-dashboard
+            - img [ref=e72] [cursor=pointer]
+            - generic [ref=e76] [cursor=pointer]: Campaign Links
+          - link "QR Code Maker" [ref=e78] [cursor=pointer]:
+            - /url: /apps/utm-qr
+            - img [ref=e79] [cursor=pointer]
+            - generic [ref=e82] [cursor=pointer]: QR Code Maker
+          - link "Staff Referral Codes" [ref=e84] [cursor=pointer]:
+            - /url: /apps/referral-qr
+            - img [ref=e85] [cursor=pointer]
+            - generic [ref=e91] [cursor=pointer]: Staff Referral Codes
+          - link "Review Request Links" [ref=e93] [cursor=pointer]:
+            - /url: /apps/review-link
+            - img [ref=e94] [cursor=pointer]
+            - generic [ref=e100] [cursor=pointer]: Review Request Links
+      - generic [ref=e101]:
+        - heading "Customer Management" [level=3] [ref=e103]
+        - generic [ref=e104]:
+          - link "Review Responses" [ref=e106] [cursor=pointer]:
+            - /url: /apps/review-composer
+            - img [ref=e107] [cursor=pointer]
+            - generic [ref=e109] [cursor=pointer]: Review Responses
+          - link "Customer Analysis" [ref=e111] [cursor=pointer]:
+            - /url: /apps/rfm-crm
+            - img [ref=e112] [cursor=pointer]
+            - generic [ref=e117] [cursor=pointer]: Customer Analysis
+          - link "Appointment Reminders" [ref=e119] [cursor=pointer]:
+            - /url: /apps/noshow-shield
+            - img [ref=e120] [cursor=pointer]
+            - generic [ref=e122] [cursor=pointer]: Appointment Reminders
+          - link "Service Suggestions" [ref=e124] [cursor=pointer]:
+            - /url: /apps/addon-recommender
+            - img [ref=e125] [cursor=pointer]
+            - generic [ref=e126] [cursor=pointer]: Service Suggestions
+      - generic [ref=e127]:
+        - heading "Search Performance" [level=3] [ref=e129]
+        - generic [ref=e130]:
+          - link "Search Performance" [ref=e132] [cursor=pointer]:
+            - /url: /apps/gsc-ctr-miner
+            - img [ref=e133] [cursor=pointer]
+            - generic [ref=e135] [cursor=pointer]: Search Performance
+          - link "Search Rankings" [ref=e137] [cursor=pointer]:
+            - /url: /apps/rank-grid
+            - img [ref=e138] [cursor=pointer]
+            - generic [ref=e141] [cursor=pointer]: Search Rankings
+          - link "Ranking Monitor" [ref=e143] [cursor=pointer]:
+            - /url: /apps/rankgrid-watcher
+            - img [ref=e144] [cursor=pointer]
+            - generic [ref=e147] [cursor=pointer]: Ranking Monitor
+          - link "Service Profits" [ref=e149] [cursor=pointer]:
+            - /url: /apps/slot-yield
+            - img [ref=e150] [cursor=pointer]
+            - generic [ref=e153] [cursor=pointer]: Service Profits
+          - link "Busy Times Predictor" [ref=e155] [cursor=pointer]:
+            - /url: /apps/queuetime
+            - img [ref=e156] [cursor=pointer]
+            - generic [ref=e159] [cursor=pointer]: Busy Times Predictor
+      - generic [ref=e160]:
+        - heading "Local Partnerships" [level=3] [ref=e162]
+        - generic [ref=e163]:
+          - link "Partner Finder" [ref=e165] [cursor=pointer]:
+            - /url: /apps/link-prospect-kit
+            - img [ref=e166] [cursor=pointer]
+            - generic [ref=e169] [cursor=pointer]: Partner Finder
+          - link "Partnership Map" [ref=e171] [cursor=pointer]:
+            - /url: /apps/link-map
+            - img [ref=e172] [cursor=pointer]
+            - generic [ref=e175] [cursor=pointer]: Partnership Map
+      - generic [ref=e176]:
+        - heading "Website Optimization" [level=3] [ref=e178]
+        - generic [ref=e179]:
+          - link "Website Guide" [ref=e181] [cursor=pointer]:
+            - /url: /apps/seo-brief
+            - img [ref=e182] [cursor=pointer]
+            - generic [ref=e185] [cursor=pointer]: Website Guide
+          - link "Page Titles & Descriptions" [ref=e187] [cursor=pointer]:
+            - /url: /apps/meta-planner
+            - img [ref=e188] [cursor=pointer]
+            - generic [ref=e191] [cursor=pointer]: Page Titles & Descriptions
+          - link "Business Listings Check" [ref=e193] [cursor=pointer]:
+            - /url: /apps/citation-tracker
+            - img [ref=e194] [cursor=pointer]
+            - generic [ref=e200] [cursor=pointer]: Business Listings Check
+      - generic [ref=e201]:
+        - heading "Support" [level=3] [ref=e203]
+        - generic [ref=e204]:
+          - link "Status" [ref=e206] [cursor=pointer]:
+            - /url: /status
+            - img [ref=e207] [cursor=pointer]
+            - generic [ref=e209] [cursor=pointer]: Status
+          - link "Trial Guide" [ref=e211] [cursor=pointer]:
+            - /url: /guide/trial
+            - img [ref=e212] [cursor=pointer]
+            - generic [ref=e215] [cursor=pointer]: Trial Guide
+  - generic [ref=e216]:
+    - banner [ref=e217]:
+      - generic [ref=e218]:
+        - link "Prairie SignalBelmont SEO LabSEO Lab" [ref=e219] [cursor=pointer]:
+          - /url: /
+          - img "Prairie Signal" [ref=e220] [cursor=pointer]
+          - generic [ref=e221] [cursor=pointer]: Belmont SEO Lab
+          - generic [ref=e222] [cursor=pointer]: SEO Lab
+        - generic [ref=e223]:
+          - generic [ref=e224]:
+            - link "Call for assistance" [ref=e225] [cursor=pointer]:
+              - /url: tel:403-555-0123
+              - img [ref=e226] [cursor=pointer]
+              - generic [ref=e228] [cursor=pointer]: Assistance
+            - link "Find The Belmont Barbershop on map" [ref=e229] [cursor=pointer]:
+              - /url: https://maps.google.com/?q=Little+Bow+River,+High+River,+AB,+T1V+1M6
+              - img [ref=e230] [cursor=pointer]
+              - generic [ref=e233] [cursor=pointer]: Map
+          - generic [ref=e234]:
+            - img [ref=e235]
+            - textbox "Search tools" [ref=e238]
+          - generic [ref=e239]:
+            - button "Toggle Simple Mode" [ref=e240]: Advanced
+            - button "Toggle theme" [ref=e241]:
+              - img [ref=e242]
+    - main [ref=e244]:
+      - generic [ref=e245]:
+        - generic [ref=e246]:
+          - generic [ref=e248]:
+            - heading "Review Request Links" [level=1] [ref=e249]
+            - paragraph [ref=e250]: "Create Google/Apple review links, copy CASL-compliant email/SMS, and print QR cards. (Optional: connect AI for optimization)"
+          - generic [ref=e251]:
+            - generic [ref=e252]:
+              - img [ref=e253]
+              - text: "AI: Unavailable"
+            - generic [ref=e261]:
+              - button "AI Optimize (optional)" [ref=e262]:
+                - img [ref=e263]
+                - text: AI Optimize (optional)
+              - button "Analytics" [disabled] [ref=e271]:
+                - img [ref=e272]
+                - text: Analytics
+              - button "Batch Generate" [ref=e274]:
+                - img [ref=e275]
+                - text: Batch Generate
+              - button "Export Report" [disabled] [ref=e279]:
+                - img [ref=e280]
+                - text: Export Report
+        - generic [ref=e285]:
+          - generic [ref=e286]:
+            - generic [ref=e287]:
+              - img [ref=e288]
+              - text: What this tool does
+            - generic [ref=e290]: Make it easy for customers to leave a review and help Belmont keep a 5‑star reputation.
+          - generic [ref=e291]:
+            - text: "- Creates one‑click links to your Google and Apple review pages"
+            - text: "- Generates ready‑to‑send Email and SMS messages (CASL‑friendly)"
+            - text: "- Prints QR codes you can place at the counter"
+        - generic [ref=e292]:
+          - generic [ref=e294]: Do this next
+          - list [ref=e296]:
+            - listitem [ref=e297]: Enter or confirm your Google and Apple review links.
+            - listitem [ref=e298]: Copy the Email and SMS from the Compose tab.
+            - listitem [ref=e299]: Ask permission, then send one message to a recent client.
+            - listitem [ref=e300]: Log consent in the Consent Log (optional, recommended).
+            - listitem [ref=e301]: Print a counter card with the QR in the QR & Cards tab.
+        - generic [ref=e302]:
+          - generic [ref=e303]:
+            - generic [ref=e305]:
+              - img [ref=e306]
+              - text: Review Requests
+            - generic [ref=e309]:
+              - generic [ref=e310]: "0"
+              - generic [ref=e311]: Active campaigns
+          - generic [ref=e312]:
+            - generic [ref=e314]:
+              - img [ref=e315]
+              - text: AI Status
+            - generic [ref=e323]:
+              - generic [ref=e324]: Server-managed
+              - generic [ref=e325]: Optimization
+          - generic [ref=e326]:
+            - generic [ref=e328]:
+              - img [ref=e329]
+              - text: Conversion Rate
+            - generic [ref=e333]:
+              - generic [ref=e334]: —
+              - generic [ref=e335]: Requests to reviews
+          - generic [ref=e336]:
+            - generic [ref=e338]:
+              - img [ref=e339]
+              - text: Avg Rating
+            - generic [ref=e341]:
+              - generic [ref=e342]: —
+              - generic [ref=e343]: Review quality
+          - generic [ref=e344]:
+            - generic [ref=e346]:
+              - img [ref=e347]
+              - text: Templates
+            - generic [ref=e349]:
+              - generic [ref=e350]: "1"
+              - generic [ref=e351]: Saved designs
+          - generic [ref=e352]:
+            - generic [ref=e354]:
+              - img [ref=e355]
+              - text: Compliance
+            - generic [ref=e358]:
+              - generic [ref=e359]: CASL Ready
+              - generic [ref=e360]: Legal compliance
+        - generic [ref=e361]:
+          - tablist [ref=e362]:
+            - tab "How To" [selected] [ref=e363]
+            - tab "Compose" [ref=e364]
+            - generic [ref=e365]:
+              - tab "AI Optimize" [ref=e366]
+              - tab "Templates" [ref=e367]
+              - tab "Campaigns" [ref=e368]
+              - tab "Analytics" [ref=e369]
+              - tab "QR & Cards" [ref=e370]
+              - tab "Compliance" [ref=e371]
+          - tabpanel "How To" [ref=e372]:
+            - generic [ref=e374]:
+              - generic [ref=e375]:
+                - generic [ref=e376]:
+                  - img [ref=e377]
+                  - text: How to Use the Review Request System
+                - generic [ref=e379]: Create professional review requests that follow Canadian privacy laws and get more customer reviews for Belmont
+              - generic [ref=e381]:
+                - generic [ref=e382]:
+                  - heading "What This Tool Does" [level=3] [ref=e383]
+                  - paragraph [ref=e384]: This tool helps Belmont ask customers for reviews in a professional, legal way. It creates special links that customers can click to leave reviews on Google Maps and Apple Maps. Everything is set up to follow Canadian privacy laws (CASL) so Belmont stays compliant.
+                - generic [ref=e385]:
+                  - heading "Why This Matters for Belmont" [level=3] [ref=e386]
+                  - paragraph [ref=e387]: "Customer reviews are incredibly important for Belmont's success. More reviews mean:"
+                  - list [ref=e388]:
+                    - listitem [ref=e389]: More customers find Belmont when searching for barbers in Calgary
+                    - listitem [ref=e390]: Google shows Belmont higher in search results
+                    - listitem [ref=e391]: New customers trust Belmont more when they see positive reviews
+                    - listitem [ref=e392]: Belmont builds a stronger reputation in the Bridgeland community
+                    - listitem [ref=e393]: Reviews help potential customers choose Belmont over competitors
+                - generic [ref=e394]:
+                  - heading "How to Request Reviews the Right Way" [level=3] [ref=e395]
+                  - generic [ref=e396]:
+                    - generic [ref=e397]:
+                      - generic [ref=e398]: "1"
+                      - generic [ref=e399]:
+                        - paragraph [ref=e400]: Choose Your Communication Method
+                        - paragraph [ref=e401]: Decide if you want to send review requests by email, text message, or both. The tool creates ready-to-use templates for each method.
+                    - generic [ref=e402]:
+                      - generic [ref=e403]: "2"
+                      - generic [ref=e404]:
+                        - paragraph [ref=e405]: Customize the Business Information
+                        - paragraph [ref=e406]: The tool is pre-filled with Belmont's information (address, phone, etc.), but you can adjust the wording or add personal touches for each customer.
+                    - generic [ref=e407]:
+                      - generic [ref=e408]: "3"
+                      - generic [ref=e409]:
+                        - paragraph [ref=e410]: Generate Review Links
+                        - paragraph [ref=e411]: Click the buttons to create unique links for Google and Apple Maps reviews. These links take customers directly to the review page for Belmont.
+                    - generic [ref=e412]:
+                      - generic [ref=e413]: "4"
+                      - generic [ref=e414]:
+                        - paragraph [ref=e415]: Create Professional Messages
+                        - paragraph [ref=e416]: Use the pre-written templates to create personalized messages. All templates include the legally required "STOP" option for customers who don't want to receive messages.
+                    - generic [ref=e417]:
+                      - generic [ref=e418]: "5"
+                      - generic [ref=e419]:
+                        - paragraph [ref=e420]: Track Your Consent
+                        - paragraph [ref=e421]: Log when and how you contacted each customer. This helps Belmont stay compliant with Canadian privacy laws and shows you followed the rules.
+                    - generic [ref=e422]:
+                      - generic [ref=e423]: "6"
+                      - generic [ref=e424]:
+                        - paragraph [ref=e425]: Send and Follow Up
+                        - paragraph [ref=e426]: Send your review requests and follow up politely if needed. Always respect customers who don't want to be contacted again.
+                - generic [ref=e427]:
+                  - heading "Legal Compliance (Very Important)" [level=3] [ref=e428]
+                  - generic [ref=e430]:
+                    - img [ref=e431]
+                    - generic [ref=e434]:
+                      - paragraph [ref=e435]: CASL Compliance Requirements
+                      - list [ref=e436]:
+                        - listitem [ref=e437]: • Always include a way for customers to unsubscribe ("STOP")
+                        - listitem [ref=e438]: • Get permission before sending marketing messages
+                        - listitem [ref=e439]: • Keep records of when and how you contacted customers
+                        - listitem [ref=e440]: • Respect customers who ask not to be contacted
+                        - listitem [ref=e441]: • Use Belmont's official contact information
+                - generic [ref=e442]:
+                  - heading "Tips for Belmont" [level=3] [ref=e443]
+                  - list [ref=e445]:
+                    - listitem [ref=e446]:
+                      - generic [ref=e447]: 💡
+                      - generic [ref=e448]: Send review requests within 24 hours of the customer's visit while the experience is fresh
+                    - listitem [ref=e449]:
+                      - generic [ref=e450]: 🎯
+                      - generic [ref=e451]: Personalize messages with the customer's name and specific service they received
+                    - listitem [ref=e452]:
+                      - generic [ref=e453]: 📱
+                      - generic [ref=e454]: Test your review links by clicking them yourself first
+                    - listitem [ref=e455]:
+                      - generic [ref=e456]: 📊
+                      - generic [ref=e457]: Track which communication method gets the most reviews (email vs text)
+                    - listitem [ref=e458]:
+                      - generic [ref=e459]: 🤝
+                      - generic [ref=e460]: Always thank customers for their reviews, even if they're not positive
+                - generic [ref=e461]:
+                  - heading "Best Times to Ask for Reviews" [level=3] [ref=e462]
+                  - generic [ref=e463]:
+                    - generic [ref=e464]:
+                      - heading "After Great Service" [level=4] [ref=e465]
+                      - paragraph [ref=e466]: Send requests after exceptional service experiences. Customers are more likely to leave positive reviews.
+                    - generic [ref=e467]:
+                      - heading "After Special Occasions" [level=4] [ref=e468]
+                      - paragraph [ref=e469]: Great timing after weddings, proms, or other special events where customers want to share their experience.
+                    - generic [ref=e470]:
+                      - heading "During Slow Periods" [level=4] [ref=e471]
+                      - paragraph [ref=e472]: Use quiet times to catch up on review requests for recent customers.
+                    - generic [ref=e473]:
+                      - heading "Before Competitor Visits" [level=4] [ref=e474]
+                      - paragraph [ref=e475]: Ask for reviews before customers might visit competitors to capture their positive experience.
+    - generic [ref=e477]:
+      - link "Email support" [ref=e478] [cursor=pointer]:
+        - /url: mailto:info@thebelmontbarber.ca
+        - img "Prairie Signal" [ref=e479] [cursor=pointer]
+        - text: Need help? Email support
+      - generic [ref=e480]:
+        - button "Open AI diagnostics" [ref=e481]:
+          - img [ref=e482]
+        - link "Call for assistance" [ref=e490] [cursor=pointer]:
+          - /url: tel:403-555-0123
+          - img [ref=e491] [cursor=pointer]
+        - link "Find The Belmont Barbershop on map" [ref=e493] [cursor=pointer]:
+          - /url: https://maps.google.com/?q=Little+Bow+River,+High+River,+AB,+T1V+1M6
+          - img [ref=e494] [cursor=pointer]
+```

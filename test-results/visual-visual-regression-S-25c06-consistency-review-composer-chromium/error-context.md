@@ -1,0 +1,422 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - button "Toggle navigation menu" [ref=e3]:
+    - img [ref=e4]
+  - complementary [ref=e5]:
+    - generic [ref=e7]:
+      - img "Prairie Signal" [ref=e8]
+      - generic [ref=e9]:
+        - generic [ref=e10]: Belmont
+        - generic [ref=e11]: SEO Lab
+    - navigation "Primary Navigation" [ref=e12]:
+      - generic [ref=e14]:
+        - link "Home" [ref=e16] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e17] [cursor=pointer]: Home
+        - link "Dashboard" [ref=e19] [cursor=pointer]:
+          - /url: /apps/dashboard
+          - img [ref=e20] [cursor=pointer]
+          - generic [ref=e23] [cursor=pointer]: Dashboard
+        - link "Onboarding" [ref=e25] [cursor=pointer]:
+          - /url: /apps/onboarding
+          - img [ref=e26] [cursor=pointer]
+          - generic [ref=e33] [cursor=pointer]: Onboarding
+      - generic [ref=e34]:
+        - heading "Content Creation" [level=3] [ref=e36]
+        - generic [ref=e37]:
+          - link "Google Posts Writer" [ref=e39] [cursor=pointer]:
+            - /url: /apps/gbp-composer
+            - img [ref=e40] [cursor=pointer]
+            - generic [ref=e43] [cursor=pointer]: Google Posts Writer
+          - link "Social Media Studio" [ref=e45] [cursor=pointer]:
+            - /url: /apps/post-studio
+            - img [ref=e46] [cursor=pointer]
+            - generic [ref=e50] [cursor=pointer]: Social Media Studio
+          - link "Content Calendar" [ref=e52] [cursor=pointer]:
+            - /url: /apps/post-oracle
+            - img [ref=e53] [cursor=pointer]
+            - generic [ref=e55] [cursor=pointer]: Content Calendar
+          - link "Local Content Ideas" [ref=e57] [cursor=pointer]:
+            - /url: /apps/neighbor-signal
+            - img [ref=e58] [cursor=pointer]
+            - generic [ref=e65] [cursor=pointer]: Local Content Ideas
+      - generic [ref=e66]:
+        - heading "Marketing & Tracking" [level=3] [ref=e68]
+        - generic [ref=e69]:
+          - link "Campaign Links" [ref=e71] [cursor=pointer]:
+            - /url: /apps/utm-dashboard
+            - img [ref=e72] [cursor=pointer]
+            - generic [ref=e76] [cursor=pointer]: Campaign Links
+          - link "QR Code Maker" [ref=e78] [cursor=pointer]:
+            - /url: /apps/utm-qr
+            - img [ref=e79] [cursor=pointer]
+            - generic [ref=e82] [cursor=pointer]: QR Code Maker
+          - link "Staff Referral Codes" [ref=e84] [cursor=pointer]:
+            - /url: /apps/referral-qr
+            - img [ref=e85] [cursor=pointer]
+            - generic [ref=e91] [cursor=pointer]: Staff Referral Codes
+          - link "Review Request Links" [ref=e93] [cursor=pointer]:
+            - /url: /apps/review-link
+            - img [ref=e94] [cursor=pointer]
+            - generic [ref=e100] [cursor=pointer]: Review Request Links
+      - generic [ref=e101]:
+        - heading "Customer Management" [level=3] [ref=e103]
+        - generic [ref=e104]:
+          - link "Review Responses" [ref=e106] [cursor=pointer]:
+            - /url: /apps/review-composer
+            - img [ref=e107] [cursor=pointer]
+            - generic [ref=e109] [cursor=pointer]: Review Responses
+          - link "Customer Analysis" [ref=e111] [cursor=pointer]:
+            - /url: /apps/rfm-crm
+            - img [ref=e112] [cursor=pointer]
+            - generic [ref=e117] [cursor=pointer]: Customer Analysis
+          - link "Appointment Reminders" [ref=e119] [cursor=pointer]:
+            - /url: /apps/noshow-shield
+            - img [ref=e120] [cursor=pointer]
+            - generic [ref=e122] [cursor=pointer]: Appointment Reminders
+          - link "Service Suggestions" [ref=e124] [cursor=pointer]:
+            - /url: /apps/addon-recommender
+            - img [ref=e125] [cursor=pointer]
+            - generic [ref=e126] [cursor=pointer]: Service Suggestions
+      - generic [ref=e127]:
+        - heading "Search Performance" [level=3] [ref=e129]
+        - generic [ref=e130]:
+          - link "Search Performance" [ref=e132] [cursor=pointer]:
+            - /url: /apps/gsc-ctr-miner
+            - img [ref=e133] [cursor=pointer]
+            - generic [ref=e135] [cursor=pointer]: Search Performance
+          - link "Search Rankings" [ref=e137] [cursor=pointer]:
+            - /url: /apps/rank-grid
+            - img [ref=e138] [cursor=pointer]
+            - generic [ref=e141] [cursor=pointer]: Search Rankings
+          - link "Ranking Monitor" [ref=e143] [cursor=pointer]:
+            - /url: /apps/rankgrid-watcher
+            - img [ref=e144] [cursor=pointer]
+            - generic [ref=e147] [cursor=pointer]: Ranking Monitor
+          - link "Service Profits" [ref=e149] [cursor=pointer]:
+            - /url: /apps/slot-yield
+            - img [ref=e150] [cursor=pointer]
+            - generic [ref=e153] [cursor=pointer]: Service Profits
+          - link "Busy Times Predictor" [ref=e155] [cursor=pointer]:
+            - /url: /apps/queuetime
+            - img [ref=e156] [cursor=pointer]
+            - generic [ref=e159] [cursor=pointer]: Busy Times Predictor
+      - generic [ref=e160]:
+        - heading "Local Partnerships" [level=3] [ref=e162]
+        - generic [ref=e163]:
+          - link "Partner Finder" [ref=e165] [cursor=pointer]:
+            - /url: /apps/link-prospect-kit
+            - img [ref=e166] [cursor=pointer]
+            - generic [ref=e169] [cursor=pointer]: Partner Finder
+          - link "Partnership Map" [ref=e171] [cursor=pointer]:
+            - /url: /apps/link-map
+            - img [ref=e172] [cursor=pointer]
+            - generic [ref=e175] [cursor=pointer]: Partnership Map
+      - generic [ref=e176]:
+        - heading "Website Optimization" [level=3] [ref=e178]
+        - generic [ref=e179]:
+          - link "Website Guide" [ref=e181] [cursor=pointer]:
+            - /url: /apps/seo-brief
+            - img [ref=e182] [cursor=pointer]
+            - generic [ref=e185] [cursor=pointer]: Website Guide
+          - link "Page Titles & Descriptions" [ref=e187] [cursor=pointer]:
+            - /url: /apps/meta-planner
+            - img [ref=e188] [cursor=pointer]
+            - generic [ref=e191] [cursor=pointer]: Page Titles & Descriptions
+          - link "Business Listings Check" [ref=e193] [cursor=pointer]:
+            - /url: /apps/citation-tracker
+            - img [ref=e194] [cursor=pointer]
+            - generic [ref=e200] [cursor=pointer]: Business Listings Check
+      - generic [ref=e201]:
+        - heading "Support" [level=3] [ref=e203]
+        - generic [ref=e204]:
+          - link "Status" [ref=e206] [cursor=pointer]:
+            - /url: /status
+            - img [ref=e207] [cursor=pointer]
+            - generic [ref=e209] [cursor=pointer]: Status
+          - link "Trial Guide" [ref=e211] [cursor=pointer]:
+            - /url: /guide/trial
+            - img [ref=e212] [cursor=pointer]
+            - generic [ref=e215] [cursor=pointer]: Trial Guide
+  - generic [ref=e216]:
+    - banner [ref=e217]:
+      - generic [ref=e218]:
+        - link "Prairie SignalBelmont SEO LabSEO Lab" [ref=e219] [cursor=pointer]:
+          - /url: /
+          - img "Prairie Signal" [ref=e220] [cursor=pointer]
+          - generic [ref=e221] [cursor=pointer]: Belmont SEO Lab
+          - generic [ref=e222] [cursor=pointer]: SEO Lab
+        - generic [ref=e223]:
+          - generic [ref=e224]:
+            - link "Call for assistance" [ref=e225] [cursor=pointer]:
+              - /url: tel:403-555-0123
+              - img [ref=e226] [cursor=pointer]
+              - generic [ref=e228] [cursor=pointer]: Assistance
+            - link "Find The Belmont Barbershop on map" [ref=e229] [cursor=pointer]:
+              - /url: https://maps.google.com/?q=Little+Bow+River,+High+River,+AB,+T1V+1M6
+              - img [ref=e230] [cursor=pointer]
+              - generic [ref=e233] [cursor=pointer]: Map
+          - generic [ref=e234]:
+            - img [ref=e235]
+            - textbox "Search tools" [ref=e238]
+          - generic [ref=e239]:
+            - button "Toggle Simple Mode" [ref=e240]: Advanced
+            - button "Toggle theme" [ref=e241]:
+              - img [ref=e242]
+    - main [ref=e244]:
+      - generic [ref=e245]:
+        - generic [ref=e246]:
+          - generic [ref=e248]:
+            - heading "AI Review Response Studio" [level=1] [ref=e249]
+            - paragraph [ref=e250]: AI-powered review management with intelligent responses, performance analytics, and automated optimization.
+          - generic [ref=e251]:
+            - generic [ref=e252]:
+              - img [ref=e253]
+              - text: "AI: Unavailable"
+            - generic [ref=e261]:
+              - button "Load Sample" [ref=e262]:
+                - img [ref=e263]
+                - text: Load Sample
+              - button "Import CSV" [ref=e266]
+              - button "Import CSV" [ref=e268]
+              - generic [ref=e269]:
+                - button "AI Generate" [disabled] [ref=e270]:
+                  - img [ref=e271]
+                  - text: AI Generate
+                - button "Analytics" [disabled] [ref=e279]:
+                  - img [ref=e280]
+                  - text: Analytics
+                - button "Batch Generate" [disabled] [ref=e282]:
+                  - img [ref=e283]
+                  - text: Batch Generate
+                - button "Export Report" [disabled] [ref=e287]:
+                  - img [ref=e288]
+                  - text: Export Report
+        - generic [ref=e293]:
+          - generic [ref=e294]:
+            - generic [ref=e296]:
+              - img [ref=e297]
+              - text: Total Reviews
+            - generic [ref=e299]:
+              - generic [ref=e300]: "0"
+              - generic [ref=e301]: All reviews
+          - generic [ref=e302]:
+            - generic [ref=e304]:
+              - img [ref=e305]
+              - text: Response Rate
+            - generic [ref=e308]:
+              - generic [ref=e309]: 0/0
+              - generic [ref=e310]: Reviews responded to
+          - generic [ref=e311]:
+            - generic [ref=e313]:
+              - img [ref=e314]
+              - text: AI Status
+            - generic [ref=e322]:
+              - generic [ref=e323]: Server-managed
+              - generic [ref=e324]: AI optimization
+          - generic [ref=e325]:
+            - generic [ref=e327]:
+              - img [ref=e328]
+              - text: Avg Rating
+            - generic [ref=e330]:
+              - generic [ref=e331]: —
+              - generic [ref=e332]: Review quality
+          - generic [ref=e333]:
+            - generic [ref=e335]:
+              - img [ref=e336]
+              - text: Templates
+            - generic [ref=e338]:
+              - generic [ref=e339]: "1"
+              - generic [ref=e340]: Saved templates
+          - generic [ref=e341]:
+            - generic [ref=e343]:
+              - img [ref=e344]
+              - text: Overdue
+            - generic [ref=e346]:
+              - generic [ref=e347]: "0"
+              - generic [ref=e348]: Need urgent attention
+        - generic [ref=e349]:
+          - tablist [ref=e350]:
+            - tab "How To" [selected] [ref=e351]
+            - tab "Review Queue" [ref=e352]
+            - tab "Reply Composer" [ref=e353]
+            - generic [ref=e354]:
+              - tab "AI Optimize" [ref=e355]
+              - tab "Templates" [ref=e356]
+              - tab "Campaigns" [ref=e357]
+              - tab "Analytics" [ref=e358]
+              - tab "Compliance" [ref=e359]
+          - tabpanel "How To" [ref=e360]:
+            - generic [ref=e361]:
+              - generic [ref=e362]:
+                - generic [ref=e363]:
+                  - img [ref=e364]
+                  - text: How to Use the Review Responses Tool
+                - generic [ref=e366]: Learn how to manage customer reviews and generate professional, CASL-compliant responses for Little Bow Meadows
+              - generic [ref=e368]:
+                - generic [ref=e369]:
+                  - heading "What This Tool Does" [level=3] [ref=e370]
+                  - paragraph [ref=e371]: This tool helps you manage customer reviews from Google, Yelp, and other platforms by generating professional, personalized responses. It analyzes review content to understand customer sentiment and provides reply templates that maintain Little Bow Meadows's brand voice while complying with Canadian privacy laws.
+                - generic [ref=e372]:
+                  - heading "Why Review Management Matters for Little Bow Meadows" [level=3] [ref=e373]
+                  - paragraph [ref=e374]: "Customer reviews directly impact Little Bow Meadows's online reputation and search rankings:"
+                  - list [ref=e375]:
+                    - listitem [ref=e376]:
+                      - strong [ref=e377]: Google Business Profile rankings
+                      - text: are heavily influenced by review volume and response rate
+                    - listitem [ref=e378]:
+                      - strong [ref=e379]: Responding to reviews
+                      - text: shows customers you care and can improve their future experiences
+                    - listitem [ref=e380]:
+                      - strong [ref=e381]: Professional responses
+                      - text: build trust and demonstrate Little Bow Meadows's commitment to service excellence
+                    - listitem [ref=e382]:
+                      - strong [ref=e383]: Review analytics
+                      - text: help identify service improvements and customer preferences
+                    - listitem [ref=e384]:
+                      - strong [ref=e385]: CASL compliance
+                      - text: ensures all responses follow Canadian privacy regulations
+                - generic [ref=e386]:
+                  - heading "Step-by-Step Instructions" [level=3] [ref=e387]
+                  - list [ref=e388]:
+                    - listitem [ref=e389]:
+                      - strong [ref=e390]: "Import your reviews:"
+                      - text: Upload a CSV file from your review management platform or use the sample data to see how it works
+                    - listitem [ref=e391]:
+                      - strong [ref=e392]: "Review the queue:"
+                      - text: Check the "Review Queue" tab to see all unreplied reviews, with overdue items highlighted
+                    - listitem [ref=e393]:
+                      - strong [ref=e394]: "Select a review to reply:"
+                      - text: Click the "Reply" button on any review to open the reply composer
+                    - listitem [ref=e395]:
+                      - strong [ref=e396]: "Review analysis:"
+                      - text: The tool automatically analyzes the review content and detects mentioned aspects (service, location, atmosphere, etc.)
+                    - listitem [ref=e397]:
+                      - strong [ref=e398]: "Choose reply tone:"
+                      - text: Select "Warm" or "Concise" tone for the reply drafts
+                    - listitem [ref=e399]:
+                      - strong [ref=e400]: "Generate reply options:"
+                      - text: The tool creates 3 personalized reply drafts based on the review rating and content
+                    - listitem [ref=e401]:
+                      - strong [ref=e402]: "Copy and customize:"
+                      - text: Copy a draft reply and make any personal touches before sending
+                    - listitem [ref=e403]:
+                      - strong [ref=e404]: "Mark as replied:"
+                      - text: After sending the reply, mark it as completed in the tool
+                    - listitem [ref=e405]:
+                      - strong [ref=e406]: "Export for records:"
+                      - text: Download CSV files of all reviews and responses for your records
+                - generic [ref=e407]:
+                  - heading "Best Practices for Review Responses" [level=3] [ref=e408]
+                  - list [ref=e409]:
+                    - listitem [ref=e410]:
+                      - strong [ref=e411]: "Respond within 24 hours:"
+                      - text: Quick responses show you value customer feedback
+                    - listitem [ref=e412]:
+                      - strong [ref=e413]: "Personalize responses:"
+                      - text: Use the customer's name and reference specific details from their review
+                    - listitem [ref=e414]:
+                      - strong [ref=e415]: "Maintain professionalism:"
+                      - text: Keep responses positive, helpful, and aligned with Little Bow Meadows's brand voice
+                    - listitem [ref=e416]:
+                      - strong [ref=e417]: "Address concerns privately:"
+                      - text: For negative reviews, offer to discuss issues offline via phone or email
+                    - listitem [ref=e418]:
+                      - strong [ref=e419]: "Highlight improvements:"
+                      - text: Show how you've addressed similar concerns in the past
+                    - listitem [ref=e420]:
+                      - strong [ref=e421]: "Include booking CTAs:"
+                      - text: For positive reviews, gently encourage future visits
+                    - listitem [ref=e422]:
+                      - strong [ref=e423]: "Stay CASL compliant:"
+                      - text: Avoid promotional content and respect privacy regulations
+                    - listitem [ref=e424]:
+                      - strong [ref=e425]: "Track response metrics:"
+                      - text: Monitor response time and customer satisfaction improvements
+                - generic [ref=e426]:
+                  - heading "Understanding Review Analysis" [level=3] [ref=e427]
+                  - list [ref=e428]:
+                    - listitem [ref=e429]:
+                      - strong [ref=e430]: "Sentiment analysis:"
+                      - text: Reviews are categorized as positive (4-5 stars), neutral (3 stars), or negative (1-2 stars)
+                    - listitem [ref=e431]:
+                      - strong [ref=e432]: "Aspect detection:"
+                      - text: The tool identifies what customers are talking about (service quality, location, atmosphere, wait times)
+                    - listitem [ref=e433]:
+                      - strong [ref=e434]: "Reply templates:"
+                      - text: Different templates are used based on review rating and detected aspects
+                    - listitem [ref=e435]:
+                      - strong [ref=e436]: "Overdue tracking:"
+                      - text: Reviews older than 72 hours are flagged as overdue for urgent attention
+                - generic [ref=e437]:
+                  - heading "CASL and Privacy Compliance" [level=3] [ref=e438]
+                  - list [ref=e439]:
+                    - listitem [ref=e440]:
+                      - strong [ref=e441]: "Keep responses informational:"
+                      - text: Focus on acknowledging feedback rather than selling services
+                    - listitem [ref=e442]:
+                      - strong [ref=e443]: "Avoid promotional content:"
+                      - text: Don't use reviews as an opportunity to advertise specials or services
+                    - listitem [ref=e444]:
+                      - strong [ref=e445]: "Don't collect contact info:"
+                      - text: Unless the customer specifically requests further contact
+                    - listitem [ref=e446]:
+                      - strong [ref=e447]: "Include opt-out language:"
+                      - text: If collecting any information, provide clear opt-out instructions
+                    - listitem [ref=e448]:
+                      - strong [ref=e449]: "Maintain professional boundaries:"
+                      - text: Keep responses business-focused and appropriate
+                - generic [ref=e450]:
+                  - heading "Data Format Requirements" [level=3] [ref=e451]
+                  - paragraph [ref=e452]: "Your CSV file should include these key columns (the tool will map common variations):"
+                  - list [ref=e453]:
+                    - listitem [ref=e454]:
+                      - strong [ref=e455]: "Date:"
+                      - text: When the review was posted (YYYY-MM-DD format)
+                    - listitem [ref=e456]:
+                      - strong [ref=e457]: "Rating:"
+                      - text: Star rating (1-5 scale)
+                    - listitem [ref=e458]:
+                      - strong [ref=e459]: "Author:"
+                      - text: Customer name or username
+                    - listitem [ref=e460]:
+                      - strong [ref=e461]: "Text:"
+                      - text: The full review content
+                    - listitem [ref=e462]:
+                      - strong [ref=e463]: "Platform:"
+                      - text: Where the review was posted (Google, Yelp, etc.)
+                - generic [ref=e464]:
+                  - heading "Response Time Guidelines" [level=3] [ref=e465]
+                  - list [ref=e466]:
+                    - listitem [ref=e467]:
+                      - strong [ref=e468]: "5-star reviews:"
+                      - text: Respond within 24 hours to maintain momentum
+                    - listitem [ref=e469]:
+                      - strong [ref=e470]: "4-star reviews:"
+                      - text: Respond within 24 hours, acknowledge positive aspects
+                    - listitem [ref=e471]:
+                      - strong [ref=e472]: "3-star reviews:"
+                      - text: Respond within 12 hours, thank them and note improvements
+                    - listitem [ref=e473]:
+                      - strong [ref=e474]: "1-2 star reviews:"
+                      - text: Respond within 2-4 hours, apologize and offer offline resolution
+                    - listitem [ref=e475]:
+                      - strong [ref=e476]: "Overdue reviews:"
+                      - text: Reviews over 72 hours old need immediate attention
+    - generic [ref=e478]:
+      - link "Email support" [ref=e479] [cursor=pointer]:
+        - /url: mailto:info@thebelmontbarber.ca
+        - img "Prairie Signal" [ref=e480] [cursor=pointer]
+        - text: Need help? Email support
+      - generic [ref=e481]:
+        - button "Open AI diagnostics" [ref=e482]:
+          - img [ref=e483]
+        - link "Call for assistance" [ref=e491] [cursor=pointer]:
+          - /url: tel:403-555-0123
+          - img [ref=e492] [cursor=pointer]
+        - link "Find The Belmont Barbershop on map" [ref=e494] [cursor=pointer]:
+          - /url: https://maps.google.com/?q=Little+Bow+River,+High+River,+AB,+T1V+1M6
+          - img [ref=e495] [cursor=pointer]
+```

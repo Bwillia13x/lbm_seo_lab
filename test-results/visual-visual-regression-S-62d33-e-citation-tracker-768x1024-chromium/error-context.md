@@ -1,0 +1,344 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - button "Toggle navigation menu" [ref=e3]:
+    - img [ref=e4]
+  - complementary [ref=e5]:
+    - generic [ref=e7]:
+      - img "Prairie Signal" [ref=e8]
+      - generic [ref=e9]:
+        - generic [ref=e10]: Belmont
+        - generic [ref=e11]: SEO Lab
+    - navigation "Primary Navigation" [ref=e12]:
+      - generic [ref=e14]:
+        - link "Home" [ref=e16] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e17] [cursor=pointer]: Home
+        - link "Dashboard" [ref=e19] [cursor=pointer]:
+          - /url: /apps/dashboard
+          - img [ref=e20] [cursor=pointer]
+          - generic [ref=e23] [cursor=pointer]: Dashboard
+        - link "Onboarding" [ref=e25] [cursor=pointer]:
+          - /url: /apps/onboarding
+          - img [ref=e26] [cursor=pointer]
+          - generic [ref=e33] [cursor=pointer]: Onboarding
+      - generic [ref=e34]:
+        - heading "Content Creation" [level=3] [ref=e36]
+        - generic [ref=e37]:
+          - link "Google Posts Writer" [ref=e39] [cursor=pointer]:
+            - /url: /apps/gbp-composer
+            - img [ref=e40] [cursor=pointer]
+            - generic [ref=e43] [cursor=pointer]: Google Posts Writer
+          - link "Social Media Studio" [ref=e45] [cursor=pointer]:
+            - /url: /apps/post-studio
+            - img [ref=e46] [cursor=pointer]
+            - generic [ref=e50] [cursor=pointer]: Social Media Studio
+          - link "Content Calendar" [ref=e52] [cursor=pointer]:
+            - /url: /apps/post-oracle
+            - img [ref=e53] [cursor=pointer]
+            - generic [ref=e55] [cursor=pointer]: Content Calendar
+          - link "Local Content Ideas" [ref=e57] [cursor=pointer]:
+            - /url: /apps/neighbor-signal
+            - img [ref=e58] [cursor=pointer]
+            - generic [ref=e65] [cursor=pointer]: Local Content Ideas
+      - generic [ref=e66]:
+        - heading "Marketing & Tracking" [level=3] [ref=e68]
+        - generic [ref=e69]:
+          - link "Campaign Links" [ref=e71] [cursor=pointer]:
+            - /url: /apps/utm-dashboard
+            - img [ref=e72] [cursor=pointer]
+            - generic [ref=e76] [cursor=pointer]: Campaign Links
+          - link "QR Code Maker" [ref=e78] [cursor=pointer]:
+            - /url: /apps/utm-qr
+            - img [ref=e79] [cursor=pointer]
+            - generic [ref=e82] [cursor=pointer]: QR Code Maker
+          - link "Staff Referral Codes" [ref=e84] [cursor=pointer]:
+            - /url: /apps/referral-qr
+            - img [ref=e85] [cursor=pointer]
+            - generic [ref=e91] [cursor=pointer]: Staff Referral Codes
+          - link "Review Request Links" [ref=e93] [cursor=pointer]:
+            - /url: /apps/review-link
+            - img [ref=e94] [cursor=pointer]
+            - generic [ref=e100] [cursor=pointer]: Review Request Links
+      - generic [ref=e101]:
+        - heading "Customer Management" [level=3] [ref=e103]
+        - generic [ref=e104]:
+          - link "Review Responses" [ref=e106] [cursor=pointer]:
+            - /url: /apps/review-composer
+            - img [ref=e107] [cursor=pointer]
+            - generic [ref=e109] [cursor=pointer]: Review Responses
+          - link "Customer Analysis" [ref=e111] [cursor=pointer]:
+            - /url: /apps/rfm-crm
+            - img [ref=e112] [cursor=pointer]
+            - generic [ref=e117] [cursor=pointer]: Customer Analysis
+          - link "Appointment Reminders" [ref=e119] [cursor=pointer]:
+            - /url: /apps/noshow-shield
+            - img [ref=e120] [cursor=pointer]
+            - generic [ref=e122] [cursor=pointer]: Appointment Reminders
+          - link "Service Suggestions" [ref=e124] [cursor=pointer]:
+            - /url: /apps/addon-recommender
+            - img [ref=e125] [cursor=pointer]
+            - generic [ref=e126] [cursor=pointer]: Service Suggestions
+      - generic [ref=e127]:
+        - heading "Search Performance" [level=3] [ref=e129]
+        - generic [ref=e130]:
+          - link "Search Performance" [ref=e132] [cursor=pointer]:
+            - /url: /apps/gsc-ctr-miner
+            - img [ref=e133] [cursor=pointer]
+            - generic [ref=e135] [cursor=pointer]: Search Performance
+          - link "Search Rankings" [ref=e137] [cursor=pointer]:
+            - /url: /apps/rank-grid
+            - img [ref=e138] [cursor=pointer]
+            - generic [ref=e141] [cursor=pointer]: Search Rankings
+          - link "Ranking Monitor" [ref=e143] [cursor=pointer]:
+            - /url: /apps/rankgrid-watcher
+            - img [ref=e144] [cursor=pointer]
+            - generic [ref=e147] [cursor=pointer]: Ranking Monitor
+          - link "Service Profits" [ref=e149] [cursor=pointer]:
+            - /url: /apps/slot-yield
+            - img [ref=e150] [cursor=pointer]
+            - generic [ref=e153] [cursor=pointer]: Service Profits
+          - link "Busy Times Predictor" [ref=e155] [cursor=pointer]:
+            - /url: /apps/queuetime
+            - img [ref=e156] [cursor=pointer]
+            - generic [ref=e159] [cursor=pointer]: Busy Times Predictor
+      - generic [ref=e160]:
+        - heading "Local Partnerships" [level=3] [ref=e162]
+        - generic [ref=e163]:
+          - link "Partner Finder" [ref=e165] [cursor=pointer]:
+            - /url: /apps/link-prospect-kit
+            - img [ref=e166] [cursor=pointer]
+            - generic [ref=e169] [cursor=pointer]: Partner Finder
+          - link "Partnership Map" [ref=e171] [cursor=pointer]:
+            - /url: /apps/link-map
+            - img [ref=e172] [cursor=pointer]
+            - generic [ref=e175] [cursor=pointer]: Partnership Map
+      - generic [ref=e176]:
+        - heading "Website Optimization" [level=3] [ref=e178]
+        - generic [ref=e179]:
+          - link "Website Guide" [ref=e181] [cursor=pointer]:
+            - /url: /apps/seo-brief
+            - img [ref=e182] [cursor=pointer]
+            - generic [ref=e185] [cursor=pointer]: Website Guide
+          - link "Page Titles & Descriptions" [ref=e187] [cursor=pointer]:
+            - /url: /apps/meta-planner
+            - img [ref=e188] [cursor=pointer]
+            - generic [ref=e191] [cursor=pointer]: Page Titles & Descriptions
+          - link "Business Listings Check" [ref=e193] [cursor=pointer]:
+            - /url: /apps/citation-tracker
+            - img [ref=e194] [cursor=pointer]
+            - generic [ref=e200] [cursor=pointer]: Business Listings Check
+      - generic [ref=e201]:
+        - heading "Support" [level=3] [ref=e203]
+        - generic [ref=e204]:
+          - link "Status" [ref=e206] [cursor=pointer]:
+            - /url: /status
+            - img [ref=e207] [cursor=pointer]
+            - generic [ref=e209] [cursor=pointer]: Status
+          - link "Trial Guide" [ref=e211] [cursor=pointer]:
+            - /url: /guide/trial
+            - img [ref=e212] [cursor=pointer]
+            - generic [ref=e215] [cursor=pointer]: Trial Guide
+  - generic [ref=e216]:
+    - banner [ref=e217]:
+      - generic [ref=e218]:
+        - link "Prairie SignalBelmont SEO LabSEO Lab" [ref=e219] [cursor=pointer]:
+          - /url: /
+          - img "Prairie Signal" [ref=e220] [cursor=pointer]
+          - generic [ref=e221] [cursor=pointer]: Belmont SEO Lab
+          - generic [ref=e222] [cursor=pointer]: SEO Lab
+        - generic [ref=e223]:
+          - generic [ref=e224]:
+            - link "Call for assistance" [ref=e225] [cursor=pointer]:
+              - /url: tel:403-555-0123
+              - img [ref=e226] [cursor=pointer]
+              - generic [ref=e228] [cursor=pointer]: Assistance
+            - link "Find The Belmont Barbershop on map" [ref=e229] [cursor=pointer]:
+              - /url: https://maps.google.com/?q=Little+Bow+River,+High+River,+AB,+T1V+1M6
+              - img [ref=e230] [cursor=pointer]
+              - generic [ref=e233] [cursor=pointer]: Map
+          - generic [ref=e234]:
+            - img [ref=e235]
+            - textbox "Search tools" [ref=e238]
+          - generic [ref=e239]:
+            - button "Toggle Simple Mode" [ref=e240]: Advanced
+            - button "Toggle theme" [ref=e241]:
+              - img [ref=e242]
+    - main [ref=e244]:
+      - generic [ref=e245]:
+        - generic [ref=e246]:
+          - generic [ref=e248]:
+            - heading "Business Listings Check" [level=1] [ref=e249]
+            - paragraph [ref=e250]: Create and manage your business listings on Google, Yelp, Facebook, and other websites so more customers can find you.
+          - generic [ref=e251]:
+            - generic [ref=e252]:
+              - img [ref=e253]
+              - text: "AI: Unavailable"
+            - button "Reset" [ref=e261]:
+              - img [ref=e262]
+              - text: Reset
+        - generic [ref=e267]:
+          - generic [ref=e269]: Do this next
+          - list [ref=e271]:
+            - listitem [ref=e272]: Open the Citations tab and mark your Google Business Profile as "Live".
+            - listitem [ref=e273]: Click the Portal link for each site and check if you already have a listing.
+            - listitem [ref=e274]: If you have a listing, copy the Profile URL and mark it as "Live".
+            - listitem [ref=e275]: If you don't have a listing, mark it as "To Do" and plan to create it.
+            - listitem [ref=e276]: Use the Templates tab to get ready-made descriptions for each site.
+            - listitem [ref=e277]: Check the Consistency tab to make sure all your listings match exactly.
+        - generic [ref=e278]:
+          - generic [ref=e279]:
+            - generic [ref=e281]: Targets
+            - generic [ref=e283]: "12"
+          - generic [ref=e284]:
+            - generic [ref=e286]: Live
+            - generic [ref=e288]: "0"
+          - generic [ref=e289]:
+            - generic [ref=e291]: Inconsistent
+            - generic [ref=e293]: "0"
+          - generic [ref=e294]:
+            - generic [ref=e296]: Tests Passed
+            - generic [ref=e298]: 4/4
+        - generic [ref=e299]:
+          - tablist [ref=e300]:
+            - tab "How To" [selected] [ref=e301]
+            - tab "Your Business Info" [ref=e302]
+            - tab "Your Listings" [ref=e303]
+            - tab "Check for Mistakes" [ref=e304]
+            - generic [ref=e305]:
+              - tab "Ready-Made Content" [ref=e306]
+              - tab "Save/Load Progress" [ref=e307]
+              - tab "Tests" [ref=e308]
+          - tabpanel "How To" [ref=e309]:
+            - generic [ref=e310]:
+              - generic [ref=e311]:
+                - generic [ref=e313]:
+                  - img [ref=e314]
+                  - text: What Are Business Listings & Why Do They Matter?
+                - generic [ref=e316]:
+                  - paragraph [ref=e317]:
+                    - strong [ref=e318]: Business listings
+                    - text: are your shop's information that appears on websites like Google Maps, Yelp, Yellow Pages, and Facebook. They're like having your business card posted in hundreds of online phone books.
+                  - paragraph [ref=e319]:
+                    - strong [ref=e320]: "Why they matter:"
+                    - text: When customers search for "barber shop near me" or "haircut Calgary", these listings help them find and contact you. Google especially uses this information to decide where your business appears in search results.
+                  - paragraph [ref=e321]:
+                    - strong [ref=e322]: "The goal:"
+                    - text: Have your exact same business information (name, address, phone) on as many relevant websites as possible. This builds trust with search engines and helps more customers find you.
+              - generic [ref=e323]:
+                - generic [ref=e325]: How to Use This Tool - Step by Step
+                - generic [ref=e326]:
+                  - generic [ref=e327]:
+                    - heading "1. First Time Setup" [level=4] [ref=e328]
+                    - list [ref=e329]:
+                      - listitem [ref=e330]: Go to the "Your Business Info" tab and enter your shop's information (name, address, phone, website, hours, services)
+                      - listitem [ref=e331]: Make sure everything is exactly right - this will be your "master copy" that all listings should match
+                      - listitem [ref=e332]: The tool will automatically create descriptions and contact information for each website
+                  - generic [ref=e333]:
+                    - heading "2. Check Your Existing Listings" [level=4] [ref=e334]
+                    - list [ref=e335]:
+                      - listitem [ref=e336]: Go to the "Your Listings" tab to see the list of important websites
+                      - listitem [ref=e337]: For each website, click the "Portal" or "Search" link to check if you already have a listing
+                      - listitem [ref=e338]:
+                        - text: "If you find your listing:"
+                        - list [ref=e339]:
+                          - listitem [ref=e340]: Copy the web address (URL) of your listing and paste it in the "Profile URL" box
+                          - listitem [ref=e341]: Change the status to "Live"
+                          - listitem [ref=e342]: Add any login information (username/email) if you remember it
+                      - listitem [ref=e343]:
+                        - text: "If you don't have a listing yet:"
+                        - list [ref=e344]:
+                          - listitem [ref=e345]: Leave the status as "To Do"
+                          - listitem [ref=e346]: Add a note about when you plan to create it
+                  - generic [ref=e347]:
+                    - heading "3. Get Ready-Made Content" [level=4] [ref=e348]
+                    - list [ref=e349]:
+                      - listitem [ref=e350]: Go to the "Ready-Made Content" tab to see automatically created descriptions
+                      - listitem [ref=e351]: "The tool creates three versions: Short (for Instagram/Twitter), Medium, and Long (for Google/Yelp)"
+                      - listitem [ref=e352]: Click "Copy" buttons to copy the descriptions you need
+                      - listitem [ref=e353]: The "NAP Block" shows your name, address, and phone in a standard format
+                  - generic [ref=e354]:
+                    - heading "4. Check for Mistakes" [level=4] [ref=e355]
+                    - list [ref=e356]:
+                      - listitem [ref=e357]: Go to the "Check for Mistakes" tab to compare your listings
+                      - listitem [ref=e358]: Check the boxes for each piece of information that matches exactly
+                      - listitem [ref=e359]: Focus on getting your name, phone, and address exactly the same everywhere
+                      - listitem [ref=e360]: If something doesn't match, make a note to fix it on that website
+                  - generic [ref=e361]:
+                    - heading "5. Create New Listings" [level=4] [ref=e362]
+                    - list [ref=e363]:
+                      - listitem [ref=e364]: "Start with the most important websites first: Google, Apple Maps, Bing, Facebook"
+                      - listitem [ref=e365]: Click the "Portal" link to go to their signup page
+                      - listitem [ref=e366]: Use the descriptions and information from the "Ready-Made Content" tab
+                      - listitem [ref=e367]: Copy your business information exactly as it appears in the "Your Business Info" tab
+                      - listitem [ref=e368]: Upload good photos of your shop, team, and work
+                  - generic [ref=e369]:
+                    - heading "6. Keep Everything Updated" [level=4] [ref=e370]
+                    - list [ref=e371]:
+                      - listitem [ref=e372]: Check back every 3-6 months to make sure your information is still correct
+                      - listitem [ref=e373]: Update hours for holidays, add new services, refresh photos
+                      - listitem [ref=e374]: Export your progress using the "Save/Load Progress" tab to keep track of what you've done
+              - generic [ref=e375]:
+                - generic [ref=e377]: What the Status Labels Mean
+                - generic [ref=e379]:
+                  - generic [ref=e380]:
+                    - heading "📝 To Do" [level=4] [ref=e381]
+                    - paragraph [ref=e382]: You haven't created a listing on this website yet. This is where you should start.
+                  - generic [ref=e383]:
+                    - heading "⏳ Pending" [level=4] [ref=e384]
+                    - paragraph [ref=e385]: You've started the process of creating a listing but it's not live yet.
+                  - generic [ref=e386]:
+                    - heading "✅ Live" [level=4] [ref=e387]
+                    - paragraph [ref=e388]: Your listing is published and customers can see it on this website.
+                  - generic [ref=e389]:
+                    - heading "⚠️ Inconsistent" [level=4] [ref=e390]
+                    - paragraph [ref=e391]: You have a listing but the information doesn't match your master copy (different name, phone, or address).
+              - generic [ref=e392]:
+                - generic [ref=e394]: Tips for Success
+                - list [ref=e396]:
+                  - listitem [ref=e397]:
+                    - strong [ref=e398]: "Use the exact same words everywhere:"
+                    - text: Don't use "The Belmont Barbershop" in one place and "Belmont Barber Shop" in another. Pick one version and stick with it.
+                  - listitem [ref=e399]:
+                    - strong [ref=e400]: "Include your neighborhood:"
+                    - text: Add "Bridgeland" or "Riverside" to your descriptions so local customers can find you more easily.
+                  - listitem [ref=e401]:
+                    - strong [ref=e402]: "Add good photos:"
+                    - text: Include pictures of your shop exterior, interior, team members, equipment, and recent haircut examples. Fresh photos make your listings more trustworthy.
+                  - listitem [ref=e403]:
+                    - strong [ref=e404]: "Link to your booking page:"
+                    - text: Most websites let you add a link to your online booking system. Use this everywhere to make it easy for customers to book appointments.
+                  - listitem [ref=e405]:
+                    - strong [ref=e406]: "Respond to reviews:"
+                    - text: Many listing sites let customers leave reviews. Always respond politely, even to negative reviews - it shows you care about your customers.
+                  - listitem [ref=e407]:
+                    - strong [ref=e408]: "Start with Google:"
+                    - text: Google Business Profile is the most important listing. Make sure this one is perfect before moving to others.
+              - generic [ref=e409]:
+                - generic [ref=e411]: Saving Your Work
+                - generic [ref=e412]:
+                  - paragraph [ref=e413]: "This tool keeps your information in your browser while you're using it. To save your progress:"
+                  - list [ref=e414]:
+                    - listitem [ref=e415]: Go to the "Save/Load Progress" tab
+                    - listitem [ref=e416]: Click "Export Status CSV" to save just the website statuses
+                    - listitem [ref=e417]: Click "Export JSON" to save everything (including your business information)
+                    - listitem [ref=e418]: Use "Import CSV" to load your saved work later
+                  - paragraph [ref=e419]:
+                    - strong [ref=e420]: "Tip:"
+                    - text: Export your work every few weeks so you don't lose track of what you've completed.
+    - generic [ref=e422]:
+      - link "Email support" [ref=e423] [cursor=pointer]:
+        - /url: mailto:info@thebelmontbarber.ca
+        - img "Prairie Signal" [ref=e424] [cursor=pointer]
+        - text: Need help? Email support
+      - generic [ref=e425]:
+        - button "Open AI diagnostics" [ref=e426]:
+          - img [ref=e427]
+        - link "Call for assistance" [ref=e435] [cursor=pointer]:
+          - /url: tel:403-555-0123
+          - img [ref=e436] [cursor=pointer]
+        - link "Find The Belmont Barbershop on map" [ref=e438] [cursor=pointer]:
+          - /url: https://maps.google.com/?q=Little+Bow+River,+High+River,+AB,+T1V+1M6
+          - img [ref=e439] [cursor=pointer]
+```

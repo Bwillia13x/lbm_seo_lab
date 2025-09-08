@@ -1,0 +1,430 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - button "Toggle navigation menu" [ref=e3]:
+    - img [ref=e4]
+  - complementary [ref=e5]:
+    - generic [ref=e7]:
+      - img "Prairie Signal" [ref=e8]
+      - generic [ref=e9]:
+        - generic [ref=e10]: Belmont
+        - generic [ref=e11]: SEO Lab
+    - navigation "Primary Navigation" [ref=e12]:
+      - generic [ref=e14]:
+        - link "Home" [ref=e16] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e17] [cursor=pointer]: Home
+        - link "Dashboard" [ref=e19] [cursor=pointer]:
+          - /url: /apps/dashboard
+          - img [ref=e20] [cursor=pointer]
+          - generic [ref=e23] [cursor=pointer]: Dashboard
+        - link "Onboarding" [ref=e25] [cursor=pointer]:
+          - /url: /apps/onboarding
+          - img [ref=e26] [cursor=pointer]
+          - generic [ref=e33] [cursor=pointer]: Onboarding
+      - generic [ref=e34]:
+        - heading "Content Creation" [level=3] [ref=e36]
+        - generic [ref=e37]:
+          - link "Google Posts Writer" [ref=e39] [cursor=pointer]:
+            - /url: /apps/gbp-composer
+            - img [ref=e40] [cursor=pointer]
+            - generic [ref=e43] [cursor=pointer]: Google Posts Writer
+          - link "Social Media Studio" [ref=e45] [cursor=pointer]:
+            - /url: /apps/post-studio
+            - img [ref=e46] [cursor=pointer]
+            - generic [ref=e50] [cursor=pointer]: Social Media Studio
+          - link "Content Calendar" [ref=e52] [cursor=pointer]:
+            - /url: /apps/post-oracle
+            - img [ref=e53] [cursor=pointer]
+            - generic [ref=e55] [cursor=pointer]: Content Calendar
+          - link "Local Content Ideas" [ref=e57] [cursor=pointer]:
+            - /url: /apps/neighbor-signal
+            - img [ref=e58] [cursor=pointer]
+            - generic [ref=e65] [cursor=pointer]: Local Content Ideas
+      - generic [ref=e66]:
+        - heading "Marketing & Tracking" [level=3] [ref=e68]
+        - generic [ref=e69]:
+          - link "Campaign Links" [ref=e71] [cursor=pointer]:
+            - /url: /apps/utm-dashboard
+            - img [ref=e72] [cursor=pointer]
+            - generic [ref=e76] [cursor=pointer]: Campaign Links
+          - link "QR Code Maker" [ref=e78] [cursor=pointer]:
+            - /url: /apps/utm-qr
+            - img [ref=e79] [cursor=pointer]
+            - generic [ref=e82] [cursor=pointer]: QR Code Maker
+          - link "Staff Referral Codes" [ref=e84] [cursor=pointer]:
+            - /url: /apps/referral-qr
+            - img [ref=e85] [cursor=pointer]
+            - generic [ref=e91] [cursor=pointer]: Staff Referral Codes
+          - link "Review Request Links" [ref=e93] [cursor=pointer]:
+            - /url: /apps/review-link
+            - img [ref=e94] [cursor=pointer]
+            - generic [ref=e100] [cursor=pointer]: Review Request Links
+      - generic [ref=e101]:
+        - heading "Customer Management" [level=3] [ref=e103]
+        - generic [ref=e104]:
+          - link "Review Responses" [ref=e106] [cursor=pointer]:
+            - /url: /apps/review-composer
+            - img [ref=e107] [cursor=pointer]
+            - generic [ref=e109] [cursor=pointer]: Review Responses
+          - link "Customer Analysis" [ref=e111] [cursor=pointer]:
+            - /url: /apps/rfm-crm
+            - img [ref=e112] [cursor=pointer]
+            - generic [ref=e117] [cursor=pointer]: Customer Analysis
+          - link "Appointment Reminders" [ref=e119] [cursor=pointer]:
+            - /url: /apps/noshow-shield
+            - img [ref=e120] [cursor=pointer]
+            - generic [ref=e122] [cursor=pointer]: Appointment Reminders
+          - link "Service Suggestions" [ref=e124] [cursor=pointer]:
+            - /url: /apps/addon-recommender
+            - img [ref=e125] [cursor=pointer]
+            - generic [ref=e126] [cursor=pointer]: Service Suggestions
+      - generic [ref=e127]:
+        - heading "Search Performance" [level=3] [ref=e129]
+        - generic [ref=e130]:
+          - link "Search Performance" [ref=e132] [cursor=pointer]:
+            - /url: /apps/gsc-ctr-miner
+            - img [ref=e133] [cursor=pointer]
+            - generic [ref=e135] [cursor=pointer]: Search Performance
+          - link "Search Rankings" [ref=e137] [cursor=pointer]:
+            - /url: /apps/rank-grid
+            - img [ref=e138] [cursor=pointer]
+            - generic [ref=e141] [cursor=pointer]: Search Rankings
+          - link "Ranking Monitor" [ref=e143] [cursor=pointer]:
+            - /url: /apps/rankgrid-watcher
+            - img [ref=e144] [cursor=pointer]
+            - generic [ref=e147] [cursor=pointer]: Ranking Monitor
+          - link "Service Profits" [ref=e149] [cursor=pointer]:
+            - /url: /apps/slot-yield
+            - img [ref=e150] [cursor=pointer]
+            - generic [ref=e153] [cursor=pointer]: Service Profits
+          - link "Busy Times Predictor" [ref=e155] [cursor=pointer]:
+            - /url: /apps/queuetime
+            - img [ref=e156] [cursor=pointer]
+            - generic [ref=e159] [cursor=pointer]: Busy Times Predictor
+      - generic [ref=e160]:
+        - heading "Local Partnerships" [level=3] [ref=e162]
+        - generic [ref=e163]:
+          - link "Partner Finder" [ref=e165] [cursor=pointer]:
+            - /url: /apps/link-prospect-kit
+            - img [ref=e166] [cursor=pointer]
+            - generic [ref=e169] [cursor=pointer]: Partner Finder
+          - link "Partnership Map" [ref=e171] [cursor=pointer]:
+            - /url: /apps/link-map
+            - img [ref=e172] [cursor=pointer]
+            - generic [ref=e175] [cursor=pointer]: Partnership Map
+      - generic [ref=e176]:
+        - heading "Website Optimization" [level=3] [ref=e178]
+        - generic [ref=e179]:
+          - link "Website Guide" [ref=e181] [cursor=pointer]:
+            - /url: /apps/seo-brief
+            - img [ref=e182] [cursor=pointer]
+            - generic [ref=e185] [cursor=pointer]: Website Guide
+          - link "Page Titles & Descriptions" [ref=e187] [cursor=pointer]:
+            - /url: /apps/meta-planner
+            - img [ref=e188] [cursor=pointer]
+            - generic [ref=e191] [cursor=pointer]: Page Titles & Descriptions
+          - link "Business Listings Check" [ref=e193] [cursor=pointer]:
+            - /url: /apps/citation-tracker
+            - img [ref=e194] [cursor=pointer]
+            - generic [ref=e200] [cursor=pointer]: Business Listings Check
+      - generic [ref=e201]:
+        - heading "Support" [level=3] [ref=e203]
+        - generic [ref=e204]:
+          - link "Status" [ref=e206] [cursor=pointer]:
+            - /url: /status
+            - img [ref=e207] [cursor=pointer]
+            - generic [ref=e209] [cursor=pointer]: Status
+          - link "Trial Guide" [ref=e211] [cursor=pointer]:
+            - /url: /guide/trial
+            - img [ref=e212] [cursor=pointer]
+            - generic [ref=e215] [cursor=pointer]: Trial Guide
+  - generic [ref=e216]:
+    - banner [ref=e217]:
+      - generic [ref=e218]:
+        - link "Prairie SignalBelmont SEO LabSEO Lab" [ref=e219] [cursor=pointer]:
+          - /url: /
+          - img "Prairie Signal" [ref=e220] [cursor=pointer]
+          - generic [ref=e221] [cursor=pointer]: Belmont SEO Lab
+          - generic [ref=e222] [cursor=pointer]: SEO Lab
+        - generic [ref=e223]:
+          - generic [ref=e224]:
+            - link "Call for assistance" [ref=e225] [cursor=pointer]:
+              - /url: tel:403-555-0123
+              - img [ref=e226] [cursor=pointer]
+              - generic [ref=e228] [cursor=pointer]: Assistance
+            - link "Find The Belmont Barbershop on map" [ref=e229] [cursor=pointer]:
+              - /url: https://maps.google.com/?q=Little+Bow+River,+High+River,+AB,+T1V+1M6
+              - img [ref=e230] [cursor=pointer]
+              - generic [ref=e233] [cursor=pointer]: Map
+          - generic [ref=e234]:
+            - img [ref=e235]
+            - textbox "Search tools" [ref=e238]
+          - generic [ref=e239]:
+            - button "Toggle Simple Mode" [ref=e240]: Advanced
+            - button "Toggle theme" [ref=e241]:
+              - img [ref=e242]
+    - main [ref=e244]:
+      - generic [ref=e245]:
+        - generic [ref=e246]:
+          - generic [ref=e248]:
+            - heading "AI Customer Intelligence Studio" [level=1] [ref=e249]
+            - paragraph [ref=e250]: AI-powered customer segmentation, predictive analytics, and personalized marketing campaigns.
+          - generic [ref=e251]:
+            - generic [ref=e252]:
+              - img [ref=e253]
+              - text: "AI: Unavailable"
+            - generic [ref=e261]:
+              - button "Load Demo" [ref=e262]:
+                - img [ref=e263]
+                - text: Load Demo
+              - button "Upload CSV" [ref=e266]
+              - generic [ref=e268]:
+                - img [ref=e269]
+                - text: Upload CSV
+              - generic [ref=e272]:
+                - button "AI Insights" [disabled] [ref=e273]:
+                  - img [ref=e274]
+                  - text: AI Insights
+                - button "Analytics" [disabled] [ref=e282]:
+                  - img [ref=e283]
+                  - text: Analytics
+                - button "Export Report" [disabled] [ref=e285]:
+                  - img [ref=e286]
+                  - text: Export Report
+        - generic [ref=e291]:
+          - generic [ref=e292]:
+            - generic [ref=e294]:
+              - img [ref=e295]
+              - text: Total Customers
+            - generic [ref=e300]:
+              - generic [ref=e301]: "0"
+              - generic [ref=e302]: All customers
+          - generic [ref=e303]:
+            - generic [ref=e305]:
+              - img [ref=e306]
+              - text: AI Status
+            - generic [ref=e314]:
+              - generic [ref=e315]: Server-managed
+              - generic [ref=e316]: AI insights
+          - generic [ref=e317]:
+            - generic [ref=e319]:
+              - img [ref=e320]
+              - text: Active Customers
+            - generic [ref=e323]:
+              - generic [ref=e324]: —
+              - generic [ref=e325]: Visited within 90 days
+          - generic [ref=e326]:
+            - generic [ref=e328]:
+              - img [ref=e329]
+              - text: At Risk
+            - generic [ref=e331]:
+              - generic [ref=e332]: —
+              - generic [ref=e333]: Need attention
+          - generic [ref=e334]:
+            - generic [ref=e336]:
+              - img [ref=e337]
+              - text: Avg Lifetime Value
+            - generic [ref=e339]:
+              - generic [ref=e340]: —
+              - generic [ref=e341]: Customer value
+          - generic [ref=e342]:
+            - generic [ref=e344]:
+              - img [ref=e345]
+              - text: Churn Rate
+            - generic [ref=e348]:
+              - generic [ref=e349]: —
+              - generic [ref=e350]: Customer retention
+        - generic [ref=e351]:
+          - generic [ref=e353]:
+            - img [ref=e354]
+            - text: Scoring Settings
+          - generic [ref=e357]:
+            - generic [ref=e358]:
+              - generic [ref=e359]:
+                - generic [ref=e360]: Bins (1..7)
+                - spinbutton [ref=e361]: "5"
+              - generic [ref=e362]:
+                - generic [ref=e363]: As‑of date
+                - textbox [ref=e364]: 2025-09-06
+              - generic [ref=e365]:
+                - generic [ref=e366]: Min visits
+                - spinbutton [ref=e367]: "1"
+              - generic [ref=e368]:
+                - generic [ref=e369]: Min spend ($)
+                - spinbutton [ref=e370]: "0"
+              - generic [ref=e371]:
+                - generic [ref=e372]: Search
+                - generic [ref=e373]:
+                  - img [ref=e374]
+                  - textbox "name, email, phone" [ref=e377]
+            - generic [ref=e378]:
+              - generic [ref=e379]:
+                - generic [ref=e380]: id
+                - textbox [ref=e381]: id
+              - generic [ref=e382]:
+                - generic [ref=e383]: name*
+                - textbox [ref=e384]: name
+              - generic [ref=e385]:
+                - generic [ref=e386]: email
+                - textbox [ref=e387]: email
+              - generic [ref=e388]:
+                - generic [ref=e389]: phone
+                - textbox [ref=e390]: phone
+              - generic [ref=e391]:
+                - generic [ref=e392]: last_visit*
+                - textbox [ref=e393]: last_visit
+              - generic [ref=e394]:
+                - generic [ref=e395]: visits*
+                - textbox [ref=e396]: visits
+              - generic [ref=e397]:
+                - generic [ref=e398]: total_spend*
+                - textbox [ref=e399]: total_spend
+        - generic [ref=e400]:
+          - button "ALL" [ref=e402]:
+            - img [ref=e403]
+            - text: ALL
+          - generic [ref=e408]:
+            - button "Copy Emails" [ref=e409]:
+              - img [ref=e410]
+              - text: Copy Emails
+            - button "Export CSV" [ref=e413]:
+              - img [ref=e414]
+              - text: Export CSV
+            - button "Generate Messages" [ref=e417]:
+              - img [ref=e418]
+              - text: Generate Messages
+        - generic [ref=e422]: Segment Counts (Top)
+        - generic [ref=e423]:
+          - generic [ref=e425]: Customers (0)
+          - table [ref=e429]:
+            - rowgroup [ref=e430]:
+              - row "ID Name Email Phone Last Visit Visits Spend R F M Segment" [ref=e431]:
+                - cell "ID" [ref=e432]
+                - cell "Name" [ref=e433]
+                - cell "Email" [ref=e434]
+                - cell "Phone" [ref=e435]
+                - cell "Last Visit" [ref=e436]
+                - cell "Visits" [ref=e437]
+                - cell "Spend" [ref=e438]
+                - cell "R" [ref=e439]
+                - cell "F" [ref=e440]
+                - cell "M" [ref=e441]
+                - cell "Segment" [ref=e442]
+            - rowgroup
+        - generic [ref=e443]:
+          - tablist [ref=e444]:
+            - tab "How To" [selected] [ref=e445]
+            - tab "Segmentation" [ref=e446]
+            - generic [ref=e447]:
+              - tab "AI Insights" [ref=e448]
+              - tab "Analytics" [ref=e449]
+              - tab "Campaigns" [ref=e450]
+              - tab "Templates" [ref=e451]
+              - tab "Messages" [ref=e452]
+              - tab "Settings" [ref=e453]
+          - tabpanel "How To" [ref=e454]:
+            - generic [ref=e455]:
+              - generic [ref=e456]:
+                - generic [ref=e457]:
+                  - img [ref=e458]
+                  - text: How to Use the AI Customer Intelligence Studio
+                - generic [ref=e460]: Learn how to leverage AI-powered customer analysis and segmentation for Belmont
+              - generic [ref=e462]:
+                - generic [ref=e463]:
+                  - heading "What This Tool Does" [level=3] [ref=e464]
+                  - paragraph [ref=e465]: This advanced customer analysis platform uses RFM (Recency, Frequency, Monetary) segmentation enhanced with AI-powered insights to help Belmont understand customer behavior, predict churn, and create personalized marketing campaigns.
+                - generic [ref=e466]:
+                  - heading "AI-Powered Features" [level=3] [ref=e467]
+                  - list [ref=e468]:
+                    - listitem [ref=e469]:
+                      - strong [ref=e470]: "Customer Segmentation:"
+                      - text: Automatically categorize customers into actionable segments
+                    - listitem [ref=e471]:
+                      - strong [ref=e472]: "AI Insights:"
+                      - text: Generate personalized insights for each customer
+                    - listitem [ref=e473]:
+                      - strong [ref=e474]: "Predictive Analytics:"
+                      - text: Forecast customer behavior and lifetime value
+                    - listitem [ref=e475]:
+                      - strong [ref=e476]: "Campaign Optimization:"
+                      - text: AI-powered campaign suggestions and optimization
+                    - listitem [ref=e477]:
+                      - strong [ref=e478]: "Retention Strategies:"
+                      - text: Proactive customer retention and reactivation
+                - generic [ref=e479]:
+                  - heading "Step-by-Step Usage Guide" [level=3] [ref=e480]
+                  - list [ref=e481]:
+                    - listitem [ref=e482]:
+                      - strong [ref=e483]: "Import Data:"
+                      - text: Upload your customer CSV or use demo data
+                    - listitem [ref=e484]:
+                      - strong [ref=e485]: "Configure Segmentation:"
+                      - text: Adjust RFM parameters for your business
+                    - listitem [ref=e486]:
+                      - strong [ref=e487]: "Generate AI Insights:"
+                      - text: Select customers and get AI-powered analysis
+                    - listitem [ref=e488]:
+                      - strong [ref=e489]: "View Analytics:"
+                      - text: Analyze customer lifetime value and churn risk
+                    - listitem [ref=e490]:
+                      - strong [ref=e491]: "Create Campaigns:"
+                      - text: Design targeted marketing campaigns by segment
+                    - listitem [ref=e492]:
+                      - strong [ref=e493]: "Generate Messages:"
+                      - text: Create personalized communication templates
+                    - listitem [ref=e494]:
+                      - strong [ref=e495]: "Export Results:"
+                      - text: Download reports and customer lists
+                - generic [ref=e496]:
+                  - heading "Understanding RFM Segmentation" [level=3] [ref=e497]
+                  - generic [ref=e498]:
+                    - generic [ref=e499]:
+                      - heading "Recency (R)" [level=4] [ref=e500]
+                      - paragraph [ref=e501]: How recently did the customer visit?
+                      - paragraph [ref=e502]: Higher scores = more recent visits
+                    - generic [ref=e503]:
+                      - heading "Frequency (F)" [level=4] [ref=e504]
+                      - paragraph [ref=e505]: How often does the customer visit?
+                      - paragraph [ref=e506]: Higher scores = more frequent visits
+                    - generic [ref=e507]:
+                      - heading "Monetary (M)" [level=4] [ref=e508]
+                      - paragraph [ref=e509]: How much does the customer spend?
+                      - paragraph [ref=e510]: Higher scores = higher spending
+                - generic [ref=e511]:
+                  - heading "AI Insights Categories" [level=3] [ref=e512]
+                  - generic [ref=e513]:
+                    - generic [ref=e514]:
+                      - heading "Behavioral Insights" [level=4] [ref=e515]
+                      - list [ref=e516]:
+                        - listitem [ref=e517]: • Visit pattern analysis
+                        - listitem [ref=e518]: • Service preference trends
+                        - listitem [ref=e519]: • Communication effectiveness
+                        - listitem [ref=e520]: • Loyalty indicators
+                    - generic [ref=e521]:
+                      - heading "Business Opportunities" [level=4] [ref=e522]
+                      - list [ref=e523]:
+                        - listitem [ref=e524]: • Upsell recommendations
+                        - listitem [ref=e525]: • Service expansion suggestions
+                        - listitem [ref=e526]: • Retention strategies
+                        - listitem [ref=e527]: • Reactivation opportunities
+        - paragraph [ref=e529]:
+          - text: "Tip: Adjust"
+          - emphasis [ref=e530]: Bins
+          - text: for coarser/finer segments. Ensure CASL/PIPA compliance for any messaging (consent, identification, unsubscribe).
+    - generic [ref=e532]:
+      - link "Email support" [ref=e533] [cursor=pointer]:
+        - /url: mailto:info@thebelmontbarber.ca
+        - img "Prairie Signal" [ref=e534] [cursor=pointer]
+        - text: Need help? Email support
+      - generic [ref=e535]:
+        - button "Open AI diagnostics" [ref=e536]:
+          - img [ref=e537]
+        - link "Call for assistance" [ref=e545] [cursor=pointer]:
+          - /url: tel:403-555-0123
+          - img [ref=e546] [cursor=pointer]
+        - link "Find The Belmont Barbershop on map" [ref=e548] [cursor=pointer]:
+          - /url: https://maps.google.com/?q=Little+Bow+River,+High+River,+AB,+T1V+1M6
+          - img [ref=e549] [cursor=pointer]
+```

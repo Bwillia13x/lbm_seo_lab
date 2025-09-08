@@ -1,0 +1,591 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - button "Toggle navigation menu" [ref=e3]:
+    - img [ref=e4]
+  - complementary [ref=e5]:
+    - generic [ref=e7]:
+      - img "Prairie Signal" [ref=e8]
+      - generic [ref=e9]:
+        - generic [ref=e10]: Belmont
+        - generic [ref=e11]: SEO Lab
+    - navigation "Primary Navigation" [ref=e12]:
+      - generic [ref=e14]:
+        - link "Home" [ref=e16] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e17] [cursor=pointer]: Home
+        - link "Dashboard" [ref=e19] [cursor=pointer]:
+          - /url: /apps/dashboard
+          - img [ref=e20] [cursor=pointer]
+          - generic [ref=e23] [cursor=pointer]: Dashboard
+        - link "Onboarding" [ref=e25] [cursor=pointer]:
+          - /url: /apps/onboarding
+          - img [ref=e26] [cursor=pointer]
+          - generic [ref=e33] [cursor=pointer]: Onboarding
+      - generic [ref=e34]:
+        - heading "Content Creation" [level=3] [ref=e36]
+        - generic [ref=e37]:
+          - link "Google Posts Writer" [ref=e39] [cursor=pointer]:
+            - /url: /apps/gbp-composer
+            - img [ref=e40] [cursor=pointer]
+            - generic [ref=e43] [cursor=pointer]: Google Posts Writer
+          - link "Social Media Studio" [ref=e45] [cursor=pointer]:
+            - /url: /apps/post-studio
+            - img [ref=e46] [cursor=pointer]
+            - generic [ref=e50] [cursor=pointer]: Social Media Studio
+          - link "Content Calendar" [ref=e52] [cursor=pointer]:
+            - /url: /apps/post-oracle
+            - img [ref=e53] [cursor=pointer]
+            - generic [ref=e55] [cursor=pointer]: Content Calendar
+          - link "Local Content Ideas" [ref=e57] [cursor=pointer]:
+            - /url: /apps/neighbor-signal
+            - img [ref=e58] [cursor=pointer]
+            - generic [ref=e65] [cursor=pointer]: Local Content Ideas
+      - generic [ref=e66]:
+        - heading "Marketing & Tracking" [level=3] [ref=e68]
+        - generic [ref=e69]:
+          - link "Campaign Links" [ref=e71] [cursor=pointer]:
+            - /url: /apps/utm-dashboard
+            - img [ref=e72] [cursor=pointer]
+            - generic [ref=e76] [cursor=pointer]: Campaign Links
+          - link "QR Code Maker" [ref=e78] [cursor=pointer]:
+            - /url: /apps/utm-qr
+            - img [ref=e79] [cursor=pointer]
+            - generic [ref=e82] [cursor=pointer]: QR Code Maker
+          - link "Staff Referral Codes" [ref=e84] [cursor=pointer]:
+            - /url: /apps/referral-qr
+            - img [ref=e85] [cursor=pointer]
+            - generic [ref=e91] [cursor=pointer]: Staff Referral Codes
+          - link "Review Request Links" [ref=e93] [cursor=pointer]:
+            - /url: /apps/review-link
+            - img [ref=e94] [cursor=pointer]
+            - generic [ref=e100] [cursor=pointer]: Review Request Links
+      - generic [ref=e101]:
+        - heading "Customer Management" [level=3] [ref=e103]
+        - generic [ref=e104]:
+          - link "Review Responses" [ref=e106] [cursor=pointer]:
+            - /url: /apps/review-composer
+            - img [ref=e107] [cursor=pointer]
+            - generic [ref=e109] [cursor=pointer]: Review Responses
+          - link "Customer Analysis" [ref=e111] [cursor=pointer]:
+            - /url: /apps/rfm-crm
+            - img [ref=e112] [cursor=pointer]
+            - generic [ref=e117] [cursor=pointer]: Customer Analysis
+          - link "Appointment Reminders" [ref=e119] [cursor=pointer]:
+            - /url: /apps/noshow-shield
+            - img [ref=e120] [cursor=pointer]
+            - generic [ref=e122] [cursor=pointer]: Appointment Reminders
+          - link "Service Suggestions" [ref=e124] [cursor=pointer]:
+            - /url: /apps/addon-recommender
+            - img [ref=e125] [cursor=pointer]
+            - generic [ref=e126] [cursor=pointer]: Service Suggestions
+      - generic [ref=e127]:
+        - heading "Search Performance" [level=3] [ref=e129]
+        - generic [ref=e130]:
+          - link "Search Performance" [ref=e132] [cursor=pointer]:
+            - /url: /apps/gsc-ctr-miner
+            - img [ref=e133] [cursor=pointer]
+            - generic [ref=e135] [cursor=pointer]: Search Performance
+          - link "Search Rankings" [ref=e137] [cursor=pointer]:
+            - /url: /apps/rank-grid
+            - img [ref=e138] [cursor=pointer]
+            - generic [ref=e141] [cursor=pointer]: Search Rankings
+          - link "Ranking Monitor" [ref=e143] [cursor=pointer]:
+            - /url: /apps/rankgrid-watcher
+            - img [ref=e144] [cursor=pointer]
+            - generic [ref=e147] [cursor=pointer]: Ranking Monitor
+          - link "Service Profits" [ref=e149] [cursor=pointer]:
+            - /url: /apps/slot-yield
+            - img [ref=e150] [cursor=pointer]
+            - generic [ref=e153] [cursor=pointer]: Service Profits
+          - link "Busy Times Predictor" [ref=e155] [cursor=pointer]:
+            - /url: /apps/queuetime
+            - img [ref=e156] [cursor=pointer]
+            - generic [ref=e159] [cursor=pointer]: Busy Times Predictor
+      - generic [ref=e160]:
+        - heading "Local Partnerships" [level=3] [ref=e162]
+        - generic [ref=e163]:
+          - link "Partner Finder" [ref=e165] [cursor=pointer]:
+            - /url: /apps/link-prospect-kit
+            - img [ref=e166] [cursor=pointer]
+            - generic [ref=e169] [cursor=pointer]: Partner Finder
+          - link "Partnership Map" [ref=e171] [cursor=pointer]:
+            - /url: /apps/link-map
+            - img [ref=e172] [cursor=pointer]
+            - generic [ref=e175] [cursor=pointer]: Partnership Map
+      - generic [ref=e176]:
+        - heading "Website Optimization" [level=3] [ref=e178]
+        - generic [ref=e179]:
+          - link "Website Guide" [ref=e181] [cursor=pointer]:
+            - /url: /apps/seo-brief
+            - img [ref=e182] [cursor=pointer]
+            - generic [ref=e185] [cursor=pointer]: Website Guide
+          - link "Page Titles & Descriptions" [ref=e187] [cursor=pointer]:
+            - /url: /apps/meta-planner
+            - img [ref=e188] [cursor=pointer]
+            - generic [ref=e191] [cursor=pointer]: Page Titles & Descriptions
+          - link "Business Listings Check" [ref=e193] [cursor=pointer]:
+            - /url: /apps/citation-tracker
+            - img [ref=e194] [cursor=pointer]
+            - generic [ref=e200] [cursor=pointer]: Business Listings Check
+      - generic [ref=e201]:
+        - heading "Support" [level=3] [ref=e203]
+        - generic [ref=e204]:
+          - link "Status" [ref=e206] [cursor=pointer]:
+            - /url: /status
+            - img [ref=e207] [cursor=pointer]
+            - generic [ref=e209] [cursor=pointer]: Status
+          - link "Trial Guide" [ref=e211] [cursor=pointer]:
+            - /url: /guide/trial
+            - img [ref=e212] [cursor=pointer]
+            - generic [ref=e215] [cursor=pointer]: Trial Guide
+  - generic [ref=e216]:
+    - banner [ref=e217]:
+      - generic [ref=e218]:
+        - link "Prairie SignalBelmont SEO LabSEO Lab" [ref=e219] [cursor=pointer]:
+          - /url: /
+          - img "Prairie Signal" [ref=e220] [cursor=pointer]
+          - generic [ref=e221] [cursor=pointer]: Belmont SEO Lab
+          - generic [ref=e222] [cursor=pointer]: SEO Lab
+        - generic [ref=e223]:
+          - generic [ref=e224]:
+            - link "Call for assistance" [ref=e225] [cursor=pointer]:
+              - /url: tel:403-555-0123
+              - img [ref=e226] [cursor=pointer]
+              - generic [ref=e228] [cursor=pointer]: Assistance
+            - link "Find The Belmont Barbershop on map" [ref=e229] [cursor=pointer]:
+              - /url: https://maps.google.com/?q=Little+Bow+River,+High+River,+AB,+T1V+1M6
+              - img [ref=e230] [cursor=pointer]
+              - generic [ref=e233] [cursor=pointer]: Map
+          - generic [ref=e234]:
+            - img [ref=e235]
+            - textbox "Search tools" [ref=e238]
+          - generic [ref=e239]:
+            - button "Toggle Simple Mode" [ref=e240]: Advanced
+            - button "Toggle theme" [ref=e241]:
+              - img [ref=e242]
+    - main [ref=e244]:
+      - generic [ref=e245]:
+        - generic [ref=e246]:
+          - generic [ref=e248]:
+            - heading "AI Partner Intelligence Studio" [level=1] [ref=e249]
+            - paragraph [ref=e250]: AI-powered partner prospecting with intelligent scoring, outreach optimization, and relationship management for Little Bow Meadows Barbershop partnerships.
+          - generic [ref=e251]:
+            - generic [ref=e252]:
+              - img [ref=e253]
+              - text: "AI: Unavailable"
+            - generic [ref=e261]:
+              - button "Load Little Bow Meadows Sample" [ref=e262]:
+                - img [ref=e263]
+                - text: Load Little Bow Meadows Sample
+              - button "Import CSV" [ref=e266]:
+                - img [ref=e267]
+                - text: Import CSV
+              - button "Reset" [ref=e270]:
+                - img [ref=e271]
+                - text: Reset
+              - generic [ref=e273]:
+                - button "AI Optimize" [disabled] [ref=e274]:
+                  - img [ref=e275]
+                  - text: AI Optimize
+                - button "Analytics" [ref=e283]:
+                  - img [ref=e284]
+                  - text: Analytics
+                - button "Export Report" [disabled] [ref=e286]:
+                  - img [ref=e287]
+                  - text: Export Report
+        - generic [ref=e292]:
+          - generic [ref=e293]:
+            - generic [ref=e295]: Prospects
+            - generic [ref=e296]:
+              - generic [ref=e297]: "12"
+              - generic [ref=e298]: Loaded
+          - generic [ref=e299]:
+            - generic [ref=e301]: High Priority
+            - generic [ref=e302]:
+              - generic [ref=e303]: "12"
+              - generic [ref=e304]: ICE ≥ 7
+          - generic [ref=e305]:
+            - generic [ref=e307]: Contacted
+            - generic [ref=e308]:
+              - generic [ref=e309]: "0"
+              - generic [ref=e310]: Outreach sent
+          - generic [ref=e311]:
+            - generic [ref=e313]: Tests
+            - generic [ref=e314]:
+              - generic [ref=e315]: 5/5
+              - generic [ref=e316]: Passed
+        - generic [ref=e317]:
+          - tablist [ref=e318]:
+            - tab "How To" [ref=e319]
+            - tab "Settings" [ref=e320]
+            - tab "Prospects" [selected] [ref=e321]
+            - generic [ref=e322]:
+              - tab "AI Optimize" [ref=e323]
+              - tab "Campaigns" [ref=e324]
+              - tab "Outreach" [ref=e325]
+              - tab "Analytics" [ref=e326]
+              - tab "Templates" [ref=e327]
+              - tab "Reports" [ref=e328]
+              - tab "Alerts" [ref=e329]
+              - tab "Integrations" [ref=e330]
+              - tab "Bulk Add" [ref=e331]
+          - tabpanel "Prospects" [ref=e332]:
+            - generic [ref=e333]:
+              - generic [ref=e335]: Prospect Database
+              - generic [ref=e336]:
+                - generic [ref=e337]:
+                  - textbox "Search prospects..." [ref=e338]
+                  - combobox "Filter prospects by type" [ref=e339]:
+                    - option "All types" [selected]
+                    - option "Directories"
+                    - option "News"
+                    - option "Events"
+                    - option "Partners"
+                    - option "Cafes"
+                    - option "Tattoo"
+                    - option "Gyms"
+                    - option "Schools"
+                    - option "Other"
+                  - button "Export CSV" [ref=e340]:
+                    - img [ref=e341]
+                    - text: Export CSV
+                - table [ref=e346]:
+                  - rowgroup [ref=e347]:
+                    - row "Prospect Type ICE Score Priority Contact Status Actions" [ref=e348]:
+                      - cell "Prospect" [ref=e349]
+                      - cell "Type" [ref=e350]
+                      - cell "ICE Score" [ref=e351]
+                      - cell "Priority" [ref=e352]
+                      - cell "Contact" [ref=e353]
+                      - cell "Status" [ref=e354]
+                      - cell "Actions" [ref=e355]
+                  - rowgroup [ref=e356]:
+                    - row "Foothills Wedding Directory https://foothillsweddings.ca directory 64/125 L1 R3 A3 E4 C4 I4 51% info@foothillsweddings.ca To Do Email ×" [ref=e357]:
+                      - cell "Foothills Wedding Directory https://foothillsweddings.ca" [ref=e358]:
+                        - generic [ref=e359]: Foothills Wedding Directory
+                        - link "https://foothillsweddings.ca" [ref=e361] [cursor=pointer]:
+                          - /url: https://foothillsweddings.ca
+                      - cell "directory" [ref=e362]:
+                        - generic [ref=e363]: directory
+                      - cell "64/125 L1 R3 A3 E4 C4 I4" [ref=e364]:
+                        - generic [ref=e365]: 64/125
+                        - generic [ref=e366]: L1 R3 A3 E4 C4 I4
+                      - cell "51%" [ref=e367]:
+                        - generic [ref=e368]: 51%
+                      - cell "info@foothillsweddings.ca" [ref=e369]:
+                        - generic [ref=e370]: info@foothillsweddings.ca
+                      - cell "To Do" [ref=e371]:
+                        - combobox "Update prospect status" [ref=e372]:
+                          - option "To Do" [selected]
+                          - option "Sent"
+                          - option "Responded"
+                          - option "Ignore"
+                      - cell "Email ×" [ref=e373]:
+                        - generic [ref=e374]:
+                          - button "Email" [ref=e375]:
+                            - img [ref=e376]
+                            - text: Email
+                          - button "×" [ref=e379]
+                    - row "High River Chamber of Commerce https://highriverchamber.ca business 32/125 L1 R1 A2 E4 C4 I2 26% info@highriverchamber.ca To Do Email ×" [ref=e380]:
+                      - cell "High River Chamber of Commerce https://highriverchamber.ca" [ref=e381]:
+                        - generic [ref=e382]: High River Chamber of Commerce
+                        - link "https://highriverchamber.ca" [ref=e384] [cursor=pointer]:
+                          - /url: https://highriverchamber.ca
+                      - cell "business" [ref=e385]:
+                        - generic [ref=e386]: business
+                      - cell "32/125 L1 R1 A2 E4 C4 I2" [ref=e387]:
+                        - generic [ref=e388]: 32/125
+                        - generic [ref=e389]: L1 R1 A2 E4 C4 I2
+                      - cell "26%" [ref=e390]:
+                        - generic [ref=e391]: 26%
+                      - cell "info@highriverchamber.ca" [ref=e392]:
+                        - generic [ref=e393]: info@highriverchamber.ca
+                      - cell "To Do" [ref=e394]:
+                        - combobox "Update prospect status" [ref=e395]:
+                          - option "To Do" [selected]
+                          - option "Sent"
+                          - option "Responded"
+                          - option "Ignore"
+                      - cell "Email ×" [ref=e396]:
+                        - generic [ref=e397]:
+                          - button "Email" [ref=e398]:
+                            - img [ref=e399]
+                            - text: Email
+                          - button "×" [ref=e402]
+                    - row "Okotoks Chamber of Commerce https://okotokschamber.com business 32/125 L0 R1 A0 E4 C4 I2 26% info@okotokschamber.com To Do Email ×" [ref=e403]:
+                      - cell "Okotoks Chamber of Commerce https://okotokschamber.com" [ref=e404]:
+                        - generic [ref=e405]: Okotoks Chamber of Commerce
+                        - link "https://okotokschamber.com" [ref=e407] [cursor=pointer]:
+                          - /url: https://okotokschamber.com
+                      - cell "business" [ref=e408]:
+                        - generic [ref=e409]: business
+                      - cell "32/125 L0 R1 A0 E4 C4 I2" [ref=e410]:
+                        - generic [ref=e411]: 32/125
+                        - generic [ref=e412]: L0 R1 A0 E4 C4 I2
+                      - cell "26%" [ref=e413]:
+                        - generic [ref=e414]: 26%
+                      - cell "info@okotokschamber.com" [ref=e415]:
+                        - generic [ref=e416]: info@okotokschamber.com
+                      - cell "To Do" [ref=e417]:
+                        - combobox "Update prospect status" [ref=e418]:
+                          - option "To Do" [selected]
+                          - option "Sent"
+                          - option "Responded"
+                          - option "Ignore"
+                      - cell "Email ×" [ref=e419]:
+                        - generic [ref=e420]:
+                          - button "Email" [ref=e421]:
+                            - img [ref=e422]
+                            - text: Email
+                          - button "×" [ref=e425]
+                    - row "Alberta Game Farm https://albertagamefarm.com venue 32/125 L0 R1 A0 E4 C4 I2 26% info@albertagamefarm.com To Do Email ×" [ref=e426]:
+                      - cell "Alberta Game Farm https://albertagamefarm.com" [ref=e427]:
+                        - generic [ref=e428]: Alberta Game Farm
+                        - link "https://albertagamefarm.com" [ref=e430] [cursor=pointer]:
+                          - /url: https://albertagamefarm.com
+                      - cell "venue" [ref=e431]:
+                        - generic [ref=e432]: venue
+                      - cell "32/125 L0 R1 A0 E4 C4 I2" [ref=e433]:
+                        - generic [ref=e434]: 32/125
+                        - generic [ref=e435]: L0 R1 A0 E4 C4 I2
+                      - cell "26%" [ref=e436]:
+                        - generic [ref=e437]: 26%
+                      - cell "info@albertagamefarm.com" [ref=e438]:
+                        - generic [ref=e439]: info@albertagamefarm.com
+                      - cell "To Do" [ref=e440]:
+                        - combobox "Update prospect status" [ref=e441]:
+                          - option "To Do" [selected]
+                          - option "Sent"
+                          - option "Responded"
+                          - option "Ignore"
+                      - cell "Email ×" [ref=e442]:
+                        - generic [ref=e443]:
+                          - button "Email" [ref=e444]:
+                            - img [ref=e445]
+                            - text: Email
+                          - button "×" [ref=e448]
+                    - row "Bow Valley Ranche https://bowvalleyranche.com venue 32/125 L0 R1 A0 E4 C4 I2 26% info@bowvalleyranche.com To Do Email ×" [ref=e449]:
+                      - cell "Bow Valley Ranche https://bowvalleyranche.com" [ref=e450]:
+                        - generic [ref=e451]: Bow Valley Ranche
+                        - link "https://bowvalleyranche.com" [ref=e453] [cursor=pointer]:
+                          - /url: https://bowvalleyranche.com
+                      - cell "venue" [ref=e454]:
+                        - generic [ref=e455]: venue
+                      - cell "32/125 L0 R1 A0 E4 C4 I2" [ref=e456]:
+                        - generic [ref=e457]: 32/125
+                        - generic [ref=e458]: L0 R1 A0 E4 C4 I2
+                      - cell "26%" [ref=e459]:
+                        - generic [ref=e460]: 26%
+                      - cell "info@bowvalleyranche.com" [ref=e461]:
+                        - generic [ref=e462]: info@bowvalleyranche.com
+                      - cell "To Do" [ref=e463]:
+                        - combobox "Update prospect status" [ref=e464]:
+                          - option "To Do" [selected]
+                          - option "Sent"
+                          - option "Responded"
+                          - option "Ignore"
+                      - cell "Email ×" [ref=e465]:
+                        - generic [ref=e466]:
+                          - button "Email" [ref=e467]:
+                            - img [ref=e468]
+                            - text: Email
+                          - button "×" [ref=e471]
+                    - row "Meadow Muse https://meadowmuse.ca venue 32/125 L1 R1 A3 E4 C4 I2 26% hello@meadowmuse.ca To Do Email ×" [ref=e472]:
+                      - cell "Meadow Muse https://meadowmuse.ca" [ref=e473]:
+                        - generic [ref=e474]: Meadow Muse
+                        - link "https://meadowmuse.ca" [ref=e476] [cursor=pointer]:
+                          - /url: https://meadowmuse.ca
+                      - cell "venue" [ref=e477]:
+                        - generic [ref=e478]: venue
+                      - cell "32/125 L1 R1 A3 E4 C4 I2" [ref=e479]:
+                        - generic [ref=e480]: 32/125
+                        - generic [ref=e481]: L1 R1 A3 E4 C4 I2
+                      - cell "26%" [ref=e482]:
+                        - generic [ref=e483]: 26%
+                      - cell "hello@meadowmuse.ca" [ref=e484]:
+                        - generic [ref=e485]: hello@meadowmuse.ca
+                      - cell "To Do" [ref=e486]:
+                        - combobox "Update prospect status" [ref=e487]:
+                          - option "To Do" [selected]
+                          - option "Sent"
+                          - option "Responded"
+                          - option "Ignore"
+                      - cell "Email ×" [ref=e488]:
+                        - generic [ref=e489]:
+                          - button "Email" [ref=e490]:
+                            - img [ref=e491]
+                            - text: Email
+                          - button "×" [ref=e494]
+                    - row "Prairie Wedding Association https://prairieweddingassociation.com industry 32/125 L0 R0 A0 E4 C4 I2 26% info@prairieweddingassociation.com To Do Email ×" [ref=e495]:
+                      - cell "Prairie Wedding Association https://prairieweddingassociation.com" [ref=e496]:
+                        - generic [ref=e497]: Prairie Wedding Association
+                        - link "https://prairieweddingassociation.com" [ref=e499] [cursor=pointer]:
+                          - /url: https://prairieweddingassociation.com
+                      - cell "industry" [ref=e500]:
+                        - generic [ref=e501]: industry
+                      - cell "32/125 L0 R0 A0 E4 C4 I2" [ref=e502]:
+                        - generic [ref=e503]: 32/125
+                        - generic [ref=e504]: L0 R0 A0 E4 C4 I2
+                      - cell "26%" [ref=e505]:
+                        - generic [ref=e506]: 26%
+                      - cell "info@prairieweddingassociation.com" [ref=e507]:
+                        - generic [ref=e508]: info@prairieweddingassociation.com
+                      - cell "To Do" [ref=e509]:
+                        - combobox "Update prospect status" [ref=e510]:
+                          - option "To Do" [selected]
+                          - option "Sent"
+                          - option "Responded"
+                          - option "Ignore"
+                      - cell "Email ×" [ref=e511]:
+                        - generic [ref=e512]:
+                          - button "Email" [ref=e513]:
+                            - img [ref=e514]
+                            - text: Email
+                          - button "×" [ref=e517]
+                    - row "Alberta Wedding Planners Association https://albertaweddingplanners.com industry 32/125 L0 R0 A0 E4 C4 I2 26% info@albertaweddingplanners.com To Do Email ×" [ref=e518]:
+                      - cell "Alberta Wedding Planners Association https://albertaweddingplanners.com" [ref=e519]:
+                        - generic [ref=e520]: Alberta Wedding Planners Association
+                        - link "https://albertaweddingplanners.com" [ref=e522] [cursor=pointer]:
+                          - /url: https://albertaweddingplanners.com
+                      - cell "industry" [ref=e523]:
+                        - generic [ref=e524]: industry
+                      - cell "32/125 L0 R0 A0 E4 C4 I2" [ref=e525]:
+                        - generic [ref=e526]: 32/125
+                        - generic [ref=e527]: L0 R0 A0 E4 C4 I2
+                      - cell "26%" [ref=e528]:
+                        - generic [ref=e529]: 26%
+                      - cell "info@albertaweddingplanners.com" [ref=e530]:
+                        - generic [ref=e531]: info@albertaweddingplanners.com
+                      - cell "To Do" [ref=e532]:
+                        - combobox "Update prospect status" [ref=e533]:
+                          - option "To Do" [selected]
+                          - option "Sent"
+                          - option "Responded"
+                          - option "Ignore"
+                      - cell "Email ×" [ref=e534]:
+                        - generic [ref=e535]:
+                          - button "Email" [ref=e536]:
+                            - img [ref=e537]
+                            - text: Email
+                          - button "×" [ref=e540]
+                    - row "Calgary Wedding Photographers Guild https://calgaryweddingphotographers.ca photography 32/125 L4 R0 A2 E4 C4 I2 26% info@calgaryweddingphotographers.ca To Do Email ×" [ref=e541]:
+                      - cell "Calgary Wedding Photographers Guild https://calgaryweddingphotographers.ca" [ref=e542]:
+                        - generic [ref=e543]: Calgary Wedding Photographers Guild
+                        - link "https://calgaryweddingphotographers.ca" [ref=e545] [cursor=pointer]:
+                          - /url: https://calgaryweddingphotographers.ca
+                      - cell "photography" [ref=e546]:
+                        - generic [ref=e547]: photography
+                      - cell "32/125 L4 R0 A2 E4 C4 I2" [ref=e548]:
+                        - generic [ref=e549]: 32/125
+                        - generic [ref=e550]: L4 R0 A2 E4 C4 I2
+                      - cell "26%" [ref=e551]:
+                        - generic [ref=e552]: 26%
+                      - cell "info@calgaryweddingphotographers.ca" [ref=e553]:
+                        - generic [ref=e554]: info@calgaryweddingphotographers.ca
+                      - cell "To Do" [ref=e555]:
+                        - combobox "Update prospect status" [ref=e556]:
+                          - option "To Do" [selected]
+                          - option "Sent"
+                          - option "Responded"
+                          - option "Ignore"
+                      - cell "Email ×" [ref=e557]:
+                        - generic [ref=e558]:
+                          - button "Email" [ref=e559]:
+                            - img [ref=e560]
+                            - text: Email
+                          - button "×" [ref=e563]
+                    - row "Southern Alberta Caterers Association https://southernalbertacaterers.ca catering 32/125 L1 R0 A2 E4 C4 I2 26% info@southernalbertacaterers.ca To Do Email ×" [ref=e564]:
+                      - cell "Southern Alberta Caterers Association https://southernalbertacaterers.ca" [ref=e565]:
+                        - generic [ref=e566]: Southern Alberta Caterers Association
+                        - link "https://southernalbertacaterers.ca" [ref=e568] [cursor=pointer]:
+                          - /url: https://southernalbertacaterers.ca
+                      - cell "catering" [ref=e569]:
+                        - generic [ref=e570]: catering
+                      - cell "32/125 L1 R0 A2 E4 C4 I2" [ref=e571]:
+                        - generic [ref=e572]: 32/125
+                        - generic [ref=e573]: L1 R0 A2 E4 C4 I2
+                      - cell "26%" [ref=e574]:
+                        - generic [ref=e575]: 26%
+                      - cell "info@southernalbertacaterers.ca" [ref=e576]:
+                        - generic [ref=e577]: info@southernalbertacaterers.ca
+                      - cell "To Do" [ref=e578]:
+                        - combobox "Update prospect status" [ref=e579]:
+                          - option "To Do" [selected]
+                          - option "Sent"
+                          - option "Responded"
+                          - option "Ignore"
+                      - cell "Email ×" [ref=e580]:
+                        - generic [ref=e581]:
+                          - button "Email" [ref=e582]:
+                            - img [ref=e583]
+                            - text: Email
+                          - button "×" [ref=e586]
+                    - row "Foothills Event Rentals https://foothillseventrentals.ca rentals 32/125 L1 R0 A2 E4 C4 I2 26% rentals@foothillseventrentals.ca To Do Email ×" [ref=e587]:
+                      - cell "Foothills Event Rentals https://foothillseventrentals.ca" [ref=e588]:
+                        - generic [ref=e589]: Foothills Event Rentals
+                        - link "https://foothillseventrentals.ca" [ref=e591] [cursor=pointer]:
+                          - /url: https://foothillseventrentals.ca
+                      - cell "rentals" [ref=e592]:
+                        - generic [ref=e593]: rentals
+                      - cell "32/125 L1 R0 A2 E4 C4 I2" [ref=e594]:
+                        - generic [ref=e595]: 32/125
+                        - generic [ref=e596]: L1 R0 A2 E4 C4 I2
+                      - cell "26%" [ref=e597]:
+                        - generic [ref=e598]: 26%
+                      - cell "rentals@foothillseventrentals.ca" [ref=e599]:
+                        - generic [ref=e600]: rentals@foothillseventrentals.ca
+                      - cell "To Do" [ref=e601]:
+                        - combobox "Update prospect status" [ref=e602]:
+                          - option "To Do" [selected]
+                          - option "Sent"
+                          - option "Responded"
+                          - option "Ignore"
+                      - cell "Email ×" [ref=e603]:
+                        - generic [ref=e604]:
+                          - button "Email" [ref=e605]:
+                            - img [ref=e606]
+                            - text: Email
+                          - button "×" [ref=e609]
+                    - row "Prairie Floral Network https://prairieflowers.ca floral 32/125 L1 R1 A2 E4 C4 I2 26% network@prairieflowers.ca To Do Email ×" [ref=e610]:
+                      - cell "Prairie Floral Network https://prairieflowers.ca" [ref=e611]:
+                        - generic [ref=e612]: Prairie Floral Network
+                        - link "https://prairieflowers.ca" [ref=e614] [cursor=pointer]:
+                          - /url: https://prairieflowers.ca
+                      - cell "floral" [ref=e615]:
+                        - generic [ref=e616]: floral
+                      - cell "32/125 L1 R1 A2 E4 C4 I2" [ref=e617]:
+                        - generic [ref=e618]: 32/125
+                        - generic [ref=e619]: L1 R1 A2 E4 C4 I2
+                      - cell "26%" [ref=e620]:
+                        - generic [ref=e621]: 26%
+                      - cell "network@prairieflowers.ca" [ref=e622]:
+                        - generic [ref=e623]: network@prairieflowers.ca
+                      - cell "To Do" [ref=e624]:
+                        - combobox "Update prospect status" [ref=e625]:
+                          - option "To Do" [selected]
+                          - option "Sent"
+                          - option "Responded"
+                          - option "Ignore"
+                      - cell "Email ×" [ref=e626]:
+                        - generic [ref=e627]:
+                          - button "Email" [ref=e628]:
+                            - img [ref=e629]
+                            - text: Email
+                          - button "×" [ref=e632]
+    - generic [ref=e634]:
+      - link "Email support" [ref=e635] [cursor=pointer]:
+        - /url: mailto:info@thebelmontbarber.ca
+        - img "Prairie Signal" [ref=e636] [cursor=pointer]
+        - text: Need help? Email support
+      - generic [ref=e637]:
+        - button "Open AI diagnostics" [ref=e638]:
+          - img [ref=e639]
+        - link "Call for assistance" [ref=e647] [cursor=pointer]:
+          - /url: tel:403-555-0123
+          - img [ref=e648] [cursor=pointer]
+        - link "Find The Belmont Barbershop on map" [ref=e650] [cursor=pointer]:
+          - /url: https://maps.google.com/?q=Little+Bow+River,+High+River,+AB,+T1V+1M6
+          - img [ref=e651] [cursor=pointer]
+```
