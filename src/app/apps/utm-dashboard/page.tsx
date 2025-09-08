@@ -319,17 +319,17 @@ function downloadDataUrl(dataUrl: string, filename: string) {
 // ---------------- Presets ----------------
 const SERVICE_OPTIONS = LBM_CONSTANTS.SERVICES;
 
-const AREA_OPTIONS = ["little-bow-river", "high-river", "southern-alberta"];
+const AREA_OPTIONS = ["calgary", "downtown-calgary", "kensington", "beltline"];
 
 type PresetKey =
   | "gbp_post"
   | "gbp_profile"
   | "instagram_bio"
   | "instagram_post"
-  | "wedding_tour"
-  | "bouquet_order"
-  | "workshop_signup"
-  | "airbnb_stay";
+  | "workshop_booking"
+  | "commission_inquiry"
+  | "gallery_visit"
+  | "art_therapy";
 
 const PRESETS: Record<
   PresetKey,
@@ -339,10 +339,10 @@ const PRESETS: Record<
   gbp_profile: LBM_UTM_PRESETS.gbp_profile,
   instagram_bio: LBM_UTM_PRESETS.instagram_bio,
   instagram_post: LBM_UTM_PRESETS.instagram_post,
-  wedding_tour: LBM_UTM_PRESETS.wedding_tour,
-  bouquet_order: LBM_UTM_PRESETS.bouquet_order,
-  workshop_signup: LBM_UTM_PRESETS.workshop_signup,
-  airbnb_stay: LBM_UTM_PRESETS.airbnb_stay,
+  workshop_booking: LBM_UTM_PRESETS.workshop_booking,
+  commission_inquiry: LBM_UTM_PRESETS.commission_inquiry,
+  gallery_visit: LBM_UTM_PRESETS.gallery_visit,
+  art_therapy: LBM_UTM_PRESETS.art_therapy,
 };
 
 // ---------------- Main Component ----------------
@@ -453,12 +453,12 @@ function UTMDashboard() {
         {
           id: `demo-3-${Date.now()}`,
           base: LBM_CONSTANTS.BOOK_URL,
-          preset: "wedding_tour",
-          service: "wedding-tour",
-          area: "little-bow-river",
-          campaign: `lbm-wedding-tour-${todayYYYYMM()}`,
-          term: "wedding",
-          content: "package",
+          preset: "workshop_booking",
+          service: "art-commission",
+          area: "calgary",
+          campaign: `prairie-art-commission-${todayYYYYMM()}`,
+          term: "commission",
+          content: "custom-art",
         },
       ];
 

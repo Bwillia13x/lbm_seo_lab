@@ -4,9 +4,9 @@ export const LBM_CONSTANTS = {
   BUSINESS_NAME: "Prairie Artistry Studio",
   BOOK_URL: "https://prairie-artistry-studio.lovable.app/book", // Main booking page
   WEBSITE_URL: "https://prairie-artistry-studio.lovable.app",
-  PHONE_TEL: "tel:403-555-0123", // Update with actual number
-  PHONE_DISPLAY: "403-555-0123", // Update with actual number
-  ADDRESS_STR: "Calgary, Alberta", // Update with actual address
+  PHONE_TEL: "tel:403-457-0420", // Prairie Artistry Studio phone
+  PHONE_DISPLAY: "403-457-0420", // Prairie Artistry Studio phone
+  ADDRESS_STR: "Calgary, Alberta", // Prairie Artistry Studio address
   MAP_URL: "https://maps.google.com/?q=Prairie+Artistry+Studio,+Calgary,+AB",
 
   // Review Links - Placeholder Google Place ID needed

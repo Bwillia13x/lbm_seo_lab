@@ -56,7 +56,7 @@ export default function LinkInBio() {
         href: placeUrl,
       },
     ];
-  }, [baseBook, placeUrl, campaign]);
+  }, [placeUrl, campaign]);
 
   useEffect(() => {
     QRCode.toDataURL(window.location.href, { width: 384, margin: 2 }).then(setQr).catch(() => setQr(""));
