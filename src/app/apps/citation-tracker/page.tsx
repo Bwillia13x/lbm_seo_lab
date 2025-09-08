@@ -78,14 +78,14 @@ type Site = {
 
 // ---------------- Defaults ----------------
 const DEFAULT_BIZ: Biz = {
-  name: LBM_CONSTANTS.BUSINESS_NAME,
-  street: "915 General Ave NE",
+  name: "Prairie Artistry Studio",
+  street: "Calgary, AB",
   city: "Calgary",
   region: "AB",
   postal: "T2E 9E1",
   country: "CA",
   phone: LBM_CONSTANTS.PHONE_DISPLAY,
-  email: "hello@thebelmontbarber.ca",
+  email: "hello@prairieartistry.ca",
   website: LBM_CONSTANTS.WEBSITE_URL,
   lat: 51.05,
   lon: -114.05,
@@ -99,12 +99,12 @@ const DEFAULT_BIZ: Biz = {
     { days: ["Sat", "Sun"], opens: "10:00", closes: "17:00" },
   ],
   services: [
-    { name: "Men's Haircut", priceFrom: 40 },
-    { name: "Skin Fade", priceFrom: 45 },
-    { name: "Beard Trim", priceFrom: 20 },
-    { name: "Hot Towel Shave", priceFrom: 35 },
-    { name: "Kids Cut", priceFrom: 30 },
-    { name: "Groomsmen Party Package", priceFrom: 150 },
+    { name: "Art Workshop", priceFrom: 65 },
+    { name: "Private Lesson", priceFrom: 85 },
+    { name: "Art Therapy Session", priceFrom: 120 },
+    { name: "Custom Commission", priceFrom: 200 },
+    { name: "Group Workshop", priceFrom: 45 },
+    { name: "Corporate Workshop", priceFrom: 300 },
   ],
 };
 
@@ -225,17 +225,17 @@ function servicesInline(b: Biz) {
 function makeDesc(b: Biz, len: number) {
   const base = `${
     b.name
-  } — barbershop in Bridgeland/Riverside, Calgary. Services: ${servicesInline(
+  } — art studio in Calgary. Services: ${servicesInline(
     b
-  )}. Book online: ${b.website}. ${oneLineAddress(b)}. Hours: ${hoursInline(
+  )}. Book workshops: ${b.website}. ${oneLineAddress(b)}. Hours: ${hoursInline(
     b
   )}.`;
   if (base.length <= len) return base;
-  const alt = `${b.name} — barbershop in Bridgeland/Riverside. ${servicesInline(
+  const alt = `${b.name} — art studio in Calgary. ${servicesInline(
     b
-  )}. Book: ${b.website}. ${oneLineAddress(b)}.`;
+  )}. Book workshops: ${b.website}. ${oneLineAddress(b)}.`;
   if (alt.length <= len) return alt;
-  const short = `${b.name} — barbershop in Bridgeland/Riverside. Book: ${b.website}.`;
+  const short = `${b.name} — art studio in Calgary. Book workshops: ${b.website}.`;
   return short.slice(0, len);
 }
 

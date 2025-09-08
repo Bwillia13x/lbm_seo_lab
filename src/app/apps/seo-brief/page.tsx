@@ -105,22 +105,23 @@ type Biz = {
 
 // ---------------- Defaults ----------------
 const DEFAULT_BIZ: Biz = {
-  name: "The Belmont Barbershop",
-  street: "[Street]",
+  name: "Prairie Artistry Studio",
+  street: "Calgary, AB",
   city: "Calgary",
   region: "AB",
   postal: "[T2x xXx]",
   country: "CA",
   phone: "403-000-0000",
-  email: "hello@thebelmontbarber.ca",
-  website: "https://thebelmontbarber.ca",
+  email: "hello@prairieartistry.ca",
+  website: "https://prairie-artistry-studio.lovable.app",
   lat: 51.05,
   lon: -114.05,
   priceRange: "$$",
   googleMaps: "https://maps.google.com/?q=the+belmont+barbershop",
-  instagram: "https://www.instagram.com/thebelmontbarber",
-  facebook: "https://www.facebook.com/thebelmontbarber",
-  appleMaps: "https://apple.co/your-place",
+  googleMaps: "https://maps.google.com/?q=prairie+artistry+studio",
+  instagram: "https://www.instagram.com/prairieartistry",
+  facebook: "https://www.facebook.com/prairieartistry",
+  appleMaps: "https://apple.co/prairie-artistry-studio",
   hours: [
     {
       days: ["Mon", "Tue", "Wed", "Thu", "Fri"],
@@ -131,34 +132,34 @@ const DEFAULT_BIZ: Biz = {
   ],
   services: [
     {
-      name: "Men's Haircut",
-      priceFrom: 40,
-      durationMin: 30,
-      description: "Classic cut with consultation and style.",
+      name: "Art Workshop",
+      priceFrom: 65,
+      durationMin: 120,
+      description: "Hands-on creative workshop with all materials included.",
     },
     {
-      name: "Skin Fade",
+      name: "Private Lesson",
+      priceFrom: 85,
+      durationMin: 90,
+      description: "One-on-one instruction tailored to your skill level.",
+    },
+    {
+      name: "Art Therapy Session",
+      priceFrom: 120,
+      durationMin: 60,
+      description: "Therapeutic art session for emotional wellness.",
+    },
+    {
+      name: "Custom Commission",
+      priceFrom: 200,
+      durationMin: 0,
+      description: "Personalized artwork created to your specifications.",
+    },
+    {
+      name: "Group Workshop",
       priceFrom: 45,
-      durationMin: 45,
-      description: "Sharp fades with clean transitions and finish.",
-    },
-    {
-      name: "Beard Trim",
-      priceFrom: 20,
-      durationMin: 15,
-      description: "Beard shape, line‑up, hot towel finish.",
-    },
-    {
-      name: "Hot Towel Shave",
-      priceFrom: 35,
-      durationMin: 30,
-      description: "Traditional straight‑razor shave.",
-    },
-    {
-      name: "Kids Cut",
-      priceFrom: 30,
-      durationMin: 30,
-      description: "Patient, age‑appropriate cut and style.",
+      durationMin: 150,
+      description: "Creative group session for teams or friends.",
     },
   ],
 };
@@ -166,21 +167,21 @@ const DEFAULT_BIZ: Biz = {
 // ---------------- Generators ----------------
 function makeTitle(page: "home" | "service" | "area", biz: Biz, svc?: Service) {
   if (page === "home")
-    return "Belmont Barbershop — Classic Cuts & Fades in Bridgeland/Riverside, Calgary";
+    return "Prairie Artistry Studio — Creative Workshops & Custom Art in Calgary";
   if (page === "area")
-    return "Barbershop in Bridgeland/Riverside — The Belmont (Calgary)";
+    return "Art Studio in Calgary — Prairie Artistry Studio";
   if (page === "service" && svc)
-    return `${svc.name} in Bridgeland — Belmont Barbershop (Calgary)`;
+    return `${svc.name} in Calgary — Prairie Artistry Studio`;
   return `${biz.name} — Calgary`;
 }
 
 function makeMeta(page: "home" | "service" | "area", biz: Biz, svc?: Service) {
   if (page === "home")
-    return "Book a precise cut, skin fade, beard trim, or hot towel shave at Belmont in Bridgeland/Riverside. Easy online booking. Walk‑ins welcome.";
+    return "Book art workshops, commission custom artwork, or explore art therapy at Prairie Artistry Studio in Calgary. Easy online booking.";
   if (page === "area")
-    return "Your neighborhood barbershop in Bridgeland/Riverside, Calgary. Prices up front, friendly barbers, easy online booking.";
+    return "Your local art studio in Calgary. Transparent pricing, experienced instructors, easy workshop booking.";
   if (page === "service" && svc)
-    return `Sharp ${svc.name.toLowerCase()}s by seasoned barbers in Bridgeland/Riverside. View prices and book online in minutes.`;
+    return `Professional ${svc.name.toLowerCase()} by experienced artists in Calgary. View prices and book online in minutes.`;
   return `${biz.name} in Calgary — book online.`;
 }
 
@@ -191,19 +192,19 @@ function makeOutline(
 ) {
   const bullets = (arr: string[]) => arr.map((x) => `- ${x}`).join("\n");
   if (page === "home") {
-    return `H1: ${biz.name} — Barbershop in Bridgeland/Riverside\n\nH2: Services\n${bullets(
+    return `H1: ${biz.name} — Art Studio in Calgary\n\nH2: Services\n${bullets(
       biz.services.map((s) => `${s.name} — ${fmtPrice(s.priceFrom) || ""}`)
-    )}\n\nH2: Why Belmont\n- Experienced barbers\n- Fair pricing\n- Walk‑ins welcome\n\nH2: Find Us\n- ${biz.street}, ${biz.city}\n- Near Bridgeland LRT`;
+    )}\n\nH2: Why Prairie Artistry\n- Experienced artists\n- Fair pricing\n- All skill levels welcome\n\nH2: Find Us\n- ${biz.street}, ${biz.city}\n- Easy Calgary access`;
   }
   if (page === "area") {
-    return `H1: Barbershop in Bridgeland/Riverside (Calgary)\n\nH2: Book a Chair\n- Online booking link\n\nH2: Getting Here\n- Steps from Bridgeland LRT\n- Parking tips\n\nH2: Popular Services\n${bullets(
+    return `H1: Art Studio in Calgary\n\nH2: Book a Workshop\n- Online booking link\n\nH2: Getting Here\n- Calgary location\n- Parking available\n\nH2: Popular Services\n${bullets(
       biz.services.map((s) => s.name)
     )}`;
   }
   if (page === "service" && svc) {
-    return `H1: ${svc.name} in Bridgeland (Calgary)\n\nH2: What to Expect\n- Consultation\n- Technique\n- Finish\n\nH2: Pricing & Timing\n- ${
+    return `H1: ${svc.name} in Calgary\n\nH2: What to Expect\n- Consultation\n- Instruction\n- Creation\n\nH2: Pricing & Timing\n- ${
       fmtPrice(svc.priceFrom) || "See booking"
-    } · ~${svc.durationMin || 30} min\n\nH2: Book Now`;
+    } · ~${svc.durationMin || 90} min\n\nH2: Book Now`;
   }
   return "";
 }
@@ -212,12 +213,12 @@ function makeFAQs(page: "home" | "service" | "area", biz: Biz, svc?: Service) {
   const faqs: { q: string; a: string }[] = [];
   if (page === "home" || page === "area") {
     faqs.push({
-      q: "Do you take walk‑ins?",
-      a: "Yes — when chairs are free. Online booking shows live availability.",
+      q: "Do you accept drop-ins?",
+      a: "Yes — when studio space is available. Online booking shows live workshop availability.",
     });
     faqs.push({
       q: "Where are you located?",
-      a: `${biz.street}, ${biz.city}. A short walk from the Bridgeland LRT.`,
+      a: `${biz.street}, ${biz.city}. Easy access throughout Calgary.`,
     });
     faqs.push({
       q: "What are your hours?",
@@ -229,15 +230,15 @@ function makeFAQs(page: "home" | "service" | "area", biz: Biz, svc?: Service) {
   if (page === "service" && svc) {
     faqs.push({
       q: `How long does a ${svc.name.toLowerCase()} take?`,
-      a: `About ${svc.durationMin || 30} minutes depending on hair density and style.`,
+      a: `About ${svc.durationMin || 90} minutes depending on complexity and skill level.`,
     });
     faqs.push({
-      q: "Do you offer skin fades and beards together?",
-      a: "Yes — book back‑to‑back (or a combo if available in Square).",
+      q: "Do you offer combined workshop packages?",
+      a: "Yes — book multiple workshops or combine with private lessons.",
     });
     faqs.push({
-      q: "Can I bring a photo?",
-      a: "Please do — it helps us tailor the cut to your growth pattern.",
+      q: "Can I bring reference images?",
+      a: "Please do — it helps us tailor the workshop to your artistic goals.",
     });
   }
   return faqs;
@@ -276,6 +277,7 @@ function businessSchema(biz: Biz) {
   return {
     "@context": "https://schema.org",
     "@type": "Barbershop",
+    "@type": "ArtGallery",
     name: biz.name,
     image: ["[https://.../exterior.jpg]", "[https://.../interior.jpg]"],
     url: biz.website,
@@ -302,7 +304,7 @@ function pageServiceSchema(biz: Biz, svc: Service) {
     "@type": "Service",
     name: svc.name,
     provider: {
-      "@type": "Barbershop",
+      "@type": "ArtGallery",
       name: biz.name,
       telephone: biz.phone,
       address: {

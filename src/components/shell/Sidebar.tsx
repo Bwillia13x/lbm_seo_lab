@@ -203,7 +203,7 @@ export function Sidebar({ simple = false }: { readonly simple?: boolean }) {
             />
             <div>
               <div className="font-semibold text-base tracking-tight">
-                Belmont
+                Prairie Artistry
               </div>
               <div className="text-xs text-muted-foreground">SEO Lab</div>
             </div>
@@ -247,39 +247,39 @@ export function Sidebar({ simple = false }: { readonly simple?: boolean }) {
                   {simple && group.title === "Marketing & Tracking" && (
                     <div className="pl-10 pr-3 text-[11px] text-muted-foreground">
                       {label === "Campaign Links" &&
-                        "Create links that tell you where customers came from."}
+                        "Create links that tell you where workshop participants came from."}
                       {label === "QR Code Maker" &&
-                        "Make a square barcode people can scan with their phone."}
+                        "Make a square barcode people can scan to book workshops."}
                       {label === "Review Request Links" &&
-                        "Send people straight to your review page."}
+                        "Send workshop participants straight to your review page."}
                       {label === "Staff Referral Codes" &&
-                        "Create QR codes for staff referral rewards."}
+                        "Create QR codes for instructor referral rewards."}
                     </div>
                   )}
                   {simple && group.title === "Content Creation" && (
                     <div className="pl-10 pr-3 text-[11px] text-muted-foreground">
                       {label === "Google Posts Writer" &&
-                        "Write a short, clear update for Google."}
+                        "Write a short, clear update about workshops for Google."}
                       {label === "Social Media Studio" &&
-                        "Draft simple posts for Facebook/Instagram."}
+                        "Draft simple posts about art for Facebook/Instagram."}
                       {label === "Content Calendar" &&
-                        "Plan and schedule your weekly posts."}
+                        "Plan and schedule your weekly art content."}
                       {label === "Local Content Ideas" &&
-                        "See what content works best for Bridgeland."}
+                        "See what content works best for Calgary art audiences."}
                     </div>
                   )}
                   {simple && group.title === "Search Performance" && (
                     <div className="pl-10 pr-3 text-[11px] text-muted-foreground">
                       {label === "Search Performance" &&
-                        "See how people find you on Google."}
+                        "See how people find your art studio on Google."}
                       {label === "Search Rankings" &&
-                        "Check where you appear in Google Maps."}
+                        "Check where your studio appears in Google Maps."}
                       {label === "Ranking Monitor" &&
-                        "Get automatic updates on ranking changes."}
+                        "Get automatic updates on art studio ranking changes."}
                       {label === "Service Profits" &&
-                        "See which services make the most money."}
+                        "See which workshops make the most money."}
                       {label === "Busy Times Predictor" &&
-                        "Predict when you'll be busiest."}
+                        "Predict when your studio will be busiest."}
                     </div>
                   )}
                 </div>

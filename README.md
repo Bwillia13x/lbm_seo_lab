@@ -1,32 +1,33 @@
-# 🏆 Belmont SEO Lab - Transform Your Barbershop's Online Presence
+# 🎨 Prairie Artistry Studio SEO Lab - Transform Your Art Studio's Online Presence
 
-![Belmont SEO Lab](https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=1200&q=80)
+![Prairie Artistry Studio SEO Lab](https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=1200&q=80)
 
-**AI-powered local SEO tools designed specifically for barbershops. Get more customers, better reviews, and higher rankings with our comprehensive toolkit.**
+**AI-powered local SEO tools designed specifically for art studios. Get more workshop participants, better reviews, and higher rankings with our comprehensive toolkit.**
 
 ## 🚀 Why Belmont SEO Lab Will Transform Your Business
 
 ### **🎯 Real Results for Barbershops**
-- **📈 40-60% Increase in New Customers** - Proven track record with local service businesses
+### **🎯 Real Results for Art Studios**
+- **📈 40-60% Increase in New Workshop Participants** - Proven track record with local creative businesses
 - **⭐ 4.9/5 Average Review Rating** - AI-powered review management system
-- **💰 $2,500-$8,000 Monthly Revenue Growth** - Typical results for our clients
+- **💰 $2,500-$8,000 Monthly Revenue Growth** - Typical results for our art studio clients
 - **⏰ 10 Hours Saved Weekly** - Automate repetitive marketing tasks
-- **📍 Dominate Local Search Results** - Appear at the top of Google Maps and local searches
+- **📍 Dominate Local Search Results** - Appear at the top of Google Maps and local art searches
 
-### **💼 Perfect for Your Barbershop**
-- **🎨 Brand-Consistent Content** - All tools use your barbershop's voice and branding
-- **📞 Local Calgary Focus** - Specialized for Bridgeland/Riverside area
-- **💰 Revenue-Driven** - Every feature connects to booking appointments
+### **💼 Perfect for Your Art Studio**
+- **🎨 Brand-Consistent Content** - All tools use your art studio's voice and branding
+- **📞 Local Calgary Focus** - Specialized for Calgary art community
+- **💰 Revenue-Driven** - Every feature connects to booking workshops and commissions
 - **🛠️ Easy to Use** - No technical expertise required
 
 ### 🎯 Key Features
 
-- **22 Professional SEO Tools** - Complete local SEO management suite
-- **Belmont-Specific Configuration** - Pre-configured with Belmont branding and data
-- **Local Calgary Focus** - Bridgeland/Riverside neighborhood targeting
+- **22 Professional SEO Tools** - Complete local SEO management suite for art studios
+- **Prairie Artistry-Specific Configuration** - Pre-configured with studio branding and data
+- **Local Calgary Focus** - Calgary art community targeting
 - **Client-Side Processing** - No external dependencies for privacy and speed
-- **Professional UI/UX** - Modern design with consistent Belmont theming
-- **Compliance Ready** - CASL-compliant review management and outreach
+- **Professional UI/UX** - Modern design with consistent Prairie Artistry theming
+- **Compliance Ready** - CASL-compliant review management and workshop outreach
 - **Mobile Responsive** - Works seamlessly on all devices
 
 ---
@@ -84,30 +85,31 @@ Environment variables:
 ---
 
 ## 🏪 Belmont-Specific Configuration
+## 🎨 Prairie Artistry Studio-Specific Configuration
 
-The Belmont SEO Lab comes pre-configured with Belmont-specific data and settings:
+The Prairie Artistry Studio SEO Lab comes pre-configured with studio-specific data and settings:
 
 ### Business Information
-- **Business Name**: The Belmont Barbershop
-- **Location**: 915 General Ave NE, Calgary, Alberta, T2E 9E1
+- **Business Name**: Prairie Artistry Studio
+- **Location**: Calgary, Alberta
 - **Phone**: 403-457-0420
-- **Booking URL**: https://thebelmontbarber.ca/book
-- **Website**: https://thebelmontbarber.ca/
+- **Booking URL**: https://prairie-artistry-studio.lovable.app/book
+- **Website**: https://prairie-artistry-studio.lovable.app/
 
 ### Service Offerings
-- Men's Haircut
-- Beard Trim
-- Hot Towel Shave
-- Skin Fade
-- Kids Cut
-- **Groomsmen Party Packages**
-- **Veterans/First Responders/Seniors Discounts**
+- Art Workshops & Classes
+- Custom Artwork Commissions
+- Art Therapy Sessions
+- Gallery Exhibitions
+- Private Art Lessons
+- **Group Workshop Packages**
+- **Corporate Team Building Workshops**
 
 ### Local Focus Areas
-- Bridgeland neighborhood
-- Riverside community
+- Calgary art community
+- Local creative professionals
 - Calgary metropolitan area
-- Local business partnerships
+- Art therapy and wellness partnerships
 
 ---
 

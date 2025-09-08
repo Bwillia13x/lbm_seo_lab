@@ -1,5 +1,5 @@
 // Lightweight client-side event logging for the Dashboard
-// Stores recent events in localStorage under `belmont_events`
+// Stores recent events in localStorage under `prairie_artistry_events`
 
 export type BelmontEvent = {
   type: string;
@@ -7,7 +7,7 @@ export type BelmontEvent = {
   meta?: Record<string, any>;
 };
 
-const KEY = "belmont_events";
+const KEY = "prairie_artistry_events";
 const MAX_EVENTS = 1000;
 
 function read(): BelmontEvent[] {
@@ -51,10 +51,10 @@ export function countByType(types: string[], days = 1) {
 
 // Onboarding helpers
 export function getOnboardingStatus() {
-  const place = localStorage.getItem("belmont_onboarding_place_id") || "";
-  const booking = localStorage.getItem("belmont_onboarding_booking") || "";
-  const phone = localStorage.getItem("belmont_onboarding_phone") || "";
-  const address = localStorage.getItem("belmont_onboarding_address") || "";
+  const place = localStorage.getItem("prairie_artistry_onboarding_place_id") || "";
+  const booking = localStorage.getItem("prairie_artistry_onboarding_booking") || "";
+  const phone = localStorage.getItem("prairie_artistry_onboarding_phone") || "";
+  const address = localStorage.getItem("prairie_artistry_onboarding_address") || "";
   return {
     placeIdSet: !!place,
     bookingSet: !!booking,

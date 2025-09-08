@@ -11,7 +11,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import {
-  Flower,
+  Palette,
   Users,
   Calendar,
   Clock,
@@ -21,76 +21,77 @@ import {
   ArrowRight,
   Phone,
   Mail,
+  Brush,
   Heart,
   Gift,
-  Palette,
+  Camera,
   Scissors,
 } from "lucide-react";
 import { LBM_CONSTANTS } from "@/lib/constants";
 
 const workshops = [
   {
-    title: "Bridal Bouquet Workshop",
-    description: "Create your perfect wedding bouquet with seasonal flowers",
+    title: "Prairie Landscape Painting",
+    description: "Capture the beauty of Alberta's golden fields and endless skies",
     duration: "3 hours",
     price: "$85",
     maxParticipants: 8,
     includes: [
-      "All materials and flowers",
+      "All painting materials and canvas",
       "Professional instruction",
-      "Bridal bouquet to take home",
+      "Finished landscape painting to take home",
       "Light refreshments",
-      "Flower care guide",
+      "Technique guide",
     ],
     schedule: "Saturdays 10 AM - 1 PM",
     popular: true,
   },
   {
-    title: "Seasonal Arrangements",
-    description: "Learn to create beautiful arrangements with current blooms",
-    duration: "2 hours",
-    price: "$65",
-    maxParticipants: 12,
-    includes: [
-      "Seasonal flowers and greenery",
-      "Professional techniques",
-      "Arrangement to take home",
-      "Design principles",
-      "Flower care tips",
-    ],
-    schedule: "Wednesdays & Sundays 2 PM - 4 PM",
-    popular: false,
-  },
-  {
-    title: "Wedding Table Centerpieces",
-    description: "Design stunning centerpieces for your wedding reception",
+    title: "Abstract Expression Workshop",
+    description: "Explore color, texture, and emotion through abstract painting",
     duration: "2.5 hours",
     price: "$75",
     maxParticipants: 10,
     includes: [
-      "Materials for centerpiece",
-      "Professional guidance",
-      "Centerpiece to take home",
-      "Styling consultation",
-      "Reception planning tips",
+      "Acrylic paints and brushes",
+      "Large canvas for expression",
+      "Abstract artwork to take home",
+      "Color theory guidance",
+      "Creative process exploration",
     ],
-    schedule: "Fridays 6 PM - 8:30 PM",
+    schedule: "Wednesdays & Sundays 2 PM - 4:30 PM",
     popular: false,
   },
   {
-    title: "Kids Flower Craft",
-    description: "Fun, creative floral activities for children",
+    title: "Art Therapy Session",
+    description: "Healing and self-discovery through guided creative expression",
     duration: "1.5 hours",
-    price: "$35",
-    maxParticipants: 15,
+    price: "$120",
+    maxParticipants: 6,
     includes: [
-      "Child-friendly materials",
-      "Simple arrangements",
-      "Craft to take home",
-      "Supervision provided",
+      "All art materials provided",
+      "Licensed art therapist guidance",
+      "Safe, supportive environment",
+      "Personal artwork creation",
+      "Reflection and processing time",
+    ],
+    schedule: "Tuesdays & Thursdays 6 PM - 7:30 PM",
+    popular: false,
+  },
+  {
+    title: "Family Art Day",
+    description: "Creative fun for all ages with prairie-themed projects",
+    duration: "2 hours",
+    price: "$45",
+    maxParticipants: 12,
+    includes: [
+      "Family-friendly materials",
+      "Age-appropriate projects",
+      "Art pieces to take home",
+      "Instruction for all skill levels",
       "Photo opportunities",
     ],
-    schedule: "Saturdays 2 PM - 3:30 PM",
+    schedule: "Saturdays 2 PM - 4 PM",
     popular: false,
   },
 ];
@@ -102,43 +103,43 @@ const workshopFeatures = [
     description: "Intimate class sizes ensure personalized attention",
   },
   {
-    icon: Flower,
-    title: "Fresh Flowers",
-    description: "Work with the freshest seasonal blooms from our farm",
+    icon: Palette,
+    title: "Quality Materials",
+    description: "Work with professional-grade art supplies and tools",
   },
   {
-    icon: Palette,
-    title: "Creative Freedom",
-    description: "Express your style with guidance from our florists",
+    icon: Brush,
+    title: "Expert Instruction",
+    description: "Learn from experienced artists and certified instructors",
   },
   {
     icon: Gift,
     title: "Take Home Creations",
-    description: "Leave with beautiful arrangements for your home",
+    description: "Leave with beautiful artwork you've created yourself",
   },
 ];
 
 const upcomingWorkshops = [
   {
-    title: "Spring Bridal Workshop",
+    title: "Spring Prairie Colors",
     date: "April 15, 2024",
     time: "10 AM - 1 PM",
     spots: "3 spots left",
-    type: "Bridal Bouquet",
+    type: "Landscape Painting",
   },
   {
-    title: "Tulip Arrangement Class",
+    title: "Abstract Emotions",
     date: "April 17, 2024",
-    time: "2 PM - 4 PM",
+    time: "2 PM - 4:30 PM",
     spots: "5 spots left",
-    type: "Seasonal Arrangements",
+    type: "Abstract Expression",
   },
   {
-    title: "Easter Flower Crafts",
+    title: "Family Creative Time",
     date: "April 20, 2024",
-    time: "2 PM - 3:30 PM",
+    time: "2 PM - 4 PM",
     spots: "8 spots left",
-    type: "Kids Craft",
+    type: "Family Art",
   },
 ];
 
@@ -149,15 +150,15 @@ export default function WorkshopsPage() {
       <div className="text-center space-y-6">
         <div className="space-y-4">
           <Badge variant="secondary" className="text-sm">
-            Floral Design Workshops
+            Creative Art Workshops
           </Badge>
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
-            Learn the Art of Floral Design
+            Discover Your Creative Voice
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Join our hands-on workshops and learn to create stunning floral arrangements
-            with fresh, locally grown flowers. From bridal bouquets to seasonal centerpieces,
-            discover your creative potential.
+            Join our hands-on art workshops and explore your creativity in a supportive,
+            inspiring environment. From landscape painting to abstract expression,
+            discover new techniques and create beautiful artwork.
           </p>
         </div>
 
@@ -195,8 +196,8 @@ export default function WorkshopsPage() {
         <div className="text-center">
           <h2 className="text-3xl font-bold">Workshop Offerings</h2>
           <p className="text-muted-foreground mt-3 max-w-2xl mx-auto">
-            Choose from our selection of floral design workshops, each designed to
-            teach specific techniques and create beautiful arrangements.
+            Choose from our selection of art workshops, each designed to
+            teach specific techniques and inspire creative expression.
           </p>
         </div>
 
@@ -262,7 +263,7 @@ export default function WorkshopsPage() {
             Upcoming Workshops
           </CardTitle>
           <CardDescription>
-            Reserve your spot in our next floral design sessions
+            Reserve your spot in our next creative sessions
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -331,10 +332,10 @@ export default function WorkshopsPage() {
               </p>
             </div>
             <div className="text-center p-6 border rounded-lg">
-              <h4 className="font-semibold mb-2">Bridal Package</h4>
-              <p className="text-2xl font-bold text-primary mb-2">$25 off</p>
+              <h4 className="font-semibold mb-2">Corporate Package</h4>
+              <p className="text-2xl font-bold text-primary mb-2">$50 off</p>
               <p className="text-sm text-muted-foreground">
-                Special discount for bridal party workshop bookings
+                Special discount for corporate team building workshops
               </p>
             </div>
           </div>
@@ -346,7 +347,7 @@ export default function WorkshopsPage() {
         <CardHeader>
           <CardTitle>What to Expect</CardTitle>
           <CardDescription>
-            Your floral design workshop experience
+            Your creative workshop experience
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-6">
@@ -357,9 +358,9 @@ export default function WorkshopsPage() {
                   <span className="text-sm font-semibold text-primary">1</span>
                 </div>
                 <div>
-                  <h4 className="font-semibold">Welcome & Introduction</h4>
+                  <h4 className="font-semibold">Welcome & Setup</h4>
                   <p className="text-sm text-muted-foreground">
-                    Meet your instructor and learn about the flowers you'll be working with
+                    Meet your instructor and get familiar with materials and techniques
                   </p>
                 </div>
               </div>
@@ -368,9 +369,9 @@ export default function WorkshopsPage() {
                   <span className="text-sm font-semibold text-primary">2</span>
                 </div>
                 <div>
-                  <h4 className="font-semibold">Design Principles</h4>
+                  <h4 className="font-semibold">Skill Building</h4>
                   <p className="text-sm text-muted-foreground">
-                    Learn fundamental floral design techniques and composition
+                    Learn fundamental techniques and artistic principles
                   </p>
                 </div>
               </div>
@@ -381,9 +382,9 @@ export default function WorkshopsPage() {
                   <span className="text-sm font-semibold text-primary">3</span>
                 </div>
                 <div>
-                  <h4 className="font-semibold">Hands-On Creation</h4>
+                  <h4 className="font-semibold">Creative Expression</h4>
                   <p className="text-sm text-muted-foreground">
-                    Create your arrangement with guidance from our expert florists
+                    Create your artwork with guidance and encouragement
                   </p>
                 </div>
               </div>
@@ -392,9 +393,9 @@ export default function WorkshopsPage() {
                   <span className="text-sm font-semibold text-primary">4</span>
                 </div>
                 <div>
-                  <h4 className="font-semibold">Take Home & Care</h4>
+                  <h4 className="font-semibold">Share & Celebrate</h4>
                   <p className="text-sm text-muted-foreground">
-                    Leave with your creation and learn how to care for your flowers
+                    Share your creation and celebrate your artistic journey
                   </p>
                 </div>
               </div>
@@ -406,19 +407,19 @@ export default function WorkshopsPage() {
       {/* Contact CTA */}
       <Card className="bg-primary/5 border-primary/20">
         <CardContent className="text-center py-8">
-          <h3 className="text-2xl font-bold mb-4">Ready to Create Floral Magic?</h3>
+          <h3 className="text-2xl font-bold mb-4">Ready to Create Something Beautiful?</h3>
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-            Join our community of floral enthusiasts and learn to create beautiful
-            arrangements with fresh, locally grown flowers.
+            Join our community of artists and discover your creative potential
+            in our welcoming Calgary studio space.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button size="lg" className="belmont-accent text-white">
-              <Flower className="h-5 w-5 mr-2" />
+              <Palette className="h-5 w-5 mr-2" />
               Browse Workshops
             </Button>
             <Button variant="outline" size="lg">
               <Mail className="h-5 w-5 mr-2" />
-              Contact Us
+              Contact Studio
             </Button>
           </div>
         </CardContent>

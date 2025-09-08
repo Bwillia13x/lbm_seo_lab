@@ -1,213 +1,217 @@
-// Little Bow Meadows Constants - Centralize all LBM-specific data here
+// Prairie Artistry Studio Constants - Centralize all business-specific data here
 export const LBM_CONSTANTS = {
   // Business Info
-  BUSINESS_NAME: "Little Bow Meadows",
-  BOOK_URL: "https://www.airbnb.com/slink/ezl2mtlK", // Airbnb A-frame booking
-  WEBSITE_URL: "https://littlebowmeadows.ca",
-  PHONE_TEL: "tel:403-555-0123", // Placeholder - needs actual number
-  PHONE_DISPLAY: "403-555-0123", // Placeholder - needs actual number
-  ADDRESS_STR: "Little Bow River, High River, Alberta, T1V 1M6", // Placeholder - needs actual address
-  MAP_URL: "https://maps.google.com/?q=Little+Bow+River,+High+River,+AB,+T1V+1M6",
+  BUSINESS_NAME: "Prairie Artistry Studio",
+  BOOK_URL: "https://prairie-artistry-studio.lovable.app/book", // Main booking page
+  WEBSITE_URL: "https://prairie-artistry-studio.lovable.app",
+  PHONE_TEL: "tel:403-555-0123", // Update with actual number
+  PHONE_DISPLAY: "403-555-0123", // Update with actual number
+  ADDRESS_STR: "Calgary, Alberta", // Update with actual address
+  MAP_URL: "https://maps.google.com/?q=Prairie+Artistry+Studio,+Calgary,+AB",
 
   // Review Links - Placeholder Google Place ID needed
   REVIEW_GOOGLE_URL:
-    "https://search.google.com/local/writereview?placeid=PLACEHOLDER_NEEDS_LBM_PLACE_ID",
+    "https://search.google.com/local/writereview?placeid=PLACEHOLDER_NEEDS_PRAIRIE_ARTISTRY_PLACE_ID",
   REVIEW_APPLE_URL:
-    "https://maps.apple.com/?q=Little+Bow+River,+High+River,+AB,+T1V+1M6",
+    "https://maps.apple.com/?q=Prairie+Artistry+Studio,+Calgary,+AB",
 
   // Social & Contact
-  INSTAGRAM_URL: "https://instagram.com/littlebowmeadows",
-  FACEBOOK_URL: "https://facebook.com/littlebowmeadows",
+  INSTAGRAM_URL: "https://instagram.com/prairieartistry",
+  FACEBOOK_URL: "https://facebook.com/prairieartistry",
 
-  // Services (for UTM content) - Three monetization lines
+  // Services (for UTM content) - Art & Creative Services
   SERVICES: [
-    "wedding-tour",
-    "bouquet-order",
-    "workshop-signup",
-    "airbnb-booking",
-    "floral-consultation",
-    "seasonal-csa",
-    "engagement-session",
-    "farm-visit",
+    "art-commission",
+    "workshop-booking",
+    "gallery-visit",
+    "private-lesson",
+    "art-consultation",
+    "custom-artwork",
+    "group-workshop",
+    "art-therapy",
+    "corporate-workshop",
+    "art-supplies",
   ],
 
   // UTM Campaign Base
-  UTM_CAMPAIGN_BASE: "lbm",
+  UTM_CAMPAIGN_BASE: "prairie_artistry",
 
-  // Local Keywords (Southern Alberta wedding/farm focus)
+  // Local Keywords (Calgary art studio focus)
   LOCAL_KEYWORDS: [
-    "southern alberta outdoor wedding venues",
-    "prairie wildflower bouquets",
-    "high river weekend stay",
-    "calgary wedding venue near river",
-    "seasonal farm bouquets alberta",
-    "little bow river wedding",
-    "prairie wedding photography",
-    "alberta floral farm",
-    "high river airbnb",
-    "calgary floral delivery",
+    "calgary art studio",
+    "prairie art workshops",
+    "custom artwork calgary",
+    "art classes calgary",
+    "local artist calgary",
+    "art therapy calgary",
+    "painting workshops alberta",
+    "creative studio calgary",
+    "art commissions calgary",
+    "group art classes",
   ],
 
   // Business Lines
   BUSINESS_LINES: {
-    WEDDINGS: "weddings",
-    FLOWERS: "flowers",
-    STAY: "stay",
+    WORKSHOPS: "workshops",
+    COMMISSIONS: "commissions",
+    GALLERY: "gallery",
+    THERAPY: "therapy",
   },
 
   // Seasonal Content Themes
   SEASONS: {
-    SPRING: "spring-blooms",
-    SUMMER: "summer-weddings",
-    FALL: "fall-harvest",
-    WINTER: "winter-planning",
+    SPRING: "spring-inspiration",
+    SUMMER: "summer-workshops",
+    FALL: "fall-colors",
+    WINTER: "winter-creativity",
   },
 };
 
-// Pre-configured UTM Presets for LBM
+// Pre-configured UTM Presets for Prairie Artistry Studio
 export const LBM_UTM_PRESETS = {
   gbp_post: {
     label: "GBP Post",
     source: "google",
     medium: "gbp",
     campaign: `${LBM_CONSTANTS.UTM_CAMPAIGN_BASE}_${new Date().toISOString().slice(0, 7)}`,
-    content: "prairie-wedding",
+    content: "art-studio",
   },
   gbp_profile: {
     label: "GBP Profile",
     source: "google",
     medium: "gbp-profile",
     campaign: `${LBM_CONSTANTS.UTM_CAMPAIGN_BASE}_${new Date().toISOString().slice(0, 7)}`,
-    content: "little-bow-profile",
+    content: "studio-profile",
   },
   instagram_bio: {
     label: "Instagram Bio",
     source: "instagram",
     medium: "bio",
     campaign: `${LBM_CONSTANTS.UTM_CAMPAIGN_BASE}_${new Date().toISOString().slice(0, 7)}`,
-    content: "prairie-bio",
+    content: "art-bio",
   },
   instagram_post: {
     label: "Instagram Post",
     source: "instagram",
     medium: "post",
     campaign: `${LBM_CONSTANTS.UTM_CAMPAIGN_BASE}_${new Date().toISOString().slice(0, 7)}`,
-    content: "prairie-post",
+    content: "art-post",
   },
-  wedding_tour: {
-    label: "Wedding Tour",
-    source: "instagram",
-    medium: "bio",
-    campaign: `${LBM_CONSTANTS.UTM_CAMPAIGN_BASE}_wedding_${new Date().toISOString().slice(0, 7)}`,
-    content: "tour-request",
-  },
-  bouquet_order: {
-    label: "Bouquet Order",
-    source: "instagram",
-    medium: "bio",
-    campaign: `${LBM_CONSTANTS.UTM_CAMPAIGN_BASE}_flowers_${new Date().toISOString().slice(0, 7)}`,
-    content: "bouquet-shop",
-  },
-  workshop_signup: {
-    label: "Workshop Signup",
+  workshop_booking: {
+    label: "Workshop Booking",
     source: "instagram",
     medium: "bio",
     campaign: `${LBM_CONSTANTS.UTM_CAMPAIGN_BASE}_workshop_${new Date().toISOString().slice(0, 7)}`,
-    content: "floral-workshop",
+    content: "workshop-signup",
   },
-  airbnb_stay: {
-    label: "Airbnb Stay",
+  commission_inquiry: {
+    label: "Commission Inquiry",
     source: "instagram",
     medium: "bio",
-    campaign: `${LBM_CONSTANTS.UTM_CAMPAIGN_BASE}_stay_${new Date().toISOString().slice(0, 7)}`,
-    content: "a-frame-booking",
+    campaign: `${LBM_CONSTANTS.UTM_CAMPAIGN_BASE}_commission_${new Date().toISOString().slice(0, 7)}`,
+    content: "custom-art",
+  },
+  gallery_visit: {
+    label: "Gallery Visit",
+    source: "instagram",
+    medium: "bio",
+    campaign: `${LBM_CONSTANTS.UTM_CAMPAIGN_BASE}_gallery_${new Date().toISOString().slice(0, 7)}`,
+    content: "gallery-tour",
+  },
+  art_therapy: {
+    label: "Art Therapy",
+    source: "instagram",
+    medium: "bio",
+    campaign: `${LBM_CONSTANTS.UTM_CAMPAIGN_BASE}_therapy_${new Date().toISOString().slice(0, 7)}`,
+    content: "therapy-session",
   },
 };
 
-// LBM-specific content templates
+// Prairie Artistry Studio-specific content templates
 export const LBM_CONTENT_TEMPLATES = {
   gbp_posts: [
-    "💐 Seasonal prairie wildflowers now blooming! Fresh bouquets available for pickup or delivery. #PrairieFlowers #AlbertaFlorist #LittleBowMeadows",
-    "💒 Dreamy outdoor wedding venue on the Little Bow River. Request a tour today! #PrairieWedding #AlbertaWeddingVenue #LittleBowMeadows",
-    "🏠 Cozy A-frame stay on the river - perfect for your prairie escape. Book through Airbnb! #PrairieStay #LittleBowRiver #AlbertaTravel",
-    "🌸 Join our floral workshop this weekend! Learn to arrange prairie blooms. Limited spots available. #FloralWorkshop #AlbertaFlowers #LittleBowMeadows",
+    "🎨 New art workshop this weekend! Learn watercolor techniques with prairie landscapes. Limited spots available. #PrairieArt #CalgaryArt #ArtWorkshop",
+    "✨ Custom artwork commissions now open! Transform your space with original prairie-inspired pieces. #CustomArt #CalgaryArtist #PrairieArtistry",
+    "🖼️ Gallery open for private viewings! See our latest collection of prairie landscapes and abstract works. #ArtGallery #CalgaryArt #PrairieArtistry",
+    "🧘 Art therapy sessions available - healing through creative expression. Book your consultation today. #ArtTherapy #CalgaryWellness #CreativeHealing",
   ],
   instagram_captions: [
-    "Southern Alberta's premier outdoor wedding venue & floral farm. Where prairie dreams come to life. Request a tour: [link] #PrairieWedding #AlbertaWedding #LittleBowMeadows",
-    "From wildflower bouquets to ceremony arches - we create magical moments on the Little Bow River. #WeddingFlowers #PrairieVenue #Alberta",
-    "Our A-frame on the river offers the perfect blend of rustic charm and modern comfort. Your prairie getaway awaits. #PrairieStay #LittleBowRiver #Alberta",
-    "Planning your special day? Our floral workshops teach you to create stunning arrangements with seasonal blooms. #FloralWorkshop #WeddingPlanning #AlbertaFlowers",
-  ],
-  wedding_posts: [
-    "🌅 Golden hour ceremonies overlooking the Little Bow River - pure magic! #PrairieWedding #OutdoorWedding #LittleBowMeadows",
-    "💑 Intimate micro-weddings for just the two of you, surrounded by wildflowers. #MicroWedding #PrairieRomance #AlbertaWedding",
-    "🎨 Our flexible ceremony spaces adapt to your vision - from elopements to grand celebrations. #WeddingVenue #LittleBowRiver #Alberta",
-  ],
-  flower_posts: [
-    "🌼 This week's seasonal bouquet: peonies, delphiniums, and prairie wildflowers. #SeasonalBouquets #PrairieFlowers #LittleBowMeadows",
-    "🌾 CSA flower shares deliver fresh blooms to your door weekly. Support local farming! #CSAFlowers #AlbertaFlorist #FarmFresh",
-    "🎁 Custom bridal bouquets featuring Alberta-grown flowers. Let's create your perfect arrangement. #BridalBouquet #WeddingFlowers #Prairie",
+    "Where prairie inspiration meets artistic expression. Join us for workshops, commissions, and creative healing. Book your session: [link] #PrairieArt #CalgaryArtist #CreativeStudio",
+    "From landscape paintings to abstract expressions - we bring the beauty of the prairies to life through art. #PrairieInspired #CalgaryArt #ArtStudio",
+    "Discover your creative voice in our welcoming studio space. Workshops, private lessons, and art therapy available. #CreativeJourney #CalgaryArt #ArtWorkshops",
+    "Custom artwork that captures the essence of prairie life. Commission your unique piece today. #CustomArt #PrairieArtistry #CalgaryCommissions",
   ],
   workshop_posts: [
-    "👐 Hands-on floral design workshop this Saturday. Learn from our expert florists! #FloralWorkshop #FlowerArranging #LittleBowMeadows",
-    "👨‍👩‍👧 Family-friendly flower crafts for all ages. Create memories with prairie blooms. #FamilyWorkshop #AlbertaFlowers #Prairie",
-    "💡 Bridal consultation + workshop bundle - perfect preparation for your wedding flowers. #WeddingPlanning #FloralDesign #Alberta",
+    "🌾 Prairie Landscape Painting Workshop - capture the beauty of Alberta's golden fields. #LandscapeArt #PrairieWorkshop #CalgaryArt",
+    "🎭 Abstract Expression Workshop - explore color, texture, and emotion through paint. #AbstractArt #CreativeWorkshop #CalgaryArtist",
+    "👨‍👩‍👧‍👦 Family Art Day - creative fun for all ages with prairie-themed projects. #FamilyArt #CalgaryWorkshops #CreativeFamily",
+    "🧘‍♀️ Mindful Art Session - combine meditation with creative expression for wellness. #ArtTherapy #MindfulArt #CalgaryWellness",
   ],
-  stay_posts: [
-    "🌙 Stargazing from our A-frame deck - the perfect end to your prairie day. #PrairieStay #LittleBowRiver #Alberta",
-    "☕ Morning coffee with river views. Start your day in pure tranquility. #PrairieEscape #AlbertaTravel #LittleBowMeadows",
-    "🚶‍♀️ Hiking trails, fishing spots, and farm visits - adventure awaits at Little Bow Meadows. #PrairieAdventure #Alberta #LittleBowRiver",
+  commission_posts: [
+    "🏠 Transform your home with custom prairie-inspired artwork. From landscapes to abstracts. #CustomArt #HomeDecor #PrairieArtistry",
+    "💼 Corporate art commissions - enhance your workspace with original Calgary artist creations. #CorporateArt #OfficeDecor #CalgaryBusiness",
+    "💝 Gift commissions available - surprise someone special with personalized artwork. #ArtGifts #CustomCommissions #PrairieArt",
+  ],
+  gallery_posts: [
+    "🖼️ New exhibition opening: 'Prairie Dreams' - contemporary interpretations of Alberta landscapes. #ArtExhibition #CalgaryGallery #PrairieArt",
+    "👁️ Gallery tours available by appointment - see our full collection of prairie-inspired works. #GalleryTour #CalgaryArt #ArtViewing",
+    "🎨 Featured artist spotlight: Local Calgary creators showcasing prairie life through various mediums. #LocalArtist #CalgaryCreatives #PrairieArtistry",
+  ],
+  therapy_posts: [
+    "🌱 Art therapy sessions help process emotions through creative expression. Safe, supportive environment. #ArtTherapy #MentalHealth #CreativeHealing",
+    "🤝 Group art therapy sessions - connect with others while exploring creativity. #GroupTherapy #CommunityHealing #ArtWellness",
+    "💆‍♀️ Stress relief through art - discover the therapeutic power of creative expression. #StressRelief #ArtHealing #CalgaryWellness",
   ],
 };
 
-// LBM partner prospects for Southern Alberta wedding industry
+// Prairie Artistry Studio partner prospects for Calgary art community
 export const LBM_PARTNERS = [
   {
-    name: "High River Chamber of Commerce",
-    url: "https://highriverchamber.ca",
-    type: "business",
-    email: "info@highriverchamber.ca",
+    name: "Calgary Arts Development",
+    url: "https://calgaryartsdevelopment.com",
+    type: "arts",
+    email: "info@calgaryartsdevelopment.com",
   },
   {
-    name: "Okotoks Chamber of Commerce",
-    url: "https://okotokschamber.com",
-    type: "business",
-    email: "info@okotokschamber.com",
+    name: "Alberta Society of Artists",
+    url: "https://albertaartists.com",
+    type: "arts",
+    email: "info@albertaartists.com",
   },
   {
-    name: "Alberta Game Farm",
-    url: "https://albertagamefarm.com",
-    type: "venue",
-    email: "info@albertagamefarm.com",
+    name: "Calgary Public Library",
+    url: "https://calgarylibrary.ca",
+    type: "community",
+    email: "info@calgarylibrary.ca",
   },
   {
-    name: "Bow Valley Ranche",
-    url: "https://bowvalleyranche.com",
-    type: "venue",
-    email: "info@bowvalleyranche.com",
+    name: "Kensington Art Supply",
+    url: "https://kensingtonartsupply.com",
+    type: "supplier",
+    email: "info@kensingtonartsupply.ca",
   },
   {
-    name: "Meadow Muse",
-    url: "https://meadowmuse.ca",
-    type: "venue",
-    email: "hello@meadowmuse.ca",
+    name: "Calgary Mental Health Association",
+    url: "https://cmha.calgary.ab.ca",
+    type: "wellness",
+    email: "info@cmha.calgary.ab.ca",
   },
   {
-    name: "Prairie Wedding Association",
-    url: "https://prairieweddingassociation.com",
-    type: "industry",
-    email: "info@prairieweddingassociation.com",
+    name: "Hillhurst Sunnyside Community Association",
+    url: "https://hsca.ca",
+    type: "community",
+    email: "info@hsca.ca",
   },
   {
-    name: "Alberta Wedding Planners Association",
-    url: "https://albertaweddingplanners.com",
-    type: "industry",
-    email: "info@albertaweddingplanners.com",
+    name: "Calgary Wellness Centre",
+    url: "https://calgarywellness.ca",
+    type: "wellness",
+    email: "info@calgarywellness.ca",
   },
   {
-    name: "Foothills Wedding Directory",
-    url: "https://foothillsweddings.ca",
-    type: "directory",
-    email: "info@foothillsweddings.ca",
+    name: "Alberta Art Therapy Association",
+    url: "https://albertaarttherapy.com",
+    type: "therapy",
+    email: "info@albertaarttherapy.com",
   },
 ];

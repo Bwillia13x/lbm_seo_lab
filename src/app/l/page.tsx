@@ -21,12 +21,12 @@ function buildLink(base: string, params: Record<string, string>) {
 export default function LinkInBio() {
   const [placeUrl, setPlaceUrl] = useState(LBM_CONSTANTS.REVIEW_GOOGLE_URL);
   const [qr, setQr] = useState<string>("");
-  const campaign = `lbm_linkinbio_${monthCode()}`;
-  const baseBook = (typeof window !== "undefined" && localStorage.getItem("lbm_onboarding_booking")) || LBM_CONSTANTS.BOOK_URL;
+  const campaign = `prairie_artistry_linkinbio_${monthCode()}`;
+  const baseBook = (typeof window !== "undefined" && localStorage.getItem("prairie_artistry_onboarding_booking")) || LBM_CONSTANTS.BOOK_URL;
 
   useEffect(() => {
     try {
-      const u = localStorage.getItem("lbm_google_review_url");
+      const u = localStorage.getItem("prairie_artistry_google_review_url");
       if (u) setPlaceUrl(u);
     } catch {}
   }, []);
@@ -36,20 +36,20 @@ export default function LinkInBio() {
     const medium = "bio";
     return [
       {
-        label: "Request Tour",
-        href: buildLink(LBM_CONSTANTS.WEBSITE_URL + "/weddings", { utm_source: source, utm_medium: medium, utm_campaign: campaign, utm_content: "wedding-tour" }),
+        label: "Book Workshop",
+        href: buildLink(LBM_CONSTANTS.WEBSITE_URL + "/workshops", { utm_source: source, utm_medium: medium, utm_campaign: campaign, utm_content: "workshop-booking" }),
       },
       {
-        label: "Book Flowers",
-        href: buildLink(LBM_CONSTANTS.WEBSITE_URL + "/flowers", { utm_source: source, utm_medium: medium, utm_campaign: campaign, utm_content: "bouquet-order" }),
+        label: "Commission Art",
+        href: buildLink(LBM_CONSTANTS.WEBSITE_URL + "/commissions", { utm_source: source, utm_medium: medium, utm_campaign: campaign, utm_content: "commission-inquiry" }),
       },
       {
-        label: "Join Workshop",
-        href: buildLink(LBM_CONSTANTS.WEBSITE_URL + "/workshops", { utm_source: source, utm_medium: medium, utm_campaign: campaign, utm_content: "floral-workshop" }),
+        label: "Visit Gallery",
+        href: buildLink(LBM_CONSTANTS.WEBSITE_URL + "/gallery", { utm_source: source, utm_medium: medium, utm_campaign: campaign, utm_content: "gallery-visit" }),
       },
       {
-        label: "Book Stay",
-        href: buildLink(baseBook, { utm_source: source, utm_medium: medium, utm_campaign: campaign, utm_content: "airbnb-booking" }),
+        label: "Art Therapy",
+        href: buildLink(LBM_CONSTANTS.WEBSITE_URL + "/therapy", { utm_source: source, utm_medium: medium, utm_campaign: campaign, utm_content: "therapy-session" }),
       },
       {
         label: "Leave a Review",
@@ -67,8 +67,8 @@ export default function LinkInBio() {
       <Card className="max-w-md w-full">
         <CardContent className="p-6 space-y-4">
           <div className="text-center space-y-1">
-            <div className="text-xl font-semibold">Little Bow Meadows</div>
-            <div className="text-sm text-muted-foreground">Little Bow River • High River</div>
+            <div className="text-xl font-semibold">Prairie Artistry Studio</div>
+            <div className="text-sm text-muted-foreground">Creative Studio • Calgary</div>
           </div>
           <div className="grid gap-3">
             {tiles.map((t) => (
@@ -86,7 +86,7 @@ export default function LinkInBio() {
                   size="sm"
                   onClick={() => {
                     const a = document.createElement("a");
-                    a.href = qr; a.download = "belmont-link-in-bio.png"; a.click();
+                    a.href = qr; a.download = "prairie-artistry-link-in-bio.png"; a.click();
                   }}
                 >
                   Download Bio QR

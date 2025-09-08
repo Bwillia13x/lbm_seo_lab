@@ -106,86 +106,86 @@ const SAMPLE_TRANSACTIONS: Transaction[] = [
     id: "T001",
     customerId: "C001",
     date: "2024-09-01",
-    services: ["Men's Haircut", "Beard Trim"],
-    totalAmount: 65,
-    staff: "Mike",
+    services: ["Art Workshop", "Private Lesson"],
+    totalAmount: 150,
+    staff: "Sarah",
     customerType: "regular",
   },
   {
     id: "T002",
     customerId: "C002",
     date: "2024-09-01",
-    services: ["Skin Fade", "Hot Towel Shave"],
-    totalAmount: 70,
-    staff: "Sarah",
+    services: ["Custom Commission", "Art Therapy"],
+    totalAmount: 320,
+    staff: "Emma",
     customerType: "returning",
   },
   {
     id: "T003",
     customerId: "C003",
     date: "2024-09-02",
-    services: ["Men's Haircut"],
-    totalAmount: 35,
-    staff: "Alex",
+    services: ["Art Workshop"],
+    totalAmount: 65,
+    staff: "David",
     customerType: "new",
   },
   {
     id: "T004",
     customerId: "C004",
     date: "2024-09-02",
-    services: ["Beard Trim", "Hot Towel Shave"],
-    totalAmount: 55,
-    staff: "Mike",
+    services: ["Private Lesson", "Art Therapy"],
+    totalAmount: 205,
+    staff: "Sarah",
     customerType: "regular",
   },
   {
     id: "T005",
     customerId: "C005",
     date: "2024-09-03",
-    services: ["Kids Cut", "Men's Haircut"],
-    totalAmount: 60,
-    staff: "Sarah",
+    services: ["Group Workshop", "Art Workshop"],
+    totalAmount: 110,
+    staff: "Emma",
     customerType: "returning",
   },
 ];
 
 const CUSTOMER_SEGMENTS: CustomerSegment[] = [
   {
-    name: "Young Professionals",
+    name: "Creative Professionals",
     description:
-      "Busy professionals aged 25-35 seeking quick, quality grooming",
+      "Busy professionals aged 25-45 seeking creative outlets and skill development",
     characteristics: [
       "Time-conscious",
-      "Brand loyal",
+      "Quality-focused",
       "Willing to pay premium",
     ],
-    recommendedServices: ["Skin Fade", "Beard Trim", "Hot Towel Shave"],
-    avgSpend: 65,
+    recommendedServices: ["Private Lesson", "Art Therapy", "Custom Commission"],
+    avgSpend: 180,
   },
   {
-    name: "Families",
-    description: "Parents bringing children for haircuts",
-    characteristics: ["Budget-conscious", "Value-focused", "Loyal customers"],
-    recommendedServices: ["Kids Cut", "Men's Haircut", "Beard Trim"],
-    avgSpend: 55,
+    name: "Art Enthusiasts",
+    description: "Hobbyists and art lovers seeking regular creative engagement",
+    characteristics: ["Value-focused", "Community-oriented", "Regular participants"],
+    recommendedServices: ["Art Workshop", "Group Workshop", "Private Lesson"],
+    avgSpend: 95,
   },
   {
-    name: "Luxury Clients",
-    description: "High-end clients seeking premium grooming experience",
+    name: "Wellness Seekers",
+    description: "Individuals seeking therapeutic and healing creative experiences",
     characteristics: [
-      "Quality-focused",
+      "Wellness-focused",
       "Willing to invest",
-      "Brand ambassadors",
+      "Long-term commitment",
     ],
-    recommendedServices: ["Hot Towel Shave", "Beard Trim", "Skin Fade"],
-    avgSpend: 85,
+    recommendedServices: ["Art Therapy", "Private Lesson", "Custom Commission"],
+    avgSpend: 220,
   },
   {
-    name: "Occasional Visitors",
-    description: "Infrequent visitors needing basic services",
-    characteristics: ["Price-sensitive", "Trial customers", "Need education"],
-    recommendedServices: ["Beard Trim", "Hot Towel Shave"],
-    avgSpend: 45,
+    name: "Beginners",
+    description: "New to art seeking introductory experiences",
+    characteristics: ["Price-sensitive", "Learning-focused", "Need guidance"],
+    recommendedServices: ["Art Workshop", "Group Workshop"],
+    avgSpend: 75,
   },
 ];
 
@@ -193,17 +193,17 @@ const AI_RECOMMENDATION_PROMPTS = [
   {
     name: "Service Bundle Recommendation",
     prompt:
-      "Based on customer {customerType} with {primaryService}, suggest 2-3 complementary services from {availableServices}. Consider their typical spending pattern of ${avgSpend} and focus on services that increase satisfaction and revenue by 30-50%.",
+      "Based on customer {customerType} with {primaryService}, suggest 2-3 complementary creative services from {availableServices}. Consider their typical spending pattern of ${avgSpend} and focus on services that increase artistic satisfaction and revenue by 30-50%.",
   },
   {
     name: "Upselling Strategy",
     prompt:
-      "For a {customerType} customer getting {primaryService}, create a persuasive but natural recommendation script that highlights the benefits of adding {suggestedService}. Include pricing context and value proposition.",
+      "For a {customerType} customer taking {primaryService}, create a persuasive but natural recommendation script that highlights the benefits of adding {suggestedService}. Include pricing context and creative value proposition.",
   },
   {
     name: "Customer Education",
     prompt:
-      "Explain to a customer why {suggestedService} would complement their {primaryService}. Focus on benefits, timing, and how it improves their overall grooming experience.",
+      "Explain to a customer why {suggestedService} would complement their {primaryService}. Focus on benefits, timing, and how it enhances their overall creative journey.",
   },
 ];
 
@@ -213,9 +213,9 @@ export default function AddOnRecommender() {
   const [transactions, setTransactions] = useState<Transaction[]>([]);
   const [recommendations, setRecommendations] = useState<Recommendation[]>([]);
   const [selectedService, setSelectedService] =
-    useState<string>("Men's Haircut");
+    useState<string>("Art Workshop");
   const [customerSegment, setCustomerSegment] = useState<string>(
-    "Young Professionals"
+    "Creative Professionals"
   );
   // Server-managed AI; no client key needed
   const [isAnalyzing, setIsAnalyzing] = useState(false);
@@ -322,10 +322,10 @@ export default function AddOnRecommender() {
     try {
       const segment = CUSTOMER_SEGMENTS.find((s) => s.name === customerSegment);
       const availableServices = [
-        "Beard Trim",
-        "Hot Towel Shave",
-        "Skin Fade",
-        "Kids Cut",
+        "Private Lesson",
+        "Art Therapy",
+        "Custom Commission",
+        "Group Workshop",
       ];
 
       const prompt = AI_RECOMMENDATION_PROMPTS[0].prompt
@@ -484,40 +484,40 @@ export default function AddOnRecommender() {
                   <p className="text-muted-foreground">
                     This tool analyzes customer purchase patterns to recommend
                     complementary services and add-ons during appointments. It
-                    uses historical sales data to identify which services are
-                    frequently purchased together, helping Belmont increase
-                    average transaction value and customer satisfaction.
+                    uses historical booking data to identify which services are
+                    frequently booked together, helping Prairie Artistry Studio increase
+                    average transaction value and participant satisfaction.
                   </p>
                 </div>
 
                 <div>
                   <h3 className="font-semibold text-lg mb-2">
-                    Why Service Suggestions Matter for Belmont
+                    Why Service Suggestions Matter for Prairie Artistry Studio
                   </h3>
                   <p className="text-muted-foreground">
-                    Recommending add-on services helps Belmont grow revenue
-                    while providing better value to customers:
+                    Recommending add-on services helps Prairie Artistry Studio grow revenue
+                    while providing better value to workshop participants:
                   </p>
                   <ul className="list-disc pl-5 space-y-1 text-muted-foreground mt-2">
                     <li>
                       <strong>Increased revenue:</strong> Add-on services can
-                      increase average transaction value by 20-40%
+                      increase average workshop value by 20-40%
                     </li>
                     <li>
-                      <strong>Better customer experience:</strong> Customers get
-                      more comprehensive grooming services
+                      <strong>Better participant experience:</strong> Participants get
+                      more comprehensive creative learning
                     </li>
                     <li>
                       <strong>Improved satisfaction:</strong> Addressing all
-                      customer needs in one visit
+                      creative needs in one session
                     </li>
                     <li>
                       <strong>Data-driven recommendations:</strong> Suggestions
-                      based on actual purchase patterns
+                      based on actual booking patterns
                     </li>
                     <li>
-                      <strong>Staff confidence:</strong> Barbers can confidently
-                      suggest services customers actually want
+                      <strong>Instructor confidence:</strong> Artists can confidently
+                      suggest services participants actually want
                     </li>
                   </ul>
                 </div>
@@ -529,7 +529,7 @@ export default function AddOnRecommender() {
                   <ol className="list-decimal pl-5 space-y-2 text-muted-foreground">
                     <li>
                       <strong>Load your sales data:</strong> Click "Load Sales
-                      Data" to analyze historical transaction patterns
+                      Data" to analyze historical workshop booking patterns
                     </li>
                     <li>
                       <strong>Review the dashboard:</strong> Check the
@@ -542,11 +542,11 @@ export default function AddOnRecommender() {
                     </li>
                     <li>
                       <strong>Train your staff:</strong> Share the most popular
-                      add-on combinations with your barbers
+                      add-on combinations with your instructors
                     </li>
                     <li>
-                      <strong>Implement during appointments:</strong> Have
-                      barbers suggest relevant add-ons during consultations
+                      <strong>Implement during workshops:</strong> Have
+                      instructors suggest relevant add-ons during sessions
                     </li>
                     <li>
                       <strong>Track success:</strong> Monitor which suggestions
@@ -586,22 +586,22 @@ export default function AddOnRecommender() {
                   <ul className="list-disc pl-5 space-y-1 text-muted-foreground">
                     <li>
                       <strong>Timing is key:</strong> Suggest add-ons after the
-                      customer has decided on their main service
+                      participant has decided on their main workshop
                     </li>
                     <li>
-                      <strong>Be consultative:</strong> Ask about their grooming
+                      <strong>Be consultative:</strong> Ask about their creative
                       goals rather than just selling
                     </li>
                     <li>
                       <strong>Bundle pricing:</strong> Offer small discounts for
-                      combining services
+                      combining workshops
                     </li>
                     <li>
                       <strong>Quality over quantity:</strong> Focus on 2-3
-                      high-confidence recommendations per customer
+                      high-confidence recommendations per participant
                     </li>
                     <li>
-                      <strong>Staff training:</strong> Train barbers on how to
+                      <strong>Instructor training:</strong> Train artists on how to
                       naturally incorporate suggestions
                     </li>
                     <li>
@@ -613,23 +613,23 @@ export default function AddOnRecommender() {
 
                 <div>
                   <h3 className="font-semibold text-lg mb-2">
-                    Common Belmont Add-On Combinations
+                    Common Prairie Artistry Add-On Combinations
                   </h3>
                   <ul className="list-disc pl-5 space-y-1 text-muted-foreground">
                     <li>
-                      <strong>Men's Cut + Beard Trim:</strong> Most popular
+                      <strong>Art Workshop + Private Lesson:</strong> Most popular
                       combination (85% confidence)
                     </li>
                     <li>
-                      <strong>Men's Cut + Hot Towel Shave:</strong> Luxury
+                      <strong>Art Workshop + Art Therapy:</strong> Wellness
                       package option (72% confidence)
                     </li>
                     <li>
-                      <strong>Beard Trim + Skin Fade:</strong> Complete grooming
+                      <strong>Private Lesson + Custom Commission:</strong> Complete creative
                       experience (68% confidence)
                     </li>
                     <li>
-                      <strong>Kids Cut + Beard Trim:</strong> Family service
+                      <strong>Group Workshop + Art Workshop:</strong> Social learning
                       bundle (45% confidence)
                     </li>
                   </ul>
@@ -642,15 +642,15 @@ export default function AddOnRecommender() {
                   <ul className="list-disc pl-5 space-y-1 text-muted-foreground">
                     <li>
                       <strong>Add-on conversion rate:</strong> Percentage of
-                      suggestions that result in additional sales
+                      suggestions that result in additional bookings
                     </li>
                     <li>
                       <strong>Average transaction value:</strong> Track increase
-                      in average sale amount
+                      in average workshop booking amount
                     </li>
                     <li>
-                      <strong>Customer satisfaction:</strong> Monitor if add-on
-                      customers report higher satisfaction
+                      <strong>Participant satisfaction:</strong> Monitor if add-on
+                      participants report higher satisfaction
                     </li>
                     <li>
                       <strong>Service utilization:</strong> Track which services
@@ -658,7 +658,7 @@ export default function AddOnRecommender() {
                     </li>
                     <li>
                       <strong>Revenue per customer:</strong> Measure overall
-                      increase in revenue per visit
+                      increase in revenue per workshop session
                     </li>
                   </ul>
                 </div>
@@ -674,7 +674,7 @@ export default function AddOnRecommender() {
                     </li>
                     <li>
                       <strong>Product knowledge:</strong> Ensure staff
-                      understand the benefits of each service
+                      understand the benefits of each workshop type
                     </li>
                     <li>
                       <strong>Confidence building:</strong> Share success
@@ -749,19 +749,19 @@ export default function AddOnRecommender() {
                   <div className="space-y-2">
                     <Badge variant="default" className="text-sm px-3 py-1">
                       <Plus className="h-3 w-3 mr-1" />
-                      Beard Trim (85% confidence) - Most popular add-on
+                      Private Lesson (85% confidence) - Most popular add-on
                     </Badge>
                     <Badge variant="secondary" className="text-sm px-3 py-1">
                       <Plus className="h-3 w-3 mr-1" />
-                      Hot Towel Shave (72% confidence) - Luxury upgrade
+                      Art Therapy (72% confidence) - Wellness upgrade
                     </Badge>
                     <Badge variant="secondary" className="text-sm px-3 py-1">
                       <Plus className="h-3 w-3 mr-1" />
-                      Skin Fade (68% confidence) - Complete grooming
+                      Custom Commission (68% confidence) - Complete creative experience
                     </Badge>
                     <Badge variant="outline" className="text-sm px-3 py-1">
                       <Plus className="h-3 w-3 mr-1" />
-                      Kids Cut (45% confidence) - Family service
+                      Group Workshop (45% confidence) - Social learning
                     </Badge>
                   </div>
 
@@ -772,10 +772,10 @@ export default function AddOnRecommender() {
                     <div className="text-sm text-muted-foreground space-y-1">
                       <p>
                         • Focus on high-confidence recommendations (80%+) for
-                        best results
+                        best workshop results
                       </p>
                       <p>
-                        • Suggest 1-2 add-ons per customer to avoid overwhelming
+                        • Suggest 1-2 add-ons per participant to avoid overwhelming
                         them
                       </p>
                       <p>
@@ -783,7 +783,7 @@ export default function AddOnRecommender() {
                       </p>
                       <p>
                         • Track which combinations perform best for your
-                        specific customers
+                        specific workshop participants
                       </p>
                     </div>
                   </div>

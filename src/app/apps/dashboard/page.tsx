@@ -88,7 +88,7 @@ export default function Dashboard() {
     let scans = 0;
     for (const e of last30) {
       if (e.type === "utm_link_built") links++;
-      if (e.type === "booking_created") bookings++;
+      if (e.type === "workshop_booking" || e.type === "commission_inquiry") bookings++;
       if (e.type === "qr_scan") scans++;
       if (e.type === "review_completed") {
         reviews++;
@@ -151,7 +151,7 @@ export default function Dashboard() {
   // Leaderboards
   const topServices = useMemo(() => {
     const m: Record<string, number> = {};
-    for (const e of last30) if (e.type === "booking_created") {
+    for (const e of last30) if (e.type === "workshop_booking" || e.type === "commission_inquiry") {
       const s = String(e.meta?.service || "other");
       m[s] = (m[s] || 0) + 1;
     }
@@ -226,7 +226,7 @@ export default function Dashboard() {
         }
         for (let j = 0; j < bookings; j++) {
           const ts = new Date(d.getTime() - Math.random() * 86400000).toISOString();
-          demo.push({ type: "booking_created", ts, meta: { service: ["wedding-tour","bouquet-order","workshop-signup"][Math.floor(Math.random()*3)] } });
+          demo.push({ type: "workshop_booking", ts, meta: { service: ["art-workshop","commission-inquiry","gallery-visit"][Math.floor(Math.random()*3)] } });
         }
         for (let j = 0; j < reviews; j++) {
           const ts = new Date(d.getTime() - Math.random() * 86400000).toISOString();
@@ -258,8 +258,8 @@ export default function Dashboard() {
   return (
     <div className="space-y-6">
       <PageHeader
-        title="Little Bow Meadows Dashboard"
-        subtitle="Executive overview, today's actions, and quick links for prairie wins."
+        title="Prairie Artistry Studio Dashboard"
+        subtitle="Executive overview, today's actions, and quick links for creative wins."
         actions={
           <div className="flex gap-2">
             <Button onClick={loadDemoMetrics} variant="secondary">
@@ -293,7 +293,7 @@ export default function Dashboard() {
         <CardHeader className="pb-2">
           <CardTitle className="text-base">How to use this dashboard</CardTitle>
           <CardDescription>
-            Start with Onboarding if you haven’t set your info. Then use the quick links to create a tracking link and request reviews.
+            Start with Onboarding if you haven't set your info. Then use the quick links to create a tracking link and request reviews.
           </CardDescription>
         </CardHeader>
       </Card>
@@ -302,7 +302,7 @@ export default function Dashboard() {
       <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
         <KPICard label="Links (30d)" value={kpis.links} hint="UTM links created" />
         <KPICard label="QR Scans (30d)" value={kpis.scans} hint="From printed QR/QR tools" />
-        <KPICard label="Inquiries (30d)" value={kpis.bookings} hint="Tour requests & bookings" />
+        <KPICard label="Inquiries (30d)" value={kpis.bookings} hint="Workshop bookings & commissions" />
         <KPICard label="Reviews (30d)" value={kpis.reviews} hint="Completed" />
         <KPICard label="Avg Rating" value={kpis.avgRating} hint="Out of 5.0" />
       </div>
@@ -312,7 +312,7 @@ export default function Dashboard() {
         <Card>
           <CardHeader>
             <CardTitle className="text-base">30‑Day Trends</CardTitle>
-            <CardDescription>Links, inquiries, and reviews</CardDescription>
+            <CardDescription>Links, workshop bookings, and reviews</CardDescription>
           </CardHeader>
           <CardContent>
             <div className="h-56">
@@ -323,7 +323,7 @@ export default function Dashboard() {
                   <YAxis allowDecimals={false} tickLine={false} width={30} />
                   <ReTooltip />
                   <Line type="monotone" dataKey="links" name="Links" stroke="#6366f1" strokeWidth={2} dot={false} />
-                  <Line type="monotone" dataKey="inquiries" name="Inquiries" stroke="#22c55e" strokeWidth={2} dot={false} />
+                  <Line type="monotone" dataKey="inquiries" name="Bookings" stroke="#22c55e" strokeWidth={2} dot={false} />
                   <Line type="monotone" dataKey="reviews" name="Reviews" stroke="#f59e0b" strokeWidth={2} dot={false} />
                 </LineChart>
               </ResponsiveContainer>
@@ -355,7 +355,7 @@ export default function Dashboard() {
       <Card>
         <CardHeader>
           <CardTitle className="text-base">Marketing Funnel (30d)</CardTitle>
-          <CardDescription>From links → QR scans → inquiries</CardDescription>
+          <CardDescription>From links → QR scans → workshop bookings</CardDescription>
         </CardHeader>
         <CardContent className="space-y-2 text-sm">
           <div className="space-y-2">
@@ -378,7 +378,7 @@ export default function Dashboard() {
           </div>
           <div className="space-y-2">
             <div className="flex items-center justify-between">
-              <span>Inquiries</span>
+              <span>Bookings</span>
               <span>{kpis.bookings}</span>
             </div>
             <div className="h-3 bg-muted rounded">
@@ -391,7 +391,7 @@ export default function Dashboard() {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center gap-2">Onboarding Status</CardTitle>
-          <CardDescription>Complete these to unlock one‑click review requests and consistent tracking.</CardDescription>
+          <CardDescription>Complete these to unlock one‑click review requests and workshop tracking.</CardDescription>
         </CardHeader>
         <CardContent>
           <div className="grid md:grid-cols-2 gap-3 text-sm">
@@ -416,7 +416,7 @@ export default function Dashboard() {
             <CardTitle className="flex items-center gap-2"><LinkIcon className="h-4 w-4"/>Quick: Create Tracking Link</CardTitle>
           </CardHeader>
           <CardContent className="space-y-2 text-sm">
-            <p>Create a UTM link for your next post and download a QR.</p>
+            <p>Create a UTM link for your next workshop post and download a QR.</p>
             <Button asChild size="sm" variant="outline"><Link href="/apps/utm-dashboard">Open UTM Dashboard</Link></Button>
           </CardContent>
         </Card>
@@ -425,7 +425,7 @@ export default function Dashboard() {
             <CardTitle className="flex items-center gap-2"><MessageSquare className="h-4 w-4"/>Quick: Request Reviews</CardTitle>
           </CardHeader>
           <CardContent className="space-y-2 text-sm">
-            <p>Copy CASL‑compliant email/SMS and send to two recent clients.</p>
+            <p>Copy CASL‑compliant email/SMS and send to two recent workshop participants.</p>
             <Button asChild size="sm" variant="outline"><Link href="/apps/review-link">Open Review Requests</Link></Button>
           </CardContent>
         </Card>
@@ -434,7 +434,7 @@ export default function Dashboard() {
             <CardTitle className="flex items-center gap-2"><FileText className="h-4 w-4"/>Quick: Post to Google</CardTitle>
           </CardHeader>
           <CardContent className="space-y-2 text-sm">
-            <p>Generate a fresh GBP post about a featured service.</p>
+            <p>Generate a fresh GBP post about a featured workshop or art service.</p>
             <Button asChild size="sm" variant="outline"><Link href="/apps/gbp-composer">Open GBP Composer</Link></Button>
           </CardContent>
         </Card>
@@ -443,7 +443,7 @@ export default function Dashboard() {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center gap-2"><QrCode className="h-4 w-4"/>Link‑in‑Bio (Instagram)</CardTitle>
-          <CardDescription>Share a single bio link that tracks Book Now, Services, Discounts, and Reviews.</CardDescription>
+          <CardDescription>Share a single bio link that tracks Workshop Booking, Commissions, Gallery, and Reviews.</CardDescription>
         </CardHeader>
         <CardContent className="text-sm">
           <Button asChild><Link href="/l">Open Link‑in‑Bio</Link></Button>

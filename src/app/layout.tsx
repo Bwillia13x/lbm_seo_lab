@@ -7,31 +7,31 @@ const SITE_BASE = process.env.NEXT_PUBLIC_SITE_BASE || LBM_CONSTANTS.WEBSITE_URL
 const ALLOW_INDEXING = process.env.NEXT_PUBLIC_ALLOW_INDEXING === "true";
 
 export const metadata = {
-  title: "Little Bow Meadows SEO Lab - Wedding Venue & Floral Farm Marketing Tools",
+  title: "Prairie Artistry Studio SEO Lab - Art Studio & Creative Workshop Marketing Tools",
   description:
-    "Professional SEO toolkit for Little Bow Meadows wedding venue, floral farm, and Airbnb stay. UTM tracking, review management, GBP posting, and prairie wedding marketing tools.",
+    "Professional SEO toolkit for Prairie Artistry Studio art workshops, custom commissions, and creative therapy. UTM tracking, review management, GBP posting, and Calgary art marketing tools.",
   keywords: [
     "SEO tools",
     "local SEO",
     "UTM tracking",
     "Google Business Profile",
     "review management",
-    "wedding venue marketing",
-    "floral farm marketing",
-    "prairie wedding venue",
-    "southern alberta wedding",
-    "little bow river wedding",
-    "alberta floral farm",
-    "high river wedding venue",
-    "outdoor wedding alberta",
-    "seasonal bouquets",
-    "wedding flowers alberta",
+    "art studio marketing",
+    "creative workshop marketing",
+    "calgary art studio",
+    "art therapy calgary",
+    "custom artwork calgary",
+    "painting workshops calgary",
+    "art classes alberta",
+    "creative therapy",
+    "art commissions",
+    "prairie art",
     "local business marketing",
-    "wedding venue marketing",
+    "art studio marketing",
   ],
   authors: [{ name: "Little Bow Meadows" }],
-  creator: "Little Bow Meadows",
-  publisher: "Little Bow Meadows",
+  creator: "Prairie Artistry Studio",
+  publisher: "Prairie Artistry Studio",
   formatDetection: {
     email: false,
     address: false,
@@ -53,11 +53,11 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Little Bow Meadows SEO Lab - Prairie Wedding Marketing Tools",
+    title: "Prairie Artistry Studio SEO Lab - Art Studio Marketing Tools",
     description:
-      "Complete SEO toolkit for Little Bow Meadows wedding venue, floral farm, and Airbnb stay on the Little Bow River",
+      "Complete SEO toolkit for Prairie Artistry Studio art workshops, custom commissions, and creative therapy in Calgary",
     url: SITE_BASE,
-    siteName: "Little Bow Meadows",
+    siteName: "Prairie Artistry Studio",
     locale: "en_CA",
     type: "website",
     images: [
@@ -66,15 +66,16 @@ export const metadata = {
         width: 1200,
         height: 630,
         alt: "Prairie Signal - Little Bow Meadows SEO Lab Professional Wedding Marketing Tools",
+        alt: "Prairie Signal - Prairie Artistry Studio SEO Lab Professional Art Marketing Tools",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Little Bow Meadows SEO Lab - Prairie Wedding Marketing Tools",
+    title: "Prairie Artistry Studio SEO Lab - Art Studio Marketing Tools",
     description:
-      "Complete SEO toolkit for Little Bow Meadows wedding venue, floral farm, and Airbnb stay on the Little Bow River",
-    creator: "@LittleBowMeadows",
+      "Complete SEO toolkit for Prairie Artistry Studio art workshops, custom commissions, and creative therapy in Calgary",
+    creator: "@PrairieArtistry",
     images: ["/images/PRAIRIESIGNALLOGO.png"],
   },
   verification: {
@@ -89,16 +90,16 @@ export const metadata = {
     "schema:Organization": JSON.stringify({
       "@context": "https://schema.org",
       "@type": "Organization",
-      "name": "Little Bow Meadows",
-      "url": "https://littlebowmeadows.ca",
+      "name": "Prairie Artistry Studio",
+      "url": "https://prairie-artistry-studio.lovable.app",
       "logo": "https://littlebowmeadows.ca/images/PRAIRIESIGNALLOGO.png",
-      "description": "Outdoor wedding venue, seasonal floral farm, and A-frame Airbnb stay on the Little Bow River",
+      "description": "Creative art studio offering workshops, custom commissions, art therapy, and gallery exhibitions in Calgary",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Little Bow River",
-        "addressLocality": "High River",
+        "streetAddress": "Calgary",
+        "addressLocality": "Calgary",
         "addressRegion": "AB",
-        "postalCode": "T1V 1M6",
+        "postalCode": "T2X XXX",
         "addressCountry": "CA"
       },
       "contactPoint": {
@@ -107,53 +108,53 @@ export const metadata = {
         "contactType": "customer service"
       }
     }),
-    "schema:EventVenue": JSON.stringify({
+    "schema:ArtGallery": JSON.stringify({
       "@context": "https://schema.org",
-      "@type": "EventVenue",
-      "name": "Little Bow Meadows Wedding Venue",
-      "description": "Stunning outdoor wedding venue on the Little Bow River with prairie views and natural floral arrangements",
-      "url": "https://littlebowmeadows.ca/weddings",
+      "@type": "ArtGallery",
+      "name": "Prairie Artistry Studio Gallery",
+      "description": "Contemporary art gallery featuring prairie-inspired works and local Calgary artists",
+      "url": "https://prairie-artistry-studio.lovable.app/gallery",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Little Bow River",
-        "addressLocality": "High River",
+        "streetAddress": "Calgary",
+        "addressLocality": "Calgary",
         "addressRegion": "AB",
-        "postalCode": "T1V 1M6",
+        "postalCode": "T2X XXX",
         "addressCountry": "CA"
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "50.5806",
-        "longitude": "-113.8744"
+        "latitude": "51.0447",
+        "longitude": "-114.0719"
       }
     }),
-    "schema:Florist": JSON.stringify({
+    "schema:EducationalOrganization": JSON.stringify({
       "@context": "https://schema.org",
-      "@type": "Florist",
-      "name": "Little Bow Meadows Floral Farm",
-      "description": "Seasonal cut flowers, wedding floral arrangements, and floral design workshops from Alberta's premier prairie floral farm",
-      "url": "https://littlebowmeadows.ca/flowers",
+      "@type": "EducationalOrganization",
+      "name": "Prairie Artistry Studio Workshops",
+      "description": "Art workshops, creative classes, and art therapy sessions for all skill levels in Calgary",
+      "url": "https://prairie-artistry-studio.lovable.app/workshops",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Little Bow River",
-        "addressLocality": "High River",
+        "streetAddress": "Calgary",
+        "addressLocality": "Calgary",
         "addressRegion": "AB",
-        "postalCode": "T1V 1M6",
+        "postalCode": "T2X XXX",
         "addressCountry": "CA"
       }
     }),
-    "schema:LodgingBusiness": JSON.stringify({
+    "schema:LocalBusiness": JSON.stringify({
       "@context": "https://schema.org",
-      "@type": "LodgingBusiness",
-      "name": "Little Bow Meadows A-Frame",
-      "description": "Charming A-frame cabin on the Little Bow River perfect for couples, families, and prairie getaways",
-      "url": "https://littlebowmeadows.ca/stay",
+      "@type": "LocalBusiness",
+      "name": "Prairie Artistry Studio",
+      "description": "Professional art studio offering custom commissions, creative workshops, and art therapy in Calgary",
+      "url": "https://prairie-artistry-studio.lovable.app",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Little Bow River",
-        "addressLocality": "High River",
+        "streetAddress": "Calgary",
+        "addressLocality": "Calgary",
         "addressRegion": "AB",
-        "postalCode": "T1V 1M6",
+        "postalCode": "T2X XXX",
         "addressCountry": "CA"
       },
       "telephone": "+1-403-555-0123"
@@ -175,16 +176,16 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              "name": "Little Bow Meadows",
-              "url": "https://littlebowmeadows.ca",
+              "name": "Prairie Artistry Studio",
+              "url": "https://prairie-artistry-studio.lovable.app",
               "logo": "https://littlebowmeadows.ca/images/PRAIRIESIGNALLOGO.png",
-              "description": "Outdoor wedding venue, seasonal floral farm, and A-frame Airbnb stay on the Little Bow River",
+              "description": "Creative art studio offering workshops, custom commissions, art therapy, and gallery exhibitions in Calgary",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Little Bow River",
-                "addressLocality": "High River",
+                "streetAddress": "Calgary",
+                "addressLocality": "Calgary",
                 "addressRegion": "AB",
-                "postalCode": "T1V 1M6",
+                "postalCode": "T2X XXX",
                 "addressCountry": "CA"
               },
               "contactPoint": {
@@ -200,22 +201,22 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "EventVenue",
-              "name": "Little Bow Meadows Wedding Venue",
-              "description": "Stunning outdoor wedding venue on the Little Bow River with prairie views and natural floral arrangements",
-              "url": "https://littlebowmeadows.ca/weddings",
+              "@type": "ArtGallery",
+              "name": "Prairie Artistry Studio Gallery",
+              "description": "Contemporary art gallery featuring prairie-inspired works and local Calgary artists",
+              "url": "https://prairie-artistry-studio.lovable.app/gallery",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Little Bow River",
-                "addressLocality": "High River",
+                "streetAddress": "Calgary",
+                "addressLocality": "Calgary",
                 "addressRegion": "AB",
-                "postalCode": "T1V 1M6",
+                "postalCode": "T2X XXX",
                 "addressCountry": "CA"
               },
               "geo": {
                 "@type": "GeoCoordinates",
-                "latitude": "50.5806",
-                "longitude": "-113.8744"
+                "latitude": "51.0447",
+                "longitude": "-114.0719"
               }
             })
           }}
@@ -225,16 +226,16 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "Florist",
-              "name": "Little Bow Meadows Floral Farm",
-              "description": "Seasonal cut flowers, wedding floral arrangements, and floral design workshops from Alberta's premier prairie floral farm",
-              "url": "https://littlebowmeadows.ca/flowers",
+              "@type": "EducationalOrganization",
+              "name": "Prairie Artistry Studio Workshops",
+              "description": "Art workshops, creative classes, and art therapy sessions for all skill levels in Calgary",
+              "url": "https://prairie-artistry-studio.lovable.app/workshops",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Little Bow River",
-                "addressLocality": "High River",
+                "streetAddress": "Calgary",
+                "addressLocality": "Calgary",
                 "addressRegion": "AB",
-                "postalCode": "T1V 1M6",
+                "postalCode": "T2X XXX",
                 "addressCountry": "CA"
               }
             })
@@ -245,16 +246,16 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "LodgingBusiness",
-              "name": "Little Bow Meadows A-Frame",
-              "description": "Charming A-frame cabin on the Little Bow River perfect for couples, families, and prairie getaways",
-              "url": "https://littlebowmeadows.ca/stay",
+              "@type": "LocalBusiness",
+              "name": "Prairie Artistry Studio",
+              "description": "Professional art studio offering custom commissions, creative workshops, and art therapy in Calgary",
+              "url": "https://prairie-artistry-studio.lovable.app",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Little Bow River",
-                "addressLocality": "High River",
+                "streetAddress": "Calgary",
+                "addressLocality": "Calgary",
                 "addressRegion": "AB",
-                "postalCode": "T1V 1M6",
+                "postalCode": "T2X XXX",
                 "addressCountry": "CA"
               },
               "telephone": "+1-403-555-0123"

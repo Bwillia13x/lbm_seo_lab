@@ -35,185 +35,185 @@ const toolCategories = [
     title: "Marketing & Tracking",
     icon: Tags,
     description:
-      "Create tracking links and QR codes for Little Bow Meadows marketing campaigns",
+      "Create tracking links and QR codes for Prairie Artistry Studio marketing campaigns",
     tools: [
       {
         name: "Campaign Link Builder",
         href: "/apps/utm-dashboard",
         description:
-          "Create special links that track where your customers come from when they book tours or make purchases",
+          "Create special links that track where your customers come from when they book workshops or commission artwork",
       },
       {
         name: "QR Code Maker",
         href: "/apps/utm-qr",
         description:
-          "Generate square barcode images for easy scanning on phones at farm events and pop-ups",
+          "Generate square barcode images for easy scanning on phones at art shows and studio events",
       },
       {
         name: "Referral Program QR",
         href: "/apps/referral-qr",
-        description: "Create QR codes for vendor and photographer referral rewards",
+        description: "Create QR codes for artist and instructor referral rewards",
       },
     ],
   },
   {
     title: "Content Creation",
     icon: ImageIcon,
-    description: "Create posts for social media and Google Business Profile around bloom cycles and wedding seasonality",
+    description: "Create posts for social media and Google Business Profile around art workshops and creative events",
     tools: [
       {
         name: "Google Business Posts",
         href: "/apps/gbp-composer",
         description:
-          "Write professional posts for your Google Business Profile about weddings, flowers, and farm stays",
+          "Write professional posts for your Google Business Profile about art workshops, commissions, and gallery events",
       },
       {
         name: "Social Media Studio",
         href: "/apps/post-studio",
         description:
-          "Create content for Facebook, Instagram, and other social platforms showcasing seasonal blooms and wedding magic",
+          "Create content for Facebook, Instagram, and other social platforms showcasing artwork and creative workshops",
       },
       {
         name: "Content Calendar",
         href: "/apps/post-oracle",
-        description: "Plan and schedule your weekly social media posts around prairie seasons and wedding peaks",
+        description: "Plan and schedule your weekly social media posts around workshop schedules and art events",
       },
     ],
   },
   {
     title: "Customer Reviews",
     icon: MessageSquare,
-    description: "Collect and manage customer reviews from couples, flower buyers, and guests",
+    description: "Collect and manage customer reviews from workshop participants, commission clients, and gallery visitors",
     tools: [
       {
         name: "Review Request Links",
         href: "/apps/review-link",
         description:
-          "Create links to ask wedding couples, flower customers, and Airbnb guests for reviews",
+          "Create links to ask workshop participants, commission clients, and gallery visitors for reviews",
       },
       {
         name: "Review Response Writer",
         href: "/apps/review-composer",
-        description: "Write professional responses to reviews about weddings, bouquets, and farm stays",
+        description: "Write professional responses to reviews about art workshops, commissions, and studio experiences",
       },
     ],
   },
   {
     title: "Search Performance",
     icon: BarChart3,
-    description: "Check how well Little Bow Meadows appears in Google searches for wedding venues and flower farms",
+    description: "Check how well Prairie Artistry Studio appears in Google searches for art studios and creative workshops",
     tools: [
       {
         name: "Search Results Analyzer",
         href: "/apps/gsc-ctr-miner",
         description:
-          "See how customers find Little Bow Meadows online and improve your search rankings for prairie weddings",
+          "See how customers find Prairie Artistry Studio online and improve your search rankings for art workshops",
       },
       {
         name: "Local Search Rankings",
         href: "/apps/rank-grid",
         description:
-          "Monitor where Little Bow Meadows appears when people search for Southern Alberta wedding venues",
+          "Monitor where Prairie Artistry Studio appears when people search for Calgary art studios",
       },
       {
         name: "Ranking Tracker",
         href: "/apps/rankgrid-watcher",
         description:
-          "Get automatic updates on Little Bow Meadows' search position changes",
+          "Get automatic updates on Prairie Artistry Studio's search position changes",
       },
     ],
   },
   {
     title: "Local Partnerships",
     icon: Link2,
-    description: "Find and connect with Southern Alberta wedding vendors and local businesses",
+    description: "Find and connect with Calgary art community partners and local creative businesses",
     tools: [
       {
         name: "Partner Finder",
         href: "/apps/link-prospect-kit",
         description:
-          "Discover Southern Alberta wedding vendors, photographers, and caterers for partnerships",
+          "Discover Calgary art suppliers, galleries, and creative professionals for partnerships",
       },
       {
         name: "Neighborhood Content Analyzer",
         href: "/apps/neighbor-signal",
-        description: "See what content works best for prairie wedding and flower customers",
+        description: "See what content works best for Calgary art and creative workshop audiences",
       },
       {
         name: "Partnership Map",
         href: "/apps/link-map",
-        description: "Visual map showing Little Bow Meadows' wedding vendor connections",
+        description: "Visual map showing Prairie Artistry Studio's creative community connections",
       },
     ],
   },
   {
     title: "Business Insights",
     icon: TrendingUp,
-    description: "Understand seasonal patterns and predict wedding peaks and bloom cycles",
+    description: "Understand seasonal patterns and predict workshop demand and creative trends",
     advanced: true,
     tools: [
       {
         name: "Seasonal Traffic Predictor",
         href: "/apps/queuetime",
         description:
-          "Predict when Little Bow Meadows will be busiest with weddings and flower sales",
+          "Predict when Prairie Artistry Studio will be busiest with workshops and commissions",
       },
       {
         name: "Service Revenue Optimizer",
         href: "/apps/slot-yield",
         description:
-          "See which offerings make the most money and optimize seasonal pricing",
+          "See which workshops and services make the most money and optimize pricing",
       },
       {
         name: "Customer Behavior Tracker",
         href: "/apps/rfm-crm",
         description:
-          "Learn which wedding couples and flower customers are your best and how to keep them happy",
+          "Learn which workshop participants and commission clients are your best and how to keep them happy",
       },
     ],
   },
   {
     title: "Booking Protection",
     icon: Shield,
-    description: "Reduce no-shows for tours, workshops, and bookings",
+    description: "Reduce no-shows for workshops, private lessons, and consultations",
     advanced: true,
     tools: [
       {
         name: "No-Show Predictor",
         href: "/apps/noshow-shield",
         description:
-          "Identify wedding couples and workshop participants who might not show up and send reminders",
+          "Identify workshop participants and private lesson clients who might not show up and send reminders",
       },
       {
         name: "Service Recommender",
         href: "/apps/addon-recommender",
         description:
-          "Suggest add-on services like floral consultation or photography sessions",
+          "Suggest additional services like art supplies, private lessons, or commission consultations",
       },
     ],
   },
   {
     title: "Website Optimization",
     icon: FileText,
-    description: "Make Little Bow Meadows' website work better for search engines",
+    description: "Make Prairie Artistry Studio's website work better for search engines",
     tools: [
       {
         name: "Page Title Tester",
         href: "/apps/meta-planner",
         description:
-          "Test different page titles and descriptions for weddings, flowers, and stays",
+          "Test different page titles and descriptions for workshops, commissions, and gallery events",
       },
       {
         name: "Website Improvement Guide",
         href: "/apps/seo-brief",
         description:
-          "Get step-by-step instructions to improve Little Bow Meadows' website",
+          "Get step-by-step instructions to improve Prairie Artistry Studio's website",
       },
       {
         name: "Business Info Checker",
         href: "/apps/citation-tracker",
         description:
-          "Make sure Little Bow Meadows' address and phone number are correct everywhere online",
+          "Make sure Prairie Artistry Studio's address and phone number are correct everywhere online",
       },
     ],
   },
@@ -224,7 +224,7 @@ const quickStartSteps = [
     step: "1",
     title: "Create Tracking Links",
     description:
-      "Start with the Campaign Link Builder to create special links that track where your wedding and flower customers come from",
+      "Start with the Campaign Link Builder to create special links that track where your workshop and commission customers come from",
     tool: "Campaign Link Builder",
     href: "/apps/utm-dashboard",
   },
@@ -232,7 +232,7 @@ const quickStartSteps = [
     step: "2",
     title: "Set Up Review Collection",
     description:
-      "Use the Review Request Links to create easy ways for couples, flower buyers, and guests to leave reviews",
+      "Use the Review Request Links to create easy ways for workshop participants, commission clients, and gallery visitors to leave reviews",
     tool: "Review Request Links",
     href: "/apps/review-link",
   },
@@ -240,7 +240,7 @@ const quickStartSteps = [
     step: "3",
     title: "Generate Content",
     description:
-      "Use Google Business Posts to create professional content about prairie weddings and seasonal blooms",
+      "Use Google Business Posts to create professional content about art workshops and creative events",
     tool: "Google Business Posts",
     href: "/apps/gbp-composer",
   },
@@ -248,7 +248,7 @@ const quickStartSteps = [
     step: "4",
     title: "Check Search Performance",
     description:
-      "Use the Search Results Analyzer to see how customers find Little Bow Meadows online",
+      "Use the Search Results Analyzer to see how customers find Prairie Artistry Studio online",
     tool: "Search Results Analyzer",
     href: "/apps/gsc-ctr-miner",
   },
@@ -256,7 +256,7 @@ const quickStartSteps = [
     step: "5",
     title: "Find Local Partners",
     description:
-      "Use the Partner Finder to discover Southern Alberta wedding vendors and photographers",
+      "Use the Partner Finder to discover Calgary art suppliers and creative professionals",
     tool: "Partner Finder",
     href: "/apps/link-prospect-kit",
   },
@@ -276,20 +276,20 @@ export default function Home() {
             className="h-12 w-12"
           />
           <h1 className="text-4xl font-bold tracking-tight belmont-accent-text">
-            Little Bow Meadows SEO Lab
+            Prairie Artistry Studio SEO Lab
           </h1>
         </div>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
           Professional online marketing toolkit for{" "}
           <a
-            href="https://littlebowmeadows.ca/"
+            href="https://prairie-artistry-studio.lovable.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-primary hover:underline font-medium transition-colors"
           >
-            Little Bow Meadows
+            Prairie Artistry Studio
           </a>{" "}
-          wedding venue, floral farm, and Airbnb stay on the Little Bow River. Streamline your prairie marketing with
+          art studio, creative workshops, and art therapy services in Calgary. Streamline your creative marketing with
           easy-to-use tools.
         </p>
 
@@ -623,98 +623,24 @@ export default function Home() {
             <div className="space-y-2">
               <h4 className="font-semibold">Service Offerings</h4>
               <ul className="text-sm text-muted-foreground space-y-1">
-                <li>• Outdoor Prairie Wedding Venue</li>
-                <li>• Seasonal Cut Flower Farm</li>
-                <li>• Floral Workshops & Events</li>
-                <li>• A-Frame Riverfront Stay</li>
-                <li>• Custom Bridal Bouquets</li>
+                <li>• Art Workshops & Classes</li>
+                <li>• Custom Artwork Commissions</li>
+                <li>• Art Therapy Sessions</li>
+                <li>• Gallery Exhibitions</li>
+                <li>• Private Art Lessons</li>
               </ul>
             </div>
             <div className="space-y-2">
               <h4 className="font-semibold">Popular Search Terms</h4>
               <ul className="text-sm text-muted-foreground space-y-1">
-                <li>• "southern alberta wedding venues"</li>
-                <li>• "prairie wildflower bouquets"</li>
-                <li>• "little bow river wedding"</li>
-                <li>• "high river floral farm"</li>
+                <li>• "calgary art studio"</li>
+                <li>• "art workshops calgary"</li>
+                <li>• "custom artwork calgary"</li>
+                <li>• "art therapy calgary"</li>
               </ul>
             </div>
             <div className="space-y-2">
               <h4 className="font-semibold">Marketing Campaigns</h4>
               <ul className="text-sm text-muted-foreground space-y-1">
-                <li>• Seasonal bloom promotions</li>
-                <li>• Wedding vendor partnerships</li>
-                <li>• Airbnb stay packages</li>
-                <li>• Workshop early bird deals</li>
-              </ul>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
-
-      {/* Daily Workflow */}
-      <Card>
-        <CardHeader>
-          <CardTitle className="flex items-center gap-2">
-            <Clock className="h-5 w-5" />
-            Daily Little Bow Meadows Marketing Routine
-          </CardTitle>
-          <CardDescription>
-            Recommended daily schedule for the best prairie marketing results
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="space-y-2">
-              <h4 className="font-semibold">Morning (9-11 AM)</h4>
-              <ul className="text-sm text-muted-foreground space-y-1">
-                <li>• Check Search Results Analyzer for wedding venue performance</li>
-                <li>• Review seasonal bloom calendar and ranking updates</li>
-                <li>• Plan daily content around current flower availability</li>
-              </ul>
-            </div>
-            <div className="space-y-2">
-              <h4 className="font-semibold">Afternoon (1-4 PM)</h4>
-              <ul className="text-sm text-muted-foreground space-y-1">
-                <li>• Create tracking links for wedding inquiries and flower sales</li>
-                <li>• Write Google Business Profile posts about seasonal blooms</li>
-                <li>• Send review requests to recent couples and flower customers</li>
-              </ul>
-            </div>
-            <div className="space-y-2">
-              <h4 className="font-semibold">Evening (4-6 PM)</h4>
-              <ul className="text-sm text-muted-foreground space-y-1">
-                <li>• Connect with Southern Alberta wedding vendors</li>
-                <li>• Study seasonal booking patterns and flower demand</li>
-                <li>• Plan next day's marketing around bloom cycles</li>
-              </ul>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
-
-      {/* Support Information */}
-      <div className="text-center space-y-4">
-        <Separator />
-        <div className="space-y-2">
-          <h3 className="text-lg font-semibold">Need Help?</h3>
-          <p className="text-muted-foreground">
-            Contact Little Bow Meadows for help or questions about using the
-            prairie marketing toolkit.
-          </p>
-          <div className="flex justify-center gap-4">
-            <Button asChild variant="outline">
-              <a href={LBM_CONSTANTS.PHONE_TEL}>
-                <Phone className="h-4 w-4 mr-2" />
-                Call Support
-              </a>
-            </Button>
-            <Button asChild variant="outline">
-              <a href="mailto:info@littlebowmeadows.ca">Message Support</a>
-            </Button>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
+                <li>• Workshop early bird promotions</li>
+                <li
