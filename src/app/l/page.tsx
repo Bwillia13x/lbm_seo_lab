@@ -34,11 +34,11 @@ export default function LinkInBio() {
   const tiles = useMemo(() => {
     const source = "instagram";
     const medium = "bio";
-    return [
-      {
-        label: "Book Workshop",
-        href: buildLink(LBM_CONSTANTS.WEBSITE_URL + "/workshops", { utm_source: source, utm_medium: medium, utm_campaign: campaign, utm_content: "workshop-booking" }),
-      },
+  return [
+    {
+      label: "Book Workshop",
+      href: buildLink(baseBook, { utm_source: source, utm_medium: medium, utm_campaign: campaign, utm_content: "workshop-booking" }),
+    },
       {
         label: "Commission Art",
         href: buildLink(LBM_CONSTANTS.WEBSITE_URL + "/commissions", { utm_source: source, utm_medium: medium, utm_campaign: campaign, utm_content: "commission-inquiry" }),

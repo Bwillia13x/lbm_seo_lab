@@ -38,8 +38,12 @@ export default function AppShell({
         } catch {}
       }
       try {
-        const ph = window.localStorage.getItem("prairie_artistry_onboarding_phone");
-        const addr = window.localStorage.getItem("prairie_artistry_onboarding_address");
+        const ph = window.localStorage.getItem(
+          "prairie_artistry_onboarding_phone",
+        );
+        const addr = window.localStorage.getItem(
+          "prairie_artistry_onboarding_address",
+        );
         // No client API key storage; server-managed
         if (ph) {
           const digits = ph.replace(/[^0-9+]/g, "");
@@ -62,7 +66,10 @@ export default function AppShell({
       const next = !s;
       document.documentElement.classList.toggle("simple", next);
       try {
-        window.localStorage.setItem("prairie_artistry_simple_mode", next ? "1" : "0");
+        window.localStorage.setItem(
+          "prairie_artistry_simple_mode",
+          next ? "1" : "0",
+        );
       } catch {}
       return next;
     });
@@ -70,7 +77,9 @@ export default function AppShell({
   function toggleAI() {
     setShowAI((s) => {
       const next = !s;
-      try { logEvent(next ? "ai_diag_open" : "ai_diag_close"); } catch {}
+      try {
+        logEvent(next ? "ai_diag_open" : "ai_diag_close");
+      } catch {}
       return next;
     });
   }
@@ -112,7 +121,6 @@ export default function AppShell({
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 px-3 py-2 text-xs font-medium rounded-full hover:bg-accent transition-colors"
-                  aria-label="Find The Belmont Barbershop on map"
                   aria-label="Find Prairie Artistry Studio on map"
                 >
                   <MapPin className="h-3.5 w-3.5" />
@@ -165,7 +173,6 @@ export default function AppShell({
         <div className="fixed bottom-6 right-6 z-50">
           <div className="flex flex-col items-end gap-3">
             <a
-              href="mailto:info@thebelmontbarber.ca"
               href="mailto:info@prairieartistry.ca"
               className="hidden lg:flex items-center gap-2 px-4 py-2.5 rounded-lg border bg-background/90 backdrop-blur shadow-lg hover:bg-accent transition-all duration-200 text-sm font-medium hover:shadow-xl"
               aria-label="Email support"
@@ -201,7 +208,6 @@ export default function AppShell({
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-blue-600 text-white shadow-lg hover:shadow-xl hover:scale-105 focus-ring transition-all duration-200"
-                aria-label="Find The Belmont Barbershop on map"
                 aria-label="Find Prairie Artistry Studio on map"
                 title="Find us on map"
               >

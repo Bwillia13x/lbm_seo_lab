@@ -26,6 +26,7 @@ import {
   Gift,
   Camera,
   DollarSign,
+  Eye,
   MessageSquare,
 } from "lucide-react";
 import { LBM_CONSTANTS } from "@/lib/constants";
@@ -159,8 +160,8 @@ export default function CommissionsPage() {
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Commission a unique piece of artwork created specifically for you.
-            From portraits to landscapes to abstract expressions, our talented artists
-            will transform your ideas into beautiful, lasting art.
+            From portraits to landscapes to abstract expressions, our talented
+            artists will transform your ideas into beautiful, lasting art.
           </p>
         </div>
 
@@ -188,10 +189,15 @@ export default function CommissionsPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {commissionTypes.map((commission, index) => (
-            <Card key={index} className="relative group hover:scale-105 transition-transform duration-200">
+            <Card
+              key={index}
+              className="relative group hover:scale-105 transition-transform duration-200"
+            >
               {commission.popular && (
                 <div className="absolute -top-2 -right-2">
-                  <Badge className="bg-orange-500 hover:bg-orange-600">Popular</Badge>
+                  <Badge className="bg-orange-500 hover:bg-orange-600">
+                    Popular
+                  </Badge>
                 </div>
               )}
               <CardHeader>
@@ -205,8 +211,12 @@ export default function CommissionsPage() {
                     </div>
                   </div>
                   <div className="text-right">
-                    <div className="text-2xl font-bold text-primary">{commission.startingPrice}</div>
-                    <div className="text-xs text-muted-foreground">starting price</div>
+                    <div className="text-2xl font-bold text-primary">
+                      {commission.startingPrice}
+                    </div>
+                    <div className="text-xs text-muted-foreground">
+                      starting price
+                    </div>
                   </div>
                 </div>
               </CardHeader>
@@ -248,11 +258,15 @@ export default function CommissionsPage() {
             {commissionProcess.map((step, index) => (
               <div key={index} className="flex gap-4">
                 <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
-                  <span className="text-sm font-semibold text-primary">{step.step}</span>
+                  <span className="text-sm font-semibold text-primary">
+                    {step.step}
+                  </span>
                 </div>
                 <div className="space-y-1">
                   <h4 className="font-semibold">{step.title}</h4>
-                  <p className="text-sm text-muted-foreground">{step.description}</p>
+                  <p className="text-sm text-muted-foreground">
+                    {step.description}
+                  </p>
                   <Badge variant="outline" className="text-xs">
                     {step.duration}
                   </Badge>
@@ -277,10 +291,17 @@ export default function CommissionsPage() {
         <CardContent>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {portfolioCategories.map((category, index) => (
-              <div key={index} className="text-center p-4 border rounded-lg hover:border-primary/50 transition-colors">
-                <div className="text-2xl font-bold text-primary mb-1">{category.count}</div>
+              <div
+                key={index}
+                className="text-center p-4 border rounded-lg hover:border-primary/50 transition-colors"
+              >
+                <div className="text-2xl font-bold text-primary mb-1">
+                  {category.count}
+                </div>
                 <h4 className="font-semibold mb-2">{category.category}</h4>
-                <p className="text-xs text-muted-foreground">{category.description}</p>
+                <p className="text-xs text-muted-foreground">
+                  {category.description}
+                </p>
               </div>
             ))}
           </div>
@@ -333,10 +354,12 @@ export default function CommissionsPage() {
       {/* Contact CTA */}
       <Card className="bg-primary/5 border-primary/20">
         <CardContent className="text-center py-8">
-          <h3 className="text-2xl font-bold mb-4">Ready to Commission Your Artwork?</h3>
+          <h3 className="text-2xl font-bold mb-4">
+            Ready to Commission Your Artwork?
+          </h3>
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-            Let's discuss your vision and create something truly unique together.
-            Contact us for a free consultation and quote.
+            Let's discuss your vision and create something truly unique
+            together. Contact us for a free consultation and quote.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button size="lg" className="belmont-accent text-white">
