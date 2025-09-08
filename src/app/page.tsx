@@ -55,14 +55,16 @@ const toolCategories = [
       {
         name: "Venue Tours",
         href: "/apps/venue-tours",
-        description: "Schedule and manage venue tours for potential wedding couples",
+        description:
+          "Schedule and manage venue tours for potential wedding couples",
       },
     ],
   },
   {
     title: "Floral Operations",
     icon: Flower2,
-    description: "Manage floral farm operations, inventory, and custom arrangements",
+    description:
+      "Manage floral farm operations, inventory, and custom arrangements",
     tools: [
       {
         name: "Floral Operations Dashboard",
@@ -79,7 +81,8 @@ const toolCategories = [
       {
         name: "Floral Design Studio",
         href: "/apps/floral-design",
-        description: "Create custom bouquets and centerpieces with AI-powered design suggestions",
+        description:
+          "Create custom bouquets and centerpieces with AI-powered design suggestions",
       },
     ],
   },
@@ -103,7 +106,8 @@ const toolCategories = [
       {
         name: "Package Optimizer",
         href: "/apps/package-optimizer",
-        description: "Optimize wedding packages for maximum revenue and customer satisfaction",
+        description:
+          "Optimize wedding packages for maximum revenue and customer satisfaction",
       },
     ],
   },
@@ -127,14 +131,16 @@ const toolCategories = [
       {
         name: "Communication Hub",
         href: "/apps/communication-hub",
-        description: "Centralized communication with couples, vendors, and team members",
+        description:
+          "Centralized communication with couples, vendors, and team members",
       },
     ],
   },
   {
     title: "Marketing & Promotion",
     icon: Tags,
-    description: "Digital marketing tools for wedding venue and floral farm promotion",
+    description:
+      "Digital marketing tools for wedding venue and floral farm promotion",
     tools: [
       {
         name: "Campaign Link Builder",
@@ -165,7 +171,8 @@ const toolCategories = [
   {
     title: "Business Intelligence",
     icon: BarChart3,
-    description: "AI-powered analytics and business insights for data-driven decisions",
+    description:
+      "AI-powered analytics and business insights for data-driven decisions",
     tools: [
       {
         name: "Business Intelligence",
@@ -309,7 +316,8 @@ export default function Home() {
           >
             Little Bow Meadows
           </a>{" "}
-          wedding venue and floral farm in Alberta. Optimize your business operations with intelligent digital tools.
+          wedding venue and floral farm in Alberta. Optimize your business
+          operations with intelligent digital tools.
         </p>
 
         {/* Quick Start Actions */}
@@ -384,7 +392,8 @@ export default function Home() {
                   >
                     Venue Booking System
                   </Link>{" "}
-                  to manage wedding bookings, availability, and customer information.
+                  to manage wedding bookings, availability, and customer
+                  information.
                 </p>
               </div>
             </div>
@@ -417,7 +426,7 @@ export default function Home() {
       </Card>
 
       {/* Quick Contact Actions */}
-        <div className="flex justify-center gap-4">
+      <div className="flex justify-center gap-4">
         <Button asChild size="sm">
           <a href={LBM_CONSTANTS.PHONE_TEL} className="flex items-center gap-2">
             <Phone className="h-4 w-4" />
@@ -474,8 +483,8 @@ export default function Home() {
           </CardHeader>
           <CardContent>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Everything is set up with Little Bow Meadows' branding, wedding venue,
-              floral farm, and AI-powered business optimization tools
+              Everything is set up with Little Bow Meadows' branding, wedding
+              venue, floral farm, and AI-powered business optimization tools
             </p>
           </CardContent>
         </Card>
@@ -504,7 +513,8 @@ export default function Home() {
             Quick Start Guide - 5 Steps to Little Bow Meadows Business Success
           </CardTitle>
           <CardDescription>
-            Follow these steps to get started with Little Bow Meadows' AI-powered business platform
+            Follow these steps to get started with Little Bow Meadows'
+            AI-powered business platform
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -543,18 +553,23 @@ export default function Home() {
       {/* Tool Categories */}
       <div className="space-y-8">
         <div className="text-center">
-          <h2 className="text-3xl font-bold">Complete Business Management Platform</h2>
+          <h2 className="text-3xl font-bold">
+            Complete Business Management Platform
+          </h2>
           <p className="text-muted-foreground mt-3 max-w-2xl mx-auto">
-            AI-powered tools organized by category for comprehensive wedding venue
-            and floral farm business management
+            AI-powered tools organized by category for comprehensive wedding
+            venue and floral farm business management
           </p>
         </div>
 
         <div className="grid gap-8">
           {toolCategories.map((category, index) => (
-            <Card key={category.title} className={`elevated-card ${
-              (category as any).advanced ? "advanced-only" : ""
-            }`}>
+            <Card
+              key={category.title}
+              className={`elevated-card ${
+                (category as any).advanced ? "advanced-only" : ""
+              }`}
+            >
               <CardHeader>
                 <CardTitle className="flex items-center gap-3 text-xl">
                   <div className="p-2 rounded-lg bg-primary/10">
@@ -624,8 +639,9 @@ export default function Home() {
             Everything Set Up for Little Bow Meadows
           </CardTitle>
           <CardDescription>
-            All the settings and information are already configured for
-            Little Bow Meadows wedding venue and floral farm with AI-powered optimization
+            All the settings and information are already configured for Little
+            Bow Meadows wedding venue and floral farm with AI-powered
+            optimization
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -636,7 +652,9 @@ export default function Home() {
                 <li>• Business Name: {LBM_CONSTANTS.BUSINESS_NAME}</li>
                 <li>• Address: {LBM_CONSTANTS.ADDRESS_STR}</li>
                 <li>• Phone: {LBM_CONSTANTS.PHONE_DISPLAY}</li>
-                <li>• Website: {LBM_CONSTANTS.WEBSITE_URL.replace("https://", "")}</li>
+                <li>
+                  • Website: {LBM_CONSTANTS.WEBSITE_URL.replace("https://", "")}
+                </li>
               </ul>
             </div>
             <div className="space-y-2">
@@ -670,3 +688,6 @@ export default function Home() {
           </div>
         </CardContent>
       </Card>
+    </div>
+  );
+}
