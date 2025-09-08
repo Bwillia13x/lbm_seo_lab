@@ -26,194 +26,214 @@ import {
   Phone,
   MapPin,
   Calendar,
+  Flower2,
+  DollarSign,
+  Users,
 } from "lucide-react";
 import { OnboardingBanner } from "@/components/ui/onboarding-banner";
 import { LBM_CONSTANTS } from "@/lib/constants";
 
 const toolCategories = [
   {
-    title: "Marketing & Tracking",
-    icon: Tags,
+    title: "Venue Management",
+    icon: Calendar,
     description:
-      "Create tracking links and QR codes for Prairie Artistry Studio marketing campaigns",
+      "Manage wedding bookings, venue availability, and event coordination for Little Bow Meadows",
+    tools: [
+      {
+        name: "Venue Booking System",
+        href: "/apps/venue-booking",
+        description:
+          "Complete wedding venue management with booking calendar, package selection, and customer management",
+      },
+      {
+        name: "Event Coordination",
+        href: "/apps/event-coordination",
+        description:
+          "Manage wedding day timelines, vendor coordination, and day-of event management",
+      },
+      {
+        name: "Venue Tours",
+        href: "/apps/venue-tours",
+        description: "Schedule and manage venue tours for potential wedding couples",
+      },
+    ],
+  },
+  {
+    title: "Floral Operations",
+    icon: Flower2,
+    description: "Manage floral farm operations, inventory, and custom arrangements",
+    tools: [
+      {
+        name: "Floral Operations Dashboard",
+        href: "/apps/floral-operations",
+        description:
+          "Track floral inventory, crop planning, and manage custom wedding arrangements",
+      },
+      {
+        name: "Crop Planning",
+        href: "/apps/crop-planning",
+        description:
+          "Plan seasonal flower planting and harvest schedules for optimal wedding season supply",
+      },
+      {
+        name: "Floral Design Studio",
+        href: "/apps/floral-design",
+        description: "Create custom bouquets and centerpieces with AI-powered design suggestions",
+      },
+    ],
+  },
+  {
+    title: "Pricing & Revenue",
+    icon: DollarSign,
+    description: "AI-powered pricing optimization and revenue management",
+    tools: [
+      {
+        name: "Dynamic Pricing Engine",
+        href: "/apps/dynamic-pricing",
+        description:
+          "AI-powered pricing recommendations based on season, demand, and market conditions",
+      },
+      {
+        name: "Revenue Analytics",
+        href: "/apps/revenue-analytics",
+        description:
+          "Track revenue performance, profit margins, and identify growth opportunities",
+      },
+      {
+        name: "Package Optimizer",
+        href: "/apps/package-optimizer",
+        description: "Optimize wedding packages for maximum revenue and customer satisfaction",
+      },
+    ],
+  },
+  {
+    title: "Customer Management",
+    icon: Users,
+    description: "Manage customer relationships and wedding planning process",
+    tools: [
+      {
+        name: "Wedding CRM",
+        href: "/apps/wedding-crm",
+        description:
+          "Track wedding inquiries, couple profiles, and manage the entire planning process",
+      },
+      {
+        name: "Customer Portal",
+        href: "/apps/customer-portal",
+        description:
+          "Self-service portal for couples to manage their wedding planning and payments",
+      },
+      {
+        name: "Communication Hub",
+        href: "/apps/communication-hub",
+        description: "Centralized communication with couples, vendors, and team members",
+      },
+    ],
+  },
+  {
+    title: "Marketing & Promotion",
+    icon: Tags,
+    description: "Digital marketing tools for wedding venue and floral farm promotion",
     tools: [
       {
         name: "Campaign Link Builder",
         href: "/apps/utm-dashboard",
         description:
-          "Create special links that track where your customers come from when they book workshops or commission artwork",
-      },
-      {
-        name: "QR Code Maker",
-        href: "/apps/utm-qr",
-        description:
-          "Generate square barcode images for easy scanning on phones at art shows and studio events",
-      },
-      {
-        name: "Referral Program QR",
-        href: "/apps/referral-qr",
-        description: "Create QR codes for artist and instructor referral rewards",
-      },
-    ],
-  },
-  {
-    title: "Content Creation",
-    icon: ImageIcon,
-    description: "Create posts for social media and Google Business Profile around art workshops and creative events",
-    tools: [
-      {
-        name: "Google Business Posts",
-        href: "/apps/gbp-composer",
-        description:
-          "Write professional posts for your Google Business Profile about art workshops, commissions, and gallery events",
+          "Create tracking links for wedding venue marketing campaigns and social media",
       },
       {
         name: "Social Media Studio",
         href: "/apps/post-studio",
         description:
-          "Create content for Facebook, Instagram, and other social platforms showcasing artwork and creative workshops",
+          "Create beautiful social media content showcasing weddings and floral arrangements",
       },
       {
-        name: "Content Calendar",
-        href: "/apps/post-oracle",
-        description: "Plan and schedule your weekly social media posts around workshop schedules and art events",
-      },
-    ],
-  },
-  {
-    title: "Customer Reviews",
-    icon: MessageSquare,
-    description: "Collect and manage customer reviews from workshop participants, commission clients, and gallery visitors",
-    tools: [
-      {
-        name: "Review Request Links",
-        href: "/apps/review-link",
+        name: "Google Business Posts",
+        href: "/apps/gbp-composer",
         description:
-          "Create links to ask workshop participants, commission clients, and gallery visitors for reviews",
+          "Generate Google Business Profile posts about venue availability and special offers",
       },
       {
-        name: "Review Response Writer",
-        href: "/apps/review-composer",
-        description: "Write professional responses to reviews about art workshops, commissions, and studio experiences",
+        name: "Marketing Automation",
+        href: "/apps/marketing-automation",
+        description:
+          "Automate email campaigns, social media posting, and lead nurturing sequences",
       },
     ],
   },
   {
-    title: "Search Performance",
+    title: "Business Intelligence",
     icon: BarChart3,
-    description: "Check how well Prairie Artistry Studio appears in Google searches for art studios and creative workshops",
+    description: "AI-powered analytics and business insights for data-driven decisions",
     tools: [
       {
-        name: "Search Results Analyzer",
-        href: "/apps/gsc-ctr-miner",
+        name: "Business Intelligence",
+        href: "/apps/business-intelligence",
         description:
-          "See how customers find Prairie Artistry Studio online and improve your search rankings for art workshops",
+          "AI-powered analytics and insights for data-driven business decisions",
       },
       {
-        name: "Local Search Rankings",
-        href: "/apps/rank-grid",
+        name: "Demand Forecasting",
+        href: "/apps/demand-forecasting",
         description:
-          "Monitor where Prairie Artistry Studio appears when people search for Calgary art studios",
+          "Predict wedding booking demand and optimize staffing and inventory planning",
       },
       {
-        name: "Ranking Tracker",
-        href: "/apps/rankgrid-watcher",
+        name: "Competitive Analysis",
+        href: "/apps/competitive-analysis",
         description:
-          "Get automatic updates on Prairie Artistry Studio's search position changes",
+          "Monitor competitor pricing and market positioning for strategic advantage",
       },
     ],
   },
   {
-    title: "Local Partnerships",
-    icon: Link2,
-    description: "Find and connect with Calgary art community partners and local creative businesses",
-    tools: [
-      {
-        name: "Partner Finder",
-        href: "/apps/link-prospect-kit",
-        description:
-          "Discover Calgary art suppliers, galleries, and creative professionals for partnerships",
-      },
-      {
-        name: "Neighborhood Content Analyzer",
-        href: "/apps/neighbor-signal",
-        description: "See what content works best for Calgary art and creative workshop audiences",
-      },
-      {
-        name: "Partnership Map",
-        href: "/apps/link-map",
-        description: "Visual map showing Prairie Artistry Studio's creative community connections",
-      },
-    ],
-  },
-  {
-    title: "Business Insights",
-    icon: TrendingUp,
-    description: "Understand seasonal patterns and predict workshop demand and creative trends",
-    advanced: true,
-    tools: [
-      {
-        name: "Seasonal Traffic Predictor",
-        href: "/apps/queuetime",
-        description:
-          "Predict when Prairie Artistry Studio will be busiest with workshops and commissions",
-      },
-      {
-        name: "Service Revenue Optimizer",
-        href: "/apps/slot-yield",
-        description:
-          "See which workshops and services make the most money and optimize pricing",
-      },
-      {
-        name: "Customer Behavior Tracker",
-        href: "/apps/rfm-crm",
-        description:
-          "Learn which workshop participants and commission clients are your best and how to keep them happy",
-      },
-    ],
-  },
-  {
-    title: "Booking Protection",
+    title: "Operations & Logistics",
     icon: Shield,
-    description: "Reduce no-shows for workshops, private lessons, and consultations",
-    advanced: true,
+    description: "Streamline operations and reduce manual work with automation",
     tools: [
       {
-        name: "No-Show Predictor",
-        href: "/apps/noshow-shield",
+        name: "Vendor Management",
+        href: "/apps/vendor-management",
         description:
-          "Identify workshop participants and private lesson clients who might not show up and send reminders",
+          "Manage preferred vendor relationships and coordinate wedding day logistics",
       },
       {
-        name: "Service Recommender",
-        href: "/apps/addon-recommender",
+        name: "Inventory Management",
+        href: "/apps/inventory-management",
         description:
-          "Suggest additional services like art supplies, private lessons, or commission consultations",
+          "Track venue supplies, floral inventory, and equipment maintenance schedules",
+      },
+      {
+        name: "Task Automation",
+        href: "/apps/task-automation",
+        description:
+          "Automate routine tasks like follow-ups, reminders, and status updates",
       },
     ],
   },
   {
-    title: "Website Optimization",
+    title: "Website & SEO",
     icon: FileText,
-    description: "Make Prairie Artistry Studio's website work better for search engines",
+    description: "Optimize online presence and search engine visibility",
     tools: [
       {
-        name: "Page Title Tester",
-        href: "/apps/meta-planner",
+        name: "SEO Optimizer",
+        href: "/apps/seo-optimizer",
         description:
-          "Test different page titles and descriptions for workshops, commissions, and gallery events",
+          "Optimize website content for wedding venue and floral farm search terms",
       },
       {
-        name: "Website Improvement Guide",
-        href: "/apps/seo-brief",
+        name: "Local SEO Manager",
+        href: "/apps/local-seo",
         description:
-          "Get step-by-step instructions to improve Prairie Artistry Studio's website",
+          "Improve local search rankings for wedding venues in Alberta",
       },
       {
-        name: "Business Info Checker",
-        href: "/apps/citation-tracker",
+        name: "Review Management",
+        href: "/apps/review-management",
         description:
-          "Make sure Prairie Artistry Studio's address and phone number are correct everywhere online",
+          "Collect and respond to customer reviews to build online reputation",
       },
     ],
   },
@@ -222,43 +242,43 @@ const toolCategories = [
 const quickStartSteps = [
   {
     step: "1",
-    title: "Create Tracking Links",
+    title: "Set Up Venue Bookings",
     description:
-      "Start with the Campaign Link Builder to create special links that track where your workshop and commission customers come from",
-    tool: "Campaign Link Builder",
-    href: "/apps/utm-dashboard",
+      "Start with the Venue Booking System to manage wedding bookings, availability, and customer information",
+    tool: "Venue Booking System",
+    href: "/apps/venue-booking",
   },
   {
     step: "2",
-    title: "Set Up Review Collection",
+    title: "Configure Dynamic Pricing",
     description:
-      "Use the Review Request Links to create easy ways for workshop participants, commission clients, and gallery visitors to leave reviews",
-    tool: "Review Request Links",
-    href: "/apps/review-link",
+      "Use the Dynamic Pricing Engine to set AI-powered pricing based on season, demand, and market conditions",
+    tool: "Dynamic Pricing Engine",
+    href: "/apps/dynamic-pricing",
   },
   {
     step: "3",
-    title: "Generate Content",
+    title: "Manage Floral Operations",
     description:
-      "Use Google Business Posts to create professional content about art workshops and creative events",
+      "Set up the Floral Operations Dashboard to track inventory, crop planning, and custom arrangements",
+    tool: "Floral Operations Dashboard",
+    href: "/apps/floral-operations",
+  },
+  {
+    step: "4",
+    title: "Create Marketing Content",
+    description:
+      "Use Google Business Posts to create professional content about venue availability and wedding packages",
     tool: "Google Business Posts",
     href: "/apps/gbp-composer",
   },
   {
-    step: "4",
-    title: "Check Search Performance",
-    description:
-      "Use the Search Results Analyzer to see how customers find Prairie Artistry Studio online",
-    tool: "Search Results Analyzer",
-    href: "/apps/gsc-ctr-miner",
-  },
-  {
     step: "5",
-    title: "Find Local Partners",
+    title: "Set Up Customer Management",
     description:
-      "Use the Partner Finder to discover Calgary art suppliers and creative professionals",
-    tool: "Partner Finder",
-    href: "/apps/link-prospect-kit",
+      "Configure the Wedding CRM to track inquiries, manage couple profiles, and streamline the planning process",
+    tool: "Wedding CRM",
+    href: "/apps/wedding-crm",
   },
 ];
 
@@ -270,27 +290,26 @@ export default function Home() {
         <div className="flex items-center justify-center gap-3 mb-6">
           <Image
             src="/images/PRAIRIESIGNALLOGO.png"
-            alt="Prairie Signal"
+            alt="Little Bow Meadows"
             width={48}
             height={48}
             className="h-12 w-12"
           />
           <h1 className="text-4xl font-bold tracking-tight belmont-accent-text">
-            Prairie Artistry Studio SEO Lab
+            Little Bow Meadows Digital Platform
           </h1>
         </div>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-          Professional online marketing toolkit for{" "}
+          AI-powered business management platform for{" "}
           <a
-            href="https://prairie-artistry-studio.lovable.app/"
+            href="https://littlebowmeadows.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-primary hover:underline font-medium transition-colors"
           >
-            Prairie Artistry Studio
+            Little Bow Meadows
           </a>{" "}
-          art studio, creative workshops, and art therapy services in Calgary. Streamline your creative marketing with
-          easy-to-use tools.
+          wedding venue and floral farm in Alberta. Optimize your business operations with intelligent digital tools.
         </p>
 
         {/* Quick Start Actions */}
@@ -355,17 +374,17 @@ export default function Home() {
               </Badge>
               <div>
                 <h4 className="font-semibold text-blue-800 dark:text-blue-200">
-                  Create Tracking Links
+                  Set Up Venue Bookings
                 </h4>
                 <p className="text-sm text-blue-700 dark:text-blue-300 mt-1">
                   Use the{" "}
                   <Link
-                    href="/apps/utm-dashboard"
+                    href="/apps/venue-booking"
                     className="underline font-medium hover:text-blue-600"
                   >
-                    Campaign Link Builder
+                    Venue Booking System
                   </Link>{" "}
-                  to create special links that track wedding and flower customer sources.
+                  to manage wedding bookings, availability, and customer information.
                 </p>
               </div>
             </div>
@@ -379,17 +398,17 @@ export default function Home() {
               </Badge>
               <div>
                 <h4 className="font-semibold text-purple-800 dark:text-purple-200">
-                  Get Customer Reviews
+                  Configure Dynamic Pricing
                 </h4>
                 <p className="text-sm text-purple-700 dark:text-purple-300 mt-1">
-                  Generate{" "}
+                  Set up the{" "}
                   <Link
-                    href="/apps/review-link"
+                    href="/apps/dynamic-pricing"
                     className="underline font-medium hover:text-purple-600"
                   >
-                    review request links
+                    Dynamic Pricing Engine
                   </Link>{" "}
-                  and send them to recent wedding couples and flower customers.
+                  for AI-powered pricing based on season and demand.
                 </p>
               </div>
             </div>
@@ -413,7 +432,7 @@ export default function Home() {
             className="flex items-center gap-2"
           >
             <Calendar className="h-4 w-4" />
-            Book Tour
+            Book Venue Tour
           </a>
         </Button>
         <Button asChild size="sm">
@@ -435,13 +454,13 @@ export default function Home() {
           <CardHeader>
             <CardTitle className="text-lg flex items-center justify-center gap-2">
               <MapPin className="h-5 w-5 text-blue-600" />
-              Prairie Focus
+              Alberta Focus
             </CardTitle>
           </CardHeader>
           <CardContent>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Designed specifically for Southern Alberta with prairie wedding
-              marketing and local vendor connections in High River and Calgary
+              Designed specifically for Alberta wedding venues and floral farms
+              with local market intelligence and seasonal optimization
             </p>
           </CardContent>
         </Card>
@@ -456,7 +475,7 @@ export default function Home() {
           <CardContent>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Everything is set up with Little Bow Meadows' branding, wedding venue,
-              floral farm, and Airbnb services with professional templates
+              floral farm, and AI-powered business optimization tools
             </p>
           </CardContent>
         </Card>
@@ -465,13 +484,13 @@ export default function Home() {
           <CardHeader>
             <CardTitle className="text-lg flex items-center justify-center gap-2">
               <Shield className="h-5 w-5 text-purple-600" />
-              Private & Secure
+              AI-Powered
             </CardTitle>
           </CardHeader>
           <CardContent>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              All work happens on your computer - no data is sent to external
-              servers for maximum privacy
+              Advanced AI features for pricing optimization, demand forecasting,
+              and automated business intelligence
             </p>
           </CardContent>
         </Card>
@@ -482,10 +501,10 @@ export default function Home() {
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
             <Target className="h-5 w-5" />
-            Quick Start Guide - 5 Steps to Little Bow Meadows Marketing Success
+            Quick Start Guide - 5 Steps to Little Bow Meadows Business Success
           </CardTitle>
           <CardDescription>
-            Follow these steps to get started with Little Bow Meadows' marketing toolkit
+            Follow these steps to get started with Little Bow Meadows' AI-powered business platform
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -524,10 +543,10 @@ export default function Home() {
       {/* Tool Categories */}
       <div className="space-y-8">
         <div className="text-center">
-          <h2 className="text-3xl font-bold">Complete Marketing Toolkit</h2>
+          <h2 className="text-3xl font-bold">Complete Business Management Platform</h2>
           <p className="text-muted-foreground mt-3 max-w-2xl mx-auto">
-            22 Easy-to-use tools organized by category for comprehensive local
-            marketing management
+            AI-powered tools organized by category for comprehensive wedding venue
+            and floral farm business management
           </p>
         </div>
 
@@ -606,7 +625,7 @@ export default function Home() {
           </CardTitle>
           <CardDescription>
             All the settings and information are already configured for
-            Little Bow Meadows wedding venue and floral farm
+            Little Bow Meadows wedding venue and floral farm with AI-powered optimization
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -623,24 +642,31 @@ export default function Home() {
             <div className="space-y-2">
               <h4 className="font-semibold">Service Offerings</h4>
               <ul className="text-sm text-muted-foreground space-y-1">
-                <li>• Art Workshops & Classes</li>
-                <li>• Custom Artwork Commissions</li>
-                <li>• Art Therapy Sessions</li>
-                <li>• Gallery Exhibitions</li>
-                <li>• Private Art Lessons</li>
+                <li>• Wedding Venue Rental</li>
+                <li>• Custom Floral Arrangements</li>
+                <li>• Event Planning Services</li>
+                <li>• Venue Tours & Consultations</li>
+                <li>• Floral Farm Products</li>
               </ul>
             </div>
             <div className="space-y-2">
               <h4 className="font-semibold">Popular Search Terms</h4>
               <ul className="text-sm text-muted-foreground space-y-1">
-                <li>• "calgary art studio"</li>
-                <li>• "art workshops calgary"</li>
-                <li>• "custom artwork calgary"</li>
-                <li>• "art therapy calgary"</li>
+                <li>• "wedding venue alberta"</li>
+                <li>• "floral farm alberta"</li>
+                <li>• "rustic wedding venue"</li>
+                <li>• "wedding flowers alberta"</li>
               </ul>
             </div>
             <div className="space-y-2">
               <h4 className="font-semibold">Marketing Campaigns</h4>
               <ul className="text-sm text-muted-foreground space-y-1">
-                <li>• Workshop early bird promotions</li>
-                <li
+                <li>• Spring wedding season promotions</li>
+                <li>• Summer peak season pricing</li>
+                <li>• Fall harvest wedding themes</li>
+                <li>• Winter wonderland packages</li>
+              </ul>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
