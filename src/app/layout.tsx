@@ -65,7 +65,6 @@ export const metadata = {
         url: "/images/PRAIRIESIGNALLOGO.png",
         width: 1200,
         height: 630,
-        alt: "Prairie Signal - Little Bow Meadows SEO Lab Professional Wedding Marketing Tools",
         alt: "Prairie Signal - Prairie Artistry Studio SEO Lab Professional Art Marketing Tools",
       },
     ],
@@ -99,12 +98,12 @@ export const metadata = {
         "streetAddress": "Calgary",
         "addressLocality": "Calgary",
         "addressRegion": "AB",
-        "postalCode": "T2X XXX",
+          "postalCode": "T2X 0X1",
         "addressCountry": "CA"
       },
       "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": "+1-403-555-0123",
+        "telephone": "+1-403-457-0420",
         "contactType": "customer service"
       }
     }),
@@ -119,7 +118,7 @@ export const metadata = {
         "streetAddress": "Calgary",
         "addressLocality": "Calgary",
         "addressRegion": "AB",
-        "postalCode": "T2X XXX",
+          "postalCode": "T2X 0X1",
         "addressCountry": "CA"
       },
       "geo": {
@@ -139,7 +138,7 @@ export const metadata = {
         "streetAddress": "Calgary",
         "addressLocality": "Calgary",
         "addressRegion": "AB",
-        "postalCode": "T2X XXX",
+          "postalCode": "T2X 0X1",
         "addressCountry": "CA"
       }
     }),
@@ -154,12 +153,60 @@ export const metadata = {
         "streetAddress": "Calgary",
         "addressLocality": "Calgary",
         "addressRegion": "AB",
-        "postalCode": "T2X XXX",
+          "postalCode": "T2X 0X1",
         "addressCountry": "CA"
       },
-      "telephone": "+1-403-555-0123"
+      "telephone": "+1-403-457-0420"
     })
   },
+  "schema:Service": JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Art Workshops and Creative Services",
+    "description": "Professional art workshops, custom commissions, art therapy sessions, and gallery exhibitions in Calgary",
+    "provider": {
+      "@type": "Organization",
+      "name": "Prairie Artistry Studio",
+      "url": "https://prairie-artistry-studio.lovable.app"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Calgary",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "Alberta"
+      }
+    },
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Art Workshops",
+        "description": "Creative workshops for all skill levels"
+      },
+      {
+        "@type": "Offer", 
+        "name": "Custom Art Commissions",
+        "description": "Personalized artwork and creative projects"
+      },
+      {
+        "@type": "Offer",
+        "name": "Art Therapy Sessions",
+        "description": "Therapeutic art sessions for wellness and healing"
+      }
+    ]
+  }),
+  "schema:WebSite": JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Prairie Artistry Studio SEO Lab",
+    "description": "Professional SEO toolkit for Prairie Artistry Studio art workshops, custom commissions, and creative therapy in Calgary",
+    "url": "https://prairie-artistry-studio.lovable.app",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://prairie-artistry-studio.lovable.app/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  })
 };
 
 export default function RootLayout({
@@ -185,12 +232,12 @@ export default function RootLayout({
                 "streetAddress": "Calgary",
                 "addressLocality": "Calgary",
                 "addressRegion": "AB",
-                "postalCode": "T2X XXX",
+                "postalCode": "T2X 0X1",
                 "addressCountry": "CA"
               },
               "contactPoint": {
                 "@type": "ContactPoint",
-                "telephone": "+1-403-555-0123",
+                "telephone": "+1-403-457-0420",
                 "contactType": "customer service"
               }
             })
@@ -210,7 +257,7 @@ export default function RootLayout({
                 "streetAddress": "Calgary",
                 "addressLocality": "Calgary",
                 "addressRegion": "AB",
-                "postalCode": "T2X XXX",
+                "postalCode": "T2X 0X1",
                 "addressCountry": "CA"
               },
               "geo": {
@@ -235,7 +282,7 @@ export default function RootLayout({
                 "streetAddress": "Calgary",
                 "addressLocality": "Calgary",
                 "addressRegion": "AB",
-                "postalCode": "T2X XXX",
+                "postalCode": "T2X 0X1",
                 "addressCountry": "CA"
               }
             })
@@ -255,10 +302,10 @@ export default function RootLayout({
                 "streetAddress": "Calgary",
                 "addressLocality": "Calgary",
                 "addressRegion": "AB",
-                "postalCode": "T2X XXX",
+                "postalCode": "T2X 0X1",
                 "addressCountry": "CA"
               },
-              "telephone": "+1-403-555-0123"
+              "telephone": "+1-403-457-0420"
             })
           }}
         />

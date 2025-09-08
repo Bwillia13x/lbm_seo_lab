@@ -117,7 +117,6 @@ const DEFAULT_BIZ: Biz = {
   lat: 51.05,
   lon: -114.05,
   priceRange: "$$",
-  googleMaps: "https://maps.google.com/?q=the+belmont+barbershop",
   googleMaps: "https://maps.google.com/?q=prairie+artistry+studio",
   instagram: "https://www.instagram.com/prairieartistry",
   facebook: "https://www.facebook.com/prairieartistry",
@@ -276,7 +275,6 @@ function businessSchema(biz: Biz) {
   }));
   return {
     "@context": "https://schema.org",
-    "@type": "Barbershop",
     "@type": "ArtGallery",
     name: biz.name,
     image: ["[https://.../exterior.jpg]", "[https://.../interior.jpg]"],

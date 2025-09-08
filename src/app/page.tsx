@@ -365,7 +365,7 @@ export default function Home() {
                   >
                     Campaign Link Builder
                   </Link>{" "}
-                  to create special links that track wedding and flower customer sources.
+                  to create special links that track workshop and commission customer sources.
                 </p>
               </div>
             </div>
@@ -389,7 +389,7 @@ export default function Home() {
                   >
                     review request links
                   </Link>{" "}
-                  and send them to recent wedding couples and flower customers.
+                  and send them to recent workshop participants and commission clients.
                 </p>
               </div>
             </div>
@@ -402,7 +402,7 @@ export default function Home() {
         <Button asChild size="sm">
           <a href={LBM_CONSTANTS.PHONE_TEL} className="flex items-center gap-2">
             <Phone className="h-4 w-4" />
-            Call Little Bow Meadows
+            Call Prairie Artistry Studio
           </a>
         </Button>
         <Button asChild size="sm">
@@ -440,8 +440,8 @@ export default function Home() {
           </CardHeader>
           <CardContent>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Designed specifically for Southern Alberta with prairie wedding
-              marketing and local vendor connections in High River and Calgary
+              Designed specifically for Calgary with prairie art
+              marketing and local creative community connections
             </p>
           </CardContent>
         </Card>
@@ -455,8 +455,8 @@ export default function Home() {
           </CardHeader>
           <CardContent>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Everything is set up with Little Bow Meadows' branding, wedding venue,
-              floral farm, and Airbnb services with professional templates
+              Everything is set up with Prairie Artistry Studio's branding, art workshops,
+              commissions, and gallery services with professional templates
             </p>
           </CardContent>
         </Card>
@@ -482,10 +482,10 @@ export default function Home() {
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
             <Target className="h-5 w-5" />
-            Quick Start Guide - 5 Steps to Little Bow Meadows Marketing Success
+            Quick Start Guide - 5 Steps to Prairie Artistry Studio Marketing Success
           </CardTitle>
           <CardDescription>
-            Follow these steps to get started with Little Bow Meadows' marketing toolkit
+            Follow these steps to get started with Prairie Artistry Studio's marketing toolkit
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -602,11 +602,11 @@ export default function Home() {
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
             <CheckCircle className="h-5 w-5" />
-            Everything Set Up for Little Bow Meadows
+            Everything Set Up for Prairie Artistry Studio
           </CardTitle>
           <CardDescription>
             All the settings and information are already configured for
-            Little Bow Meadows wedding venue and floral farm
+            Prairie Artistry Studio art workshops and creative services
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -643,4 +643,14 @@ export default function Home() {
               <h4 className="font-semibold">Marketing Campaigns</h4>
               <ul className="text-sm text-muted-foreground space-y-1">
                 <li>• Workshop early bird promotions</li>
-                <li
+                <li>• Commission discount campaigns</li>
+                <li>• Gallery opening events</li>
+                <li>• Art therapy wellness programs</li>
+              </ul>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+    </div>
+  );
+}

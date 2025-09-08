@@ -18,6 +18,7 @@ import {
   MapPin,
   Star,
   CheckCircle,
+  Eye,
   ArrowRight,
   Phone,
   Mail,
