@@ -6,7 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Button } from '@/components/ui/button';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
-import { Calendar, Users, TrendingUp, Home, Download, RefreshCw, Clock, Link as LinkIcon, BarChart3, Search } from 'lucide-react';
+import { Calendar, Users, TrendingUp, Home, Download, RefreshCw, Clock, Link as LinkIcon, BarChart3, Search, Settings } from 'lucide-react';
 import { useToast } from '@/lib/toast';
 
 interface CapacityData {
@@ -190,7 +190,7 @@ export default function LabDashboard() {
 
         {/* Main Tabs */}
         <Tabs defaultValue="orders" className="space-y-6">
-          <TabsList className="grid w-full grid-cols-8">
+          <TabsList className="grid w-full grid-cols-9">
             <TabsTrigger value="pickups" className="flex items-center gap-2">
               <Calendar className="h-4 w-4" />
               Pickups
@@ -214,6 +214,10 @@ export default function LabDashboard() {
             <TabsTrigger value="analytics" className="flex items-center gap-2">
               <BarChart3 className="h-4 w-4" />
               Analytics
+            </TabsTrigger>
+            <TabsTrigger value="settings" className="flex items-center gap-2">
+              <Settings className="h-4 w-4" />
+              Settings
             </TabsTrigger>
           </TabsList>
 
@@ -281,6 +285,20 @@ export default function LabDashboard() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">Revenue tracking and SKU analytics coming soon...</p>
+              </CardContent>
+            </Card>
+          </TabsContent>
+
+          <TabsContent value="settings" className="space-y-4">
+            <Card>
+              <CardHeader>
+                <CardTitle>Safety & Settings</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">Manage panic mode, auto-pause thresholds, and blackout days for operational safety.</p>
+                <Button asChild className="mt-4">
+                  <a href="/lab/settings">Open Settings</a>
+                </Button>
               </CardContent>
             </Card>
           </TabsContent>

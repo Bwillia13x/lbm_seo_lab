@@ -196,17 +196,211 @@ CREATE POLICY "Allow all operations on seasonal_tasks" ON seasonal_tasks FOR ALL
 CREATE POLICY "Allow all operations on weekly_digest_templates" ON weekly_digest_templates FOR ALL USING (true);
 CREATE POLICY "Allow all operations on margin_tracking" ON margin_tracking FOR ALL USING (true);
 
+-- =========================================
+-- PRODUCTION HARDENING - HIGH IMPACT ITEMS
+-- =========================================
+
+-- 2.1 Atomic Slot Reservation (Prevents Overselling)
+-- Add constraint to prevent overselling
+ALTER TABLE pickup_slots
+  ADD CONSTRAINT reserved_le_capacity CHECK (reserved <= capacity);
+
+-- Create atomic reservation RPC function
+CREATE OR REPLACE FUNCTION reserve_slot(p_slot UUID, p_qty INT DEFAULT 1)
+RETURNS BOOLEAN LANGUAGE PLPGSQL AS $$
+BEGIN
+  UPDATE pickup_slots
+  SET reserved = reserved + p_qty
+  WHERE id = p_slot
+    AND reserved + p_qty <= capacity;
+
+  IF FOUND THEN
+    RETURN TRUE;
+  ELSE
+    RETURN FALSE;
+  END IF;
+END $$;
+
+-- Add expiration handling for failed checkouts
+ALTER TABLE pickup_slots ADD COLUMN IF NOT EXISTS hold_expires_at TIMESTAMPTZ;
+ALTER TABLE pickup_slots ADD COLUMN IF NOT EXISTS held_by_session TEXT;
+
+-- Function to release expired holds
+CREATE OR REPLACE FUNCTION release_expired_holds()
+RETURNS INTEGER LANGUAGE PLPGSQL AS $$
+DECLARE
+  rows_affected INTEGER;
+BEGIN
+  UPDATE pickup_slots
+  SET reserved = GREATEST(0, reserved - 1),
+      hold_expires_at = NULL,
+      held_by_session = NULL
+  WHERE hold_expires_at < NOW()
+    AND hold_expires_at IS NOT NULL;
+
+  GET DIAGNOSTICS rows_affected = ROW_COUNT;
+  RETURN rows_affected;
+END $$;
+
+-- 2.2 Auto-pause + Panic Switch + Manual Overrides
+CREATE TABLE IF NOT EXISTS global_settings (
+  id INTEGER PRIMARY KEY DEFAULT 1,
+  panic_mode BOOLEAN DEFAULT FALSE,
+  auto_pause_threshold INT DEFAULT 8,
+  updated_at TIMESTAMPTZ DEFAULT NOW(),
+  updated_by TEXT
+);
+
+-- Insert default settings
+INSERT INTO global_settings (id, panic_mode, auto_pause_threshold)
+VALUES (1, FALSE, 8)
+ON CONFLICT (id) DO NOTHING;
+
+CREATE TABLE IF NOT EXISTS blackout_days (
+  day DATE PRIMARY KEY,
+  reason TEXT,
+  created_at TIMESTAMPTZ DEFAULT NOW(),
+  created_by TEXT
+);
+
+-- 2.3 Webhook Resilience & Reconciliation
+CREATE TABLE IF NOT EXISTS stripe_events (
+  id TEXT PRIMARY KEY,
+  type TEXT NOT NULL,
+  received_at TIMESTAMPTZ DEFAULT NOW(),
+  processed BOOLEAN DEFAULT FALSE,
+  error_message TEXT,
+  raw_payload JSONB
+);
+
+CREATE TABLE IF NOT EXISTS orders (
+  id UUID PRIMARY KEY DEFAULT GEN_RANDOM_UUID(),
+  stripe_session_id TEXT UNIQUE,
+  customer_email TEXT,
+  customer_name TEXT,
+  pickup_slot_id UUID REFERENCES pickup_slots(id),
+  status TEXT CHECK (status IN ('paid','ready','collected','canceled')) DEFAULT 'paid',
+  collected_at TIMESTAMPTZ,
+  total_cents BIGINT NOT NULL,
+  created_at TIMESTAMPTZ DEFAULT NOW(),
+  notes TEXT
+);
+
+CREATE TABLE IF NOT EXISTS order_items (
+  id UUID PRIMARY KEY DEFAULT GEN_RANDOM_UUID(),
+  order_id UUID REFERENCES orders(id) ON DELETE CASCADE,
+  product_id UUID NOT NULL,
+  product_name TEXT NOT NULL,
+  stripe_price_id TEXT,
+  qty INT NOT NULL,
+  unit_price_cents BIGINT NOT NULL,
+  created_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- 2.4 Pick/Pack Workflow
+-- Add notes field to pickup_slots for staff coordination
+ALTER TABLE pickup_slots ADD COLUMN IF NOT EXISTS notes TEXT;
+
+-- 2.5 Roles, Audit Logs & Safety
+CREATE TABLE IF NOT EXISTS user_roles (
+  id UUID PRIMARY KEY DEFAULT GEN_RANDOM_UUID(),
+  email TEXT UNIQUE NOT NULL,
+  role TEXT CHECK (role IN ('owner','staff')) DEFAULT 'staff',
+  active BOOLEAN DEFAULT TRUE,
+  created_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS audit_log (
+  id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  actor TEXT,
+  action TEXT,
+  entity TEXT,
+  entity_id TEXT,
+  old_values JSONB,
+  new_values JSONB,
+  meta JSONB,
+  ip_address INET,
+  user_agent TEXT,
+  ts TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- 3.1 Waitlist → Back-in-Stock Pings
+CREATE TABLE IF NOT EXISTS waitlist (
+  id UUID PRIMARY KEY DEFAULT GEN_RANDOM_UUID(),
+  product_id UUID REFERENCES products(id) ON DELETE CASCADE,
+  email TEXT NOT NULL,
+  created_at TIMESTAMPTZ DEFAULT NOW(),
+  notified_at TIMESTAMPTZ,
+  UNIQUE(product_id, email)
+);
+
+-- 8. Small Schema Touches
+-- Add soft delete to key tables
+ALTER TABLE pickup_slots ADD COLUMN IF NOT EXISTS soft_deleted BOOLEAN DEFAULT FALSE;
+ALTER TABLE market_events ADD COLUMN IF NOT EXISTS soft_deleted BOOLEAN DEFAULT FALSE;
+ALTER TABLE links ADD COLUMN IF NOT EXISTS soft_deleted BOOLEAN DEFAULT FALSE;
+ALTER TABLE seasonal_tasks ADD COLUMN IF NOT EXISTS soft_deleted BOOLEAN DEFAULT FALSE;
+
+-- Add attribution tracking
+ALTER TABLE orders ADD COLUMN IF NOT EXISTS source_link_id UUID REFERENCES links(id);
+ALTER TABLE orders ADD COLUMN IF NOT EXISTS channel TEXT DEFAULT 'retail';
+ALTER TABLE orders ADD COLUMN IF NOT EXISTS payment_method TEXT DEFAULT 'stripe';
+
+-- Enable RLS on new tables
+ALTER TABLE global_settings ENABLE ROW LEVEL SECURITY;
+ALTER TABLE blackout_days ENABLE ROW LEVEL SECURITY;
+ALTER TABLE stripe_events ENABLE ROW LEVEL SECURITY;
+ALTER TABLE orders ENABLE ROW LEVEL SECURITY;
+ALTER TABLE order_items ENABLE ROW LEVEL SECURITY;
+ALTER TABLE user_roles ENABLE ROW LEVEL SECURITY;
+ALTER TABLE audit_log ENABLE ROW LEVEL SECURITY;
+ALTER TABLE waitlist ENABLE ROW LEVEL SECURITY;
+
+-- Create policies (restrictive by default)
+CREATE POLICY "Allow read access to global_settings" ON global_settings FOR SELECT USING (true);
+CREATE POLICY "Allow owner update to global_settings" ON global_settings FOR UPDATE USING (
+  EXISTS (SELECT 1 FROM user_roles WHERE email = auth.jwt() ->> 'email' AND role = 'owner')
+);
+
+CREATE POLICY "Allow read access to blackout_days" ON blackout_days FOR SELECT USING (true);
+CREATE POLICY "Allow owner access to blackout_days" ON blackout_days FOR ALL USING (
+  EXISTS (SELECT 1 FROM user_roles WHERE email = auth.jwt() ->> 'email' AND role = 'owner')
+);
+
+CREATE POLICY "Allow authenticated access to orders" ON orders FOR ALL USING (auth.role() = 'authenticated');
+CREATE POLICY "Allow authenticated access to order_items" ON order_items FOR ALL USING (auth.role() = 'authenticated');
+
+CREATE POLICY "Allow authenticated access to audit_log" ON audit_log FOR SELECT USING (auth.role() = 'authenticated');
+CREATE POLICY "Allow system access to audit_log" ON audit_log FOR INSERT WITH CHECK (true);
+
+CREATE POLICY "Allow authenticated access to user_roles" ON user_roles FOR SELECT USING (auth.role() = 'authenticated');
+CREATE POLICY "Allow owner access to user_roles" ON user_roles FOR ALL USING (
+  EXISTS (SELECT 1 FROM user_roles WHERE email = auth.jwt() ->> 'email' AND role = 'owner')
+);
+
+CREATE POLICY "Allow public read to waitlist" ON waitlist FOR SELECT USING (true);
+CREATE POLICY "Allow public insert to waitlist" ON waitlist FOR INSERT WITH CHECK (true);
+CREATE POLICY "Allow authenticated update to waitlist" ON waitlist FOR UPDATE USING (auth.role() = 'authenticated');
+
 -- Create indexes for performance
-CREATE INDEX idx_airbnb_occupancy_day ON airbnb_occupancy(day);
-CREATE INDEX idx_capacity_rules_weekday ON capacity_rules(weekday);
-CREATE INDEX idx_pickup_slots_day ON pickup_slots(day);
-CREATE INDEX idx_pickup_slots_start_ts ON pickup_slots(start_ts);
-CREATE INDEX idx_market_events_event_date ON market_events(event_date);
-CREATE INDEX idx_market_events_active ON market_events(active);
-CREATE INDEX idx_links_short_slug ON links(short_slug);
-CREATE INDEX idx_links_active ON links(active);
-CREATE INDEX idx_link_hits_link_id ON link_hits(link_id);
-CREATE INDEX idx_link_hits_ts ON link_hits(ts);
-CREATE INDEX idx_seasonal_tasks_completed ON seasonal_tasks(completed);
-CREATE INDEX idx_margin_tracking_date ON margin_tracking(date);
-CREATE INDEX idx_margin_tracking_product_id ON margin_tracking(product_id);
+CREATE INDEX IF NOT EXISTS idx_airbnb_occupancy_day ON airbnb_occupancy(day);
+CREATE INDEX IF NOT EXISTS idx_capacity_rules_weekday ON capacity_rules(weekday);
+CREATE INDEX IF NOT EXISTS idx_pickup_slots_day ON pickup_slots(day);
+CREATE INDEX IF NOT EXISTS idx_pickup_slots_start_ts ON pickup_slots(start_ts);
+CREATE INDEX IF NOT EXISTS idx_pickup_slots_hold_expires ON pickup_slots(hold_expires_at) WHERE hold_expires_at IS NOT NULL;
+CREATE INDEX IF NOT EXISTS idx_market_events_event_date ON market_events(event_date);
+CREATE INDEX IF NOT EXISTS idx_market_events_active ON market_events(active);
+CREATE INDEX IF NOT EXISTS idx_links_short_slug ON links(short_slug);
+CREATE INDEX IF NOT EXISTS idx_links_active ON links(active);
+CREATE INDEX IF NOT EXISTS idx_link_hits_link_id ON link_hits(link_id);
+CREATE INDEX IF NOT EXISTS idx_link_hits_ts ON link_hits(ts);
+CREATE INDEX IF NOT EXISTS idx_seasonal_tasks_completed ON seasonal_tasks(completed);
+CREATE INDEX IF NOT EXISTS idx_margin_tracking_date ON margin_tracking(date);
+CREATE INDEX IF NOT EXISTS idx_margin_tracking_product_id ON margin_tracking(product_id);
+CREATE INDEX IF NOT EXISTS idx_orders_stripe_session_id ON orders(stripe_session_id);
+CREATE INDEX IF NOT EXISTS idx_orders_pickup_slot_id ON orders(pickup_slot_id);
+CREATE INDEX IF NOT EXISTS idx_orders_status ON orders(status);
+CREATE INDEX IF NOT EXISTS idx_audit_log_ts ON audit_log(ts DESC);
+CREATE INDEX IF NOT EXISTS idx_audit_log_entity ON audit_log(entity, entity_id);
+CREATE INDEX IF NOT EXISTS idx_waitlist_product_id ON waitlist(product_id);
+CREATE INDEX IF NOT EXISTS idx_waitlist_notified ON waitlist(notified_at) WHERE notified_at IS NULL;
