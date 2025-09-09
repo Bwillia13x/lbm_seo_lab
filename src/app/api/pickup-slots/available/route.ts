@@ -10,13 +10,15 @@ export async function GET(request: Request) {
   }
 
   try {
-    // Get all slots for the date with available capacity
+    // Get all slots for the date
     const { data: slots, error } = await supabaseAdmin
       .from('pickup_slots')
       .select('*')
       .eq('day', date)
-      .lt('reserved', supabaseAdmin.raw('capacity')) // reserved < capacity
       .order('start_ts');
+
+    // Filter slots with available capacity (can't do this in Supabase query)
+    const availableSlots = slots?.filter(slot => slot.reserved < slot.capacity) || [];
 
     if (error) {
       console.error('Error fetching available slots:', error);
@@ -24,7 +26,7 @@ export async function GET(request: Request) {
     }
 
     // Format slots for frontend
-    const availableSlots = slots.map(slot => ({
+    const formattedSlots = availableSlots.map(slot => ({
       id: slot.id,
       startTime: slot.start_ts,
       capacity: slot.capacity,
@@ -39,7 +41,7 @@ export async function GET(request: Request) {
 
     return NextResponse.json({
       date,
-      availableSlots
+      availableSlots: formattedSlots
     });
 
   } catch (error) {
