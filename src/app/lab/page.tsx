@@ -6,7 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Button } from '@/components/ui/button';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
-import { Calendar, Users, TrendingUp, Home, Download, RefreshCw, Clock, Link as LinkIcon, BarChart3 } from 'lucide-react';
+import { Calendar, Users, TrendingUp, Home, Download, RefreshCw, Clock, Link as LinkIcon, BarChart3, Search } from 'lucide-react';
 import { useToast } from '@/lib/toast';
 
 interface CapacityData {
