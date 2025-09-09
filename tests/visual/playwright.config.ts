@@ -79,7 +79,7 @@ export default defineConfig({
     reuseExistingServer: !process.env.CI,
   },
 
-  // Global setup and teardown
-  globalSetup: './tests/visual/setup.ts',
-  globalTeardown: './tests/visual/teardown.ts',
+  // Global setup and teardown - commented out as not needed for basic visual tests
+  // globalSetup: './tests/visual/setup.ts',
+  // globalTeardown: './tests/visual/teardown.ts',
 });

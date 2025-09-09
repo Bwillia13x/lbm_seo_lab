@@ -1,0 +1,30 @@
+# Little Bow Meadows - Environment Setup Template
+# Copy these variables to your .env.local file
+
+# Supabase Configuration
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+SUPABASE_SERVICE_ROLE_KEY=your_supabase_service_role_key
+
+# Airbnb Integration
+AIRBNB_ICAL_URL=https://www.airbnb.com/calendar/ical/your_calendar_id.ics
+
+# Stripe Configuration
+STRIPE_SECRET_KEY=sk_test_your_stripe_secret_key
+STRIPE_WEBHOOK_SECRET=whsec_your_webhook_secret
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_your_stripe_publishable_key
+
+# Email Configuration (Resend)
+RESEND_API_KEY=re_your_resend_api_key
+BUSINESS_EMAIL=orders@littlebowmeadows.ca
+
+# Application URLs
+NEXT_PUBLIC_SITE_URL=http://localhost:3000
+
+# Setup Instructions:
+1. Create a new Supabase project at https://supabase.com
+2. Copy your project URL and keys from the project settings
+3. Run the SQL schema from supabase-schema.sql in your Supabase SQL editor
+4. Get your Airbnb iCal URL from your Airbnb listing settings
+5. Set up Stripe webhook endpoint pointing to /api/stripe/webhook
+6. Get your Resend API key from https://resend.com

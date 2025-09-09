@@ -1,0 +1,109 @@
+{
+  "config": {
+    "configFile": "/Users/benjaminwilliams/Downloads/lbm_seolab/tests/visual/playwright.config.ts",
+    "rootDir": "/Users/benjaminwilliams/Downloads/lbm_seolab/tests/visual/tests/visual",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "visual-test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/benjaminwilliams/Downloads/lbm_seolab/tests/visual/test-results/visual",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "visual-chromium",
+        "name": "visual-chromium",
+        "testDir": "/Users/benjaminwilliams/Downloads/lbm_seolab/tests/visual/tests/visual",
+        "testIgnore": [
+          "**/github.com/**"
+        ],
+        "testMatch": [
+          "/\\.spec\\.ts$/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/benjaminwilliams/Downloads/lbm_seolab/tests/visual/test-results/visual",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "visual-firefox",
+        "name": "visual-firefox",
+        "testDir": "/Users/benjaminwilliams/Downloads/lbm_seolab/tests/visual/tests/visual",
+        "testIgnore": [
+          "**/github.com/**"
+        ],
+        "testMatch": [
+          "/\\.spec\\.ts$/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "/Users/benjaminwilliams/Downloads/lbm_seolab/tests/visual/test-results/visual",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "visual-mobile",
+        "name": "visual-mobile",
+        "testDir": "/Users/benjaminwilliams/Downloads/lbm_seolab/tests/visual/tests/visual",
+        "testIgnore": [
+          "**/github.com/**"
+        ],
+        "testMatch": [
+          "/.spec.ts$/"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.55.0",
+    "workers": 5,
+    "webServer": {
+      "command": "npm run dev",
+      "port": 3000,
+      "timeout": 120000,
+      "reuseExistingServer": true
+    }
+  },
+  "suites": [],
+  "errors": [
+    {
+      "message": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments.",
+      "stack": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments."
+    }
+  ],
+  "stats": {
+    "startTime": "2025-09-09T19:24:13.491Z",
+    "duration": 4.3729999999999905,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

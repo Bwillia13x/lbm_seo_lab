@@ -1,0 +1,25 @@
+{
+  "functions": {
+    "app/api/stripe/webhook/route.ts": {
+      "maxDuration": 10
+    },
+    "app/api/airbnb/refresh/route.ts": {
+      "maxDuration": 30
+    },
+    "app/api/pickup-slots/generate/route.ts": {
+      "maxDuration": 30
+    }
+  },
+  "crons": [
+    {
+      "path": "/api/airbnb/refresh",
+      "schedule": "0 */6 * * *"
+    },
+    {
+      "path": "/api/pickup-slots/generate",
+      "schedule": "5 0 * * *"
+    }
+  ]
+}
+
+

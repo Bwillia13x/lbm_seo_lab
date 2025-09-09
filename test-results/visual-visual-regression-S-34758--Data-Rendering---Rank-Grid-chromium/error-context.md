@@ -1,0 +1,397 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - complementary [ref=e3]:
+      - generic [ref=e5]:
+        - img "Prairie Signal" [ref=e6]
+        - generic [ref=e7]:
+          - generic [ref=e8]: Belmont
+          - generic [ref=e9]: SEO Lab
+      - navigation "Primary Navigation" [ref=e10]:
+        - generic [ref=e12]:
+          - link "Home" [ref=e14] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e15] [cursor=pointer]: Home
+          - link "Dashboard" [ref=e18] [cursor=pointer]:
+            - /url: /apps/dashboard
+            - img [ref=e19] [cursor=pointer]
+            - generic [ref=e22] [cursor=pointer]: Dashboard
+          - link "Onboarding" [ref=e25] [cursor=pointer]:
+            - /url: /apps/onboarding
+            - img [ref=e26] [cursor=pointer]
+            - generic [ref=e33] [cursor=pointer]: Onboarding
+        - generic [ref=e35]:
+          - heading "Content Creation" [level=3] [ref=e37]
+          - generic [ref=e38]:
+            - generic [ref=e39]:
+              - link "Google Posts Writer" [ref=e40] [cursor=pointer]:
+                - /url: /apps/gbp-composer
+                - img [ref=e41] [cursor=pointer]
+                - generic [ref=e44] [cursor=pointer]: Google Posts Writer
+              - generic [ref=e46]: Write a short, clear update for Google.
+            - generic [ref=e47]:
+              - link "Social Media Studio" [ref=e48] [cursor=pointer]:
+                - /url: /apps/post-studio
+                - img [ref=e49] [cursor=pointer]
+                - generic [ref=e53] [cursor=pointer]: Social Media Studio
+              - generic [ref=e55]: Draft simple posts for Facebook/Instagram.
+            - generic [ref=e56]:
+              - link "Content Calendar" [ref=e57] [cursor=pointer]:
+                - /url: /apps/post-oracle
+                - img [ref=e58] [cursor=pointer]
+                - generic [ref=e60] [cursor=pointer]: Content Calendar
+              - generic [ref=e62]: Plan and schedule your weekly posts.
+            - generic [ref=e63]:
+              - link "Local Content Ideas" [ref=e64] [cursor=pointer]:
+                - /url: /apps/neighbor-signal
+                - img [ref=e65] [cursor=pointer]
+                - generic [ref=e72] [cursor=pointer]: Local Content Ideas
+              - generic [ref=e74]: See what content works best for Bridgeland.
+        - generic [ref=e75]:
+          - heading "Marketing & Tracking" [level=3] [ref=e77]
+          - generic [ref=e78]:
+            - generic [ref=e79]:
+              - link "Campaign Links" [ref=e80] [cursor=pointer]:
+                - /url: /apps/utm-dashboard
+                - img [ref=e81] [cursor=pointer]
+                - generic [ref=e85] [cursor=pointer]: Campaign Links
+              - generic [ref=e87]: Create links that tell you where customers came from.
+            - generic [ref=e88]:
+              - link "QR Code Maker" [ref=e89] [cursor=pointer]:
+                - /url: /apps/utm-qr
+                - img [ref=e90] [cursor=pointer]
+                - generic [ref=e93] [cursor=pointer]: QR Code Maker
+              - generic [ref=e95]: Make a square barcode people can scan with their phone.
+            - generic [ref=e96]:
+              - link "Staff Referral Codes" [ref=e97] [cursor=pointer]:
+                - /url: /apps/referral-qr
+                - img [ref=e98] [cursor=pointer]
+                - generic [ref=e104] [cursor=pointer]: Staff Referral Codes
+              - generic [ref=e106]: Create QR codes for staff referral rewards.
+            - generic [ref=e107]:
+              - link "Review Request Links" [ref=e108] [cursor=pointer]:
+                - /url: /apps/review-link
+                - img [ref=e109] [cursor=pointer]
+                - generic [ref=e115] [cursor=pointer]: Review Request Links
+              - generic [ref=e117]: Send people straight to your review page.
+        - generic [ref=e118]:
+          - heading "Customer Management" [level=3] [ref=e120]
+          - link "Review Responses" [ref=e123] [cursor=pointer]:
+            - /url: /apps/review-composer
+            - img [ref=e124] [cursor=pointer]
+            - generic [ref=e126] [cursor=pointer]: Review Responses
+        - generic [ref=e128]:
+          - heading "Search Performance" [level=3] [ref=e130]
+          - generic [ref=e131]:
+            - generic [ref=e132]:
+              - link "Search Performance" [ref=e133] [cursor=pointer]:
+                - /url: /apps/gsc-ctr-miner
+                - img [ref=e134] [cursor=pointer]
+                - generic [ref=e136] [cursor=pointer]: Search Performance
+              - generic [ref=e138]: See how people find you on Google.
+            - generic [ref=e139]:
+              - link "Search Rankings" [ref=e140] [cursor=pointer]:
+                - /url: /apps/rank-grid
+                - img [ref=e141] [cursor=pointer]
+                - generic [ref=e144] [cursor=pointer]: Search Rankings
+              - generic [ref=e146]: Check where you appear in Google Maps.
+            - generic [ref=e147]:
+              - link "Ranking Monitor" [ref=e148] [cursor=pointer]:
+                - /url: /apps/rankgrid-watcher
+                - img [ref=e149] [cursor=pointer]
+                - generic [ref=e152] [cursor=pointer]: Ranking Monitor
+              - generic [ref=e154]: Get automatic updates on ranking changes.
+        - generic [ref=e155]:
+          - heading "Local Partnerships" [level=3] [ref=e157]
+          - generic [ref=e158]:
+            - link "Partner Finder" [ref=e160] [cursor=pointer]:
+              - /url: /apps/link-prospect-kit
+              - img [ref=e161] [cursor=pointer]
+              - generic [ref=e164] [cursor=pointer]: Partner Finder
+            - link "Partnership Map" [ref=e167] [cursor=pointer]:
+              - /url: /apps/link-map
+              - img [ref=e168] [cursor=pointer]
+              - generic [ref=e171] [cursor=pointer]: Partnership Map
+        - generic [ref=e173]:
+          - heading "Website Optimization" [level=3] [ref=e175]
+          - generic [ref=e176]:
+            - link "Website Guide" [ref=e178] [cursor=pointer]:
+              - /url: /apps/seo-brief
+              - img [ref=e179] [cursor=pointer]
+              - generic [ref=e182] [cursor=pointer]: Website Guide
+            - link "Page Titles & Descriptions" [ref=e185] [cursor=pointer]:
+              - /url: /apps/meta-planner
+              - img [ref=e186] [cursor=pointer]
+              - generic [ref=e189] [cursor=pointer]: Page Titles & Descriptions
+            - link "Business Listings Check" [ref=e192] [cursor=pointer]:
+              - /url: /apps/citation-tracker
+              - img [ref=e193] [cursor=pointer]
+              - generic [ref=e199] [cursor=pointer]: Business Listings Check
+        - generic [ref=e201]:
+          - heading "Support" [level=3] [ref=e203]
+          - generic [ref=e204]:
+            - link "Status" [ref=e206] [cursor=pointer]:
+              - /url: /status
+              - img [ref=e207] [cursor=pointer]
+              - generic [ref=e209] [cursor=pointer]: Status
+            - link "Trial Guide" [ref=e212] [cursor=pointer]:
+              - /url: /guide/trial
+              - img [ref=e213] [cursor=pointer]
+              - generic [ref=e216] [cursor=pointer]: Trial Guide
+    - generic [ref=e219]:
+      - banner [ref=e220]:
+        - generic [ref=e221]:
+          - link "Prairie Signal Belmont SEO Lab" [ref=e222] [cursor=pointer]:
+            - /url: /
+            - img "Prairie Signal" [ref=e223] [cursor=pointer]
+            - generic [ref=e224] [cursor=pointer]: Belmont SEO Lab
+          - generic [ref=e225]:
+            - generic [ref=e226]:
+              - link "Call for assistance" [ref=e227] [cursor=pointer]:
+                - /url: tel:403-555-0123
+                - img [ref=e228] [cursor=pointer]
+                - generic [ref=e230] [cursor=pointer]: Assistance
+              - link "Find The Belmont Barbershop on map" [ref=e231] [cursor=pointer]:
+                - /url: https://maps.google.com/?q=Little+Bow+River,+High+River,+AB,+T1V+1M6
+                - img [ref=e232] [cursor=pointer]
+                - generic [ref=e235] [cursor=pointer]: Map
+            - generic [ref=e236]:
+              - button "Toggle Simple Mode" [ref=e237] [cursor=pointer]: Simple
+              - button "Toggle theme" [ref=e238] [cursor=pointer]:
+                - img [ref=e239] [cursor=pointer]
+      - main [ref=e241]:
+        - generic [ref=e242]:
+          - generic [ref=e243]:
+            - generic [ref=e244]:
+              - img "Prairie Signal" [ref=e245]
+              - generic [ref=e246]:
+                - heading "AI Ranking Intelligence Studio" [level=1] [ref=e247]
+                - paragraph [ref=e248]: AI-powered search ranking analysis with optimization recommendations, competitor intelligence, and automated campaign management.
+            - generic [ref=e249]:
+              - generic [ref=e250]:
+                - img [ref=e251]
+                - text: "AI: Unavailable"
+              - generic [ref=e259]:
+                - button "Load Demo" [ref=e260] [cursor=pointer]:
+                  - img
+                  - text: Load Demo
+                - button "Clear Grid" [ref=e261] [cursor=pointer]:
+                  - img
+                  - text: Clear Grid
+          - generic [ref=e262]:
+            - generic [ref=e264]: Do this next
+            - list [ref=e266]:
+              - listitem [ref=e267]: Click Load Demo to see an example ranking grid.
+              - listitem [ref=e268]: Add competitors and set ranking goals in their respective tabs.
+              - listitem [ref=e269]: Pick a keyword and enter Belmont's ranking for each grid cell.
+              - listitem [ref=e270]: Save snapshots regularly to track changes over time.
+              - listitem [ref=e271]: Monitor automated alerts for significant ranking changes.
+              - listitem [ref=e272]: Use competitor insights and goal tracking to guide your SEO strategy.
+          - generic [ref=e273]:
+            - tablist [ref=e274]:
+              - tab "How To" [ref=e275] [cursor=pointer]
+              - tab "Grid Input" [active] [selected] [ref=e276] [cursor=pointer]
+            - tabpanel "Grid Input" [ref=e277]:
+              - generic [ref=e278]:
+                - generic [ref=e280]:
+                  - img [ref=e281]
+                  - text: Grid & Query
+                - generic [ref=e284]:
+                  - generic [ref=e285]:
+                    - generic [ref=e286]:
+                      - generic [ref=e287]: Rows
+                      - spinbutton [ref=e288]: "5"
+                    - generic [ref=e289]:
+                      - generic [ref=e290]: Cols
+                      - spinbutton [ref=e291]: "5"
+                    - generic [ref=e292]:
+                      - generic [ref=e293]: Keyword
+                      - textbox "barber bridgeland" [ref=e294]: southern alberta wedding venues
+                    - generic [ref=e295]:
+                      - generic [ref=e296]: Date
+                      - textbox [ref=e297]: 2025-09-09
+                    - generic [ref=e298]:
+                      - checkbox [checked] [ref=e299] [cursor=pointer]:
+                        - generic:
+                          - img
+                      - generic [ref=e300]: Show numbers
+                  - generic [ref=e301]:
+                    - generic [ref=e302]:
+                      - generic [ref=e303]:
+                        - img [ref=e304]
+                        - text: Location
+                      - textbox "Calgary, AB" [ref=e307]: High River, AB
+                    - generic [ref=e308]:
+                      - generic [ref=e309]:
+                        - img [ref=e310]
+                        - text: Device
+                      - combobox "Device type selection" [ref=e312]:
+                        - option "Mobile" [selected]
+                        - option "Desktop"
+                    - generic [ref=e313]:
+                      - generic [ref=e314]:
+                        - img [ref=e315]
+                        - text: Search Type
+                      - combobox "Search type selection" [ref=e318]:
+                        - option "Local Pack" [selected]
+                        - option "Organic"
+                        - option "Maps Only"
+                    - generic [ref=e319]:
+                      - generic [ref=e320]: Competitors Count
+                      - generic [ref=e321]:
+                        - img [ref=e322]
+                        - generic [ref=e327]: "0"
+                  - generic [ref=e328]:
+                    - generic [ref=e329]:
+                      - textbox "Row 1, Col 1" [ref=e330]: "10"
+                      - generic [ref=e331]: "10"
+                    - generic [ref=e332]:
+                      - textbox "Row 1, Col 2" [ref=e333]: "9"
+                      - generic [ref=e334]: "9"
+                    - generic [ref=e335]:
+                      - textbox "Row 1, Col 3" [ref=e336]: "8"
+                      - generic [ref=e337]: "8"
+                    - generic [ref=e338]:
+                      - textbox "Row 1, Col 4" [ref=e339]: "8"
+                      - generic [ref=e340]: "8"
+                    - generic [ref=e341]:
+                      - textbox "Row 1, Col 5" [ref=e342]: "10"
+                      - generic [ref=e343]: "10"
+                    - generic [ref=e344]:
+                      - textbox "Row 2, Col 1" [ref=e345]: "8"
+                      - generic [ref=e346]: "8"
+                    - generic [ref=e347]:
+                      - textbox "Row 2, Col 2" [ref=e348]: "7"
+                      - generic [ref=e349]: "7"
+                    - generic [ref=e350]:
+                      - textbox "Row 2, Col 3" [ref=e351]: "6"
+                      - generic [ref=e352]: "6"
+                    - generic [ref=e353]:
+                      - textbox "Row 2, Col 4" [ref=e354]: "5"
+                      - generic [ref=e355]: "5"
+                    - generic [ref=e356]:
+                      - textbox "Row 2, Col 5" [ref=e357]: "9"
+                      - generic [ref=e358]: "9"
+                    - generic [ref=e359]:
+                      - textbox "Row 3, Col 1" [ref=e360]: "7"
+                      - generic [ref=e361]: "7"
+                    - generic [ref=e362]:
+                      - textbox "Row 3, Col 2" [ref=e363]: "6"
+                      - generic [ref=e364]: "6"
+                    - generic [ref=e365]:
+                      - textbox "Row 3, Col 3" [ref=e366]: "2"
+                      - generic [ref=e367]: "2"
+                    - generic [ref=e368]:
+                      - textbox "Row 3, Col 4" [ref=e369]: "5"
+                      - generic [ref=e370]: "5"
+                    - generic [ref=e371]:
+                      - textbox "Row 3, Col 5" [ref=e372]: "7"
+                      - generic [ref=e373]: "7"
+                    - generic [ref=e374]:
+                      - textbox "Row 4, Col 1" [ref=e375]: "9"
+                      - generic [ref=e376]: "9"
+                    - generic [ref=e377]:
+                      - textbox "Row 4, Col 2" [ref=e378]: "7"
+                      - generic [ref=e379]: "7"
+                    - generic [ref=e380]:
+                      - textbox "Row 4, Col 3" [ref=e381]: "5"
+                      - generic [ref=e382]: "5"
+                    - generic [ref=e383]:
+                      - textbox "Row 4, Col 4" [ref=e384]: "6"
+                      - generic [ref=e385]: "6"
+                    - generic [ref=e386]:
+                      - textbox "Row 4, Col 5" [ref=e387]: "10"
+                      - generic [ref=e388]: "10"
+                    - generic [ref=e389]:
+                      - textbox "Row 5, Col 1" [ref=e390]: "11"
+                      - generic [ref=e391]: "11"
+                    - generic [ref=e392]:
+                      - textbox "Row 5, Col 2" [ref=e393]: "9"
+                      - generic [ref=e394]: "9"
+                    - generic [ref=e395]:
+                      - textbox "Row 5, Col 3" [ref=e396]: "8"
+                      - generic [ref=e397]: "8"
+                    - generic [ref=e398]:
+                      - textbox "Row 5, Col 4" [ref=e399]: "9"
+                      - generic [ref=e400]: "9"
+                    - generic [ref=e401]:
+                      - textbox "Row 5, Col 5" [ref=e402]: "10"
+                      - generic [ref=e403]: "10"
+                  - generic [ref=e404]:
+                    - generic [ref=e405]:
+                      - generic [ref=e406]: Notes
+                      - textbox "e.g., lunch slots, phone GPS mocked, etc." [ref=e407]: Demo grid — tweak and save as snapshot
+                    - button "Save Snapshot" [ref=e409] [cursor=pointer]:
+                      - img
+                      - text: Save Snapshot
+                    - generic [ref=e410]:
+                      - button "Import CSV" [ref=e412] [cursor=pointer]:
+                        - img
+                        - text: Import CSV
+                      - button "Export CSV" [ref=e413] [cursor=pointer]:
+                        - img
+                        - text: Export CSV
+                      - button "Export JSON" [ref=e414] [cursor=pointer]:
+                        - img
+                        - text: Export JSON
+                  - generic [ref=e415]:
+                    - generic [ref=e416]:
+                      - generic [ref=e418]:
+                        - img [ref=e419]
+                        - text: Average Rank
+                      - generic [ref=e422]:
+                        - generic [ref=e423]: "7.6"
+                        - generic [ref=e424]: Current position
+                    - generic [ref=e425]:
+                      - generic [ref=e427]:
+                        - img [ref=e428]
+                        - text: AI Status
+                      - generic [ref=e436]:
+                        - generic [ref=e437]: Server-managed
+                        - generic [ref=e438]: AI optimization
+                    - generic [ref=e439]:
+                      - generic [ref=e441]:
+                        - img [ref=e442]
+                        - text: Top‑3 Coverage
+                      - generic [ref=e445]:
+                        - generic [ref=e446]: 1/25
+                        - generic [ref=e447]: Positions 1-3
+                    - generic [ref=e448]:
+                      - generic [ref=e450]:
+                        - img [ref=e451]
+                        - text: Top‑10 Coverage
+                      - generic [ref=e455]:
+                        - generic [ref=e456]: 24/25
+                        - generic [ref=e457]: Positions 1-10
+                    - generic [ref=e458]:
+                      - generic [ref=e460]:
+                        - img [ref=e461]
+                        - text: Optimizations
+                      - generic [ref=e463]:
+                        - generic [ref=e464]: "0"
+                        - generic [ref=e465]: AI recommendations
+                    - generic [ref=e466]:
+                      - generic [ref=e468]:
+                        - img [ref=e469]
+                        - text: Campaigns
+                      - generic [ref=e471]:
+                        - generic [ref=e472]: "0"
+                        - generic [ref=e473]: Active campaigns
+      - generic [ref=e475]:
+        - link "Email support" [ref=e476] [cursor=pointer]:
+          - /url: mailto:info@thebelmontbarber.ca
+          - img "Prairie Signal" [ref=e477] [cursor=pointer]
+          - text: Need help? Email support
+        - generic [ref=e478]:
+          - button "Open AI diagnostics" [ref=e479] [cursor=pointer]:
+            - img [ref=e480] [cursor=pointer]
+          - link "Call for assistance" [ref=e488] [cursor=pointer]:
+            - /url: tel:403-555-0123
+            - img [ref=e489] [cursor=pointer]
+          - link "Find The Belmont Barbershop on map" [ref=e491] [cursor=pointer]:
+            - /url: https://maps.google.com/?q=Little+Bow+River,+High+River,+AB,+T1V+1M6
+            - img [ref=e492] [cursor=pointer]
+  - alert [ref=e495]
+```

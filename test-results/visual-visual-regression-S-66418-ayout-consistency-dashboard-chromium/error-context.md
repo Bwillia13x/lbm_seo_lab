@@ -1,0 +1,397 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - complementary [ref=e3]:
+      - generic [ref=e5]:
+        - img "Prairie Signal" [ref=e6]
+        - generic [ref=e7]:
+          - generic [ref=e8]: Belmont
+          - generic [ref=e9]: SEO Lab
+      - navigation "Primary Navigation" [ref=e10]:
+        - generic [ref=e12]:
+          - link "Home" [ref=e14] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e15] [cursor=pointer]: Home
+          - link "Dashboard" [ref=e18] [cursor=pointer]:
+            - /url: /apps/dashboard
+            - img [ref=e19] [cursor=pointer]
+            - generic [ref=e22] [cursor=pointer]: Dashboard
+          - link "Onboarding" [ref=e25] [cursor=pointer]:
+            - /url: /apps/onboarding
+            - img [ref=e26] [cursor=pointer]
+            - generic [ref=e33] [cursor=pointer]: Onboarding
+        - generic [ref=e35]:
+          - heading "Content Creation" [level=3] [ref=e37]
+          - generic [ref=e38]:
+            - generic [ref=e39]:
+              - link "Google Posts Writer" [ref=e40] [cursor=pointer]:
+                - /url: /apps/gbp-composer
+                - img [ref=e41] [cursor=pointer]
+                - generic [ref=e44] [cursor=pointer]: Google Posts Writer
+              - generic [ref=e46]: Write a short, clear update for Google.
+            - generic [ref=e47]:
+              - link "Social Media Studio" [ref=e48] [cursor=pointer]:
+                - /url: /apps/post-studio
+                - img [ref=e49] [cursor=pointer]
+                - generic [ref=e53] [cursor=pointer]: Social Media Studio
+              - generic [ref=e55]: Draft simple posts for Facebook/Instagram.
+            - generic [ref=e56]:
+              - link "Content Calendar" [ref=e57] [cursor=pointer]:
+                - /url: /apps/post-oracle
+                - img [ref=e58] [cursor=pointer]
+                - generic [ref=e60] [cursor=pointer]: Content Calendar
+              - generic [ref=e62]: Plan and schedule your weekly posts.
+            - generic [ref=e63]:
+              - link "Local Content Ideas" [ref=e64] [cursor=pointer]:
+                - /url: /apps/neighbor-signal
+                - img [ref=e65] [cursor=pointer]
+                - generic [ref=e72] [cursor=pointer]: Local Content Ideas
+              - generic [ref=e74]: See what content works best for Bridgeland.
+        - generic [ref=e75]:
+          - heading "Marketing & Tracking" [level=3] [ref=e77]
+          - generic [ref=e78]:
+            - generic [ref=e79]:
+              - link "Campaign Links" [ref=e80] [cursor=pointer]:
+                - /url: /apps/utm-dashboard
+                - img [ref=e81] [cursor=pointer]
+                - generic [ref=e85] [cursor=pointer]: Campaign Links
+              - generic [ref=e87]: Create links that tell you where customers came from.
+            - generic [ref=e88]:
+              - link "QR Code Maker" [ref=e89] [cursor=pointer]:
+                - /url: /apps/utm-qr
+                - img [ref=e90] [cursor=pointer]
+                - generic [ref=e93] [cursor=pointer]: QR Code Maker
+              - generic [ref=e95]: Make a square barcode people can scan with their phone.
+            - generic [ref=e96]:
+              - link "Staff Referral Codes" [ref=e97] [cursor=pointer]:
+                - /url: /apps/referral-qr
+                - img [ref=e98] [cursor=pointer]
+                - generic [ref=e104] [cursor=pointer]: Staff Referral Codes
+              - generic [ref=e106]: Create QR codes for staff referral rewards.
+            - generic [ref=e107]:
+              - link "Review Request Links" [ref=e108] [cursor=pointer]:
+                - /url: /apps/review-link
+                - img [ref=e109] [cursor=pointer]
+                - generic [ref=e115] [cursor=pointer]: Review Request Links
+              - generic [ref=e117]: Send people straight to your review page.
+        - generic [ref=e118]:
+          - heading "Customer Management" [level=3] [ref=e120]
+          - link "Review Responses" [ref=e123] [cursor=pointer]:
+            - /url: /apps/review-composer
+            - img [ref=e124] [cursor=pointer]
+            - generic [ref=e126] [cursor=pointer]: Review Responses
+        - generic [ref=e128]:
+          - heading "Search Performance" [level=3] [ref=e130]
+          - generic [ref=e131]:
+            - generic [ref=e132]:
+              - link "Search Performance" [ref=e133] [cursor=pointer]:
+                - /url: /apps/gsc-ctr-miner
+                - img [ref=e134] [cursor=pointer]
+                - generic [ref=e136] [cursor=pointer]: Search Performance
+              - generic [ref=e138]: See how people find you on Google.
+            - generic [ref=e139]:
+              - link "Search Rankings" [ref=e140] [cursor=pointer]:
+                - /url: /apps/rank-grid
+                - img [ref=e141] [cursor=pointer]
+                - generic [ref=e144] [cursor=pointer]: Search Rankings
+              - generic [ref=e146]: Check where you appear in Google Maps.
+            - generic [ref=e147]:
+              - link "Ranking Monitor" [ref=e148] [cursor=pointer]:
+                - /url: /apps/rankgrid-watcher
+                - img [ref=e149] [cursor=pointer]
+                - generic [ref=e152] [cursor=pointer]: Ranking Monitor
+              - generic [ref=e154]: Get automatic updates on ranking changes.
+        - generic [ref=e155]:
+          - heading "Local Partnerships" [level=3] [ref=e157]
+          - generic [ref=e158]:
+            - link "Partner Finder" [ref=e160] [cursor=pointer]:
+              - /url: /apps/link-prospect-kit
+              - img [ref=e161] [cursor=pointer]
+              - generic [ref=e164] [cursor=pointer]: Partner Finder
+            - link "Partnership Map" [ref=e167] [cursor=pointer]:
+              - /url: /apps/link-map
+              - img [ref=e168] [cursor=pointer]
+              - generic [ref=e171] [cursor=pointer]: Partnership Map
+        - generic [ref=e173]:
+          - heading "Website Optimization" [level=3] [ref=e175]
+          - generic [ref=e176]:
+            - link "Website Guide" [ref=e178] [cursor=pointer]:
+              - /url: /apps/seo-brief
+              - img [ref=e179] [cursor=pointer]
+              - generic [ref=e182] [cursor=pointer]: Website Guide
+            - link "Page Titles & Descriptions" [ref=e185] [cursor=pointer]:
+              - /url: /apps/meta-planner
+              - img [ref=e186] [cursor=pointer]
+              - generic [ref=e189] [cursor=pointer]: Page Titles & Descriptions
+            - link "Business Listings Check" [ref=e192] [cursor=pointer]:
+              - /url: /apps/citation-tracker
+              - img [ref=e193] [cursor=pointer]
+              - generic [ref=e199] [cursor=pointer]: Business Listings Check
+        - generic [ref=e201]:
+          - heading "Support" [level=3] [ref=e203]
+          - generic [ref=e204]:
+            - link "Status" [ref=e206] [cursor=pointer]:
+              - /url: /status
+              - img [ref=e207] [cursor=pointer]
+              - generic [ref=e209] [cursor=pointer]: Status
+            - link "Trial Guide" [ref=e212] [cursor=pointer]:
+              - /url: /guide/trial
+              - img [ref=e213] [cursor=pointer]
+              - generic [ref=e216] [cursor=pointer]: Trial Guide
+    - generic [ref=e219]:
+      - banner [ref=e220]:
+        - generic [ref=e221]:
+          - link "Prairie Signal Belmont SEO Lab" [ref=e222] [cursor=pointer]:
+            - /url: /
+            - img "Prairie Signal" [ref=e223] [cursor=pointer]
+            - generic [ref=e224] [cursor=pointer]: Belmont SEO Lab
+          - generic [ref=e225]:
+            - generic [ref=e226]:
+              - link "Call for assistance" [ref=e227] [cursor=pointer]:
+                - /url: tel:403-555-0123
+                - img [ref=e228] [cursor=pointer]
+                - generic [ref=e230] [cursor=pointer]: Assistance
+              - link "Find The Belmont Barbershop on map" [ref=e231] [cursor=pointer]:
+                - /url: https://maps.google.com/?q=Little+Bow+River,+High+River,+AB,+T1V+1M6
+                - img [ref=e232] [cursor=pointer]
+                - generic [ref=e235] [cursor=pointer]: Map
+            - generic [ref=e236]:
+              - button "Toggle Simple Mode" [ref=e237] [cursor=pointer]: Simple
+              - button "Toggle theme" [ref=e238] [cursor=pointer]:
+                - img [ref=e239] [cursor=pointer]
+      - main [ref=e241]:
+        - generic [ref=e242]:
+          - generic [ref=e243]:
+            - generic [ref=e245]:
+              - heading "Little Bow Meadows Dashboard" [level=1] [ref=e246]
+              - paragraph [ref=e247]: Executive overview, today's actions, and quick links for prairie wins.
+            - generic [ref=e248]:
+              - generic [ref=e249]:
+                - img [ref=e250]
+                - text: "AI: Unavailable"
+              - generic [ref=e258]:
+                - button "Load Demo Metrics" [ref=e259] [cursor=pointer]:
+                  - img
+                  - text: Load Demo Metrics
+                - button "Reset Demo" [ref=e260] [cursor=pointer]:
+                  - img
+                  - text: Reset Demo
+                - button "Export Snapshot" [ref=e261] [cursor=pointer]:
+                  - img
+                  - text: Export Snapshot
+                - button "Print" [ref=e262] [cursor=pointer]:
+                  - img
+                  - text: Print
+                - link "Onboarding" [ref=e263] [cursor=pointer]:
+                  - /url: /apps/onboarding
+                  - img
+                  - text: Onboarding
+                - link "Create Tracking Link" [ref=e264] [cursor=pointer]:
+                  - /url: /apps/utm-dashboard
+                  - img
+                  - text: Create Tracking Link
+                - button "Export Events CSV" [ref=e265] [cursor=pointer]
+          - generic [ref=e267]:
+            - generic [ref=e268]: How to use this dashboard
+            - generic [ref=e269]: Start with Onboarding if you haven’t set your info. Then use the quick links to create a tracking link and request reviews.
+          - generic [ref=e270]:
+            - generic [ref=e271]:
+              - generic [ref=e273]: Links (30d)
+              - generic [ref=e274]:
+                - generic [ref=e275]: "0"
+                - generic [ref=e276]: UTM links created
+            - generic [ref=e277]:
+              - generic [ref=e279]: QR Scans (30d)
+              - generic [ref=e280]:
+                - generic [ref=e281]: "0"
+                - generic [ref=e282]: From printed QR/QR tools
+            - generic [ref=e283]:
+              - generic [ref=e285]: Inquiries (30d)
+              - generic [ref=e286]:
+                - generic [ref=e287]: "0"
+                - generic [ref=e288]: Tour requests & bookings
+            - generic [ref=e289]:
+              - generic [ref=e291]: Reviews (30d)
+              - generic [ref=e292]:
+                - generic [ref=e293]: "0"
+                - generic [ref=e294]: Completed
+            - generic [ref=e295]:
+              - generic [ref=e297]: Avg Rating
+              - generic [ref=e298]:
+                - generic [ref=e299]: —
+                - generic [ref=e300]: Out of 5.0
+          - generic [ref=e301]:
+            - generic [ref=e302]:
+              - generic [ref=e303]:
+                - generic [ref=e304]: 30‑Day Trends
+                - generic [ref=e305]: Links, inquiries, and reviews
+              - application [ref=e310]:
+                - generic [ref=e315]:
+                  - generic [ref=e318]: 08-12
+                  - generic [ref=e321]: 08-15
+                  - generic [ref=e324]: 08-18
+                  - generic [ref=e327]: 08-21
+                  - generic [ref=e330]: 08-24
+                  - generic [ref=e333]: 08-27
+                  - generic [ref=e336]: 08-30
+                  - generic [ref=e339]: 09-02
+                  - generic [ref=e342]: 09-05
+                  - generic [ref=e345]: 09-09
+                - generic [ref=e347]:
+                  - generic [ref=e350]: "0"
+                  - generic [ref=e353]: "1"
+                  - generic [ref=e356]: "2"
+                  - generic [ref=e359]: "3"
+                  - generic [ref=e362]: "4"
+            - generic [ref=e363]:
+              - generic [ref=e364]:
+                - generic [ref=e365]: Attribution (30d)
+                - generic [ref=e366]: Top sources for UTM links
+              - application [ref=e371]
+          - generic [ref=e382]:
+            - generic [ref=e383]:
+              - generic [ref=e384]: Marketing Funnel (30d)
+              - generic [ref=e385]: From links → QR scans → inquiries
+            - generic [ref=e386]:
+              - generic [ref=e388]:
+                - generic [ref=e389]: Links
+                - generic [ref=e390]: "0"
+              - generic [ref=e394]:
+                - generic [ref=e395]: QR Scans
+                - generic [ref=e396]: "0"
+              - generic [ref=e400]:
+                - generic [ref=e401]: Inquiries
+                - generic [ref=e402]: "0"
+          - generic [ref=e405]:
+            - generic [ref=e406]:
+              - generic [ref=e407]: Onboarding Status
+              - generic [ref=e408]: Complete these to unlock one‑click review requests and consistent tracking.
+            - generic [ref=e409]:
+              - generic [ref=e410]:
+                - generic [ref=e411]:
+                  - img [ref=e412]
+                  - generic [ref=e414]: Google Place ID set
+                - generic [ref=e415]:
+                  - img [ref=e416]
+                  - generic [ref=e418]: Booking link confirmed
+                - generic [ref=e419]:
+                  - img [ref=e420]
+                  - generic [ref=e422]: Phone number confirmed
+                - generic [ref=e423]:
+                  - img [ref=e424]
+                  - generic [ref=e426]: Address confirmed
+              - link "Finish Onboarding" [ref=e428] [cursor=pointer]:
+                - /url: /apps/onboarding
+                - img
+                - text: Finish Onboarding
+          - generic [ref=e429]:
+            - generic [ref=e430]:
+              - generic [ref=e432]:
+                - img [ref=e433]
+                - text: "Quick: Create Tracking Link"
+              - generic [ref=e436]:
+                - paragraph [ref=e437]: Create a UTM link for your next post and download a QR.
+                - link "Open UTM Dashboard" [ref=e438] [cursor=pointer]:
+                  - /url: /apps/utm-dashboard
+            - generic [ref=e439]:
+              - generic [ref=e441]:
+                - img [ref=e442]
+                - text: "Quick: Request Reviews"
+              - generic [ref=e444]:
+                - paragraph [ref=e445]: Copy CASL‑compliant email/SMS and send to two recent clients.
+                - link "Open Review Requests" [ref=e446] [cursor=pointer]:
+                  - /url: /apps/review-link
+            - generic [ref=e447]:
+              - generic [ref=e449]:
+                - img [ref=e450]
+                - text: "Quick: Post to Google"
+              - generic [ref=e453]:
+                - paragraph [ref=e454]: Generate a fresh GBP post about a featured service.
+                - link "Open GBP Composer" [ref=e455] [cursor=pointer]:
+                  - /url: /apps/gbp-composer
+          - generic [ref=e456]:
+            - generic [ref=e457]:
+              - generic [ref=e458]:
+                - img [ref=e459]
+                - text: Link‑in‑Bio (Instagram)
+              - generic [ref=e465]: Share a single bio link that tracks Book Now, Services, Discounts, and Reviews.
+            - link "Open Link‑in‑Bio" [ref=e467] [cursor=pointer]:
+              - /url: /l
+          - generic [ref=e468]:
+            - generic [ref=e470]: Activity (last 7 days)
+            - application [ref=e475]
+          - generic [ref=e479]:
+            - generic [ref=e480]:
+              - generic [ref=e481]: Goals & Alerts
+              - generic [ref=e482]: Simple checks to guide actions
+            - generic [ref=e483]:
+              - generic [ref=e484]:
+                - generic [ref=e485]:
+                  - generic [ref=e486]:
+                    - img [ref=e487]
+                    - generic [ref=e489]: Average rating ≥ 4.7
+                  - generic [ref=e490]: Needs attention
+                - generic [ref=e491]:
+                  - generic [ref=e492]:
+                    - img [ref=e493]
+                    - generic [ref=e495]: ≥ 12 reviews in last 30 days
+                  - generic [ref=e496]: Needs attention
+                - generic [ref=e497]:
+                  - generic [ref=e498]:
+                    - img [ref=e499]
+                    - generic [ref=e501]: ≥ 3 GBP posts per week
+                  - generic [ref=e502]: Needs attention
+                - generic [ref=e504]:
+                  - img [ref=e505]
+                  - generic [ref=e508]: Links not down more than 20% WoW
+                - generic [ref=e509]:
+                  - generic [ref=e510]:
+                    - img [ref=e511]
+                    - generic [ref=e513]: Onboarding complete
+                  - generic [ref=e514]: Needs attention
+              - generic [ref=e515]:
+                - text: "Week‑over‑week links: 0 vs 0 (100%"
+                - img [ref=e516]
+                - text: )
+          - generic [ref=e519]:
+            - generic [ref=e520]:
+              - generic [ref=e521]:
+                - generic [ref=e522]: Top Sources (30d)
+                - generic [ref=e523]: Where links originate
+              - generic [ref=e524]:
+                - generic [ref=e525]:
+                  - generic [ref=e528]: google
+                  - generic [ref=e529]: "4"
+                - generic [ref=e530]:
+                  - generic [ref=e533]: instagram
+                  - generic [ref=e534]: "3"
+                - generic [ref=e535]:
+                  - generic [ref=e538]: referral
+                  - generic [ref=e539]: "2"
+                - generic [ref=e540]:
+                  - generic [ref=e543]: email
+                  - generic [ref=e544]: "1"
+            - generic [ref=e545]:
+              - generic [ref=e546]:
+                - generic [ref=e547]: Top Services (30d)
+                - generic [ref=e548]: Inquired about most often
+              - generic [ref=e550]: No inquiries yet
+      - generic [ref=e552]:
+        - link "Email support" [ref=e553] [cursor=pointer]:
+          - /url: mailto:info@thebelmontbarber.ca
+          - img "Prairie Signal" [ref=e554] [cursor=pointer]
+          - text: Need help? Email support
+        - generic [ref=e555]:
+          - button "Open AI diagnostics" [ref=e556] [cursor=pointer]:
+            - img [ref=e557] [cursor=pointer]
+          - link "Call for assistance" [ref=e565] [cursor=pointer]:
+            - /url: tel:403-555-0123
+            - img [ref=e566] [cursor=pointer]
+          - link "Find The Belmont Barbershop on map" [ref=e568] [cursor=pointer]:
+            - /url: https://maps.google.com/?q=Little+Bow+River,+High+River,+AB,+T1V+1M6
+            - img [ref=e569] [cursor=pointer]
+  - alert [ref=e572]
+  - generic [ref=e573]: 08-11
+```

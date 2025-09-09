@@ -1,0 +1,18 @@
+[
+  {
+    "id": "eggs-dozen",
+    "slug": "farm-eggs-dozen",
+    "name": "Farm Eggs (Dozen)",
+    "description": "Fresh free-range eggs from happy hens.",
+    "image": "/images/PRAIRIESIGNALLOGO.png",
+    "currency": "CAD",
+    "price_cents": 700,
+    "stripe_price_id": "price_xxx_replace_me",
+    "unit": "dozen",
+    "in_stock": true,
+    "max_per_order": 4,
+    "pickup_only": true
+  }
+]
+
+
