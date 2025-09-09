@@ -3,6 +3,11 @@ import { supabaseAdmin } from "@/lib/db";
 
 export async function POST() {
   try {
+    // First, refresh Airbnb occupancy data
+    const airbnbResponse = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/api/airbnb/refresh`);
+    const airbnbResult = await airbnbResponse.json();
+    console.log('Airbnb refresh result:', airbnbResult);
+
     // Generate slots for the next 14 days
     const today = new Date();
     const slotsToCreate = [];
@@ -68,7 +73,8 @@ export async function POST() {
 
     return NextResponse.json({
       success: true,
-      message: `Generated ${slotsToCreate.length} pickup slots for next 14 days`,
+      message: `Airbnb refreshed and ${slotsToCreate.length} pickup slots generated for next 14 days`,
+      airbnbRefreshed: airbnbResult.ok,
       slotsCreated: slotsToCreate.length
     });
 
