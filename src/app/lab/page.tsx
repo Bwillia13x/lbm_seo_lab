@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { Calendar, Users, TrendingUp, Home, Download, RefreshCw, Clock, Link as LinkIcon, BarChart3, Search, Settings } from 'lucide-react';
 import { useToast } from '@/lib/toast';
+import ErrorBoundary from '@/components/ErrorBoundary';
 
 interface CapacityData {
   date: string;
@@ -290,17 +291,19 @@ export default function LabDashboard() {
           </TabsContent>
 
           <TabsContent value="settings" className="space-y-4">
-            <Card>
-              <CardHeader>
-                <CardTitle>Safety & Settings</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">Manage panic mode, auto-pause thresholds, and blackout days for operational safety.</p>
-                <Button asChild className="mt-4">
-                  <a href="/lab/settings">Open Settings</a>
-                </Button>
-              </CardContent>
-            </Card>
+            <ErrorBoundary name="SettingsTab">
+              <Card>
+                <CardHeader>
+                  <CardTitle>Safety & Settings</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">Manage panic mode, auto-pause thresholds, and blackout days for operational safety.</p>
+                  <Button asChild className="mt-4">
+                    <a href="/lab/settings">Open Settings</a>
+                  </Button>
+                </CardContent>
+              </Card>
+            </ErrorBoundary>
           </TabsContent>
         </Tabs>
       </div>

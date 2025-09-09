@@ -334,6 +334,22 @@ CREATE TABLE IF NOT EXISTS waitlist (
   UNIQUE(product_id, email)
 );
 
+-- Error Monitoring & Logging
+CREATE TABLE IF NOT EXISTS error_reports (
+  id UUID PRIMARY KEY DEFAULT GEN_RANDOM_UUID(),
+  message TEXT NOT NULL,
+  stack TEXT,
+  url TEXT,
+  user_agent TEXT,
+  user_id UUID,
+  timestamp TIMESTAMPTZ DEFAULT NOW(),
+  severity TEXT CHECK (severity IN ('low', 'medium', 'high', 'critical')) DEFAULT 'medium',
+  tags JSONB DEFAULT '{}',
+  context JSONB,
+  resolved BOOLEAN DEFAULT FALSE,
+  resolved_at TIMESTAMPTZ
+);
+
 -- 8. Small Schema Touches
 -- Add soft delete to key tables
 ALTER TABLE pickup_slots ADD COLUMN IF NOT EXISTS soft_deleted BOOLEAN DEFAULT FALSE;
@@ -382,6 +398,12 @@ CREATE POLICY "Allow public read to waitlist" ON waitlist FOR SELECT USING (true
 CREATE POLICY "Allow public insert to waitlist" ON waitlist FOR INSERT WITH CHECK (true);
 CREATE POLICY "Allow authenticated update to waitlist" ON waitlist FOR UPDATE USING (auth.role() = 'authenticated');
 
+CREATE POLICY "Allow authenticated access to error_reports" ON error_reports FOR SELECT USING (auth.role() = 'authenticated');
+CREATE POLICY "Allow system insert to error_reports" ON error_reports FOR INSERT WITH CHECK (true);
+CREATE POLICY "Allow owner update to error_reports" ON error_reports FOR UPDATE USING (
+  EXISTS (SELECT 1 FROM user_roles WHERE email = auth.jwt() ->> 'email' AND role = 'owner')
+);
+
 -- Create indexes for performance
 CREATE INDEX IF NOT EXISTS idx_airbnb_occupancy_day ON airbnb_occupancy(day);
 CREATE INDEX IF NOT EXISTS idx_capacity_rules_weekday ON capacity_rules(weekday);
@@ -404,3 +426,6 @@ CREATE INDEX IF NOT EXISTS idx_audit_log_ts ON audit_log(ts DESC);
 CREATE INDEX IF NOT EXISTS idx_audit_log_entity ON audit_log(entity, entity_id);
 CREATE INDEX IF NOT EXISTS idx_waitlist_product_id ON waitlist(product_id);
 CREATE INDEX IF NOT EXISTS idx_waitlist_notified ON waitlist(notified_at) WHERE notified_at IS NULL;
+CREATE INDEX IF NOT EXISTS idx_error_reports_timestamp ON error_reports(timestamp DESC);
+CREATE INDEX IF NOT EXISTS idx_error_reports_severity ON error_reports(severity);
+CREATE INDEX IF NOT EXISTS idx_error_reports_resolved ON error_reports(resolved);

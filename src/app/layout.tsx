@@ -2,6 +2,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PanicBanner from "@/components/PanicBanner";
+import ErrorBoundary from "@/components/ErrorBoundary";
 
 export const metadata = {
   title: "Little Bow Meadows SEO Lab",
@@ -16,11 +17,19 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="relative">
-        <PanicBanner />
+        <ErrorBoundary name="PanicBanner">
+          <PanicBanner />
+        </ErrorBoundary>
         <div className="pt-8"> {/* Add padding for fixed panic banner */}
-          <Navbar />
-          <main>{children}</main>
-          <Footer />
+          <ErrorBoundary name="Navbar">
+            <Navbar />
+          </ErrorBoundary>
+          <ErrorBoundary name="MainContent">
+            <main>{children}</main>
+          </ErrorBoundary>
+          <ErrorBoundary name="Footer">
+            <Footer />
+          </ErrorBoundary>
         </div>
       </body>
     </html>
