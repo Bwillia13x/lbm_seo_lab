@@ -81,7 +81,7 @@ export async function GET(request: NextRequest) {
       .sort(([a], [b]) => a.localeCompare(b))
       .map(([date, revenue]) => ({
         date,
-        revenue: revenue / 100 // Convert to dollars
+        revenue: (revenue as number) / 100 // Convert to dollars
       }));
 
     return NextResponse.json({
