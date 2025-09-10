@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { captureError } from '@/lib/error-monitoring';
+import { captureError } from '@/lib/error-monitoring-server';
 
 export async function POST(req: NextRequest) {
   try {
