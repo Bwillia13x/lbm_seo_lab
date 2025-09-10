@@ -27,36 +27,36 @@ export default function SEOPage() {
   const { toast } = useToast();
 
   useEffect(() => {
+    const fetchChecklist = async () => {
+      try {
+        const response = await fetch('/api/seo/checklist');
+        const data = await response.json();
+        setChecklist(data.checklist);
+      } catch (error) {
+        console.error('Error fetching checklist:', error);
+        toast({
+          title: 'Error',
+          description: 'Failed to load SEO checklist',
+          variant: 'destructive'
+        });
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    const fetchSchemaMarkup = async () => {
+      try {
+        const response = await fetch('/api/seo/schema');
+        const data = await response.json();
+        setSchemaMarkup(data);
+      } catch (error) {
+        console.error('Error fetching schema markup:', error);
+      }
+    };
+
     fetchChecklist();
     fetchSchemaMarkup();
-  }, []);
-
-  const fetchChecklist = async () => {
-    try {
-      const response = await fetch('/api/seo/checklist');
-      const data = await response.json();
-      setChecklist(data.checklist);
-    } catch (error) {
-      console.error('Error fetching checklist:', error);
-      toast({
-        title: 'Error',
-        description: 'Failed to load SEO checklist',
-        variant: 'destructive'
-      });
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const fetchSchemaMarkup = async () => {
-    try {
-      const response = await fetch('/api/seo/schema');
-      const data = await response.json();
-      setSchemaMarkup(data);
-    } catch (error) {
-      console.error('Error fetching schema markup:', error);
-    }
-  };
+  }, [toast]);
 
   const updateChecklistItem = async (id: string, completed: boolean, notes: string) => {
     try {

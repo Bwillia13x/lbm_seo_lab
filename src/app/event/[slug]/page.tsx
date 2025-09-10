@@ -45,34 +45,33 @@ export default function MarketEventPage() {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    fetchEventAndProducts();
-  }, [slug]);
+    const fetchEventAndProducts = async () => {
+      try {
+        // Fetch event details
+        const eventResponse = await fetch(`/api/market-events/${slug}`);
+        if (!eventResponse.ok) {
+          throw new Error('Event not found');
+        }
+        const eventData = await eventResponse.json();
+        setEvent(eventData.event);
 
-  const fetchEventAndProducts = async () => {
-    try {
-      // Fetch event details
-      const eventResponse = await fetch(`/api/market-events/${slug}`);
-      if (!eventResponse.ok) {
-        throw new Error('Event not found');
-      }
-      const eventData = await eventResponse.json();
-      setEvent(eventData.event);
+        // Fetch products available for this event
+        const productIds = eventData.event.event_products.map((ep: any) => ep.product_id);
+        if (productIds.length > 0) {
+          const productsResponse = await fetch('/api/products?ids=' + productIds.join(','));
+          const productsData = await productsResponse.json();
+          setProducts(productsData.products);
+        }
 
-      // Fetch products available for this event
-      const productIds = eventData.event.event_products.map((ep: any) => ep.product_id);
-      if (productIds.length > 0) {
-        const productsResponse = await fetch('/api/products?ids=' + productIds.join(','));
-        const productsData = await productsResponse.json();
-        setProducts(productsData.products);
-      }
-
-      setLoading(false);
+        setLoading(false);
     } catch (err) {
       console.error('Error fetching event:', err);
       setError('Failed to load event details');
       setLoading(false);
-    }
-  };
+    };
+
+    fetchEventAndProducts();
+  }, [slug]);
 
   const formatDate = (dateStr: string) => {
     return new Date(dateStr).toLocaleDateString('en-CA', {

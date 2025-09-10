@@ -43,26 +43,25 @@ export default function AnalyticsPage() {
   const { toast } = useToast();
 
   useEffect(() => {
-    fetchAnalytics();
-  }, [period]);
-
-  const fetchAnalytics = async () => {
-    setLoading(true);
-    try {
-      const response = await fetch(`/api/analytics/margins?period=${period}`);
-      const analyticsData = await response.json();
-      setData(analyticsData);
-    } catch (error) {
-      console.error('Error fetching analytics:', error);
-      toast({
-        title: 'Error',
-        description: 'Failed to load analytics data',
+    const fetchAnalytics = async () => {
+      setLoading(true);
+      try {
+        const response = await fetch(`/api/analytics/margins?period=${period}`);
+        const analyticsData = await response.json();
+        setData(analyticsData);
+      } catch (error) {
+        console.error('Error fetching analytics:', error);
+        toast({
+          title: 'Error',
+          description: 'Failed to load analytics data',
         variant: 'destructive'
       });
     } finally {
       setLoading(false);
-    }
-  };
+    };
+
+    fetchAnalytics();
+  }, [period, toast]);
 
   const formatCurrency = (amount: number) => {
     return new Intl.NumberFormat('en-CA', {

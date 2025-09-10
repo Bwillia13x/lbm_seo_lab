@@ -46,41 +46,41 @@ export default function SeasonalityPage() {
   });
 
   useEffect(() => {
+    const fetchTasks = async () => {
+      try {
+        const response = await fetch('/api/seasonality/tasks');
+        const data = await response.json();
+        setTasks(data.tasks);
+      } catch (error) {
+        console.error('Error fetching tasks:', error);
+        toast({
+          title: 'Error',
+          description: 'Failed to load seasonal tasks',
+          variant: 'destructive'
+        });
+      }
+    };
+
+    const fetchRules = async () => {
+      try {
+        const response = await fetch('/api/seasonality/rules');
+        const data = await response.json();
+        setRules(data.rules);
+      } catch (error) {
+        console.error('Error fetching rules:', error);
+        toast({
+          title: 'Error',
+          description: 'Failed to load seasonality rules',
+          variant: 'destructive'
+        });
+      } finally {
+        setLoading(false);
+      }
+    };
+
     fetchTasks();
     fetchRules();
-  }, []);
-
-  const fetchTasks = async () => {
-    try {
-      const response = await fetch('/api/seasonality/tasks');
-      const data = await response.json();
-      setTasks(data.tasks);
-    } catch (error) {
-      console.error('Error fetching tasks:', error);
-      toast({
-        title: 'Error',
-        description: 'Failed to load seasonal tasks',
-        variant: 'destructive'
-      });
-    }
-  };
-
-  const fetchRules = async () => {
-    try {
-      const response = await fetch('/api/seasonality/rules');
-      const data = await response.json();
-      setRules(data.rules);
-    } catch (error) {
-      console.error('Error fetching rules:', error);
-      toast({
-        title: 'Error',
-        description: 'Failed to load seasonality rules',
-        variant: 'destructive'
-      });
-    } finally {
-      setLoading(false);
-    }
-  };
+  }, [toast]);
 
   const createRule = async () => {
     if (!formData.product_name || !formData.start_week || !formData.end_week) {

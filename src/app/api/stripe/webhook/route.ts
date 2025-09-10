@@ -119,13 +119,23 @@ export async function POST(req: NextRequest) {
             });
           } else {
             // Legacy: increment reservation (for sessions without atomic reservation)
-            const { error: updateError } = await supabaseAdmin
+            const { data: currentSlot, error: fetchError } = await supabaseAdmin
               .from('pickup_slots')
-              .update({ reserved: supabaseAdmin.raw('reserved + 1') })
-              .eq('id', session.metadata.pickup_slot_id);
+              .select('reserved')
+              .eq('id', session.metadata.pickup_slot_id)
+              .single();
 
-            if (updateError) {
-              console.error('Error updating pickup slot reservation:', updateError);
+            if (!fetchError && currentSlot) {
+              const { error: updateError } = await supabaseAdmin
+                .from('pickup_slots')
+                .update({ reserved: (currentSlot.reserved || 0) + 1 })
+                .eq('id', session.metadata.pickup_slot_id);
+
+              if (updateError) {
+                console.error('Error updating pickup slot reservation:', updateError);
+              }
+            } else {
+              console.error('Error fetching current pickup slot:', fetchError);
             }
           }
 
@@ -202,22 +212,36 @@ export async function POST(req: NextRequest) {
 
       if (session.metadata?.pickup_slot_id && session.metadata.reservation_held === "true") {
         try {
-          // Release the hold
-          await supabaseAdmin
+          // Fetch current reservation count and release the hold
+          const { data: currentSlot, error: fetchError } = await supabaseAdmin
             .from('pickup_slots')
-            .update({
-              reserved: supabaseAdmin.raw('GREATEST(0, reserved - 1)'),
-              hold_expires_at: null,
-              held_by_session: null
-            })
-            .eq('id', session.metadata.pickup_slot_id);
+            .select('reserved')
+            .eq('id', session.metadata.pickup_slot_id)
+            .single();
 
-          await logAuditEvent('release_expired_hold', 'pickup_slots', session.metadata.pickup_slot_id, null, null, {
-            session_id: session.id,
-            reason: 'checkout_expired'
-          });
+          if (!fetchError && currentSlot) {
+            const newReserved = Math.max(0, (currentSlot.reserved || 0) - 1);
 
-          console.log(`Released hold for expired session: ${session.id}`);
+            await supabaseAdmin
+              .from('pickup_slots')
+              .update({
+                reserved: newReserved,
+                hold_expires_at: null,
+                held_by_session: null
+              })
+              .eq('id', session.metadata.pickup_slot_id);
+
+            await logAuditEvent('release_expired_hold', 'pickup_slots', session.metadata.pickup_slot_id, null, null, {
+              session_id: session.id,
+              reason: 'checkout_expired',
+              old_reserved: currentSlot.reserved,
+              new_reserved: newReserved
+            });
+
+            console.log(`Released hold for expired session: ${session.id}`);
+          } else {
+            console.error('Error fetching current pickup slot for hold release:', fetchError);
+          }
         } catch (error) {
           console.error('Error releasing expired hold:', error);
         }

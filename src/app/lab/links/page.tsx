@@ -42,25 +42,24 @@ export default function LinksPage() {
   });
 
   useEffect(() => {
-    fetchLinks();
-  }, []);
-
-  const fetchLinks = async () => {
-    try {
-      const response = await fetch('/api/links');
-      const data = await response.json();
-      setLinks(data.links);
-    } catch (error) {
-      console.error('Error fetching links:', error);
-      toast({
-        title: 'Error',
-        description: 'Failed to load links',
-        variant: 'destructive'
-      });
+    const fetchLinks = async () => {
+      try {
+        const response = await fetch('/api/links');
+        const data = await response.json();
+        setLinks(data.links);
+      } catch (error) {
+        console.error('Error fetching links:', error);
+        toast({
+          title: 'Error',
+          description: 'Failed to load links',
+          variant: 'destructive'
+        });
     } finally {
       setLoading(false);
-    }
-  };
+    };
+
+    fetchLinks();
+  }, [toast]);
 
   const createLink = async () => {
     if (!formData.label || !formData.target_url) {
