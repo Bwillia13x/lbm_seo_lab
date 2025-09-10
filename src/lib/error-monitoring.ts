@@ -23,7 +23,67 @@ export const ERROR_SEVERITY = {
   CRITICAL: 'critical'
 } as const;
 
-// Capture and report errors
+// Client-safe error capture (doesn't use server-side database)
+export function captureErrorClient(
+  error: Error | string,
+  context?: {
+    severity?: keyof typeof ERROR_SEVERITY;
+    tags?: Record<string, string>;
+    userId?: string;
+    url?: string;
+    userAgent?: string;
+    additionalContext?: Record<string, any>;
+  }
+): void {
+  try {
+    const errorMessage = error instanceof Error ? error.message : error;
+    const stack = error instanceof Error ? error.stack : undefined;
+
+    const report = {
+      message: errorMessage,
+      stack,
+      url: context?.url || (typeof window !== 'undefined' ? window.location.href : undefined),
+      userAgent: context?.userAgent || (typeof window !== 'undefined' ? navigator.userAgent : undefined),
+      userId: context?.userId,
+      timestamp: new Date().toISOString(),
+      severity: context?.severity ? ERROR_SEVERITY[context.severity] : ERROR_SEVERITY.MEDIUM,
+      tags: context?.tags || {},
+      context: context?.additionalContext
+    };
+
+    // Send to server-side error handler via fetch
+    if (typeof window !== 'undefined') {
+      fetch('/api/errors/capture', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(report),
+      }).catch(fetchError => {
+        console.error('Failed to send error report to server:', fetchError);
+        console.error('Error captured (client fallback):', report);
+      });
+    }
+
+    // Always log to console
+    if (process.env.NODE_ENV === 'development') {
+      console.group('🚨 Error Captured (Client)');
+      console.error('Message:', report.message);
+      console.error('Severity:', report.severity);
+      console.error('URL:', report.url);
+      if (report.stack) console.error('Stack:', report.stack);
+      if (report.context) console.error('Context:', report.context);
+      console.groupEnd();
+    }
+
+  } catch (captureError) {
+    // Last resort - log to console
+    console.error('Failed to capture error:', captureError);
+    console.error('Original error:', error);
+  }
+}
+
+// Server-side error capture (uses database)
 export async function captureError(
   error: Error | string,
   context?: {
@@ -65,7 +125,7 @@ export async function captureError(
 
     // Log to console in development
     if (process.env.NODE_ENV === 'development') {
-      console.group('🚨 Error Captured');
+      console.group('🚨 Error Captured (Server)');
       console.error('Message:', report.message);
       console.error('Severity:', report.severity);
       console.error('URL:', report.url);
@@ -120,14 +180,14 @@ export async function withErrorMonitoring<T>(
   }
 }
 
-// React error boundary hook
+// React error boundary hook (client-safe)
 export function useErrorMonitoring() {
   const reportError = (
     error: Error,
     errorInfo?: { componentStack?: string },
     context?: Record<string, any>
   ) => {
-    captureError(error, {
+    captureErrorClient(error, {
       severity: 'HIGH',
       tags: { type: 'react_error' },
       additionalContext: {

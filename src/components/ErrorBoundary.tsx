@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { captureError, useErrorMonitoring } from '@/lib/error-monitoring';
+import { captureErrorClient, useErrorMonitoring } from '@/lib/error-monitoring';
 
 interface ErrorBoundaryState {
   hasError: boolean;
@@ -30,7 +30,7 @@ class ErrorBoundaryClass extends React.Component<ErrorBoundaryProps, ErrorBounda
 
   componentDidCatch(error: Error, errorInfo: React.ErrorInfo) {
     // Capture error with context
-    captureError(error, {
+    captureErrorClient(error, {
       severity: 'HIGH',
       tags: {
         type: 'react_error_boundary',
@@ -131,7 +131,7 @@ export function ErrorBoundary({
       fallback={fallback}
       onError={(error, errorInfo) => {
         // Add component name to error context
-        captureError(error, {
+        captureErrorClient(error, {
           severity: 'HIGH',
           tags: {
             type: 'react_error_boundary',
